@@ -20,7 +20,7 @@ export default [
       peerDepsExternal(),
       resolve(),
       commonjs(),
-      typescript({ tsconfig: './tsconfig.json' }),
+      typescript({ tsconfig: './tsconfig.json', declaration: false }),
       terser(),
     ],
     external: [...Object.keys(pkg.peerDependencies || {})],
