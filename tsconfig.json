@@ -9,8 +9,9 @@
     "resolveJsonModule": true,
     "importHelpers": true,
     "isolatedModules": true,
-    "noEmit": true,
-    "rootDir": "src"
+    "outDir": "dist",
+    "rootDir": "."
   },
-  "include": ["src"]
+  "include": ["src", "bin", "tests"],
+  "exclude": ["dist", "node_modules"]
 }

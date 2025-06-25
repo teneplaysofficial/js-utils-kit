@@ -1,0 +1,15 @@
+{
+  "entryPoints": ["src/index.ts"],
+  "out": "docs",
+  "includeVersion": true,
+  "excludePrivate": true,
+  "excludeProtected": true,
+  "excludeInternal": true,
+  "excludeExternals": true,
+  "readme": "README.md",
+  "tsconfig": "tsconfig.json",
+  "name": "JS Utils Kit",
+  "categorizeByGroup": true,
+  "sort": ["source-order"],
+  "plugin": []
+}
