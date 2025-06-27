@@ -3,13 +3,16 @@
   "out": "docs",
   "includeVersion": true,
   "excludePrivate": true,
-  "excludeProtected": true,
+  "excludeProtected": false,
   "excludeInternal": true,
-  "excludeExternals": true,
+  "excludeExternals": false,
   "readme": "README.md",
   "tsconfig": "tsconfig.json",
   "name": "JS Utils Kit",
   "categorizeByGroup": true,
   "sort": ["source-order"],
-  "plugin": []
+  "plugin": [],
+  "gitRemote": "origin",
+  "gitRevision": "main",
+  "githubPages": true
 }

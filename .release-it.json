@@ -21,7 +21,7 @@
     }
   },
   "hooks": {
-    "before:init": "yarn build",
+    "before:init": "yarn test && yarn build",
     "before:commit": "git add .",
     "after:release": "git tag -f v${version.major} && git push -f origin v${version.major}"
   }
