@@ -23,6 +23,6 @@
   "hooks": {
     "before:init": "yarn test && yarn build",
     "before:commit": "git add .",
-    "after:release": "git tag -f v${version.major} && git push -f origin v${version.major}"
+    "after:release": "major=$(echo ${version} | cut -d. -f1) && git tag -f v$major && git push -f origin v$major"
   }
 }
