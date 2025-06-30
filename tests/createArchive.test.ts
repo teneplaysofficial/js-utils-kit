@@ -23,6 +23,10 @@ describe('createArchive', () => {
 
   beforeEach(() => {
     (fs.createWriteStream as jest.Mock).mockReturnValue(mockOutput);
+    (fs.existsSync as jest.Mock).mockReturnValue(true);
+    (fs.statSync as jest.Mock).mockReturnValue({
+      isDirectory: () => true,
+    });
     (archiver as unknown as jest.Mock).mockReturnValue(mockArchive);
     jest.clearAllMocks();
   });
