@@ -28,19 +28,14 @@
   "bin": {
     "js-utils-kit": "dist/cli/index.js"
   },
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "import": {
-        "types": "./dist/index.d.ts",
-        "default": "./dist/index.esm.js"
-      },
-      "require": {
-        "types": "./dist/index.d.ts",
-        "default": "./dist/index.cjs.js"
-      }
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
     }
   },
   "lint-staged": {
@@ -48,7 +43,9 @@
   },
   "scripts": {
     "test": "jest",
-    "build": "rollup -c && yarn docs",
+    "prebuild": "yarn gen:indexes",
+    "build": "rollup -c",
+    "postbuild": "yarn docs",
     "release": "release-it",
     "watch": "rollup -c --watch",
     "lint": "eslint .",
@@ -56,7 +53,8 @@
     "format": "prettier --write",
     "format:check": "prettier --check .",
     "prepare": "husky",
-    "docs": "typedoc"
+    "docs": "typedoc",
+    "gen:indexes": "node scripts/gen-indexes.js"
   },
   "devDependencies": {
     "@eslint/js": "^9.29.0",

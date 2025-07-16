@@ -1,6 +1,6 @@
 import fs from 'fs';
 import archiver from 'archiver';
-import { createArchive } from '../src/file/createArchive';
+import { createArchive } from '../../src/file/createArchive';
 
 jest.mock('fs');
 jest.mock('archiver');

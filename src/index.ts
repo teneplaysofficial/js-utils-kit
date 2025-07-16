@@ -1,1 +1,1 @@
-export * from './file/index';
+export { default as file } from './file';

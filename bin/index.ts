@@ -1,7 +1,7 @@
 import fs from 'fs';
 import ora from 'ora';
 import { Command } from 'commander';
-import { createArchive } from '../src';
+import { createArchive } from '../src/file';
 
 const pkg = JSON.parse(fs.readFileSync('./package.json', 'utf8'));
 
