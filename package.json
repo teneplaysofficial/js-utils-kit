@@ -19,7 +19,22 @@
     "utils",
     "helpers",
     "toolkit",
-    "typescript"
+    "typescript",
+    "js",
+    "utility",
+    "functions",
+    "modules",
+    "typed",
+    "common",
+    "cli",
+    "merge",
+    "random",
+    "string",
+    "array",
+    "object",
+    "number",
+    "date",
+    "type-check"
   ],
   "type": "module",
   "files": [
