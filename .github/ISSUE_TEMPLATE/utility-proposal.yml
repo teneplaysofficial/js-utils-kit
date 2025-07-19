@@ -1,0 +1,154 @@
+name: 'Utility Proposal'
+description: Propose a detailed new utility function or enhancement for js-utils-kit
+title: '[Proposal] <utility-name> - <short summary>'
+labels: ['suggestion', 'enhancement']
+assignees:
+  - TenEplaysOfficial
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Utility Proposal Form
+
+        Thank you for your interest in improving `js-utils-kit`!  
+        Use this form to propose a new utility function or enhancement.
+
+  - type: input
+    id: utility-name
+    attributes:
+      label: Utility Name
+      placeholder: e.g., deepMerge, isUUID, flattenArray
+      description: Provide a short and descriptive name for the utility function.
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: What does this utility do?
+      description: Describe the utility’s purpose and key behavior.
+      placeholder: |
+        Recursively merges two or more objects, preserving nested structure and references.
+
+  - type: textarea
+    id: problem-solved
+    attributes:
+      label: What problem does it solve?
+      description: Explain the gap or pain point this function addresses.
+      placeholder: |
+        `Object.assign` does not preserve nested structures. This solves deep merging cases...
+
+  - type: textarea
+    id: example
+    attributes:
+      label: Example Usage
+      description: Provide usage examples showing input/output.
+      placeholder: |
+        ```ts
+        merge({ a: 1 }, { b: 2 }) // → { a: 1, b: 2 }
+        ```
+
+  - type: textarea
+    id: behavior-notes
+    attributes:
+      label: Behavior & Edge Cases
+      description: Describe any tricky behavior, config options, or edge cases.
+      placeholder: |
+        - Arrays are replaced, not merged.
+        - Accepts multiple objects.
+        - Handles circular references using WeakMap.
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Suggested Category
+      description: Choose the most appropriate category.
+      options:
+        - Other
+        - Array
+        - Object
+        - String
+        - Number
+        - Time
+        - Validation
+        - Math
+    validations:
+      required: true
+
+  - type: input
+    id: custom-category
+    attributes:
+      label: If “Other”, what category do you suggest?
+      placeholder: e.g., Crypto, DOM, URL, Performance
+      description: (Only fill this if you selected “Other” above.)
+
+  - type: input
+    id: internal-utils
+    attributes:
+      label: Internally Used Utilities
+      placeholder: e.g., clamp, merge, typeOf
+      description: Which existing utilities (if any) will this build on or use internally?
+
+  - type: dropdown
+    id: complexity
+    attributes:
+      label: Estimated Complexity
+      description: Approximate lines of code or level of depth.
+      options:
+        - 🟢 Simple
+        - 🟡 Moderate
+        - 🔴 Complex
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 🚦 Priority / Usefulness
+      description: Rate its impact or usage frequency.
+      options:
+        - 🚨 Critical — missing core utility
+        - ⚠️ High — widely needed
+        - 🧩 Medium — somewhat useful
+        - 🧪 Low — niche or rare
+
+  - type: input
+    id: related-utils
+    attributes:
+      label: Related Utilities
+      placeholder: merge, assign, cloneDeep
+      description: Mention functions this relates to or builds upon.
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Preflight Checks
+      options:
+        - label: I have reviewed the existing utilities; this doesn’t already exist.
+          required: true
+        - label: This can't be achieved easily using existing functions in combination.
+        - label: I believe this is reusable across multiple projects or scenarios.
+
+  - type: checkboxes
+    id: contribution-intent
+    attributes:
+      label: Contribution Intent
+      options:
+        - label: I plan to implement this utility and submit a PR.
+        - label: I can help write test cases or types.
+        - label: I'm only suggesting the idea for now.
+
+  - type: textarea
+    id: implementation-ideas
+    attributes:
+      label: Implementation Plan (optional)
+      description: Share thoughts on how this might be implemented or tested.
+      placeholder: |
+        - Recursive with stack-based strategy
+        - Use WeakMap to handle cycles
+        - Type-safe with generics
+
+  - type: textarea
+    id: additional-notes
+    attributes:
+      label: Additional Notes (optional)
+      description: Anything else maintainers should know?

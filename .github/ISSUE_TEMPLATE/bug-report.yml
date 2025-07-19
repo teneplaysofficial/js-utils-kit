@@ -1,0 +1,97 @@
+name: 'Bug Report'
+description: Report a bug or unexpected behavior in js-utils-kit
+title: '[Bug] <utility-name> - <short description of the issue>'
+labels: ['bug']
+assignees:
+  - TenEplaysOfficial
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Bug Report
+
+        Thank you for reporting a bug. Please fill out the form below so we can resolve the issue quickly.
+
+  - type: input
+    id: utility-name
+    attributes:
+      label: Utility Function Affected
+      placeholder: e.g., merge, clamp
+      description: Name of the function where the bug appears.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity Level
+      description: How serious is the issue?
+      options:
+        - 🛑 Critical — Breaks builds or crashes apps
+        - ⚠️ Major — Wrong output or unusable behavior
+        - ❓ Minor — Small or edge-case issue
+        - 📝 Cosmetic — Docs or message issue
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What went wrong?
+      description: Describe the incorrect behavior. What did you expect and what happened instead?
+      placeholder: |
+        The `merge` utility is mutating the original object. Expected it to return a new object.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction Steps
+      description: Share minimal reproducible code and any steps to trigger the bug.
+      placeholder: |
+        ```ts
+        const a = { x: 1 };
+        const b = { y: 2 };
+        merge(a, b); // Now `a` is mutated!
+        ```
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen instead?
+      placeholder: |
+        `a` should remain unchanged; the merged result should be a new object.
+
+  - type: input
+    id: version
+    attributes:
+      label: Package Version
+      description: What version of `js-utils-kit` are you using?
+      placeholder: e.g., 0.2.1
+    validations:
+      required: true
+
+  - type: textarea
+    id: stacktrace
+    attributes:
+      label: Stack Trace / Logs
+      description: Paste any console error or trace here, if available.
+      render: shell
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Checks Before Submitting
+      options:
+        - label: I have tested this on the latest version of the package.
+          required: true
+        - label: I’ve reviewed open issues to avoid duplicates.
+          required: true
+        - label: I’ve provided enough information for reproduction.
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Any links, screenshots, or context to help us debug faster?

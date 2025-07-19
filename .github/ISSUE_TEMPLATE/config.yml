@@ -1,0 +1,9 @@
+blank_issues_enabled: false
+contact_links:
+  - name: JS Utils Kit Discussions
+    url: https://github.com/TenEplaysOfficial/js-utils-kit/discussions
+    about: Ask questions, propose ideas, or start a discussion about JS Utils Kit.
+
+  - name: Report Security Vulnerabilities
+    url: mailto:tenegamesbusiness@gmail.com
+    about: Please report any security issues via this email.
