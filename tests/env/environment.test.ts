@@ -1,5 +1,6 @@
 import {
   Environment,
+  getRunTimeEnvironment,
   isDev,
   isNode,
   isProd,
@@ -52,6 +53,18 @@ describe('Environment checks', () => {
   describe('isNode()', () => {
     it('returns true in a Node.js environment', () => {
       expect(isNode()).toBe(true);
+    });
+  });
+
+  describe('getRunTimeEnvironment()', () => {
+    it('returns Environment.UNKNOWN for unrecognized value', () => {
+      process.env.NODE_ENV = 'staging';
+      expect(getRunTimeEnvironment()).toBe(Environment.UNKNOWN);
+    });
+
+    it('returns Environment.UNKNOWN when NODE_ENV is undefined', () => {
+      delete process.env.NODE_ENV;
+      expect(getRunTimeEnvironment()).toBe(Environment.UNKNOWN);
     });
   });
 });
