@@ -69,6 +69,7 @@
     "format:check": "prettier --check .",
     "prepare": "husky",
     "docs": "typedoc",
+    "gen:exports": "node scripts/gen-exports.js",
     "gen:indexes": "node scripts/gen-indexes.js"
   },
   "devDependencies": {
