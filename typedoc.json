@@ -17,7 +17,7 @@
   "gitRevision": "main",
   "githubPages": true,
   "hideGenerator": true,
-  "customFooterHtml": "<div style=\"text-align:center; padding:1rem;\"><div>A modern and modular JavaScript utility toolkit offering essential functions for strings, arrays, objects, numbers, dates, types, and more.</div><div style=\"margin-top:0.25rem;\">Made by <a href=\\\"https://github.com/TenEplaysOfficial/js-utils-kit\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">TenEplaysOfficial</a> • Released under <a href=\\\"https://github.com/TenEplaysOfficial/js-utils-kit/blob/main/LICENSE\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">MIT</a></div></div>",
+  "customFooterHtml": "<div style=\"text-align:center; padding:1rem;\"><div>Streamline your code with battle-tested, tree-shakable utilities</div><div style=\"margin-top:0.25rem;\">Made by <a href=\\\"https://github.com/TenEplaysOfficial/js-utils-kit\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">TenEplaysOfficial</a> • Released under <a href=\\\"https://github.com/TenEplaysOfficial/js-utils-kit/blob/main/LICENSE\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">MIT</a></div></div>",
   "projectDocuments": ["./CHANGELOG.md", "./CONTRIBUTING.md"],
   "cname": "js-utils.js.org"
 }
