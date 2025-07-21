@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.2.1](https://github.com/TenEplaysOfficial/js-utils-kit/compare/v0.2.0...v0.2.1) (2025-07-21)
+
+### Bug Fixes
+
+- Update postbuild script to generate exports ([6780622](https://github.com/TenEplaysOfficial/js-utils-kit/commit/6780622fae2a40eacaef35c1ed865a51b9037a3d))
+
 ## [0.2.0](https://github.com/TenEplaysOfficial/js-utils-kit/compare/v0.1.0...v0.2.0) (2025-07-21)
 
 ### Features
