@@ -60,7 +60,7 @@
     "test": "jest",
     "prebuild": "yarn gen:indexes",
     "build": "rollup -c",
-    "postbuild": "yarn docs",
+    "postbuild": "yarn gen:exports && yarn docs",
     "release": "release-it",
     "watch": "rollup -c --watch",
     "lint": "eslint .",
