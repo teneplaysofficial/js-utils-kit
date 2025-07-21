@@ -103,15 +103,16 @@ const generateCategoryIndex = (folder) => {
 };
 
 const generateRootIndex = (folders, rootFiles) => {
-  const lines = folders.map(
-    (folder) => `export { default as ${folder} } from './${folder}';`,
-  );
+  const lines = folders.map((folder) => [
+    `export * from './${folder}';`,
+    `export { default as ${folder} } from './${folder}';`,
+  ]);
+
   rootFiles.forEach((file) => {
     const name = file.replace('.ts', '');
     lines.push(`export * from './${name}';`);
   });
-
-  const content = lines.join('\n') + '\n';
+  const content = lines.flat().join('') + '\n';
   fs.writeFileSync(path.join(SRC_DIR, 'index.ts'), content);
   console.log(`Generated: src/index.ts`);
 };
