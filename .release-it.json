@@ -5,10 +5,11 @@
     "commit": true,
     "commitMessage": "chore: release v${version}",
     "tagName": "v${version}",
-    "requireCleanWorkingDir": true
+    "requireCleanWorkingDir": false
   },
   "npm": {
-    "publish": true
+    "publish": true,
+    "publishArgs": ["--provenance"]
   },
   "github": {
     "release": true,
