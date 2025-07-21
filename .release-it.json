@@ -5,7 +5,9 @@
     "commit": true,
     "commitMessage": "chore: release v${version}",
     "tagName": "v${version}",
-    "requireCleanWorkingDir": false
+    "requireCleanWorkingDir": false,
+    "add": ".",
+    "addUntrackedFiles": true
   },
   "npm": {
     "publish": true,
@@ -23,6 +25,7 @@
   },
   "hooks": {
     "before:commit": "git add .",
+    "after:bump": "yarn docs",
     "after:release": "major=$(echo ${version} | cut -d. -f1) && git tag -f v$major && git push -f origin v$major"
   }
 }
