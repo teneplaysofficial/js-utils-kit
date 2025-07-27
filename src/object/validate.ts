@@ -38,7 +38,8 @@ export function isEmptyObject(value: object) {
   return (
     value !== null &&
     typeof value === 'object' &&
-    Object.keys(value).length === 0
+    Object.keys(value).length === 0 &&
+    !isArray(value)
   );
 }
 
@@ -56,6 +57,9 @@ export function isEmptyObject(value: object) {
  */
 export function isNonEmptyObject(value: object) {
   return (
-    value !== null && typeof value === 'object' && Object.keys(value).length > 0
+    value !== null &&
+    typeof value === 'object' &&
+    Object.keys(value).length > 0 &&
+    !isArray(value)
   );
 }

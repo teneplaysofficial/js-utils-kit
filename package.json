@@ -5,9 +5,9 @@
   "description": "Essential JavaScript helpers",
   "license": "MIT",
   "private": false,
-  "repository": "https://github.com/TenEplaysOfficial/js-utils-kit",
+  "repository": "https://github.com/teneplaysofficial/js-utils-kit",
   "bugs": {
-    "url": "https://github.com/TenEplaysOfficial/js-utils-kit/issues"
+    "url": "https://github.com/teneplaysofficial/js-utils-kit/issues"
   },
   "author": {
     "name": "Sriman",
