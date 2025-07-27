@@ -18,7 +18,7 @@
  * const defaultConfig = { env: "dev", features: ["a"], flags: { debug: true } };
  * const userConfig = { env: "prod", features: ["b"], flags: { beta: true } };
  *
- * const result = mergeObj(false, defaultConfig, userConfig);
+ * const result = mergeObj(defaultConfig, userConfig);
  * // {
  * //   env: "prod",
  * //   features: ["b"],        // replaced, not merged
@@ -39,31 +39,30 @@
  */
 export function mergeObj(
   appendArray: boolean = false,
-  ...sources: Record<string, unknown>[]
-): Record<string, unknown> {
-  const isObject = (val: unknown): val is Record<string, unknown> =>
-    typeof val === 'object' && val !== null && !Array.isArray(val);
-
-  return sources.reduce((acc, source) => {
-    for (const key in source) {
-      const sourceVal = source[key];
-      const accVal = acc[key];
-
+  ...sources: object[]
+): object {
+  const isObject = (val: unknown): val is object =>
+    typeof val === 'object' && val !== null;
+  const result: Record<string, unknown> = {};
+  for (const source of sources) {
+    if (!isObject(source)) continue;
+    for (const key of Object.keys(source)) {
+      const sourceVal = (source as Record<string, unknown>)[key];
+      const resultVal = result[key];
       if (Array.isArray(sourceVal)) {
-        acc[key] =
-          appendArray && Array.isArray(accVal)
-            ? [...accVal, ...sourceVal]
+        result[key] =
+          appendArray && Array.isArray(resultVal)
+            ? [...resultVal, ...sourceVal]
             : [...sourceVal];
-      } else if (isObject(sourceVal)) {
-        acc[key] = mergeObj(
-          appendArray,
-          isObject(accVal) ? accVal : {},
-          sourceVal,
-        );
+      } else if (isObject(sourceVal) && !Array.isArray(sourceVal)) {
+        result[key] =
+          isObject(resultVal) && !Array.isArray(resultVal)
+            ? mergeObj(appendArray, resultVal, sourceVal)
+            : mergeObj(appendArray, {}, sourceVal);
       } else {
-        acc[key] = sourceVal;
+        result[key] = sourceVal;
       }
     }
-    return acc;
-  }, {});
+  }
+  return result;
 }
