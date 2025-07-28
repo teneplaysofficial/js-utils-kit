@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.3.0](https://github.com/teneplaysofficial/js-utils-kit/compare/v0.2.3...v0.3.0) (2025-07-28)
+
+### Features
+
+- Add string, array, and object validation utilities ([050b053](https://github.com/teneplaysofficial/js-utils-kit/commit/050b0538bd0955722f194409e8e13e7118dfd9be))
+
 ## [0.2.3](https://github.com/TenEplaysOfficial/js-utils-kit/compare/v0.2.2...v0.2.3) (2025-07-21)
 
 ## [0.2.2](https://github.com/TenEplaysOfficial/js-utils-kit/compare/v0.2.1...v0.2.2) (2025-07-21)

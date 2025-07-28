@@ -1,7 +1,7 @@
 {
   "name": "js-utils-kit",
   "displayName": "JS Utils Kit",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "description": "Essential JavaScript helpers",
   "license": "MIT",
   "private": false,
@@ -51,6 +51,11 @@
       "import": "./dist/index.js",
       "require": "./dist/index.cjs",
       "types": "./dist/index.d.ts"
+    },
+    "./array": {
+      "import": "./dist/array/index.js",
+      "require": "./dist/array/index.cjs",
+      "types": "./dist/array/index.d.ts"
     },
     "./char": {
       "import": "./dist/char/index.js",
