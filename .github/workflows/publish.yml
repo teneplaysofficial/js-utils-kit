@@ -1,4 +1,4 @@
-name: Weekly Release
+name: Publish
 
 on:
   schedule:
@@ -58,8 +58,11 @@ jobs:
       - name: Run build
         run: yarn build
 
-      - name: Run release-it
+      - name: Run release-it and publish to npm
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npx release-it --ci
+
+      - name: Publish to JSR
+        run: npx jsr publish --allow-slow-types
