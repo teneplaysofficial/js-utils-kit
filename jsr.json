@@ -17,27 +17,7 @@
     "url": "https://tene.vercel.app"
   },
   "exports": "./src/index.ts",
-  "keywords": [
-    "javascript",
-    "utils",
-    "helpers",
-    "toolkit",
-    "typescript",
-    "js",
-    "utility",
-    "functions",
-    "modules",
-    "typed",
-    "common",
-    "cli",
-    "merge",
-    "random",
-    "string",
-    "array",
-    "object",
-    "number",
-    "date",
-    "type-check"
-  ],
-  "exclude": ["**/node_modules", "**/dist", "**/docs", "**/tests"]
+  "publish": {
+    "include": ["src", "README.md", "LICENSE"]
+  }
 }
