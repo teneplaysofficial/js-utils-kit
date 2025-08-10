@@ -1,0 +1,33 @@
+{
+  "$schema": "https://jsr.io/schema/config-file.v1.json",
+  "name": "@tene/js-utils-kit",
+  "version": "0.3.0",
+  "description": "Essential JavaScript helpers",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/teneplaysofficial/js-utils-kit"
+  },
+  "bugs": {
+    "url": "https://github.com/teneplaysofficial/js-utils-kit/issues"
+  },
+  "author": {
+    "name": "Sriman",
+    "email": "136729116+TenEplaysOfficial@users.noreply.github.com",
+    "url": "https://tene.vercel.app"
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./array": "./src/array/index.ts",
+    "./char": "./src/char/index.ts",
+    "./cli": "./src/cli/index.ts",
+    "./env": "./src/env/index.ts",
+    "./file": "./src/file/index.ts",
+    "./number": "./src/number/index.ts",
+    "./object": "./src/object/index.ts",
+    "./string": "./src/string/index.ts"
+  },
+  "publish": {
+    "include": ["src", "README.md", "LICENSE"]
+  }
+}

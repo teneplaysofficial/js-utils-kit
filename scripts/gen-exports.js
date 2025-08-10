@@ -5,6 +5,7 @@ const cwd = process.cwd();
 
 const DIST_DIR = resolve(cwd, 'dist');
 const packageJson = resolve(cwd, 'package.json');
+const jsrJson = resolve(cwd, 'jsr.json');
 
 function getExportsEntries() {
   const entries = {};
@@ -37,6 +38,25 @@ function generateExportsField() {
   return exportsField;
 }
 
+function getExportsEntriesForJSR() {
+  const entries = {};
+  const dirs = readdirSync(DIST_DIR);
+  for (const dir of dirs) {
+    const path = join(DIST_DIR, dir);
+    if (statSync(path).isDirectory()) {
+      entries[`./${dir}`] = `./src/${dir}/index.ts`;
+    }
+  }
+  return entries;
+}
+
+function generateExportsFieldForJSR() {
+  return {
+    '.': './src/index.ts',
+    ...getExportsEntriesForJSR(),
+  };
+}
+
 (() => {
   console.log('Generating "exports" field for package.json...');
   const pkg = JSON.parse(readFileSync(packageJson, 'utf8'));
@@ -44,4 +64,10 @@ function generateExportsField() {
   console.log("Writing 'exports' field to package.json...");
   writeFileSync(packageJson, JSON.stringify(pkg, null, 2) + '\n', 'utf8');
   console.log('"exports" field generated successfully!');
+
+  console.log('Generating "exports" field for jsr.json...');
+  const jsr = JSON.parse(readFileSync(jsrJson, 'utf8'));
+  jsr.exports = generateExportsFieldForJSR();
+  writeFileSync(jsrJson, JSON.stringify(jsr, null, 2) + '\n', 'utf8');
+  console.log('"exports" field generated successfully in jsr.json!');
 })();

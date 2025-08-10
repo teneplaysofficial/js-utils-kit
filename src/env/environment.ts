@@ -62,7 +62,7 @@ export function getRunTimeEnvironment(): Environment {
  * }
  * ```
  */
-export function isProd() {
+export function isProd(): boolean {
   return process.env.NODE_ENV === Environment.PROD;
 }
 
@@ -80,7 +80,7 @@ export function isProd() {
  * }
  * ```
  */
-export function isDev() {
+export function isDev(): boolean {
   return process.env.NODE_ENV === Environment.DEV;
 }
 
@@ -98,7 +98,7 @@ export function isDev() {
  * }
  * ```
  */
-export function isTest() {
+export function isTest(): boolean {
   return process.env.NODE_ENV === Environment.TEST;
 }
 
@@ -120,7 +120,7 @@ export function isTest() {
  *
  * @see {@link https://nodejs.org/api/process.html | Node.js process documentation}
  */
-export function isNode() {
+export function isNode(): boolean {
   return (
     typeof process !== 'undefined' &&
     process.versions !== null &&
@@ -143,7 +143,7 @@ export function isNode() {
  * }
  * ```
  */
-export function isBrowser() {
+export function isBrowser(): boolean {
   return (
     typeof window !== 'undefined' && typeof window.document !== 'undefined'
   );

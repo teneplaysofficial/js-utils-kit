@@ -25,7 +25,7 @@
   },
   "hooks": {
     "before:commit": "git add .",
-    "after:bump": "yarn docs",
+    "after:bump": "node -e \"const fs=require('fs');const pkg=JSON.parse(fs.readFileSync('package.json','utf8'));const jsr=JSON.parse(fs.readFileSync('jsr.json','utf8'));jsr.version=pkg.version;fs.writeFileSync('jsr.json',JSON.stringify(jsr,null,2));\" && yarn docs",
     "after:release": "major=$(echo ${version} | cut -d. -f1) && git tag -f v$major && git push -f origin v$major"
   }
 }
