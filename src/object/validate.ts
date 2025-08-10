@@ -13,7 +13,7 @@ import { isDefined } from '../checks';
  * isObject(new Date()); // false
  * ```
  */
-export function isObject<T>(value: T) {
+export function isObject<T>(value: T): boolean {
   return (
     isDefined(value) &&
     typeof value === 'object' &&
@@ -34,7 +34,7 @@ export function isObject<T>(value: T) {
  * isEmptyObject([]); // false
  * ```
  */
-export function isEmptyObject(value: object) {
+export function isEmptyObject(value: object): boolean {
   return (
     value !== null &&
     typeof value === 'object' &&
@@ -55,7 +55,7 @@ export function isEmptyObject(value: object) {
  * isNonEmptyObject([]); // false
  * ```
  */
-export function isNonEmptyObject(value: object) {
+export function isNonEmptyObject(value: object): boolean {
   return (
     value !== null &&
     typeof value === 'object' &&

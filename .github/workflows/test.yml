@@ -3,8 +3,14 @@ name: Test
 on:
   pull_request:
     types: [opened, synchronize, reopened]
+    paths:
+      - 'src/**'
+      - 'tests/**'
   push:
     branches: [main]
+    paths:
+      - 'src/**'
+      - 'tests/**'
 
 jobs:
   run_tests:
@@ -31,3 +37,25 @@ jobs:
         with:
           name: coverage
           path: coverage/
+
+  jsr_check:
+    name: JSR Publish Check (Dry Run)
+    needs: run_tests
+    runs-on: ubuntu-latest
+    if: |
+      contains(github.event.pull_request.changed_files, 'src/') ||
+      contains(github.event.head_commit.message, 'src/')
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Install dependencies
+        run: npx jsr publish --dry-run

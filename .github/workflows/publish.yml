@@ -65,4 +65,4 @@ jobs:
         run: npx release-it --ci
 
       - name: Publish to JSR
-        run: npx jsr publish --allow-slow-types
+        run: npx jsr publish

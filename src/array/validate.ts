@@ -14,6 +14,6 @@ import { isDefined } from '../checks';
  * console.log(isArray("hello")); // false
  * ```
  */
-export function isArray<T>(value: T) {
+export function isArray<T>(value: T): boolean {
   return isDefined(value) && Array.isArray(value);
 }

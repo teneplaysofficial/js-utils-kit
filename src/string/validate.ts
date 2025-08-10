@@ -22,7 +22,7 @@
  * }
  * ```
  */
-export function isString<T>(value: T) {
+export function isString<T>(value: T): boolean {
   return value !== null && value !== undefined && typeof value === 'string';
 }
 
@@ -54,10 +54,13 @@ export function isString<T>(value: T) {
  * isNonEmptyString(null); // false
  * ```
  */
-export function isNonEmptyString<T>(value: T, trim = true) {
+export function isNonEmptyString<T>(value: T, trim = true): boolean {
   if (!isString(value)) return false;
 
-  return trim ? value.trim().length > 0 : value.length > 0;
+  return (
+    typeof value === 'string' &&
+    (trim ? value.trim().length > 0 : value.length > 0)
+  );
 }
 
 /**
@@ -77,7 +80,7 @@ export function isNonEmptyString<T>(value: T, trim = true) {
  * isURL('/relative/path'); // false
  * ```
  */
-export function isURL(value: string) {
+export function isURL(value: string): boolean {
   try {
     new URL(value);
     return true;
@@ -104,7 +107,7 @@ export function isURL(value: string) {
  * isEmail('name@domain'); // false
  * ```
  */
-export function isEmail(value: string) {
+export function isEmail(value: string): boolean {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
 }
 
@@ -121,7 +124,7 @@ export function isEmail(value: string) {
  * isAlphabetic("Test!"); // false
  * ```
  */
-export function isAlphabetic(value: string) {
+export function isAlphabetic(value: string): boolean {
   return /^[a-zA-Z]+$/.test(value);
 }
 
@@ -154,7 +157,7 @@ export function isAlphabetic(value: string) {
  * - {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat parseFloat()}
  * - {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN isNaN()}
  */
-export function isNumericString(value: string) {
+export function isNumericString(value: string): boolean {
   return !isNaN(Number(value)) && !isNaN(parseFloat(value));
 }
 
@@ -168,7 +171,7 @@ export function isNumericString(value: string) {
  * startsWithUppercase('world') // false
  * ```
  */
-export function startsWithUppercase(value: string) {
+export function startsWithUppercase(value: string): boolean {
   return /^[A-Z]/.test(value);
 }
 
@@ -184,7 +187,7 @@ export function startsWithUppercase(value: string) {
  * endsWithPunctuation("Okay") // false
  * ```
  */
-export function endsWithPunctuation(value: string) {
+export function endsWithPunctuation(value: string): boolean {
   return /[\p{P}]$/u.test(value);
 }
 
@@ -198,7 +201,7 @@ export function endsWithPunctuation(value: string) {
  * containsWhitespace("Nowordspace") // false
  * ```
  */
-export function containsWhitespace(value: string) {
+export function containsWhitespace(value: string): boolean {
   return /\s/.test(value);
 }
 
@@ -240,7 +243,7 @@ export function isPascalCase(value: string): boolean {
  * isKebabCase("hello_world") // false
  * ```
  */
-export function isKebabCase(value: string) {
+export function isKebabCase(value: string): boolean {
   return /^[a-z0-9]+(-[a-z0-9]+)*$/.test(value);
 }
 
@@ -254,7 +257,7 @@ export function isKebabCase(value: string) {
  * isSnakeCase("hello-world") // false
  * ```
  */
-export function isSnakeCase(value: string) {
+export function isSnakeCase(value: string): boolean {
   return /^[a-z0-9]+(_[a-z0-9]+)*$/.test(value);
 }
 

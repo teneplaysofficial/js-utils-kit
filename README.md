@@ -30,9 +30,26 @@ This package includes utilities designed for both browser and Node.js environmen
 ## Installation
 
 ```sh
-yarn add js-utils-kit
-# or
+# via npm
 npm install js-utils-kit
+
+# via yarn
+yarn add js-utils-kit
+
+# via pnpm
+pnpm add js-utils-kit
+
+# via bun
+bun add js-utils-kit
+
+# via Deno (using npm)
+deno add npm:js-utils-kit
+
+# via Deno (using JSR)
+deno add jsr:@tene/js-utils-kit
+
+# via JSR
+npx jsr add @tene/js-utils-kit
 ```
 
 ## Usage
@@ -77,6 +94,20 @@ import { number, string, env } from 'js-utils-kit';
 console.log(number.clamp(42, 0, 100)); // 42
 console.log(string.capitalize('js-utils-kit')); // 'Js-utils-kit'
 console.log(env.isDev()); // true/false
+```
+
+### Using JSR or Deno
+
+```ts
+import { number, string, env } from '@tene/js-utils-kit';
+// or
+import { number, string, env } from 'jsr:@tene/js-utils-kit';
+// or
+import number from '@tene/js-utils-kit/number';
+import string from '@tene/js-utils-kit/string';
+import array from '@tene/js-utils-kit/array';
+import object from '@tene/js-utils-kit/object';
+import env from '@tene/js-utils-kit/env';
 ```
 
 ### CommonJS Usage

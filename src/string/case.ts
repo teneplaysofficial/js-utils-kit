@@ -13,7 +13,7 @@
  * capitalize("a"); // "A"
  * ```
  */
-export function capitalize(value: string) {
+export function capitalize(value: string): string {
   // value.charAt(0).toUpperCase + value.slice(1)
   return value.replace(/^\w/, (c) => c.toUpperCase());
 }

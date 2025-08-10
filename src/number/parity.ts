@@ -8,7 +8,7 @@
  * isEven(4); // true
  * isEven(3); // false
  */
-export function isEven(value: number) {
+export function isEven(value: number): boolean {
   return value % 2 === 0;
 }
 
@@ -22,6 +22,6 @@ export function isEven(value: number) {
  * isOdd(3); // true
  * isOdd(4); // false
  */
-export function isOdd(value: number) {
+export function isOdd(value: number): boolean {
   return value % 2 !== 0;
 }
