@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.3.1](https://github.com/teneplaysofficial/js-utils-kit/compare/v0.3.0...v0.3.1) (2025-08-11)
+
+### Bug Fixes
+
+- Enhance JSR Publication, Optimize CI Workflow, and Improve Type Performance ([#5](https://github.com/teneplaysofficial/js-utils-kit/issues/5)) ([dc5780c](https://github.com/teneplaysofficial/js-utils-kit/commit/dc5780c7459910205df1348d7a71030f39cea3d8))
+
 ## [0.3.0](https://github.com/teneplaysofficial/js-utils-kit/compare/v0.2.3...v0.3.0) (2025-07-28)
 
 ### Features
