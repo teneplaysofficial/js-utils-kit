@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.3.2](https://github.com/teneplaysofficial/js-utils-kit/compare/v0.3.1...v0.3.2) (2025-08-11)
+
+### Bug Fixes
+
+- Correct JSR exports generation to scan `src` directory instead of `dist` ([bc39565](https://github.com/teneplaysofficial/js-utils-kit/commit/bc39565d326a77900ea5c3e64ff7c676e7f10166))
+
 ## [0.3.1](https://github.com/teneplaysofficial/js-utils-kit/compare/v0.3.0...v0.3.1) (2025-08-11)
 
 ### Bug Fixes
