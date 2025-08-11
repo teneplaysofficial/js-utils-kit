@@ -1,14 +1,25 @@
 import { join, resolve } from 'path';
-import { readdirSync, readFileSync, statSync, writeFileSync } from 'fs';
+import {
+  existsSync,
+  readdirSync,
+  readFileSync,
+  statSync,
+  writeFileSync,
+} from 'fs';
 
 const cwd = process.cwd();
 
 const DIST_DIR = resolve(cwd, 'dist');
+const SRC_DIR = resolve(cwd, 'src');
 const packageJson = resolve(cwd, 'package.json');
 const jsrJson = resolve(cwd, 'jsr.json');
 
 function getExportsEntries() {
   const entries = {};
+  if (!existsSync(DIST_DIR)) {
+    console.warn(`Warning: dist directory "${DIST_DIR}" does not exist.`);
+    return entries;
+  }
   const dirs = readdirSync(DIST_DIR);
   for (const index in dirs) {
     const path = join(DIST_DIR, dirs[index]);
@@ -40,9 +51,9 @@ function generateExportsField() {
 
 function getExportsEntriesForJSR() {
   const entries = {};
-  const dirs = readdirSync(DIST_DIR);
+  const dirs = readdirSync(SRC_DIR);
   for (const dir of dirs) {
-    const path = join(DIST_DIR, dir);
+    const path = join(SRC_DIR, dir);
     if (statSync(path).isDirectory()) {
       entries[`./${dir}`] = `./src/${dir}/index.ts`;
     }
