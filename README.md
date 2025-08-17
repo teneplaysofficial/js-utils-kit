@@ -3,6 +3,7 @@
 [![img](https://capsule-render.vercel.app/api?type=waving&height=300&color=gradient&text=Js%20Utils%20Kit&section=footer&desc=Modular%20JavaScript%20utilities%20with%20type%20support%20for%20strings,%20objects,%20arrays,%20and%20more&descAlign=49&descAlignY=72&animation=fadeIn&textBg=false)](https://github.com/TenEplaysOfficial/js-utils-kit)
 
 [![Build](https://github.com/teneplaysofficial/js-utils-kit/actions/workflows/publish.yml/badge.svg)](https://github.com/TenEplaysOfficial/js-utils-kit)
+[![Test](https://github.com/teneplaysofficial/js-utils-kit/actions/workflows/test.yml/badge.svg)](https://github.com/TenEplaysOfficial/js-utils-kit)
 [![npm version](https://img.shields.io/npm/v/js-utils-kit.svg)](https://www.npmjs.com/package/js-utils-kit)
 [![JSR](https://jsr.io/badges/@tene/js-utils-kit)](https://jsr.io/@tene/js-utils-kit)
 [![JSR Score](https://jsr.io/badges/@tene/js-utils-kit/score)](https://jsr.io/@tene/js-utils-kit)
