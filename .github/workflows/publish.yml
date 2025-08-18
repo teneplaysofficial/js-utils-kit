@@ -21,7 +21,7 @@ jobs:
       - name: Check for commits in last 7 days
         id: check
         run: |
-          if git log --since="7 days ago" --oneline -- src/ bin/ | grep -vE "^chore: release v[0-9]+\.[0-9]+\.[0-9]+" | grep .; then
+          if git log main --since="7 days ago" --oneline -- src/ bin/ | grep -vE "^chore: release v[0-9]+\.[0-9]+\.[0-9]+" | grep .; then
             echo "has_commits=true" >> $GITHUB_OUTPUT
           else
             echo "has_commits=false" >> $GITHUB_OUTPUT

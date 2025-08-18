@@ -1,4 +1,4 @@
-name: Test
+name: Tests
 
 on:
   pull_request:
@@ -13,6 +13,20 @@ on:
       - 'tests/**'
 
 jobs:
+  detect_changes:
+    runs-on: ubuntu-latest
+    outputs:
+      src_changed: ${{ steps.check.outputs.any_changed }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Check for src changes
+        id: check
+        uses: tj-actions/changed-files@v44
+        with:
+          files: src/**
+
   run_tests:
     name: Run yarn test
     runs-on: ubuntu-latest
@@ -40,11 +54,9 @@ jobs:
 
   jsr_check:
     name: JSR Publish Check (Dry Run)
-    needs: run_tests
+    needs: [run_tests, detect_changes]
     runs-on: ubuntu-latest
-    if: |
-      contains(github.event.pull_request.changed_files, 'src/') ||
-      contains(github.event.head_commit.message, 'src/')
+    if: needs.detect_changes.outputs.src_changed == 'true'
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -59,3 +71,11 @@ jobs:
 
       - name: Install dependencies
         run: npx jsr publish --dry-run
+
+  sheriff:
+    name: Check PR title
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    steps:
+      - name: Validate PR title
+        uses: teneplaysofficial/sheriff@v1

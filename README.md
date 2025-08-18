@@ -1,25 +1,29 @@
 <div align="center">
 
-[![img](https://capsule-render.vercel.app/api?type=waving&height=300&color=gradient&text=Js%20Utils%20Kit&section=footer&desc=Modular%20JavaScript%20utilities%20with%20type%20support%20for%20strings,%20objects,%20arrays,%20and%20more&descAlign=49&descAlignY=72&animation=fadeIn&textBg=false)](https://github.com/TenEplaysOfficial/js-utils-kit)
+<!-- [![img](https://capsule-render.vercel.app/api?type=waving&height=300&color=gradient&text=Js%20Utils%20Kit&section=footer&desc=Modular%20JavaScript%20utilities%20with%20type%20support%20for%20strings,%20objects,%20arrays,%20and%20more&descAlign=49&descAlignY=72&animation=fadeIn&textBg=false)](https://github.com/TenEplaysOfficial/js-utils-kit) -->
+
+# Js Utils Kit
+
+_Modular JavaScript utilities with type support for strings, objects, arrays and more_
 
 [![Build](https://github.com/teneplaysofficial/js-utils-kit/actions/workflows/publish.yml/badge.svg)](https://github.com/TenEplaysOfficial/js-utils-kit)
+[![Test](https://github.com/teneplaysofficial/js-utils-kit/actions/workflows/test.yml/badge.svg)](https://github.com/TenEplaysOfficial/js-utils-kit)
 [![npm version](https://img.shields.io/npm/v/js-utils-kit.svg)](https://www.npmjs.com/package/js-utils-kit)
 [![JSR](https://jsr.io/badges/@tene/js-utils-kit)](https://jsr.io/@tene/js-utils-kit)
 [![JSR Score](https://jsr.io/badges/@tene/js-utils-kit/score)](https://jsr.io/@tene/js-utils-kit)
 [![License](https://img.shields.io/github/license/TenEplaysOfficial/js-utils-kit.svg)](https://github.com/TenEplaysOfficial/js-utils-kit/blob/main/LICENSE)
-[![Bundle size](https://img.shields.io/bundlephobia/minzip/js-utils-kit)](https://bundlephobia.com/package/js-utils-kit)
-[![GitHub stars](https://img.shields.io/github/stars/TenEplaysOfficial/js-utils-kit)](https://github.com/TenEplaysOfficial/js-utils-kit/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/TenEplaysOfficial/js-utils-kit?style=flat)](https://github.com/TenEplaysOfficial/js-utils-kit/stargazers)
 [![Issues](https://img.shields.io/github/issues/TenEplaysOfficial/js-utils-kit)](https://github.com/TenEplaysOfficial/js-utils-kit/issues)
 [![PRs](https://img.shields.io/github/issues-pr/TenEplaysOfficial/js-utils-kit)](https://github.com/TenEplaysOfficial/js-utils-kit/pulls)
 [![Last Commit](https://img.shields.io/github/last-commit/TenEplaysOfficial/js-utils-kit)](https://github.com/TenEplaysOfficial/js-utils-kit/commits)
-[![Discussions](https://img.shields.io/github/discussions/TenEplaysOfficial/js-utils-kit)](https://github.com/TenEplaysOfficial/js-utils-kit/discussions)
 [![Downloads](https://img.shields.io/npm/dm/js-utils-kit)](https://www.npmjs.com/package/js-utils-kit)
-[![GitHub repo size](https://img.shields.io/github/repo-size/TenEplaysOfficial/js-utils-kit)](https://github.com/TenEplaysOfficial/js-utils-kit)
 [![Type Support](https://img.shields.io/badge/type-support-blue)](https://github.com/TenEplaysOfficial/js-utils-kit)
 [![Sponsor](https://img.shields.io/badge/funding-sponsor-yellow)](https://github.com/sponsors/TenEplaysOfficial)
 [![Follow @teneplays on X](https://img.shields.io/badge/follow-@teneplays-fff?logo=x)](https://x.com/teneplays)
 
 </div>
+
+## Overview
 
 **JS Utils Kit** is a compact and reliable library of essential JavaScript utility functions. It includes helpers for arrays, objects, numbers, promises, type checking, and more. Designed for performance and modularity, it integrates easily into JavaScript and TypeScript projects with minimal impact on bundle size.
 
