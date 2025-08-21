@@ -1,5 +1,7 @@
 # Changelog
 
+## [0.3.4](https://github.com/teneplaysofficial/js-utils-kit/compare/v0.3.2...v0.3.4) (2025-08-18)
+
 ## [0.3.2](https://github.com/teneplaysofficial/js-utils-kit/compare/v0.3.1...v0.3.2) (2025-08-11)
 
 ### Bug Fixes
