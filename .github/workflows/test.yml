@@ -69,7 +69,7 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-      - name: Install dependencies
+      - name: Dry-run JSR publish
         run: npx jsr publish --dry-run
 
   sheriff:
