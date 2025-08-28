@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.4.0](https://github.com/teneplaysofficial/js-utils-kit/compare/v0.3.4...v0.4.0) (2025-08-25)
+
+### Features
+
+- **number:** add `getMilliseconds` utility with tests and CI/docs improvements ([#7](https://github.com/teneplaysofficial/js-utils-kit/issues/7)) ([2a9db03](https://github.com/teneplaysofficial/js-utils-kit/commit/2a9db03fa18e28dc77442d09298d1f7afe9e8cb7))
+
 ## [0.3.4](https://github.com/teneplaysofficial/js-utils-kit/compare/v0.3.2...v0.3.4) (2025-08-18)
 
 ## [0.3.2](https://github.com/teneplaysofficial/js-utils-kit/compare/v0.3.1...v0.3.2) (2025-08-11)
