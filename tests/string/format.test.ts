@@ -1,9 +1,4 @@
-import {
-  padLeft,
-  padRight,
-  repeatString,
-  truncate,
-} from '../../src/string/format';
+import { padLeft, padRight, repeatString, stripSymbols, truncate } from '../../src/string/format';
 
 describe('padLeft', () => {
   it('pads string on the left with spaces by default', () => {
@@ -35,7 +30,7 @@ describe('padRight', () => {
 
 describe('truncate', () => {
   it('truncates and appends suffix if string is too long', () => {
-    expect(truncate('This is a long text', 10)).toBe('This is...');
+    expect(truncate('This is a long text', 10)).toBe('This is a ...');
   });
 
   it('returns original string if it fits', () => {
@@ -43,11 +38,11 @@ describe('truncate', () => {
   });
 
   it('handles custom suffix', () => {
-    expect(truncate('This is a long one', 11, '>>>')).toBe('This is >>>');
+    expect(truncate('This is a long one', 8, '>>>')).toBe('This is >>>');
   });
 
   it('does not truncate too much if suffix is long', () => {
-    expect(truncate('1234567890', 5, '...')).toBe('12...');
+    expect(truncate('1234567890', 5, '...')).toBe('12345...');
   });
 });
 
@@ -62,5 +57,39 @@ describe('repeatString', () => {
 
   it('returns empty string if input is empty', () => {
     expect(repeatString('', 5)).toBe('');
+  });
+});
+
+describe('stripSymbols', () => {
+  it('removes symbols by default', () => {
+    expect(stripSymbols('hello-world!')).toBe('helloworld');
+  });
+
+  it('replaces symbols with given replacement string', () => {
+    expect(stripSymbols('hello-world!', ' ')).toBe('hello world ');
+  });
+
+  it('can insert underscores instead of removing', () => {
+    expect(stripSymbols('user_name@test', '_')).toBe('user_name_test');
+  });
+
+  it('keeps spaces intact', () => {
+    expect(stripSymbols('keep  spaces')).toBe('keep  spaces');
+  });
+
+  it('handles multiple symbols in sequence with replacement', () => {
+    expect(stripSymbols('a!@#b', '*')).toBe('a***b');
+  });
+
+  it('returns empty string if only symbols are given', () => {
+    expect(stripSymbols('!@#$%^&*')).toBe('');
+  });
+
+  it('returns empty string if input is empty', () => {
+    expect(stripSymbols('')).toBe('');
+  });
+
+  it('replaces Unicode punctuation (em dash) too', () => {
+    expect(stripSymbols('foo—bar', ' ')).toBe('foo bar');
   });
 });

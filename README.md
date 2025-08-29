@@ -31,6 +31,14 @@ _Modular JavaScript utilities with type support for strings, objects, arrays and
 
 This package includes utilities designed for both browser and Node.js environments, clearly organized and optimized for cross-platform compatibility.
 
+## Features
+
+- Organized by category (e.g., `number`, `string`, `file`, etc.)
+- Fully typed in TypeScript
+- Thoroughly tested with Jest
+- Tree‑shakeable and supports both ESM and CJS
+- CLI-ready tools for file and system operations
+
 ## Installation
 
 ```sh
@@ -125,14 +133,6 @@ console.log(array.unique([1, 2, 2, 3])); // [1, 2, 3]
 console.log(object.isEmpty({})); // true
 console.log(env.isBrowser()); // true/false
 ```
-
-## Features
-
-- Organized by category (e.g., `number`, `string`, `file`, etc.)
-- Fully typed with TypeScript
-- Thoroughly tested with Jest
-- Tree-shakable and supports both ESM and CJS
-- CLI-ready tools for file and system operations
 
 ## Documentation
 

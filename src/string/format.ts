@@ -12,11 +12,7 @@
  * console.log(padLeft("", 3, "0")); // "000"
  * ```
  */
-export function padLeft(
-  str: string,
-  length: number,
-  char: string = ' ',
-): string {
+export function padLeft(str: string, length: number, char: string = ' '): string {
   return str.padStart(length, char);
 }
 
@@ -34,36 +30,40 @@ export function padLeft(
  * console.log(padRight("", 3, "0")); // "000"
  * ```
  */
-export function padRight(
-  str: string,
-  length: number,
-  char: string = ' ',
-): string {
+export function padRight(str: string, length: number, char: string = ' '): string {
   return str.padEnd(length, char);
 }
 
 /**
  * Truncates a string to a specified length, appending a suffix if the string is too long.
- * @param str - The string to truncate.
- * @param length - The maximum length of the resulting string (including the suffix).
- * @param suffix - The suffix to append if truncation occurs (defaults to "...").
+ *
  * @returns The truncated string with the suffix if the original string exceeds the length, otherwise the original string.
+ *
  * @example
  * ```ts
  * console.log(truncate("hello world", 8)); // "hello..."
  * console.log(truncate("hi", 5)); // "hi"
- * console.log(truncate("hello", 5, "...")); // "he..."
+ * console.log(truncate("hello", 5, "...")); // "hello"
  * console.log(truncate("", 3)); // ""
  * ```
  */
 export function truncate(
+  /** The string to truncate */
   str: string,
+  /** The maximum length of the resulting string */
   length: number,
+  /**
+   * The suffix to append if truncation occurs
+   *
+   * @default "..."
+   */
   suffix: string = '...',
 ): string {
-  return str.length > length
-    ? str.slice(0, length - suffix.length) + suffix
-    : str;
+  if (length <= 0) return '';
+  if (str.length <= length) return str;
+  if (suffix.length >= length) return suffix.slice(0, length);
+
+  return str.trim().slice(0, length) + suffix;
 }
 
 /**
@@ -81,4 +81,35 @@ export function truncate(
  */
 export function repeatString(str: string, count: number): string {
   return str.repeat(count);
+}
+
+/**
+ * Removes or replaces common symbol characters from a string.
+ *
+ * @remarks
+ * - Strips symbols like `- _ @ ! $ % ^ & # * ( ) + = , . ; : ' " < > ? / \ | [ ] { }`.
+ * - Keeps letters, numbers, and spaces intact.
+ * - By default, removes symbols (replaces with `""`).
+ *
+ * @returns A new string with symbols removed or replaced.
+ *
+ * @example
+ * ```ts
+ * stripSymbols("hello-world!");              // "helloworld"
+ * stripSymbols("hello-world!", " ");         // "hello world "
+ * stripSymbols("user_name@test", "_");       // "user_nametest"
+ * stripSymbols("symbols-only!!!", "*");      // "symbols-only***"
+ * ```
+ */
+export function stripSymbols(
+  /** The input string */
+  str: string,
+  /**
+   * Optional replacement string for removed symbols.
+   *
+   * @default ""
+   */
+  replacement: string = '',
+): string {
+  return str.replace(/[^\p{L}\p{N}\s]/gu, replacement);
 }

@@ -65,11 +65,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: 'yarn'
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-      - name: Install dependencies
+      - name: Dry-run JSR publish
         run: npx jsr publish --dry-run
 
   sheriff:
@@ -78,4 +79,4 @@ jobs:
     if: github.event_name == 'pull_request'
     steps:
       - name: Validate PR title
-        uses: teneplaysofficial/sheriff@v1
+        uses: teneplaysofficial/sheriff@v3
