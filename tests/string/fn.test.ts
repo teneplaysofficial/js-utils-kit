@@ -24,6 +24,10 @@ describe('splitString', () => {
   it('should split by regex delimiter', () => {
     expect(splitString('a1b2c3', /\d/)).toEqual(['a', 'b', 'c', '']);
   });
+
+  it('does not trim by default; retains empty tokens at edges', () => {
+    expect(splitString('  a b  ')).toEqual(['', 'a', 'b', '']);
+  });
 });
 
 describe('countChars', () => {
@@ -65,6 +69,10 @@ describe('countSubstring', () => {
   it('should handle repeated single character substrings', () => {
     expect(countSubstring('aaaaa', 'a')).toBe(5);
   });
+
+  it('returns 0 for empty substring input', () => {
+    expect(countSubstring('abc', '')).toBe(0);
+  });
 });
 
 describe('countFrequencies', () => {
@@ -89,11 +97,20 @@ describe('countLines', () => {
   it('should count single line', () => {
     expect(countLines('hello')).toBe(1);
   });
+
+  it('counts trailing empty line from final newline', () => {
+    expect(countLines('a\nb\n')).toBe(3);
+  });
+
+  it('returns 0 for empty string (if chosen semantics)', () => {
+    expect(countLines('')).toBe(0);
+  });
 });
 
 describe('uniqueChars', () => {
   it('should return unique characters', () => {
     expect(uniqueChars('banana').sort()).toEqual(['a', 'b', 'n']);
+    expect(uniqueChars('banana')).toEqual(['b', 'a', 'n']);
   });
 
   it('should handle empty string', () => {

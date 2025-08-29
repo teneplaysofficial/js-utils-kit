@@ -34,9 +34,9 @@ This package includes utilities designed for both browser and Node.js environmen
 ## Features
 
 - Organized by category (e.g., `number`, `string`, `file`, etc.)
-- Fully typed with TypeScript
+- Fully typed in TypeScript
 - Thoroughly tested with Jest
-- Tree-shakable and supports both ESM and CJS
+- Tree‑shakeable and supports both ESM and CJS
 - CLI-ready tools for file and system operations
 
 ## Installation

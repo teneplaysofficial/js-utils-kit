@@ -49,7 +49,11 @@ export function padRight(str: string, length: number, char: string = ' '): strin
  * ```
  */
 export function truncate(str: string, length: number, suffix: string = '...'): string {
-  return str.length > length ? str.slice(0, length - suffix.length) + suffix : str;
+  if (length <= 0) return '';
+  if (str.length <= length) return str;
+  if (suffix.length >= length) return suffix.slice(0, length);
+
+  return str.slice(0, length - suffix.length) + suffix;
 }
 
 /**
@@ -97,5 +101,5 @@ export function stripSymbols(
    */
   replacement: string = '',
 ): string {
-  return str.replace(/[-_@!$%^&#*()+=.,;:'"<>?/\\|[\]{}]/g, replacement);
+  return str.replace(/[^\p{L}\p{N}\s]/gu, replacement);
 }

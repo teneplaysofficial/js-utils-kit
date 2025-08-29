@@ -88,4 +88,8 @@ describe('stripSymbols', () => {
   it('returns empty string if input is empty', () => {
     expect(stripSymbols('')).toBe('');
   });
+
+  it('replaces Unicode punctuation (em dash) too', () => {
+    expect(stripSymbols('foo—bar', ' ')).toBe('foo bar');
+  });
 });

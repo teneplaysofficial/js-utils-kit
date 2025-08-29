@@ -6,7 +6,8 @@ import { stripSymbols } from './format';
  * @remarks
  * - Defaults to splitting by whitespace using `/\s+/`.
  * - Does not trim leading/trailing spaces unless explicitly passed.
- * - Consecutive delimiters will produce empty strings unless filtered later.
+ * - Leading/trailing delimiters may produce empty strings.
+ * - With `/\s+/` specifically, consecutive whitespace is collapsed (no interior empty tokens).
  *
  * @returns An array of substrings.
  *
@@ -100,6 +101,7 @@ export function countSubstring(
   /** The substring to count. */
   sub: string,
 ): number {
+  if (sub.length === 0) return 0;
   return splitString(str, sub).length - 1;
 }
 
@@ -153,6 +155,8 @@ export function countLines(
   /** The input string. */
   str: string,
 ): number {
+  if (!str) return 0;
+
   return splitString(str, /\r\n|\r|\n/).length;
 }
 
@@ -199,9 +203,12 @@ export function longestWordLength(
   /** The input string. */
   str: string,
 ): number {
-  return splitString(str)
+  const words = splitString(str)
     .map((a) => stripSymbols(a))
-    .reduce((max, w) => Math.max(max, w.length), 0);
+    .filter(Boolean);
+  if (words.length === 0) return 0;
+
+  return words.reduce((max, w) => Math.max(max, w.length), 0);
 }
 
 /**
@@ -225,9 +232,11 @@ export function shortestWordLength(
   /** The input string. */
   str: string,
 ): number {
-  const words = splitString(str.trim());
+  const words = splitString(str.trim())
+    .map((a) => stripSymbols(a))
+    .filter(Boolean);
   if (words.length === 0) return 0;
-  return words.map((a) => stripSymbols(a)).reduce((min, w) => Math.min(min, w.length), Infinity);
+  return words.reduce((min, w) => Math.min(min, w.length), Infinity);
 }
 
 /**
@@ -252,7 +261,9 @@ export function longestWord(
   /** The input string. */
   str: string,
 ): string | string[] {
-  const words = splitString(str).map((a) => stripSymbols(a));
+  const words = splitString(str.trim())
+    .map((a) => stripSymbols(a))
+    .filter(Boolean);
   if (words.length === 0) return '';
 
   const maxLen = Math.max(...words.map((w) => w.length));
@@ -285,7 +296,9 @@ export function shortestWord(
   /** The input string. */
   str: string,
 ): string | string[] {
-  const words = splitString(str.trim()).map((a) => stripSymbols(a));
+  const words = splitString(str.trim())
+    .map((a) => stripSymbols(a))
+    .filter(Boolean);
   if (words.length === 0) return '';
 
   const minLen = Math.min(...words.map((w) => w.length));
