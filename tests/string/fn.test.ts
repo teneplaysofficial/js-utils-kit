@@ -8,6 +8,8 @@ import {
   uniqueChars,
   longestWordLength,
   shortestWordLength,
+  shortestWord,
+  longestWord,
 } from '../../src/string/fn';
 
 describe('splitString', () => {
@@ -100,20 +102,37 @@ describe('uniqueChars', () => {
 });
 
 describe('longestWordLength', () => {
-  it('should return the length of the longest word', () => {
+  it('returns the length of the longest word', () => {
     expect(longestWordLength('js utils kit')).toBe(5);
   });
 
-  it('should handle multiple spaces', () => {
+  it('handles multiple spaces', () => {
     expect(longestWordLength('short   longerword   mid')).toBe(10);
   });
 
-  it('should handle single word', () => {
+  it('handles single word', () => {
     expect(longestWordLength('hello')).toBe(5);
   });
 
-  it('should handle empty string', () => {
+  it('returns 0 for empty string', () => {
     expect(longestWordLength('')).toBe(0);
+  });
+
+  it('ignores punctuation when counting length', () => {
+    expect(longestWordLength('hi!! wow?? amazing...')).toBe(7);
+  });
+
+  it('handles single-character words', () => {
+    expect(longestWordLength('a ab abc abcd')).toBe(4);
+  });
+
+  it('handles tie between multiple longest words', () => {
+    expect(longestWordLength('alpha beta')).toBe(5);
+  });
+
+  it('handles very long word', () => {
+    const longWord = 'a'.repeat(50);
+    expect(longestWordLength(`short ${longWord} tiny`)).toBe(50);
   });
 });
 
@@ -136,11 +155,92 @@ describe('shortestWordLength', () => {
     expect(shortestWordLength('a    bb   ccc')).toBe(1);
   });
 
-  it('handles punctuation as part of words', () => {
+  it('ignores punctuation when counting length', () => {
     expect(shortestWordLength('hi! wow?? ok')).toBe(2);
   });
 
   it('handles single-character words', () => {
     expect(shortestWordLength('a ab abc abcd')).toBe(1);
+  });
+
+  it('handles tie between multiple shortest words', () => {
+    expect(shortestWordLength('dog cat')).toBe(3);
+  });
+
+  it('handles long words mixed with short ones', () => {
+    const longWord = 'a'.repeat(50);
+    expect(shortestWordLength(`short ${longWord} tiny`)).toBe(4);
+  });
+});
+
+describe('longestWord', () => {
+  it('returns the longest word when unique', () => {
+    expect(longestWord('js utils kit')).toBe('utils');
+  });
+
+  it('handles multiple spaces', () => {
+    expect(longestWord('short   longerword   mid')).toBe('longerword');
+  });
+
+  it('returns the only word', () => {
+    expect(longestWord('hello')).toBe('hello');
+  });
+
+  it('returns empty string for empty input', () => {
+    expect(longestWord('')).toBe('');
+  });
+
+  it('ignores symbols when determining length', () => {
+    expect(longestWord('hi!! wow?? amazing...')).toBe('amazing');
+  });
+
+  it('returns array of words if multiple share longest length', () => {
+    expect(longestWord('alpha delta gamma')).toEqual(['alpha', 'delta', 'gamma']);
+  });
+
+  it('returns a single word if all ties are the same', () => {
+    expect(longestWord('alpha alpha')).toBe('alpha');
+  });
+
+  it('returns an array if multiple unique words share longest length', () => {
+    expect(longestWord('alpha gamma')).toEqual(['alpha', 'gamma']);
+  });
+});
+
+describe('shortestWord', () => {
+  it('returns the shortest word when unique', () => {
+    expect(shortestWord('js utils kit')).toBe('js');
+  });
+
+  it('handles multiple spaces', () => {
+    expect(shortestWord('a    bb   ccc')).toBe('a');
+  });
+
+  it('returns the only word', () => {
+    expect(shortestWord('hello')).toBe('hello');
+  });
+
+  it('returns empty string for empty input', () => {
+    expect(shortestWord('')).toBe('');
+  });
+
+  it('ignores symbols when determining length', () => {
+    expect(shortestWord('hi!! wow?? ok')).toEqual(['hi', 'ok']);
+  });
+
+  it('returns array of words if multiple share shortest length', () => {
+    expect(shortestWord('dog cat')).toEqual(['dog', 'cat']);
+  });
+
+  it('returns array of three words if all same length', () => {
+    expect(shortestWord('dog cat bat')).toEqual(['dog', 'cat', 'bat']);
+  });
+
+  it('returns a single word if all ties are the same', () => {
+    expect(shortestWord('dog dog')).toBe('dog');
+  });
+
+  it('returns an array if multiple unique words share shortest length', () => {
+    expect(shortestWord('dog cat')).toEqual(['dog', 'cat']);
   });
 });

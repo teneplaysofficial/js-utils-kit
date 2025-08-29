@@ -1,9 +1,4 @@
-import {
-  padLeft,
-  padRight,
-  repeatString,
-  truncate,
-} from '../../src/string/format';
+import { padLeft, padRight, repeatString, stripSymbols, truncate } from '../../src/string/format';
 
 describe('padLeft', () => {
   it('pads string on the left with spaces by default', () => {
@@ -62,5 +57,35 @@ describe('repeatString', () => {
 
   it('returns empty string if input is empty', () => {
     expect(repeatString('', 5)).toBe('');
+  });
+});
+
+describe('stripSymbols', () => {
+  it('removes symbols by default', () => {
+    expect(stripSymbols('hello-world!')).toBe('helloworld');
+  });
+
+  it('replaces symbols with given replacement string', () => {
+    expect(stripSymbols('hello-world!', ' ')).toBe('hello world ');
+  });
+
+  it('can insert underscores instead of removing', () => {
+    expect(stripSymbols('user_name@test', '_')).toBe('user_name_test');
+  });
+
+  it('keeps spaces intact', () => {
+    expect(stripSymbols('keep  spaces')).toBe('keep  spaces');
+  });
+
+  it('handles multiple symbols in sequence with replacement', () => {
+    expect(stripSymbols('a!@#b', '*')).toBe('a***b');
+  });
+
+  it('returns empty string if only symbols are given', () => {
+    expect(stripSymbols('!@#$%^&*')).toBe('');
+  });
+
+  it('returns empty string if input is empty', () => {
+    expect(stripSymbols('')).toBe('');
   });
 });

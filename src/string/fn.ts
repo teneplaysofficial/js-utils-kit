@@ -1,3 +1,5 @@
+import { stripSymbols } from './format';
+
 /**
  * Splits a string into an array of substrings using a given delimiter.
  *
@@ -179,7 +181,8 @@ export function uniqueChars(
  * Finds the length of the longest word in a string.
  *
  * @remarks
- * - Words are separated by whitespace (`/\s+/`).
+ * - Words are split by whitespace (`/\s+/`).
+ * - Symbols (punctuation, special chars) are removed using {@link stripSymbols}.
  * - Returns `0` if the string is empty or contains no words.
  *
  * @returns Length of the longest word.
@@ -196,16 +199,27 @@ export function longestWordLength(
   /** The input string. */
   str: string,
 ): number {
-  return splitString(str).reduce((max, w) => Math.max(max, w.length), 0);
+  return splitString(str)
+    .map((a) => stripSymbols(a))
+    .reduce((max, w) => Math.max(max, w.length), 0);
 }
 
 /**
- * Returns the length of the shortest word in a string.
- *
- * @returns The length of the shortest word, or `0` if the string is empty.
+ * Finds the length of the shortest word in a string.
  *
  * @remarks
- * - Multiple spaces are ignored.
+ * - Words are split by whitespace (`/\s+/`).
+ * - Symbols (punctuation, special chars) are removed using {@link stripSymbols}.
+ * - Returns `0` if the string is empty or contains no words.
+ *
+ * @returns Length of the shortest word.
+ *
+ * @example
+ * ```ts
+ * shortestWordLength("js utils kit"); // 2
+ * shortestWordLength("one three five"); // 3
+ * shortestWordLength(""); // 0
+ * ```
  */
 export function shortestWordLength(
   /** The input string. */
@@ -213,5 +227,71 @@ export function shortestWordLength(
 ): number {
   const words = splitString(str.trim());
   if (words.length === 0) return 0;
-  return words.reduce((min, w) => Math.min(min, w.length), Infinity);
+  return words.map((a) => stripSymbols(a)).reduce((min, w) => Math.min(min, w.length), Infinity);
+}
+
+/**
+ * Finds the longest word(s) in a string.
+ *
+ * @remarks
+ * - If only one longest word exists, returns it as a string.
+ * - If multiple longest words have the same length, returns them as an array.
+ * - Returns an empty string if there are no words.
+ *
+ * @returns The longest word as a string, or an array of tied words.
+ *
+ * @example
+ * ```ts
+ * longestWord("js utils kit");              // "utils"
+ * longestWord("short   longerword   mid"); // "longerword"
+ * longestWord("hello");                    // "hello"
+ * longestWord("");                         // ""
+ * ```
+ */
+export function longestWord(
+  /** The input string. */
+  str: string,
+): string | string[] {
+  const words = splitString(str).map((a) => stripSymbols(a));
+  if (words.length === 0) return '';
+
+  const maxLen = Math.max(...words.map((w) => w.length));
+  const longest = words.filter((w) => w.length === maxLen);
+
+  const unique = [...new Set(longest)];
+
+  return unique.length === 1 ? unique[0] : unique;
+}
+
+/**
+ * Finds the shortest word(s) in a string.
+ *
+ * @remarks
+ * - If only one shortest word exists, returns it as a string.
+ * - If multiple shortest words have the same length, returns them as an array.
+ * - Returns an empty string if there are no words.
+ *
+ * @returns The shortest word as a string, or an array of tied words.
+ *
+ * @example
+ * ```ts
+ * shortestWord("js utils kit"); // "js"
+ * shortestWord("one three five"); // "one"
+ * shortestWord("a ab abc abcd"); // "a"
+ * shortestWord(""); // ""
+ * ```
+ */
+export function shortestWord(
+  /** The input string. */
+  str: string,
+): string | string[] {
+  const words = splitString(str.trim()).map((a) => stripSymbols(a));
+  if (words.length === 0) return '';
+
+  const minLen = Math.min(...words.map((w) => w.length));
+  const shortest = words.filter((w) => w.length === minLen);
+
+  const unique = [...new Set(shortest)];
+
+  return unique.length === 1 ? unique[0] : unique;
 }
