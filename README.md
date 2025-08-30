@@ -136,7 +136,7 @@ console.log(env.isBrowser()); // true/false
 
 ## Documentation
 
-Full documentation available at [GitHub Pages](https://teneplaysofficial.github.io/js-utils-kit/)
+Full documentation available at [GitHub Pages](https://js-utils.js.org/modules.html)
 
 ## Requirements
 
