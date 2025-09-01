@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.5.0](https://github.com/teneplaysofficial/js-utils-kit/compare/v0.4.0...v0.5.0) (2025-09-01)
+
+### Features
+
+- **string:** enhance string utilities with word extraction ([#8](https://github.com/teneplaysofficial/js-utils-kit/issues/8)) ([95157ca](https://github.com/teneplaysofficial/js-utils-kit/commit/95157caf7c7fab2887f2892664e85b7056819f55))
+
 ## [0.4.0](https://github.com/teneplaysofficial/js-utils-kit/compare/v0.3.4...v0.4.0) (2025-08-25)
 
 ### Features
