@@ -1,7 +1,7 @@
 {
   "name": "js-utils-kit",
   "displayName": "JS Utils Kit",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Essential JavaScript helpers",
   "license": "MIT",
   "private": false,
