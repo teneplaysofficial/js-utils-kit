@@ -23,7 +23,7 @@ jobs:
 
       - name: Check for src changes
         id: check
-        uses: tj-actions/changed-files@v44
+        uses: tj-actions/changed-files@v46
         with:
           files: src/**
 
