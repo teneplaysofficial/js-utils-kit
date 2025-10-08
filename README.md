@@ -8,6 +8,7 @@ _Modular JavaScript utilities with type support for strings, objects, arrays and
 
 [![Build](https://github.com/teneplaysofficial/js-utils-kit/actions/workflows/publish.yml/badge.svg)](https://github.com/TenEplaysOfficial/js-utils-kit)
 [![Test](https://github.com/teneplaysofficial/js-utils-kit/actions/workflows/test.yml/badge.svg)](https://github.com/TenEplaysOfficial/js-utils-kit)
+[![codecov](https://codecov.io/github/teneplaysofficial/js-utils-kit/graph/badge.svg?token=9CEFGKSU2S)](https://github.com/TenEplaysOfficial/js-utils-kit)
 [![npm version](https://img.shields.io/npm/v/js-utils-kit.svg?logo=npm)](https://www.npmjs.com/package/js-utils-kit)
 [![JSR](https://jsr.io/badges/@tene/js-utils-kit)](https://jsr.io/@tene/js-utils-kit)
 [![JSR Score](https://jsr.io/badges/@tene/js-utils-kit/score)](https://jsr.io/@tene/js-utils-kit)
