@@ -129,7 +129,8 @@ export function isEmail(value: string): boolean {
   if (domain.length === 0 || domain.length > 255) return false;
 
   const emailRegex = /^[a-zA-Z0-9._%+-]+(\.[a-zA-Z0-9._%+-]+)*$/;
-  const domainRegex = /^[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  const domainRegex =
+    /^(?!.*\.\.)(?!-)[A-Za-z0-9-]{1,63}(?<!-)(\.[A-Za-z0-9-]{1,63}(?<!-))*\.[A-Za-z]{2,}$/;
 
   if (!emailRegex.test(local)) return false;
   if (!domainRegex.test(domain)) return false;
