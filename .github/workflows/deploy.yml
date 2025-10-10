@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Node Setup
-        uses: ./.github/actions/node-setup
+        uses: teneplaysofficial/js-utils-kit/.github/actions/node-setup@main
 
       - name: Build site
         run: yarn docs

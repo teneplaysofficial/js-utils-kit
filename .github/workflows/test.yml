@@ -36,7 +36,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Node Setup
-        uses: ./.github/actions/node-setup
+        uses: teneplaysofficial/js-utils-kit/.github/actions/node-setup@main
 
       - name: Run tests
         run: yarn test --coverage
@@ -53,7 +53,7 @@ jobs:
     if: needs.detect_changes.outputs.src_changed == 'true'
     steps:
       - name: Node Setup
-        uses: ./.github/actions/node-setup
+        uses: teneplaysofficial/js-utils-kit/.github/actions/node-setup@main
 
       - name: Dry-run JSR publish
         run: npx jsr publish --dry-run
@@ -71,7 +71,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Node Setup
-        uses: ./.github/actions/node-setup
+        uses: teneplaysofficial/js-utils-kit/.github/actions/node-setup@main
 
       - name: Run ESLint
         run: yarn lint
@@ -86,7 +86,7 @@ jobs:
     if: needs.detect_changes.outputs.src_changed == 'true'
     steps:
       - name: Node Setup
-        uses: ./.github/actions/node-setup
+        uses: teneplaysofficial/js-utils-kit/.github/actions/node-setup@main
 
       - name: Generate Typedoc Documentation
         run: yarn docs
