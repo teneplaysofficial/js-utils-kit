@@ -34,7 +34,7 @@ jobs:
 
     steps:
       - name: Node Setup
-        uses: ./.github/actions/node-setup
+        uses: teneplaysofficial/js-utils-kit/.github/actions/node-setup@main
 
       - name: Configure Git user
         run: |
