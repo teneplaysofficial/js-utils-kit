@@ -84,13 +84,8 @@ export function createArchive({
 }: CreateArchiveOptions): Promise<void> {
   const resolvedSource = path.resolve(source);
 
-  if (
-    !fs.existsSync(resolvedSource) ||
-    !fs.statSync(resolvedSource).isDirectory()
-  ) {
-    throw new Error(
-      `Source directory "${source}" does not exist or is not a directory.`,
-    );
+  if (!fs.existsSync(resolvedSource) || !fs.statSync(resolvedSource).isDirectory()) {
+    throw new Error(`Source directory "${source}" does not exist or is not a directory.`);
   }
 
   const output = fs.createWriteStream(destination);
@@ -127,6 +122,6 @@ export function createArchive({
 
     archive.pipe(output);
     archive.directory(source, false);
-    archive.finalize();
+    archive.finalize().catch((err) => reject(err instanceof Error ? err : new Error(String(err))));
   });
 }

@@ -1,8 +1,4 @@
-import {
-  isEmptyObject,
-  isNonEmptyObject,
-  isObject,
-} from '../../src/object/validate';
+import { isEmptyObject, isNonEmptyObject, isObject } from '../../src/object/validate';
 
 describe('isObject', () => {
   it('returns true for plain objects', () => {

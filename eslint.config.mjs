@@ -1,11 +1,17 @@
+import path from 'path';
+import { fileURLToPath } from 'url';
 import js from '@eslint/js';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 import json from '@eslint/json';
 import markdown from '@eslint/markdown';
 import { defineConfig } from 'eslint/config';
+import { includeIgnoreFile } from '@eslint/compat';
+
+const gitignorePath = fileURLToPath(new URL('.gitignore', import.meta.url));
 
 export default defineConfig([
+  includeIgnoreFile(gitignorePath, 'Imported .gitignore patterns'),
   {
     files: ['**/*.{js,mjs,cjs,ts,mts,cts}'],
     plugins: { js },
@@ -15,7 +21,16 @@ export default defineConfig([
     files: ['**/*.{js,mjs,cjs,ts,mts,cts}'],
     languageOptions: { globals: { ...globals.browser, ...globals.node } },
   },
-  tseslint.configs.recommended,
+  {
+    files: ['**/*.{ts,mts,cts}'],
+    languageOptions: {
+      parserOptions: {
+        project: path.resolve(process.cwd(), './tsconfig.json'),
+        tsconfigRootDir: process.cwd(),
+      },
+    },
+    extends: [tseslint.configs.recommendedTypeChecked],
+  },
   {
     files: ['**/*.json'],
     plugins: { json },

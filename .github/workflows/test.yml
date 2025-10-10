@@ -1,4 +1,4 @@
-name: Tests
+name: CI
 
 permissions:
   contents: read
@@ -35,17 +35,8 @@ jobs:
     name: Run yarn test
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: 'yarn'
-
-      - name: Install dependencies
-        run: yarn install --frozen-lockfile
+      - name: Node Setup
+        uses: teneplaysofficial/js-utils-kit/.github/actions/node-setup@main
 
       - name: Run tests
         run: yarn test --coverage
@@ -61,17 +52,8 @@ jobs:
     runs-on: ubuntu-latest
     if: needs.detect_changes.outputs.src_changed == 'true'
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: 'yarn'
-
-      - name: Install dependencies
-        run: yarn install --frozen-lockfile
+      - name: Node Setup
+        uses: teneplaysofficial/js-utils-kit/.github/actions/node-setup@main
 
       - name: Dry-run JSR publish
         run: npx jsr publish --dry-run
@@ -83,3 +65,28 @@ jobs:
     steps:
       - name: Validate PR title
         uses: teneplaysofficial/sheriff@v3
+
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Node Setup
+        uses: teneplaysofficial/js-utils-kit/.github/actions/node-setup@main
+
+      - name: Run ESLint
+        run: yarn lint
+
+      - name: Run Prettier Check
+        run: yarn format:check
+
+  typedoc:
+    name: Generate Documentation
+    needs: [detect_changes, run_tests, lint]
+    runs-on: ubuntu-latest
+    if: needs.detect_changes.outputs.src_changed == 'true'
+    steps:
+      - name: Node Setup
+        uses: teneplaysofficial/js-utils-kit/.github/actions/node-setup@main
+
+      - name: Generate Typedoc Documentation
+        run: yarn docs

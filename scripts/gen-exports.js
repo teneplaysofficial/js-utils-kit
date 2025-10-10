@@ -1,11 +1,5 @@
 import { join, resolve } from 'path';
-import {
-  existsSync,
-  readdirSync,
-  readFileSync,
-  statSync,
-  writeFileSync,
-} from 'fs';
+import { existsSync, readdirSync, readFileSync, statSync, writeFileSync } from 'fs';
 
 const cwd = process.cwd();
 
