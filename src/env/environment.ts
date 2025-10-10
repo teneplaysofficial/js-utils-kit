@@ -122,9 +122,7 @@ export function isTest(): boolean {
  */
 export function isNode(): boolean {
   return (
-    typeof process !== 'undefined' &&
-    process.versions !== null &&
-    process.versions.node !== null
+    typeof process !== 'undefined' && process.versions !== null && process.versions.node !== null
   );
 }
 
@@ -144,7 +142,5 @@ export function isNode(): boolean {
  * ```
  */
 export function isBrowser(): boolean {
-  return (
-    typeof window !== 'undefined' && typeof window.document !== 'undefined'
-  );
+  return typeof window !== 'undefined' && typeof window.document !== 'undefined';
 }

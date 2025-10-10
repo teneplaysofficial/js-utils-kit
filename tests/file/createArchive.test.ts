@@ -39,9 +39,9 @@ describe('createArchive', () => {
     });
 
     // Simulate close event
-    const closeCallback = mockOutput.on.mock.calls.find(
-      (call) => call[0] === 'close',
-    )?.[1];
+    const closeCallback = (
+      mockOutput.on.mock.calls as [string, (...args: unknown[]) => void][]
+    ).find((call) => call[0] === 'close')?.[1];
     closeCallback?.();
 
     await expect(promise).resolves.toBeUndefined();
@@ -66,11 +66,10 @@ describe('createArchive', () => {
     });
 
     // Simulate error event
-    const errorCallback = mockArchive.on.mock.calls.find(
-      (call) => call[0] === 'error',
-    )?.[1];
-    const error = new Error('Archiver failed');
-    errorCallback?.(error);
+    const errorCallback = (
+      mockArchive.on.mock.calls as [string, (...args: unknown[]) => void][]
+    ).find((call) => call[0] === 'error')?.[1];
+    errorCallback?.(new Error('Archiver failed'));
 
     await expect(promise).rejects.toThrow('Archiver failed');
   });

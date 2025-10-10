@@ -6,9 +6,7 @@ const IGNORED_FILES = ['index.ts', 'utils.ts'];
 const EXPORT_NAME = /export\s+(?:const|function|class)\s+(\w+)/g;
 
 const getFiles = (dir) =>
-  fs
-    .readdirSync(dir)
-    .filter((f) => f.endsWith('.ts') && !IGNORED_FILES.includes(f));
+  fs.readdirSync(dir).filter((f) => f.endsWith('.ts') && !IGNORED_FILES.includes(f));
 
 const extractNames = (filePath) => {
   const content = fs.readFileSync(filePath, 'utf8');
@@ -68,9 +66,7 @@ const generateCategoryIndex = (folder) => {
   const dir = path.join(SRC_DIR, folder);
   const files = getFiles(dir);
 
-  const exportAll = files.map(
-    (file) => `export * from './${file.replace('.ts', '')}';`,
-  );
+  const exportAll = files.map((file) => `export * from './${file.replace('.ts', '')}';`);
 
   let namedImports = '';
   let exportEntries = [];
@@ -90,14 +86,7 @@ const generateCategoryIndex = (folder) => {
     .map((name) => `  ${name},`)
     .join('\n')}\n};`;
 
-  const content = [
-    ...exportAll,
-    '',
-    namedImports.trim(),
-    '',
-    exportObject,
-    '',
-  ].join('\n');
+  const content = [...exportAll, '', namedImports.trim(), '', exportObject, ''].join('\n');
   fs.writeFileSync(path.join(dir, 'index.ts'), content);
   console.log(`Generated: ${folder}/index.ts`);
 };

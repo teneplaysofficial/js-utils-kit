@@ -41,8 +41,7 @@ export default [
     output: {
       dir: DIST_DIR,
       format: 'esm',
-      entryFileNames: (chunk) =>
-        chunk.name === 'index' ? 'index.js' : `${chunk.name}/index.js`,
+      entryFileNames: (chunk) => (chunk.name === 'index' ? 'index.js' : `${chunk.name}/index.js`),
     },
     plugins: [del({ targets: `${DIST_DIR}`, runOnce: true }), ...sharedPlugins],
     external,
@@ -54,8 +53,7 @@ export default [
     output: {
       dir: DIST_DIR,
       format: 'cjs',
-      entryFileNames: (chunk) =>
-        chunk.name === 'index' ? 'index.cjs' : `${chunk.name}/index.cjs`,
+      entryFileNames: (chunk) => (chunk.name === 'index' ? 'index.cjs' : `${chunk.name}/index.cjs`),
       exports: 'named',
     },
     plugins: [...sharedPlugins],
@@ -74,7 +72,7 @@ export default [
     plugins: [dts()],
   },
 
-  // CLI (optional)
+  // CLI
   pkg.bin?.['js-utils-kit'] && {
     input: 'bin/index.ts',
     output: {
@@ -83,6 +81,6 @@ export default [
       banner: '#!/usr/bin/env node',
     },
     plugins: [...sharedPlugins],
-    external: ['commander', 'ora'],
+    external,
   },
 ].filter(Boolean);

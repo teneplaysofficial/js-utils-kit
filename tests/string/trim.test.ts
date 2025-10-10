@@ -20,14 +20,10 @@ describe('trim.end', () => {
 
 describe('trim.normalizeWhitespace', () => {
   it('trims and collapses internal spaces', () => {
-    expect(trim.normalizeWhitespace('   this   is   a   test   ')).toBe(
-      'this is a test',
-    );
+    expect(trim.normalizeWhitespace('   this   is   a   test   ')).toBe('this is a test');
   });
 
   it('handles tabs and newlines', () => {
-    expect(trim.normalizeWhitespace('\tthis\nis\r\ta test\n')).toBe(
-      'this is a test',
-    );
+    expect(trim.normalizeWhitespace('\tthis\nis\r\ta test\n')).toBe('this is a test');
   });
 });

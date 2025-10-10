@@ -1,9 +1,7 @@
-import fs from 'fs';
 import ora from 'ora';
 import { Command } from 'commander';
-import { createArchive } from '../src/file';
-
-const pkg = JSON.parse(fs.readFileSync('./package.json', 'utf8'));
+import { createArchive, CreateArchiveOptions } from '../src/file';
+import pkg from '../package.json';
 
 const program = new Command();
 
@@ -19,7 +17,7 @@ program
   .requiredOption('-f, --format <format>', 'Archive format (zip or tar)')
   .requiredOption('-s, --source <source>', 'Source directory path')
   .requiredOption('-d, --destination <destination>', 'Destination archive file')
-  .action(async (options) => {
+  .action(async (options: CreateArchiveOptions) => {
     const spinner = ora('Creating archive...').start();
     try {
       await createArchive({
@@ -35,8 +33,7 @@ program
       });
     } catch (err) {
       spinner.fail(
-        'Failed to create archive: ' +
-          (err instanceof Error ? err.message : 'Unknown error'),
+        'Failed to create archive: ' + (err instanceof Error ? err.message : 'Unknown error'),
       );
       process.exit(1);
     }

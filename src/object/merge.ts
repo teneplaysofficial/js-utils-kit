@@ -37,12 +37,8 @@
  * @param sources - One or more objects to deeply merge.
  * @returns A new object containing deeply merged keys and values.
  */
-export function mergeObj(
-  appendArray: boolean = false,
-  ...sources: object[]
-): object {
-  const isObject = (val: unknown): val is object =>
-    typeof val === 'object' && val !== null;
+export function mergeObj(appendArray: boolean = false, ...sources: object[]): object {
+  const isObject = (val: unknown): val is object => typeof val === 'object' && val !== null;
   const result: Record<string, unknown> = {};
   for (const source of sources) {
     if (!isObject(source)) continue;
@@ -52,8 +48,8 @@ export function mergeObj(
       if (Array.isArray(sourceVal)) {
         result[key] =
           appendArray && Array.isArray(resultVal)
-            ? [...resultVal, ...sourceVal]
-            : [...sourceVal];
+            ? [...(resultVal as unknown[]), ...(sourceVal as unknown[])]
+            : [...(sourceVal as unknown[])];
       } else if (isObject(sourceVal) && !Array.isArray(sourceVal)) {
         result[key] =
           isObject(resultVal) && !Array.isArray(resultVal)

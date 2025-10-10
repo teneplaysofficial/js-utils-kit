@@ -57,9 +57,6 @@ export function isEmptyObject(value: object): boolean {
  */
 export function isNonEmptyObject(value: object): boolean {
   return (
-    value !== null &&
-    typeof value === 'object' &&
-    Object.keys(value).length > 0 &&
-    !isArray(value)
+    value !== null && typeof value === 'object' && Object.keys(value).length > 0 && !isArray(value)
   );
 }
