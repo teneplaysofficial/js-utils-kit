@@ -27,6 +27,7 @@ describe('createArchive', () => {
     (fs.statSync as jest.Mock).mockReturnValue({
       isDirectory: () => true,
     });
+    mockArchive.finalize.mockReturnValue(Promise.resolve());
     (archiver as unknown as jest.Mock).mockReturnValue(mockArchive);
     jest.clearAllMocks();
   });
@@ -72,5 +73,17 @@ describe('createArchive', () => {
     errorCallback?.(new Error('Archiver failed'));
 
     await expect(promise).rejects.toThrow('Archiver failed');
+  });
+
+  it('rejects if finalize fails', async () => {
+    mockArchive.finalize.mockReturnValueOnce(Promise.reject(new Error('Finalize failed')));
+
+    const promise = createArchive({
+      format: 'zip',
+      source: 'src',
+      destination: 'out.zip',
+    });
+
+    await expect(promise).rejects.toThrow('Finalize failed');
   });
 });
