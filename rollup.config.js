@@ -6,6 +6,7 @@ import terser from '@rollup/plugin-terser';
 import del from 'rollup-plugin-delete';
 import typescript from '@rollup/plugin-typescript';
 import { dts } from 'rollup-plugin-dts';
+import json from '@rollup/plugin-json';
 
 const pkg = JSON.parse(fs.readFileSync('./package.json', 'utf8'));
 const SRC_DIR = 'src';
@@ -31,6 +32,7 @@ const sharedPlugins = [
   resolve({ preferBuiltins: true, browser: true }),
   commonjs(),
   terser(),
+  json(),
   typescript({ tsconfig: './tsconfig.json', declaration: false }),
 ];
 
