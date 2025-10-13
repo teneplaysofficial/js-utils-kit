@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.5.4](https://github.com/teneplaysofficial/js-utils-kit/compare/v0.5.3...v0.5.4) (2025-10-13)
+
+### Bug Fixes
+
+- enforce RFC compliance and prevent ReDoS ([#11](https://github.com/teneplaysofficial/js-utils-kit/issues/11)) ([6a25ee7](https://github.com/teneplaysofficial/js-utils-kit/commit/6a25ee7f66b001296b00acff2fe4af4e0f01a903))
+
 ## [0.5.3](https://github.com/teneplaysofficial/js-utils-kit/compare/v0.5.2...v0.5.3) (2025-09-22)
 
 ## [0.5.2](https://github.com/teneplaysofficial/js-utils-kit/compare/v0.5.1...v0.5.2) (2025-09-15)
