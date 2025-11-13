@@ -1,6 +1,7 @@
 <div align="center">
 
-<!-- [![img](https://capsule-render.vercel.app/api?type=waving&height=300&color=gradient&text=Js%20Utils%20Kit&section=footer&desc=Modular%20JavaScript%20utilities%20with%20type%20support%20for%20strings,%20objects,%20arrays,%20and%20more&descAlign=49&descAlignY=72&animation=fadeIn&textBg=false)](https://github.com/TenEplaysOfficial/js-utils-kit) -->
+<!-- [![img](https://capsule-render.vercel.app/api?type=waving&height=300&color=gradient&text=Js%20Utils%20Kit&section=footer&desc=Modular%20JavaScript%20utilities%20with%20type%20support%20for%20strings,%20objects,%20arrays,%20and%20more&descAlign=49&descAlignY=72&animation=fadeIn&textBg=false)](https://github.com/TenEplaysOfficial/js-utils-kit) [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fteneplaysofficial%2Fjs-utils-kit.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fteneplaysofficial%2Fjs-utils-kit?ref=badge_shield)
+-->
 
 # Js Utils Kit
 
@@ -189,3 +190,6 @@ This enables tree-shaking for smaller, optimized bundles.
 ## License
 
 Released under the [MIT License](LICENSE)
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fteneplaysofficial%2Fjs-utils-kit.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fteneplaysofficial%2Fjs-utils-kit?ref=badge_large)
