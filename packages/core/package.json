@@ -1,0 +1,48 @@
+{
+  "name": "@js-utils-kit/core",
+  "version": "0.0.0",
+  "description": "Essential JavaScript helpers",
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/teneplaysofficial/js-utils-kit",
+    "directory": "packages/core"
+  },
+  "bugs": {
+    "url": "https://github.com/teneplaysofficial/js-utils-kit/issues"
+  },
+  "author": {
+    "name": "Sriman",
+    "email": "136729116+TenEplaysOfficial@users.noreply.github.com",
+    "url": "https://tene.vercel.app"
+  },
+  "keywords": [
+    "javascript",
+    "typescript",
+    "utils",
+    "utility",
+    "toolkit",
+    "helpers",
+    "functions",
+    "core",
+    "common",
+    "ts-utils"
+  ],
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.cts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "build": "tsdown"
+  },
+  "dependencies": {
+    "@js-utils-kit/string": "workspace:*"
+  }
+}
