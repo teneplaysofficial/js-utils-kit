@@ -5,7 +5,12 @@
   "description": "Essential JavaScript helpers",
   "license": "MIT",
   "private": true,
-  "repository": "https://github.com/teneplaysofficial/js-utils-kit",
+  "homepage": "https://js-utils.js.org",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/teneplaysofficial/js-utils-kit",
+    "directory": ""
+  },
   "bugs": {
     "url": "https://github.com/teneplaysofficial/js-utils-kit/issues"
   },
@@ -49,6 +54,7 @@
   },
   "devDependencies": {
     "@changesets/cli": "^2.29.7",
+    "@clack/prompts": "^0.11.0",
     "@eslint/compat": "^2.0.0",
     "@eslint/js": "^9.39.1",
     "@eslint/json": "^0.14.0",
