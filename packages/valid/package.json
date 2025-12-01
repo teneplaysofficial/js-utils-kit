@@ -23,6 +23,9 @@
     "checks",
     "utility"
   ],
+  "engines": {
+    "node": ">=22"
+  },
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
