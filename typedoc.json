@@ -6,5 +6,12 @@
   "githubPages": true,
   "hideGenerator": true,
   "name": "JS Utils Kit",
-  "cname": "js-utils.js.org"
+  "cname": "js-utils.js.org",
+  "externalSymbolLinkMappings": {
+    "typescript": {
+      "String.trim": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trim",
+      "String.trimStart": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trimStart",
+      "String.trimEnd": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trimEnd"
+    }
+  }
 }

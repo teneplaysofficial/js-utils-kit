@@ -73,6 +73,9 @@ importers:
       '@js-utils-kit/string':
         specifier: workspace:*
         version: link:../string
+      '@js-utils-kit/valid':
+        specifier: workspace:*
+        version: link:../valid
 
   packages/string: {}
 
