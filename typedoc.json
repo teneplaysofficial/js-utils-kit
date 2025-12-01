@@ -1,5 +1,5 @@
 {
-  "entryPoints": ["./packages/string/src/index.ts"],
+  "entryPoints": ["packages/valid/src/index.ts", "packages/string/src/index.ts"],
   "readme": "./packages/core/README.md",
   "gitRemote": "origin",
   "gitRevision": "main",
