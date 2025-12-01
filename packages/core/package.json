@@ -43,6 +43,7 @@
     "build": "tsdown"
   },
   "dependencies": {
-    "@js-utils-kit/string": "workspace:*"
+    "@js-utils-kit/string": "workspace:*",
+    "@js-utils-kit/valid": "workspace:*"
   }
 }
