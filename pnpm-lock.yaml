@@ -74,6 +74,9 @@ importers:
       rollup-plugin-dts:
         specifier: ^6.3.0
         version: 6.3.0(rollup@4.53.3)(typescript@5.9.3)
+      sylog:
+        specifier: ^2.1.0
+        version: 2.1.0
       tsdown:
         specifier: ^0.16.7
         version: 0.16.7(typescript@5.9.3)
@@ -1613,6 +1616,12 @@ packages:
       }
     engines: { node: '>=12' }
 
+  ansilory@2.0.1:
+    resolution:
+      {
+        integrity: sha512-YRcRfcy57OIw/iIPheRWKTsvY7N+6i8Vgs4EBPJsYB0Ik0L8x3IVt0wk8v474SR79uY57yQRYIhYPwxbfksZJg==,
+      }
+
   ansis@4.2.0:
     resolution:
       {
@@ -2664,6 +2673,12 @@ packages:
     resolution:
       {
         integrity: sha512-oxVHkHR/EJf2CNXnWxRLW6mg7JyCCUcG0DtEGmL2ctUo1PNTin1PUil+r/+4r5MpVgC/fn1kjsx7mjSujKqIpw==,
+      }
+
+  kolory@1.1.2:
+    resolution:
+      {
+        integrity: sha512-KVIhCeGn6fZAK+ueIvQ1gA9pCgUjhdAmunvbGji3hQJEuTyj7IA3pRkNaRFB30kEXSNkehg7O/DuJ0SjYPmczQ==,
       }
 
   lazystream@1.0.1:
@@ -3725,6 +3740,12 @@ packages:
         integrity: sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==,
       }
     engines: { node: '>=8' }
+
+  sylog@2.1.0:
+    resolution:
+      {
+        integrity: sha512-k7o4TXapGXUPRTWL4lkL9/lG3UgoDTp9kJ1YNEdXlhvfbpFtZZEbhjpmj3kwQOdYzIAFczuVoWF6yr0MN1IGuA==,
+      }
 
   tar-stream@3.1.7:
     resolution:
@@ -5043,6 +5064,10 @@ snapshots:
 
   ansi-styles@6.2.3: {}
 
+  ansilory@2.0.1:
+    dependencies:
+      kolory: 1.1.2
+
   ansis@4.2.0: {}
 
   archiver-utils@5.0.2:
@@ -5613,6 +5638,8 @@ snapshots:
   keyv@4.5.4:
     dependencies:
       json-buffer: 3.0.1
+
+  kolory@1.1.2: {}
 
   lazystream@1.0.1:
     dependencies:
@@ -6403,6 +6430,10 @@ snapshots:
   supports-color@7.2.0:
     dependencies:
       has-flag: 4.0.0
+
+  sylog@2.1.0:
+    dependencies:
+      ansilory: 2.0.1
 
   tar-stream@3.1.7:
     dependencies:
