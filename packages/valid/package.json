@@ -23,6 +23,9 @@
     "checks",
     "utility"
   ],
+  "files": [
+    "dist"
+  ],
   "engines": {
     "node": ">=22"
   },
@@ -40,5 +43,7 @@
     "build": "tsdown",
     "test": "vitest run"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@js-utils-kit/types": "workspace:*"
+  }
 }

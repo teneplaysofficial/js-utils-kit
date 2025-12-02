@@ -1,5 +1,13 @@
 {
-  "entryPoints": ["packages/valid/src/index.ts", "packages/string/src/index.ts"],
+  "entryPoints": [
+    "packages/valid/src/index.ts",
+    "packages/types/src/index.ts",
+    "packages/string/src/index.ts",
+    "packages/object/src/index.ts",
+    "packages/number/src/index.ts",
+    "packages/fs/src/index.ts",
+    "packages/array/src/index.ts"
+  ],
   "readme": "./packages/core/README.md",
   "gitRemote": "origin",
   "gitRevision": "main",

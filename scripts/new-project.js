@@ -13,7 +13,16 @@ function exitOnCancel(result) {
   }
 }
 
-const allowedKeys = ['license', 'author', 'homepage', 'repository', 'bugs', 'engines', 'type'];
+const allowedKeys = [
+  'license',
+  'author',
+  'homepage',
+  'repository',
+  'bugs',
+  'files',
+  'engines',
+  'type',
+];
 
 function buildPackageJson(name, description) {
   const pkg = {};

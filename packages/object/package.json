@@ -1,35 +1,23 @@
 {
-  "name": "@js-utils-kit/string",
+  "name": "@js-utils-kit/object",
   "version": "0.0.0",
-  "description": "String utilities",
-  "license": "MIT",
+  "description": "Object utilities",
   "private": false,
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/teneplaysofficial/js-utils-kit",
-    "directory": "packages/string"
-  },
-  "bugs": {
-    "url": "https://github.com/teneplaysofficial/js-utils-kit/issues"
-  },
+  "license": "MIT",
   "author": {
     "name": "Sriman",
     "email": "136729116+TenEplaysOfficial@users.noreply.github.com",
     "url": "https://tene.vercel.app"
   },
-  "keywords": [
-    "string",
-    "string-utils",
-    "stringify",
-    "text",
-    "case",
-    "trim",
-    "format",
-    "sanitize",
-    "camelcase",
-    "typescript",
-    "utilities"
-  ],
+  "homepage": "https://js-utils.js.org",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/teneplaysofficial/js-utils-kit",
+    "directory": "packages/object"
+  },
+  "bugs": {
+    "url": "https://github.com/teneplaysofficial/js-utils-kit/issues"
+  },
   "files": [
     "dist"
   ],

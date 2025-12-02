@@ -1,0 +1,39 @@
+{
+  "name": "@js-utils-kit/types",
+  "version": "0.0.0",
+  "description": "Type Declarations",
+  "private": false,
+  "license": "MIT",
+  "author": {
+    "name": "Sriman",
+    "email": "136729116+TenEplaysOfficial@users.noreply.github.com",
+    "url": "https://tene.vercel.app"
+  },
+  "homepage": "https://js-utils.js.org",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/teneplaysofficial/js-utils-kit",
+    "directory": "packages/types"
+  },
+  "bugs": {
+    "url": "https://github.com/teneplaysofficial/js-utils-kit/issues"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "dependencies": {}
+}
