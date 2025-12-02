@@ -2,6 +2,7 @@ export * from '@js-utils-kit/types';
 export * from './endsWithPunctuation';
 export * from './hasWhitespace';
 export * from './isAlphabetic';
+export * from './isArray';
 export * from './isBrowser';
 export * from './isCamelCase';
 export * from './isDefined';
