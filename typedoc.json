@@ -1,23 +1,27 @@
 {
-  "entryPoints": ["src"],
-  "entryPointStrategy": "expand",
-  "out": "docs",
-  "includeVersion": true,
-  "excludePrivate": true,
-  "excludeProtected": false,
-  "excludeInternal": true,
-  "excludeExternals": false,
-  "readme": "README.md",
-  "tsconfig": "tsconfig.json",
-  "name": "JS Utils Kit",
-  "categorizeByGroup": true,
-  "sort": ["source-order"],
-  "plugin": [],
+  "entryPoints": [
+    "packages/valid/src/index.ts",
+    "packages/types/src/index.ts",
+    "packages/string/src/index.ts",
+    "packages/object/src/index.ts",
+    "packages/number/src/index.ts",
+    "packages/fs/src/index.ts",
+    "packages/env/src/index.ts",
+    "packages/charset/src/index.ts"
+  ],
+  "readme": "./packages/core/README.md",
   "gitRemote": "origin",
   "gitRevision": "main",
   "githubPages": true,
   "hideGenerator": true,
-  "customFooterHtml": "<div style=\"text-align:center; padding:1rem;\"><div>Streamline your code with battle-tested, tree-shakable utilities</div><div style=\"margin-top:0.25rem;\">Made by <a href=\\\"https://github.com/TenEplaysOfficial/js-utils-kit\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">TenEplaysOfficial</a> • Released under <a href=\\\"https://github.com/TenEplaysOfficial/js-utils-kit/blob/main/LICENSE\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">MIT</a></div></div>",
-  "projectDocuments": ["./CHANGELOG.md", "./CONTRIBUTING.md"],
-  "cname": "js-utils.js.org"
+  "name": "JS Utils Kit",
+  "cname": "js-utils.js.org",
+  "favicon": "favicon.svg",
+  "externalSymbolLinkMappings": {
+    "typescript": {
+      "String.trim": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trim",
+      "String.trimStart": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trimStart",
+      "String.trimEnd": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trimEnd"
+    }
+  }
 }

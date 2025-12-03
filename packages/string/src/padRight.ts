@@ -1,0 +1,27 @@
+/**
+ * Pads a string on the right with a specified character until it reaches the desired length.
+ *
+ * @returns The padded string, or the original string if its length is already greater than or equal to the target length.
+ *
+ * @example
+ * ```ts
+ * console.log(padRight("hello", 8)); // "hello   "
+ * console.log(padRight("hi", 5, "*")); // "hi***"
+ * console.log(padRight("hello", 3)); // "hello"
+ * console.log(padRight("", 3, "0")); // "000"
+ * ```
+ */
+export function padRight(
+  /** The string to pad */
+  str: string,
+  /** The target length of the padded string */
+  length: number,
+  /**
+   * The character to use for padding (defaults to a space)
+   *
+   * @default ' '
+   */
+  char: string = ' ',
+): string {
+  return str.padEnd(length, char);
+}

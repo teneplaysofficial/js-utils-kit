@@ -1,0 +1,42 @@
+{
+  "name": "@js-utils-kit/object",
+  "version": "0.0.0",
+  "description": "Object utilities",
+  "private": false,
+  "license": "MIT",
+  "author": {
+    "name": "Sriman",
+    "email": "136729116+TenEplaysOfficial@users.noreply.github.com",
+    "url": "https://tene.vercel.app"
+  },
+  "homepage": "https://js-utils.js.org",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/teneplaysofficial/js-utils-kit",
+    "directory": "packages/object"
+  },
+  "bugs": {
+    "url": "https://github.com/teneplaysofficial/js-utils-kit/issues"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.cts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "build": "tsdown",
+    "test": "vitest run"
+  },
+  "dependencies": {}
+}
