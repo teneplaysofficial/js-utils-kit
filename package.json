@@ -79,7 +79,6 @@
     "prettier": "^3.6.2",
     "rimraf": "^6.1.2",
     "rollup": "^4.53.3",
-    "rollup-plugin-dts": "^6.3.0",
     "sylog": "^2.1.0",
     "tsdown": "^0.16.7",
     "turbo": "^2.6.1",
