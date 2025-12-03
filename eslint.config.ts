@@ -49,4 +49,7 @@ export default defineConfig([
     language: 'markdown/gfm',
     extends: ['markdown/recommended'],
   },
+  {
+    ignores: ['README.md'],
+  },
 ]);
