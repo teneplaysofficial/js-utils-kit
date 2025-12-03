@@ -26,14 +26,14 @@ try {
     }),
   );
   const lib_names = pkgNames.map((p) => `@js-utils-kit/${basename(p)}`);
-  const corePkg = JSON.parse(await readFile(corePath));
+  const corePkg = JSON.parse(await readFile(corePath, 'utf-8'));
   const missing = lib_names.filter((l) => !Object.keys(corePkg.dependencies).includes(l));
 
   const engineIssues = [];
 
   for (const p of pkgNames) {
     const pkgPath = `${p}/package.json`;
-    const pkgJson = JSON.parse(await readFile(pkgPath));
+    const pkgJson = JSON.parse(await readFile(pkgPath, 'utf-8'));
     if (JSON.stringify(pkgJson.engines) !== JSON.stringify(pkg.engines)) {
       engineIssues.push({ pkgPath, pkgJson });
     }
