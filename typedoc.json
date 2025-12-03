@@ -16,6 +16,7 @@
   "hideGenerator": true,
   "name": "JS Utils Kit",
   "cname": "js-utils.js.org",
+  "favicon": "favicon.svg",
   "externalSymbolLinkMappings": {
     "typescript": {
       "String.trim": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trim",
