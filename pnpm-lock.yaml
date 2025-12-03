@@ -100,9 +100,27 @@ importers:
 
   packages/core:
     dependencies:
+      '@js-utils-kit/charset':
+        specifier: workspace:*
+        version: link:../charset
+      '@js-utils-kit/env':
+        specifier: workspace:*
+        version: link:../env
+      '@js-utils-kit/fs':
+        specifier: workspace:*
+        version: link:../fs
+      '@js-utils-kit/number':
+        specifier: workspace:*
+        version: link:../number
+      '@js-utils-kit/object':
+        specifier: workspace:*
+        version: link:../object
       '@js-utils-kit/string':
         specifier: workspace:*
         version: link:../string
+      '@js-utils-kit/types':
+        specifier: workspace:*
+        version: link:../types
       '@js-utils-kit/valid':
         specifier: workspace:*
         version: link:../valid
