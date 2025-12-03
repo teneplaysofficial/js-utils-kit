@@ -1,7 +1,6 @@
 /**
  * Checks if a string contains only alphabetic characters (A–Z, a–z).
  *
- * @param value - The string to check.
  * @returns - `true` if the string contains only letters; otherwise, `false`.
  *
  * @example
@@ -11,6 +10,9 @@
  * isAlphabetic("Test!"); // false
  * ```
  */
-export function isAlphabetic(value: string): boolean {
+export function isAlphabetic(
+  /** The string to check */
+  value: string,
+): boolean {
   return /^[a-zA-Z]+$/.test(value);
 }

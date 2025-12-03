@@ -10,7 +10,6 @@
  * ignores surrounding whitespace. Does not allow trailing or embedded characters
  * like "123abc" or "abc123".
  *
- * @param value - The string to validate.
  * @returns - `true` if the string represents a valid number; otherwise, `false`.
  *
  * @example
@@ -27,6 +26,9 @@
  * - {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat parseFloat()}
  * - {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN isNaN()}
  */
-export function isNumericString(value: string): boolean {
+export function isNumericString(
+  /** The string to validate */
+  value: string,
+): boolean {
   return !isNaN(Number(value)) && !isNaN(parseFloat(value));
 }

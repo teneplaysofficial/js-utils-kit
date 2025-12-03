@@ -6,7 +6,7 @@
  * the type to `string` when used in conditionals.
  *
  * @template T - The type of the input value.
- * @param value - The value to be checked.
+ *
  * @returns - Whether the value is a string (`true`) or not (`false`).
  *
  * @example
@@ -22,6 +22,9 @@
  * }
  * ```
  */
-export function isString<T>(value: T): boolean {
+export function isString<T>(
+  /** The value to be checked */
+  value: T,
+): boolean {
   return value !== null && value !== undefined && typeof value === 'string';
 }

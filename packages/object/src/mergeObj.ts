@@ -13,6 +13,9 @@
  *   For example, values in the last object will override previous ones.
  * - If you want to give **priority to a specific object**, **pass it last**.
  *
+ * @returns A new object containing deeply merged keys and values.
+ *
+ *
  * @example
  * ```ts
  * const defaultConfig = { env: "dev", features: ["a"], flags: { debug: true } };
@@ -32,12 +35,17 @@
  * //   flags: { debug: true, beta: true }
  * // }
  * ```
- *
- * @param appendArray - If `true`, arrays are concatenated. If `false` (default), arrays are replaced.
- * @param sources - One or more objects to deeply merge.
- * @returns A new object containing deeply merged keys and values.
  */
-export function mergeObj(appendArray: boolean = false, ...sources: object[]): object {
+export function mergeObj(
+  /**
+   * If `true`, arrays are concatenated. If `false` (default), arrays are replaced.
+   *
+   * @default false
+   */
+  appendArray: boolean = false,
+  /** One or more objects to deeply merge */
+  ...sources: object[]
+): object {
   const isObject = (val: unknown): val is object => typeof val === 'object' && val !== null;
   const result: Record<string, unknown> = {};
   for (const source of sources) {

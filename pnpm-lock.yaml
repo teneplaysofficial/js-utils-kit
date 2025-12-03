@@ -115,6 +115,9 @@ importers:
 
   packages/fs:
     dependencies:
+      '@js-utils-kit/types':
+        specifier: workspace:*
+        version: link:../types
       archiver:
         specifier: 'catalog:'
         version: 7.0.1
@@ -127,7 +130,11 @@ importers:
 
   packages/object: {}
 
-  packages/string: {}
+  packages/string:
+    dependencies:
+      '@js-utils-kit/types':
+        specifier: workspace:*
+        version: link:../types
 
   packages/types: {}
 

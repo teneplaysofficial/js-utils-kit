@@ -3,7 +3,6 @@
  *
  * @remarks
  * - Valid range is `0–23`.
- * - Used in {@link getMilliseconds}.
  */
 export type Hour =
   | 0

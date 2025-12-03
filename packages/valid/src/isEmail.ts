@@ -11,7 +11,6 @@
  * - Domain part (after `@`): 1–255 characters
  * - Total email length: ≤ 254 characters
  *
- * @param value - The string to validate as an email address.
  *
  * @throws {TypeError} Throws if value is not a string.
  *
@@ -25,7 +24,10 @@
  * isEmail('name@domain'); // false
  * ```
  */
-export function isEmail(value: string): boolean {
+export function isEmail(
+  /** The string to validate as an email address */
+  value: string,
+): boolean {
   if (typeof value !== 'string') throw new TypeError('Expected a string');
 
   if (value.length > 254) return false;

@@ -3,7 +3,6 @@
  *
  * @remarks
  * - Valid range is `0–59`.
- * - Used in {@link getMilliseconds}.
  */
 export type MinuteOrSecond =
   | 0

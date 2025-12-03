@@ -1,44 +1,7 @@
-/**
- * String trimming utilities.
- * Trims whitespace from a string (both sides by default) with methods for leading and trailing and normalizing whitespace.
- */
-export interface Trim {
-  /**
-   * Removes whitespace from both ends of a string.
-   *
-   * @param str - The string to trim.
-   * @returns The trimmed string.
-   */
-  (str: string): string;
-
-  /**
-   * Removes leading whitespace from a string.
-   *
-   * @param str - The string to trim.
-   * @returns The string with leading whitespace removed.
-   */
-  start(str: string): string;
-
-  /**
-   * Removes trailing whitespace from a string.
-   *
-   * @param str - The string to trim.
-   * @returns The string with trailing whitespace removed.
-   */
-  end(str: string): string;
-
-  /**
-   * Trims the string and replaces sequences of whitespace with a single space.
-   *
-   * @param str - The string to normalize.
-   * @returns The string with normalized whitespace.
-   */
-  normalizeWhitespace(str: string): string;
-}
+import { Trim } from '@js-utils-kit/types';
 
 /**
- * String trimming utilities.
- * Trims whitespace from a string (both sides by default) with methods for leading and trailing and normalizing whitespace.
+ * Trims whitespace from a string with methods for leading and trailing and normalizing whitespace.
  *
  * @param str - The string to trim.
  *
@@ -49,6 +12,8 @@ export interface Trim {
  * - `.start` removes only leading whitespace (like {@link String.prototype.trimStart}).
  * - `.end` removes only trailing whitespace (like {@link String.prototype.trimEnd}).
  * - `.normalizeWhitespace` trims the string and replaces any sequence of whitespace characters with a single space.
+ *
+ * @default 'trims both sides'
  *
  * @example
  * ```ts

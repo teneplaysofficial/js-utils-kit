@@ -1,50 +1,8 @@
 import fs from 'fs';
 import path from 'path';
 import archiver from 'archiver';
-import type { Archiver, ArchiverOptions } from 'archiver';
-
-/**
- * Supported archive formats.
- */
-export type ArchiveFormat = 'zip' | 'tar';
-
-/**
- * Configuration options.
- */
-export interface CreateArchiveOptions {
-  /**
-   * Archive format to use {@link ArchiveFormat}.
-   */
-  format: ArchiveFormat;
-
-  /**
-   * Path to the source directory that should be archived.
-   */
-  source: string;
-
-  /**
-   * Destination file path where the archive will be written
-   * @example
-   *  - For `zip` format: `dist.zip`
-   *  - For `tar` format: `dist.tar`
-   */
-  destination: string;
-
-  /**
-   * Additional options passed directly to the archiver library. See {@link ArchiverOptions}.
-   */
-  options?: ArchiverOptions;
-
-  /**
-   * Optional flag to enable internal logging. Useful for CLI mode.
-   */
-  log?: boolean;
-
-  /**
-   * Called after archiving is complete — receives total size in bytes.
-   */
-  onSuccess?: (bytes: number) => void;
-}
+import type { Archiver } from 'archiver';
+import { CreateArchiveOptions } from '@js-utils-kit/types';
 
 /**
  * Creates a {@link ArchiveFormat } archive from a specified directory.
@@ -65,13 +23,8 @@ export interface CreateArchiveOptions {
  * });
  * ```
  *
- *  CLI usage:
- * ```sh
- * npx js-utils-kit createArchive -f zip -s dist -d dist.zip
- * ```
- *
- * @param options - Archive creation options
  * @returns A Promise that resolves when the archive is created
+ *
  * @throws If an error occurs during the archiving process
  */
 export function createArchive({

@@ -13,10 +13,6 @@ import { isString } from './isString';
  *
  * @template T - The type of the value being checked.
  *
- * @param value - The value to validate as a non-empty string.
- * @param trim - Whether to trim whitespace from the string before checking its length.
- *               Defaults to `true`.
- *
  * @returns - A boolean indicating whether the input is a non-empty string.
  *
  * @example
@@ -28,7 +24,16 @@ import { isString } from './isString';
  * isNonEmptyString(null); // false
  * ```
  */
-export function isNonEmptyString<T>(value: T, trim = true): boolean {
+export function isNonEmptyString<T>(
+  /** The value to validate as a non-empty string */
+  value: T,
+  /**
+   * Whether to trim whitespace from the string before checking its length.
+   *
+   * @default true
+   */
+  trim = true,
+): boolean {
   if (!isString(value)) return false;
 
   return typeof value === 'string' && (trim ? value.trim().length > 0 : value.length > 0);

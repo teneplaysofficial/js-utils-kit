@@ -3,8 +3,9 @@ import { isDefined } from './isDefined';
 
 /**
  * Checks if a value is a plain object (created by {} or new Object()).
- * @param value - The value to check.
+ *
  * @returns True if the value is a plain object, false otherwise.
+ *
  * @example
  * ```ts
  * isObject({}); // true
@@ -13,7 +14,10 @@ import { isDefined } from './isDefined';
  * isObject(new Date()); // false
  * ```
  */
-export function isObject<T>(value: T): boolean {
+export function isObject<T>(
+  /** The value to check */
+  value: T,
+): boolean {
   return (
     isDefined(value) &&
     typeof value === 'object' &&

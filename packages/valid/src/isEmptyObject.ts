@@ -2,8 +2,9 @@ import { isArray } from './isArray';
 
 /**
  * Checks if a value is an empty object (has no enumerable own properties).
- * @param value - The value to check.
+ *
  * @returns True if the value is a non-null object with no enumerable own properties, false otherwise.
+ *
  * @example
  * ```ts
  * isEmptyObject({}); // true
@@ -12,7 +13,10 @@ import { isArray } from './isArray';
  * isEmptyObject([]); // false
  * ```
  */
-export function isEmptyObject(value: object): boolean {
+export function isEmptyObject(
+  /** The value to check */
+  value: object,
+): boolean {
   return (
     value !== null &&
     typeof value === 'object' &&

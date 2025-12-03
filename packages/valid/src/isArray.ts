@@ -2,8 +2,9 @@ import { isDefined } from './isDefined';
 
 /**
  * Checks if a value is a defined array.
- * @param value - The value to check.
+ *
  * @returns True if the value is a defined array, false otherwise.
+ *
  * @example
  * ```ts
  * console.log(isArray([1, 2, 3])); // true
@@ -14,6 +15,9 @@ import { isDefined } from './isDefined';
  * console.log(isArray("hello")); // false
  * ```
  */
-export function isArray<T>(value: T): boolean {
+export function isArray<T>(
+  /** The value to check */
+  value: T,
+): boolean {
   return isDefined(value) && Array.isArray(value);
 }
