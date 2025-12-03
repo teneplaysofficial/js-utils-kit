@@ -1,6 +1,6 @@
 {
   "name": "@js-utils-kit/fs",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "File system utilities",
   "private": false,
   "license": "MIT",

@@ -1,6 +1,6 @@
 {
   "name": "@js-utils-kit/charset",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Character Sets utilities",
   "private": false,
   "license": "MIT",
