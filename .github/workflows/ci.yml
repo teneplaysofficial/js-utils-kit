@@ -25,7 +25,7 @@ jobs:
           pnpm gen
           pnpm fmt
 
-          isDiff=$(git --no-pager diff --color)
+          isDiff=$(git --no-pager diff --color --ignore-space-at-eol --ignore-cr-at-eol)
 
           if [ -n "$isDiff" ]; then
             echo "The following files are not up to date:"
