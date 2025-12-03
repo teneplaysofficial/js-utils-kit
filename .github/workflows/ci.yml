@@ -25,12 +25,21 @@ jobs:
           pnpm gen
           pnpm fmt
 
-          isDiff=$(git --no-pager diff --color --ignore-space-at-eol --ignore-cr-at-eol)
+          isDiff=$(git --no-pager diff --color --ignore-space-at-eol --ignore-cr-at-eol --ignore-blank-lines)
 
           if [ -n "$isDiff" ]; then
-            echo "The following files are not up to date:"
+            echo "────────────────────────────────────────"
+            echo "The following files are not up to date"
+            echo "────────────────────────────────────────"
             echo ""
-            git diff --name-only | sed 's/^/  - /'
+            git diff --name-only --ignore-space-at-eol --ignore-cr-at-eol --ignore-blank-lines \
+            | sed 's/^/  - /'
+            echo ""
+            echo "────────────────────────────────────────"
+            echo "Actual diff:"
+            echo "────────────────────────────────────────"
+            echo ""
+            git --no-pager diff --color --ignore-space-at-eol --ignore-cr-at-eol --ignore-blank-lines
             echo ""
             echo "::error::Generated or formatted files are out of date. Please run 'pnpm gen' and 'pnpm fmt' locally."
             exit 1
