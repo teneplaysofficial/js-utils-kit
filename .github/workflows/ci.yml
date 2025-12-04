@@ -64,6 +64,9 @@ jobs:
       - uses: ./.github/actions/setup
       - run: |
           pnpm test
+      - uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
 
   typedoc:
     runs-on: ubuntu-latest
