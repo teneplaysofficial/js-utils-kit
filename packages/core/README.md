@@ -2,6 +2,11 @@
 
 _Modular JavaScript utilities with type support_
 
+[![ci](https://github.com/teneplaysofficial/js-utils-kit/actions/workflows/ci.yml/badge.svg)](https://github.com/TenEplaysOfficial/js-utils-kit)
+[![codecov](https://codecov.io/github/teneplaysofficial/js-utils-kit/graph/badge.svg?token=9CEFGKSU2S)](https://github.com/TenEplaysOfficial/js-utils-kit)
+[![npm version](https://img.shields.io/npm/v/@js-utils-kit/core.svg?logo=npm&color=brightgreen)](https://www.npmjs.com/package/@js-utils-kit/core)
+[![Downloads](https://img.shields.io/npm/dt/@js-utils-kit/core?logo=npm)](https://www.npmjs.com/package/@js-utils-kit/core)
+
 ## Overview
 
 **JS Utils Kit** is a compact and reliable library of essential JavaScript utility functions. It includes helpers for arrays, objects, numbers, promises, type checking, and more. Designed for performance and modularity, it integrates easily into JavaScript and TypeScript projects with minimal impact on bundle size.
