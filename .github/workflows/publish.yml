@@ -29,6 +29,9 @@ jobs:
 
           pnpm changeset version
 
+          git add .
+          git diff --cached --quiet || git commit -m "chore: version packages"
+
           echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
 
           pnpm changeset publish

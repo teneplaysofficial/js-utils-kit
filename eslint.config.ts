@@ -52,4 +52,10 @@ export default defineConfig([
   {
     ignores: ['README.md'],
   },
+  {
+    files: ['**/CHANGELOG.md'],
+    rules: {
+      'markdown/no-missing-label-refs': 'off',
+    },
+  },
 ]);
