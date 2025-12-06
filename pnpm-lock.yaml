@@ -4,6 +4,12 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+catalogs:
+  default:
+    archiver:
+      specifier: ^7.0.1
+      version: 7.0.1
+
 importers:
   .:
     dependencies:
@@ -109,6 +115,9 @@ importers:
       '@js-utils-kit/string':
         specifier: workspace:*
         version: link:../string
+      '@js-utils-kit/system':
+        specifier: workspace:*
+        version: link:../system
       '@js-utils-kit/types':
         specifier: workspace:*
         version: link:../types
@@ -144,6 +153,8 @@ importers:
       '@js-utils-kit/types':
         specifier: workspace:*
         version: link:../types
+
+  packages/system: {}
 
   packages/types: {}
 

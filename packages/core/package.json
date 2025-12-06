@@ -56,6 +56,7 @@
     "@js-utils-kit/number": "workspace:*",
     "@js-utils-kit/object": "workspace:*",
     "@js-utils-kit/string": "workspace:*",
+    "@js-utils-kit/system": "workspace:*",
     "@js-utils-kit/types": "workspace:*",
     "@js-utils-kit/valid": "workspace:*"
   }

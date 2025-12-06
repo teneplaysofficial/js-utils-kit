@@ -2,6 +2,7 @@
   "entryPoints": [
     "packages/valid/src/index.ts",
     "packages/types/src/index.ts",
+    "packages/system/src/index.ts",
     "packages/string/src/index.ts",
     "packages/object/src/index.ts",
     "packages/number/src/index.ts",
