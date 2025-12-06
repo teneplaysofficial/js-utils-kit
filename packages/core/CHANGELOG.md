@@ -1,5 +1,20 @@
 # @js-utils-kit/core
 
+## 1.1.0
+
+### Minor Changes
+
+- 7b0ec06: Add system utils lib
+
+### Patch Changes
+
+- 511c35a: Added missing `homepage` fields to package metadata
+- Updated dependencies [7b0ec06]
+- Updated dependencies [511c35a]
+  - @js-utils-kit/system@1.0.0
+  - @js-utils-kit/string@1.0.1
+  - @js-utils-kit/valid@1.0.1
+
 ## 1.0.0
 
 ### Major Changes

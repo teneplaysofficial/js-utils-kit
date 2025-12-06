@@ -1,5 +1,11 @@
 # @js-utils-kit/string
 
+## 1.0.1
+
+### Patch Changes
+
+- 511c35a: Added missing `homepage` fields to package metadata
+
 ## 1.0.0
 
 ### Major Changes
