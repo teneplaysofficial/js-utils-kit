@@ -6,6 +6,7 @@ _Modular JavaScript utilities with type support_
 [![codecov](https://codecov.io/github/teneplaysofficial/js-utils-kit/graph/badge.svg?token=9CEFGKSU2S)](https://github.com/TenEplaysOfficial/js-utils-kit)
 [![npm version](https://img.shields.io/npm/v/@js-utils-kit/core.svg?logo=npm&color=brightgreen)](https://www.npmjs.com/package/@js-utils-kit/core)
 [![Downloads](https://img.shields.io/npm/dt/@js-utils-kit/core?logo=npm)](https://www.npmjs.com/package/@js-utils-kit/core)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/teneplaysofficial/js-utils-kit/main.svg)](https://results.pre-commit.ci/latest/github/teneplaysofficial/js-utils-kit/main)
 
 ## Overview
 
