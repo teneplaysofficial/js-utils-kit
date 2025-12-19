@@ -1,5 +1,9 @@
 minimum_pre_commit_version: "3.6.0"
 
+ci:
+  autofix_prs: true
+  autoupdate_schedule: weekly
+
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v6.0.0
