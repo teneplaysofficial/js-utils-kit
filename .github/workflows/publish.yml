@@ -37,7 +37,7 @@ jobs:
           pnpm changeset publish
 
           git push --follow-tags
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v4
         with:
           path: ./docs
 
