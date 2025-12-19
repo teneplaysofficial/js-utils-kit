@@ -1,4 +1,4 @@
-minimum_pre_commit_version: "3.6.0"
+minimum_pre_commit_version: '3.6.0'
 
 ci:
   autofix_prs: true
@@ -22,9 +22,4 @@ repos:
         additional_dependencies:
           - prettier@3.6.2
         pass_filenames: true
-        args:
-          [
-            "--log-level=warn",
-            "--write",
-            "--ignore-path=.gitignore",
-          ]
+        args: ['--log-level=warn', '--write', '--ignore-path=.gitignore']
