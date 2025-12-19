@@ -9,16 +9,20 @@ repos:
       - id: check-json
       - id: check-yaml
 
+  - repo: https://github.com/pre-commit/mirrors-eslint
+    rev: v9.39.1
+    hooks:
+      - id: eslint
+        args: ["--fix"]
+        additional_dependencies:
+          - eslint@9.39.1
+          - typescript@5.9.3
+          - typescript-eslint@8.48.0
+
   - repo: local
     hooks:
       - id: prettier
         name: prettier
-        entry: pnpm prettier --write .
-        language: system
-        pass_filenames: false
-
-      - id: eslint
-        name: eslint
-        entry: pnpm eslint . --fix
+        entry: npx --no-install prettier --write .
         language: system
         pass_filenames: false
