@@ -11,7 +11,7 @@ body:
       value: |
         ## Utility Proposal Form
 
-        Thank you for your interest in improving `js-utils-kit`!  
+        Thank you for your interest in improving `js-utils-kit`!
         Use this form to propose a new utility function or enhancement.
 
   - type: input
