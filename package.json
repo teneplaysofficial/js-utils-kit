@@ -26,7 +26,7 @@
     "node": ">=22"
   },
   "type": "module",
-  "packageManager": "pnpm@10.20.0",
+  "packageManager": "pnpm@10.26.1",
   "scripts": {
     "prepare": "husky",
     "test": "turbo run test -- --coverage",
