@@ -23,3 +23,11 @@ repos:
           - prettier@3.6.2
         pass_filenames: true
         args: ['--log-level=warn', '--write', '--ignore-path=.gitignore']
+
+  - repo: local
+    hooks:
+      - id: pnpm-gen
+        name: pnpm gen
+        language: docker_image
+        entry: node:24-alpine sh -c "corepack enable pnpm && pnpm install --frozen-lockfile && pnpm gen"
+        pass_filenames: false
