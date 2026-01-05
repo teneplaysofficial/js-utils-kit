@@ -1,17 +1,24 @@
 name: Publish
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - main
 
 permissions:
   contents: write
+  issues: write
+  pull-requests: write
   id-token: write
   pages: write
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
   publish:
     runs-on: ubuntu-latest
     env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       NPM_CONFIG_PROVENANCE: true
     outputs:
@@ -24,19 +31,12 @@ jobs:
       - run: |
           pnpm build:docs
 
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+      - name: Create Release Pull Request or Publish to npm
+        uses: changesets/action@v1
+        with:
+          version: pnpm changeset version
+          publish: pnpm changeset publish
 
-          pnpm changeset version
-
-          git add .
-          git diff --cached --quiet || git commit -m "chore: version packages"
-
-          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
-
-          pnpm changeset publish
-
-          git push --follow-tags
       - uses: actions/upload-pages-artifact@v4
         with:
           path: ./docs

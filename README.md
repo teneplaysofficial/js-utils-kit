@@ -2,6 +2,7 @@
 
 _Modular JavaScript utilities with type support_
 
+[![Publish](https://github.com/teneplaysofficial/js-utils-kit/actions/workflows/publish.yml/badge.svg)](https://github.com/teneplaysofficial/js-utils-kit/actions/workflows/publish.yml)
 [![ci](https://github.com/teneplaysofficial/js-utils-kit/actions/workflows/ci.yml/badge.svg)](https://github.com/TenEplaysOfficial/js-utils-kit)
 [![codecov](https://codecov.io/github/teneplaysofficial/js-utils-kit/graph/badge.svg?token=9CEFGKSU2S)](https://github.com/TenEplaysOfficial/js-utils-kit)
 [![npm version](https://img.shields.io/npm/v/@js-utils-kit/core.svg?logo=npm&color=brightgreen)](https://www.npmjs.com/package/@js-utils-kit/core)
