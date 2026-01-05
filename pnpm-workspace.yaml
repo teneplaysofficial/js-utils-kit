@@ -1,5 +1,6 @@
 packages:
   - 'packages/*'
+  - 'js-utils-kit'
 
 catalog:
   archiver: ^7.0.1
