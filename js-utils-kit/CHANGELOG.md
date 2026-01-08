@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.0
+
+### Major Changes
+
+- [`798daaf`](https://github.com/teneplaysofficial/js-utils-kit/commit/798daaf91b4cb6bbbff6cee7daaedef34f177e55) Thanks [@teneplaysofficial](https://github.com/teneplaysofficial)! - Allow access to `@js-utils-kit/core` through a single `js-utils-kit` installation.
+
 ## [0.5.4](https://github.com/teneplaysofficial/js-utils-kit/compare/v0.5.3...v0.5.4) (2025-10-13)
 
 ### Bug Fixes
