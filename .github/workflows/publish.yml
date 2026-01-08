@@ -30,6 +30,7 @@ jobs:
       - uses: ./.github/actions/setup
       - run: |
           pnpm build:docs
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
 
       - name: Create Release Pull Request or Publish to npm
         uses: changesets/action@v1
