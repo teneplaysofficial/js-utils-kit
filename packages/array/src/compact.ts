@@ -1,3 +1,5 @@
+import { Falsy } from '@js-utils-kit/types';
+
 /**
  * Removes all falsy values from an array.
  *
@@ -19,6 +21,6 @@ export function compact<T>(
    * A list of elements to compact
    */
   array: readonly T[],
-): T[] {
-  return array.filter(Boolean);
+): Exclude<T, Falsy>[] {
+  return array.filter(Boolean) as Exclude<T, Falsy>[];
 }

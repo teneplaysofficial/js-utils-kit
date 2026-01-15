@@ -23,7 +23,8 @@ export function chunk<T>(
   size: number = 1,
 ): T[][] {
   if (size <= 0) throw new RangeError('chunk size must be greater than 0');
-  if (array.length === 0) return [];
 
-  return [array.slice(0, size), ...chunk(array.slice(size), size)];
+  return Array.from({ length: Math.ceil(array.length / size) }, (_, i) =>
+    array.slice(i * size, i * size + size),
+  );
 }

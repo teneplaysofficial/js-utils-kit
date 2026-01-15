@@ -4,10 +4,10 @@
  * @returns The last element, or `undefined` if the array is empty
  *
  * @example
- * last([1, 2, 3]);
+ * lastElement([1, 2, 3]);
  * // 3
  *
- * last([]);
+ * lastElement([]);
  * // undefined
  */
 export function lastElement<T>(

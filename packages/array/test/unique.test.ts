@@ -21,12 +21,10 @@ it('sorts unique values when sort is true', () => {
 });
 
 it('uses a custom compare function when provided', () => {
-  const users = [
-    { id: 3, name: 'Charlie' },
-    { id: 1, name: 'Alice' },
-    { id: 2, name: 'Bob' },
-    { id: 1, name: 'Alice' },
-  ];
+  const user1 = { id: 1, name: 'Alice' };
+  const user2 = { id: 2, name: 'Bob' };
+  const user3 = { id: 3, name: 'Charlie' };
+  const users = [user3, user1, user2, user1];
 
   const result = unique(users, {
     sort: true,
