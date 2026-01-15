@@ -8,7 +8,8 @@
     "packages/number/src/index.ts",
     "packages/fs/src/index.ts",
     "packages/env/src/index.ts",
-    "packages/charset/src/index.ts"
+    "packages/charset/src/index.ts",
+    "packages/array/src/index.ts"
   ],
   "readme": "./packages/core/README.md",
   "gitRemote": "origin",

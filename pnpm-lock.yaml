@@ -102,10 +102,15 @@ importers:
         specifier: workspace:*
         version: link:../packages/core
 
+  packages/array: {}
+
   packages/charset: {}
 
   packages/core:
     dependencies:
+      '@js-utils-kit/array':
+        specifier: workspace:*
+        version: link:../array
       '@js-utils-kit/charset':
         specifier: workspace:*
         version: link:../charset
