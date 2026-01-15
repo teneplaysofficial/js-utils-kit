@@ -22,5 +22,7 @@ export function compact<T>(
    */
   array: readonly T[],
 ): Exclude<T, Falsy>[] {
-  return array.filter(Boolean) as Exclude<T, Falsy>[];
+  return array.filter(
+    (value): value is Exclude<T, Falsy> => Boolean(value) && !Number.isNaN(value),
+  );
 }
