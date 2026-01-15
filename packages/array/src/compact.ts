@@ -19,6 +19,6 @@ export function compact<T>(
    * A list of elements to compact
    */
   array: readonly T[],
-) {
+): T[] {
   return array.filter(Boolean);
 }
