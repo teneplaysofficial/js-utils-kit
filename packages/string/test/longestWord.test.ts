@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest';
-import { longestWord } from '../src/longestWord';
+import { longestWord } from '../src';
 
 it('returns the longest word when unique', () => {
   expect(longestWord('js utils kit')).toBe('utils');

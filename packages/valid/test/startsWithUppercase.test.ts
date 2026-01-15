@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest';
-import { startsWithUppercase } from '../src/startsWithUppercase';
+import { startsWithUppercase } from '../src';
 
 it('returns true if string starts with uppercase', () => {
   expect(startsWithUppercase('Hello')).toBe(true);

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { trim } from '../src/trim';
+import { trim } from '../src';
 
 describe('trim.all', () => {
   it('trims both ends', () => {

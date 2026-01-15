@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest';
-import { alphanumeric } from '../src/alphanumeric';
+import { alphanumeric } from '../src';
 
 it('all returns combined lowercase, uppercase, and digits', () => {
   const result = alphanumeric();

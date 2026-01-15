@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest';
-import { countChars } from '../src/countChars';
+import { countChars } from '../src';
 
 it('should count total characters', () => {
   expect(countChars('js-utils-kit')).toBe(1);

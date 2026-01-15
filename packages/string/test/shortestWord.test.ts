@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest';
-import { shortestWord } from '../src/shortestWord';
+import { shortestWord } from '../src';
 
 it('returns the shortest word when unique', () => {
   expect(shortestWord('js utils kit')).toBe('js');

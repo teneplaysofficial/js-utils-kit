@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest';
-import { countSubstring } from '../src/countSubstring';
+import { countSubstring } from '../src';
 
 it('should count occurrences of a substring', () => {
   expect(countSubstring('lololol', 'lo')).toBe(3);

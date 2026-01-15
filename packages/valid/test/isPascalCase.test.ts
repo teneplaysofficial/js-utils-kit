@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest';
-import { isPascalCase } from '../src/isPascalCase';
+import { isPascalCase } from '../src';
 
 it('returns true for PascalCase strings', () => {
   expect(isPascalCase('MyVariable')).toBe(true);

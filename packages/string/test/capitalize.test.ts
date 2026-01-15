@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest';
-import { capitalize } from '../src/capitalize';
+import { capitalize } from '../src';
 
 it('capitalizes the first lowercase letter', () => {
   expect(capitalize('hello')).toBe('Hello');

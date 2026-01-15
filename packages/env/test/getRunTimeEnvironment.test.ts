@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest';
-import { getRunTimeEnvironment } from '../src/getRunTimeEnvironment';
+import { getRunTimeEnvironment } from '../src';
 import { Environment } from '@js-utils-kit/types';
 
 it('returns Environment.UNKNOWN for unrecognized value', () => {

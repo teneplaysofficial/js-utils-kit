@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest';
-import { uppercase } from '../src/uppercase';
+import { uppercase } from '../src';
 
 it('uppercase returns 26 uppercase letters', () => {
   const result = uppercase();

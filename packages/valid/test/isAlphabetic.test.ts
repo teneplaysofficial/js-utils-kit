@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest';
-import { isAlphabetic } from '../src/isAlphabetic';
+import { isAlphabetic } from '../src';
 
 it('validates alphabetic strings', () => {
   expect(isAlphabetic('Test')).toBe(true);

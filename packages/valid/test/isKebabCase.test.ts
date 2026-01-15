@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest';
-import { isKebabCase } from '../src/isKebabCase';
+import { isKebabCase } from '../src';
 
 it('returns true for kebab-case strings', () => {
   expect(isKebabCase('my-variable')).toBe(true);

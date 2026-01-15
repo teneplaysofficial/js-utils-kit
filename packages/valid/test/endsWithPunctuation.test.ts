@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest';
-import { endsWithPunctuation } from '../src/endsWithPunctuation';
+import { endsWithPunctuation } from '../src';
 
 it('returns true if string ends with punctuation', () => {
   expect(endsWithPunctuation('Hello.')).toBe(true);

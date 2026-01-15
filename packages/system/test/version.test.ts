@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest';
-import { NODE_MAJOR_VERSION, NODE_VERSION, RUNTIME_VERSIONS } from '../src/version';
+import { NODE_MAJOR_VERSION, NODE_VERSION, RUNTIME_VERSIONS } from '../src';
 
 it('should return node version', () => {
   expect(NODE_VERSION).toBeTypeOf('string');

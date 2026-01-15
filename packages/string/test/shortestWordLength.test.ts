@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest';
-import { shortestWordLength } from '../src/shortestWordLength';
+import { shortestWordLength } from '../src';
 
 it('returns 0 for an empty string', () => {
   expect(shortestWordLength('')).toBe(0);

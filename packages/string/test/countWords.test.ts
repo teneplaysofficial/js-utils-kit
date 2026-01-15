@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest';
-import { countWords } from '../src/countWords';
+import { countWords } from '../src';
 
 it('should count words separated by spaces', () => {
   expect(countWords('js utils kit')).toBe(3);

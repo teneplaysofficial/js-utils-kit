@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest';
-import { isSnakeCase } from '../src/isSnakeCase';
+import { isSnakeCase } from '../src';
 
 it('returns true for snake_case strings', () => {
   expect(isSnakeCase('my_variable')).toBe(true);

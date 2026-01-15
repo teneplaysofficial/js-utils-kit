@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest';
-import { isUndefinedOrNull } from '../src/isUndefinedOrNull';
+import { isUndefinedOrNull } from '../src';
 
 it('returns true for null or undefined', () => {
   expect(isUndefinedOrNull(null)).toBe(true);

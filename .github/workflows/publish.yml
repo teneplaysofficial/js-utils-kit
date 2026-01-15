@@ -23,6 +23,7 @@ jobs:
       NPM_CONFIG_PROVENANCE: true
     outputs:
       docs-folder: docs
+      published: ${{ steps.changesets.outputs.published }}
     steps:
       - uses: actions/checkout@v6
         with:
@@ -33,6 +34,7 @@ jobs:
           echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
 
       - name: Create Release Pull Request or Publish to npm
+        id: changesets
         uses: changesets/action@v1
         with:
           version: pnpm changeset version
@@ -44,6 +46,7 @@ jobs:
 
   deploy:
     needs: publish
+    if: needs.publish.outputs.published == 'true'
     runs-on: ubuntu-latest
     environment:
       name: github-pages

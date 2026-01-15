@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest';
-import { isCamelCase } from '../src/isCamelCase';
+import { isCamelCase } from '../src';
 
 it('returns true for camelCase strings', () => {
   expect(isCamelCase('myVariable')).toBe(true);

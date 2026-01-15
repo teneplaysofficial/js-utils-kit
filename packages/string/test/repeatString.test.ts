@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest';
-import { repeatString } from '../src/repeatString';
+import { repeatString } from '../src';
 
 it('repeats string n times', () => {
   expect(repeatString('ab', 3)).toBe('ababab');

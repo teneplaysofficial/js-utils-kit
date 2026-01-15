@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest';
-import { isEmail } from '../src/isEmail';
+import { isEmail } from '../src';
 
 it('validates correct emails', () => {
   expect(isEmail('user@example.com')).toBe(true);

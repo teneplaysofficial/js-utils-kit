@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest';
-import { isNonEmptyString } from '../src/isNonEmptyString';
+import { isNonEmptyString } from '../src';
 
 it('checks non-empty strings with and without trim', () => {
   expect(isNonEmptyString('hello')).toBe(true);

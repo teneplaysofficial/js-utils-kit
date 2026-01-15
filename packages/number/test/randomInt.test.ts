@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest';
-import { randomInt } from '../src/randomInt';
+import { randomInt } from '../src';
 
 it('returns a number within the given range (inclusive)', () => {
   for (let i = 0; i < 100; i++) {

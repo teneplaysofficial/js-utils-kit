@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest';
-import { isUpperCase } from '../src/isUpperCase';
+import { isUpperCase } from '../src';
 
 it('returns true for all-uppercase strings', () => {
   expect(isUpperCase('HELLO')).toBe(true);

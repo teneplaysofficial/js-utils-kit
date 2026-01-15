@@ -1,5 +1,5 @@
 import { afterEach, expect, it } from 'vitest';
-import { isTest } from '../src/isTest';
+import { isTest } from '../src';
 import { Environment } from '@js-utils-kit/types';
 
 const originalEnv = process.env.NODE_ENV;

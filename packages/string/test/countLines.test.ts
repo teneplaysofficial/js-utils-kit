@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest';
-import { countLines } from '../src/countLines';
+import { countLines } from '../src';
 
 it('should count lines separated by \\n', () => {
   expect(countLines('a\nb\nc')).toBe(3);

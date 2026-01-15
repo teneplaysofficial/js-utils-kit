@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest';
-import { truncate } from '../src/truncate';
+import { truncate } from '../src';
 
 it('truncates and appends suffix if string is too long', () => {
   expect(truncate('This is a long text', 10)).toBe('This is a ...');

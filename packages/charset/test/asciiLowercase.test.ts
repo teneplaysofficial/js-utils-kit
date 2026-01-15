@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest';
-import { lowercase } from '../src/lowercase';
+import { lowercase } from '../src';
 
 it('lowercase returns 26 lowercase letters', () => {
   const result = lowercase();

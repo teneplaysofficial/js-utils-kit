@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest';
-import { randomFloat } from '../src/randomFloat';
+import { randomFloat } from '../src';
 
 it('returns a float within the given range (min inclusive, max exclusive)', () => {
   for (let i = 0; i < 100; i++) {

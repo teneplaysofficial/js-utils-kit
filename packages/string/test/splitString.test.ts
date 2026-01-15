@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest';
-import { splitString } from '../src/splitString';
+import { splitString } from '../src';
 
 it('should split by whitespace', () => {
   expect(splitString('a b  c')).toEqual(['a', 'b', 'c']);

@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest';
-import { stripSymbols } from '../src/stripSymbols';
+import { stripSymbols } from '../src';
 
 it('removes symbols by default', () => {
   expect(stripSymbols('hello-world!')).toBe('helloworld');

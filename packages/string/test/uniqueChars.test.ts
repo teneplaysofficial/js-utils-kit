@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest';
-import { uniqueChars } from '../src/uniqueChars';
+import { uniqueChars } from '../src';
 
 it('should return unique characters', () => {
   expect(uniqueChars('banana').sort()).toEqual(['a', 'b', 'n']);

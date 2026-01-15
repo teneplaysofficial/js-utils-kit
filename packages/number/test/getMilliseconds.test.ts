@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest';
-import { getMilliseconds } from '../src/getMilliseconds';
+import { getMilliseconds } from '../src';
 
 it('returns 0 when no arguments are given', () => {
   expect(getMilliseconds()).toBe(0);

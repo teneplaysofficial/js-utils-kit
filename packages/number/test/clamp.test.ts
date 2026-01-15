@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest';
-import { clamp } from '../src/clamp';
+import { clamp } from '../src';
 
 it('clamps number within range', () => {
   expect(clamp(5, 1, 10)).toBe(5);

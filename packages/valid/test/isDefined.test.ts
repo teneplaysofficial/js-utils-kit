@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest';
-import { isDefined } from '../src/isDefined';
+import { isDefined } from '../src';
 
 it('returns true for non-null/undefined values', () => {
   expect(isDefined(0)).toBe(true);

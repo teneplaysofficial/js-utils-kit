@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest';
-import { longestWordLength } from '../src/longestWordLength';
+import { longestWordLength } from '../src';
 
 it('returns the length of the longest word', () => {
   expect(longestWordLength('js utils kit')).toBe(5);

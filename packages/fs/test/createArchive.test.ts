@@ -1,7 +1,7 @@
 import fs from 'fs';
 import archiver from 'archiver';
 import { beforeEach, expect, it, Mock, vi } from 'vitest';
-import { createArchive } from '../src/createArchive';
+import { createArchive } from '../src';
 
 vi.mock('fs');
 vi.mock('archiver');

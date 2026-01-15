@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { mergeObj } from '../src/mergeObj';
+import { mergeObj } from '../src';
 
 describe('mergeObj', () => {
   it('should deeply merge plain objects', () => {

@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest';
-import { hasWhitespace } from '../src/hasWhitespace';
+import { hasWhitespace } from '../src';
 
 it('returns true if string contains any whitespace', () => {
   expect(hasWhitespace('hello world')).toBe(true);

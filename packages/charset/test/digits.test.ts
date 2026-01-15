@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest';
-import { digits } from '../src/digits';
+import { digits } from '../src';
 
 it('digits returns 10 numeric characters', () => {
   const result = digits();

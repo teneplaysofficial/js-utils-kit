@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest';
-import { padLeft } from '../src/padLeft';
+import { padLeft } from '../src';
 
 it('pads string on the left with spaces by default', () => {
   expect(padLeft('42', 5)).toBe('   42');
