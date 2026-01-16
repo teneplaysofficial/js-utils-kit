@@ -32,6 +32,7 @@ jobs:
       - run: |
           pnpm build:docs
           echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+          pnpm release:sync
 
       - name: Create Release Pull Request or Publish to npm
         id: changesets
