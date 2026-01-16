@@ -114,7 +114,7 @@ if (!didChange) {
 const frontmatter =
   '---\n' +
   [...packageBumps.entries()].map(([name, type]) => `"${name}": ${type}`).join('\n') +
-  '\n---\n';
+  '\n---\n\nDependency sync\n';
 
 const filePath = path.join(changesetDir, `sync-deps-${Date.now()}.md`);
 
