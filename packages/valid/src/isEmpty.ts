@@ -47,7 +47,7 @@ export function isEmpty<T>(
     return value.size === 0;
   }
 
-  if (typeof value === 'object') {
+  if (Object.prototype.toString.call(value) === '[object Object]') {
     return Object.keys(value).length === 0;
   }
 

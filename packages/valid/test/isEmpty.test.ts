@@ -67,6 +67,6 @@ it('returns false for functions', () => {
   expect(isEmpty(() => {})).toBe(false);
 });
 
-it('returns true for dates', () => {
-  expect(isEmpty(new Date())).toBe(true);
+it('returns false for dates', () => {
+  expect(isEmpty(new Date())).toBe(false);
 });

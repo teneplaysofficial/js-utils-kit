@@ -8,6 +8,7 @@ it('returns true for false', () => {
 it('returns true for zero', () => {
   expect(isFalsy(0)).toBe(true);
   expect(isFalsy(-0)).toBe(true);
+  expect(isFalsy(0n)).toBe(true);
 });
 
 it('returns true for empty string', () => {

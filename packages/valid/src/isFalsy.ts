@@ -34,5 +34,5 @@ export function isFalsy<T>(
    */
   value: T,
 ): boolean {
-  return !value || Number.isNaN(value);
+  return !value;
 }

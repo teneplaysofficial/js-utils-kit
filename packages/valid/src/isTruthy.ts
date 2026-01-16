@@ -34,5 +34,5 @@ export function isTruthy<T>(
    */
   value: T,
 ): boolean {
-  return Boolean(value) && !Number.isNaN(value);
+  return Boolean(value);
 }

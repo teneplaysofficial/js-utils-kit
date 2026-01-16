@@ -4,6 +4,7 @@ import { isTruthy } from '../src';
 it('returns false for falsy primitives', () => {
   expect(isTruthy(false)).toBe(false);
   expect(isTruthy(0)).toBe(false);
+  expect(isTruthy(0n)).toBe(false);
   expect(isTruthy('')).toBe(false);
   expect(isTruthy(null)).toBe(false);
   expect(isTruthy(undefined)).toBe(false);
