@@ -1,5 +1,16 @@
 # @js-utils-kit/string
 
+## 1.1.0
+
+### Minor Changes
+
+- Dependency sync
+
+### Patch Changes
+
+- Updated dependencies [[`b0534bb`](https://github.com/teneplaysofficial/js-utils-kit/commit/b0534bb9494679de4e5c3916c0824b91d9bab237)]:
+  - @js-utils-kit/types@1.1.0
+
 ## 1.0.1
 
 ### Patch Changes
