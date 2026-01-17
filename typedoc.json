@@ -1,15 +1,16 @@
 {
   "entryPoints": [
-    "packages/valid/src/index.ts",
-    "packages/types/src/index.ts",
-    "packages/system/src/index.ts",
-    "packages/string/src/index.ts",
-    "packages/object/src/index.ts",
-    "packages/number/src/index.ts",
-    "packages/fs/src/index.ts",
-    "packages/env/src/index.ts",
-    "packages/charset/src/index.ts",
-    "packages/array/src/index.ts"
+    "packages/@js-utils-kit/valid/src/index.ts",
+    "packages/@js-utils-kit/types/src/index.ts",
+    "packages/@js-utils-kit/system/src/index.ts",
+    "packages/@js-utils-kit/string/src/index.ts",
+    "packages/@js-utils-kit/object/src/index.ts",
+    "packages/@js-utils-kit/number/src/index.ts",
+    "packages/@js-utils-kit/fs/src/index.ts",
+    "packages/@js-utils-kit/env/src/index.ts",
+    "packages/@js-utils-kit/core/src/index.ts",
+    "packages/@js-utils-kit/charset/src/index.ts",
+    "packages/@js-utils-kit/array/src/index.ts"
   ],
   "readme": "./packages/core/README.md",
   "gitRemote": "origin",

@@ -50,7 +50,7 @@ function buildPackageJson(name, description) {
   pkg.dependencies = {};
 
   if (pkg.repository) {
-    pkg.repository.directory = `packages/${name}`;
+    pkg.repository.directory = `packages/@js-utils-kit/${name}`;
   }
 
   return pkg;
@@ -85,7 +85,7 @@ async function createLibrary() {
 
   exitOnCancel(description);
 
-  const folder = join('packages', name);
+  const folder = join('packages', '@js-utils-kit', name);
 
   mkdirSync(folder, { recursive: true });
 
@@ -98,7 +98,7 @@ async function createLibrary() {
     join(folder, 'tsconfig.json'),
     JSON.stringify(
       {
-        extends: '../../tsconfig.base.json',
+        extends: '../../../tsconfig.base.json',
         include: ['src', 'test'],
       },
       null,

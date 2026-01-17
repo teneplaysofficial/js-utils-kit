@@ -5,7 +5,7 @@ import { EOL } from 'node:os';
 
 const IGNORE_FOLDERS = ['core'];
 const entries = await Array.fromAsync(
-  glob('packages/*/src/index.ts', {
+  glob('packages/@js-utils-kit/*/src/index.ts', {
     exclude: IGNORE_FOLDERS.map((f) => `packages/${f}`),
   }),
 );

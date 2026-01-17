@@ -13,7 +13,7 @@ try {
    *  @type {Set<CliFlags>}
    */
   const args = new Set(process.argv.slice(2));
-  const corePath = 'packages/core/package.json';
+  const corePath = 'packages/@js-utils-kit/core/package.json';
 
   // Verify core contains all internal packages
 
@@ -21,8 +21,8 @@ try {
    * @type {string[]}
    */
   const pkgNames = await Array.fromAsync(
-    glob('packages/*', {
-      exclude: ['*/core'],
+    glob('packages/@js-utils-kit/*', {
+      exclude: ['packages/@js-utils-kit/core'],
     }),
   );
   const lib_names = pkgNames.map((p) => `@js-utils-kit/${basename(p)}`);

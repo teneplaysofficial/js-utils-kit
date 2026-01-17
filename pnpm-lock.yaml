@@ -102,21 +102,15 @@ importers:
         specifier: ^4.0.14
         version: 4.0.16(@types/node@24.10.7)(jiti@2.6.1)(yaml@2.8.2)
 
-  js-utils-kit:
-    dependencies:
-      '@js-utils-kit/core':
-        specifier: workspace:*
-        version: link:../packages/core
-
-  packages/array:
+  packages/@js-utils-kit/array:
     dependencies:
       '@js-utils-kit/types':
         specifier: workspace:*
         version: link:../types
 
-  packages/charset: {}
+  packages/@js-utils-kit/charset: {}
 
-  packages/core:
+  packages/@js-utils-kit/core:
     dependencies:
       '@js-utils-kit/array':
         specifier: workspace:*
@@ -124,6 +118,9 @@ importers:
       '@js-utils-kit/charset':
         specifier: workspace:*
         version: link:../charset
+      '@js-utils-kit/core':
+        specifier: workspace:*
+        version: 'link:'
       '@js-utils-kit/env':
         specifier: workspace:*
         version: link:../env
@@ -149,13 +146,13 @@ importers:
         specifier: workspace:*
         version: link:../valid
 
-  packages/env:
+  packages/@js-utils-kit/env:
     dependencies:
       '@js-utils-kit/types':
         specifier: workspace:*
         version: link:../types
 
-  packages/fs:
+  packages/@js-utils-kit/fs:
     dependencies:
       '@js-utils-kit/types':
         specifier: workspace:*
@@ -164,29 +161,35 @@ importers:
         specifier: 'catalog:'
         version: 7.0.1
 
-  packages/number:
+  packages/@js-utils-kit/number:
     dependencies:
       '@js-utils-kit/types':
         specifier: workspace:*
         version: link:../types
 
-  packages/object: {}
+  packages/@js-utils-kit/object: {}
 
-  packages/string:
+  packages/@js-utils-kit/string:
     dependencies:
       '@js-utils-kit/types':
         specifier: workspace:*
         version: link:../types
 
-  packages/system: {}
+  packages/@js-utils-kit/system: {}
 
-  packages/types: {}
+  packages/@js-utils-kit/types: {}
 
-  packages/valid:
+  packages/@js-utils-kit/valid:
     dependencies:
       '@js-utils-kit/types':
         specifier: workspace:*
         version: link:../types
+
+  packages/js-utils-kit:
+    dependencies:
+      '@js-utils-kit/core':
+        specifier: workspace:*
+        version: link:../@js-utils-kit/core
 
 packages:
   '@babel/generator@7.28.5':

@@ -3,7 +3,7 @@ import { glob, readFile } from 'node:fs/promises';
 import { EOL } from 'node:os';
 import { basename, join } from 'node:path';
 
-for await (const dir of glob('packages/*')) {
+for await (const dir of glob('packages/@js-utils-kit/*')) {
   const output = createWriteStream(join(dir, 'src', 'index.ts'));
   const pkg = JSON.parse(await readFile(join(dir, 'package.json'), 'utf-8'));
 
