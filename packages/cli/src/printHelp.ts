@@ -2,7 +2,7 @@ import ansi from 'ansilory';
 import { pkg } from './constant';
 import { examples, options } from './flags';
 
-const binName = pkg.name.split(/[@/]/)[1];
+const binName = Object.keys(pkg.bin)[0];
 const maxFlagLength = Math.max(...options.map((opt) => opt.flags.length));
 
 export default function printHelp() {

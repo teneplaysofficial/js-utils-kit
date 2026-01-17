@@ -57,6 +57,7 @@
     "build": "tsdown"
   },
   "dependencies": {
+    "@js-utils-kit/cli": "workspace:*",
     "@js-utils-kit/core": "workspace:*"
   }
 }

@@ -28,9 +28,6 @@ importers:
       figlet:
         specifier: ^1.9.4
         version: 1.9.4
-      js-utils-kit:
-        specifier: link:C:/Users/tchin/AppData/Local/pnpm/global/5/node_modules/js-utils-kit
-        version: link:C:/Users/tchin/AppData/Local/pnpm/global/5/node_modules/js-utils-kit
     devDependencies:
       '@changesets/changelog-github':
         specifier: ^0.5.2
@@ -119,6 +116,9 @@ importers:
 
   js-utils-kit:
     dependencies:
+      '@js-utils-kit/cli':
+        specifier: workspace:*
+        version: link:../packages/cli
       '@js-utils-kit/core':
         specifier: workspace:*
         version: link:../packages/core

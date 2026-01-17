@@ -61,8 +61,7 @@
   "dependencies": {
     "ansilory": "^2.0.1",
     "archiver": "^7.0.1",
-    "figlet": "^1.9.4",
-    "js-utils-kit": "link:C:/Users/tchin/AppData/Local/pnpm/global/5/node_modules/js-utils-kit"
+    "figlet": "^1.9.4"
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.5.2",
