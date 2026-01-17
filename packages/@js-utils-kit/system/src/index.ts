@@ -1,3 +1,8 @@
+/**
+ * System utilities
+ *
+ * @module system
+ */
 export * from './cpu';
 export * from './info';
 export * from './memory';

@@ -7,6 +7,14 @@ for await (const dir of glob('packages/@js-utils-kit/*')) {
   const output = createWriteStream(join(dir, 'src', 'index.ts'));
   const pkg = JSON.parse(await readFile(join(dir, 'package.json'), 'utf-8'));
 
+  output.write(
+    `/**
+* ${pkg.description}
+*
+* @module ${pkg.name.split('/')[1]}
+*/` + EOL,
+  );
+
   for (const [dep] of Object.entries(pkg.dependencies ?? {}).sort(([a], [b]) =>
     a.localeCompare(b),
   )) {

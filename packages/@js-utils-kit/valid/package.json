@@ -8,7 +8,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/teneplaysofficial/js-utils-kit",
-    "directory": "packages/valid"
+    "directory": "packages/@js-utils-kit/valid"
   },
   "bugs": {
     "url": "https://github.com/teneplaysofficial/js-utils-kit/issues"

@@ -1,3 +1,8 @@
+/**
+ * String utilities
+ *
+ * @module string
+ */
 export * from '@js-utils-kit/types';
 export * from './capitalize';
 export * from './countChars';

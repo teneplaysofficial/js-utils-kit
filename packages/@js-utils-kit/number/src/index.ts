@@ -1,3 +1,8 @@
+/**
+ * Number utilities
+ *
+ * @module number
+ */
 export * from '@js-utils-kit/types';
 export * from './clamp';
 export * from './getMilliseconds';

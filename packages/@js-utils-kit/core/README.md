@@ -59,8 +59,8 @@ Full documentation is available at [js-utils.js.org](https://js-utils.js.org/mod
 
 ## Contributing
 
-We welcome contributions whether it's fixing bugs, adding utilities, improving docs, or writing tests. See [CONTRIBUTING.md](../../CONTRIBUTING.md) for guidelines and join our [GitHub Discussions](https://github.com/teneplaysofficial/js-utils-kit/discussions) to share ideas or propose features.
+We welcome contributions whether it's fixing bugs, adding utilities, improving docs, or writing tests. See [CONTRIBUTING.md](../../../CONTRIBUTING.md) for guidelines and join our [GitHub Discussions](https://github.com/teneplaysofficial/js-utils-kit/discussions) to share ideas or propose features.
 
 ## License
 
-Released under the [MIT License](../../LICENSE)
+Released under the [MIT License](../../../LICENSE)

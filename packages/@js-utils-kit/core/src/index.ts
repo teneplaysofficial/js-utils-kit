@@ -1,3 +1,8 @@
+/**
+ * Essential JavaScript helpers
+ *
+ * @module core
+ */
 export * from '@js-utils-kit/array';
 export * from '@js-utils-kit/charset';
 export * from '@js-utils-kit/env';

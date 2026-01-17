@@ -1,3 +1,8 @@
+/**
+ * Type Declarations
+ *
+ * @module types
+ */
 export * from './ArchiveFormat';
 export * from './ArchiverOptions';
 export * from './CreateArchiveOptions';
