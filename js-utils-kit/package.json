@@ -40,6 +40,10 @@
   "files": [
     "dist"
   ],
+  "bin": {
+    "js-utils-kit": "./node_modules/@js-utils-kit/cli/dist/index.mjs",
+    "utils": "./node_modules/@js-utils-kit/cli/dist/index.mjs"
+  },
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.cts",

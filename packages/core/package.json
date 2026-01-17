@@ -37,6 +37,10 @@
     "node": ">=22"
   },
   "type": "module",
+  "bin": {
+    "js-utils-kit": "./node_modules/@js-utils-kit/cli/dist/index.mjs",
+    "utils": "./node_modules/@js-utils-kit/cli/dist/index.mjs"
+  },
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.cts",
@@ -52,6 +56,7 @@
   "dependencies": {
     "@js-utils-kit/array": "workspace:*",
     "@js-utils-kit/charset": "workspace:*",
+    "@js-utils-kit/cli": "workspace:*",
     "@js-utils-kit/env": "workspace:*",
     "@js-utils-kit/fs": "workspace:*",
     "@js-utils-kit/number": "workspace:*",
