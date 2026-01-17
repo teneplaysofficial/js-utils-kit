@@ -1,4 +1,5 @@
 {
+  "logLevel": "Verbose",
   "entryPoints": [
     "packages/@js-utils-kit/valid/src/index.ts",
     "packages/@js-utils-kit/types/src/index.ts",
@@ -12,6 +13,8 @@
     "packages/@js-utils-kit/charset/src/index.ts",
     "packages/@js-utils-kit/array/src/index.ts"
   ],
+  "projectDocuments": ["packages/juk-cli/README.md"],
+  "entryPointStrategy": "expand",
   "readme": "./packages/@js-utils-kit/core/README.md",
   "gitRemote": "origin",
   "gitRevision": "main",

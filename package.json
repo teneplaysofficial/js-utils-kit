@@ -59,7 +59,9 @@
     "*.{js,ts,json,md}": "eslint --fix"
   },
   "dependencies": {
-    "archiver": "^7.0.1"
+    "ansilory": "^2.0.1",
+    "archiver": "^7.0.1",
+    "figlet": "^1.9.4"
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.5.2",
@@ -72,6 +74,7 @@
     "@eslint/markdown": "^7.5.1",
     "@manypkg/get-packages": "^3.1.0",
     "@types/archiver": "^7.0.0",
+    "@types/figlet": "^1.7.0",
     "@types/node": "^24.10.1",
     "@vitest/coverage-v8": "^4.0.14",
     "dts-bundle-generator": "^9.5.1",

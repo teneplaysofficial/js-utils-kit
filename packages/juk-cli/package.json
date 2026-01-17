@@ -1,7 +1,8 @@
 {
-  "name": "@js-utils-kit/array",
+  "name": "juk-cli",
+  "displayName": "JS Utils Kit CLI",
   "version": "0.0.0",
-  "description": "Array utilities",
+  "description": "command line interface utilities",
   "private": false,
   "license": "MIT",
   "author": {
@@ -9,11 +10,11 @@
     "email": "136729116+TenEplaysOfficial@users.noreply.github.com",
     "url": "https://tene.vercel.app"
   },
-  "homepage": "https://js-utils.js.org",
+  "homepage": "https://github.com/teneplaysofficial/js-utils-kit/tree/main/packages/juk-cli#readme",
   "repository": {
     "type": "git",
     "url": "https://github.com/teneplaysofficial/js-utils-kit",
-    "directory": "packages/@js-utils-kit/array"
+    "directory": "packages/juk-cli"
   },
   "bugs": {
     "url": "https://github.com/teneplaysofficial/js-utils-kit/issues"
@@ -25,20 +26,18 @@
     "node": ">=22"
   },
   "type": "module",
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.cts",
-  "exports": {
-    ".": {
-      "require": "./dist/index.cjs",
-      "import": "./dist/index.mjs"
-    }
+  "bin": {
+    "juk-cli": "dist/index.mjs",
+    "juk": "dist/index.mjs",
+    "js-utils-kit": "dist/index.mjs",
+    "utils": "dist/index.mjs"
   },
   "scripts": {
-    "build": "tsdown",
-    "test": "vitest run"
+    "build": "tsdown"
   },
   "dependencies": {
-    "@js-utils-kit/types": "workspace:*"
+    "@js-utils-kit/env": "workspace:*",
+    "ansilory": "catalog:",
+    "figlet": "catalog:"
   }
 }
