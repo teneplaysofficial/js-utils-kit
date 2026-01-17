@@ -3,7 +3,6 @@ import { pkg } from './constant';
 import figlet from 'figlet';
 
 /* eslint-disable @typescript-eslint/no-floating-promises */
- 
 
 export default function printBanner() {
   return new Promise<void>((resolve, reject) => {
