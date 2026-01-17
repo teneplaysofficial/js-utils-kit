@@ -12,7 +12,7 @@
     "packages/@js-utils-kit/charset/src/index.ts",
     "packages/@js-utils-kit/array/src/index.ts"
   ],
-  "readme": "./packages/core/README.md",
+  "readme": "./packages/@js-utils-kit/core/README.md",
   "gitRemote": "origin",
   "gitRevision": "main",
   "githubPages": true,
