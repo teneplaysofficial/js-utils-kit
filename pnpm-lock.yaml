@@ -28,6 +28,9 @@ importers:
       figlet:
         specifier: ^1.9.4
         version: 1.9.4
+      sylog:
+        specifier: ^2.1.0
+        version: 2.1.0
     devDependencies:
       '@changesets/changelog-github':
         specifier: ^0.5.2
@@ -92,9 +95,6 @@ importers:
       rollup:
         specifier: ^4.53.3
         version: 4.55.1
-      sylog:
-        specifier: ^2.1.0
-        version: 2.1.0
       tsdown:
         specifier: ^0.19.0
         version: 0.19.0(typescript@5.9.3)
