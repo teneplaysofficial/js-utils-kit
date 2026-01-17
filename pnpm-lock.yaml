@@ -118,9 +118,6 @@ importers:
       '@js-utils-kit/charset':
         specifier: workspace:*
         version: link:../charset
-      '@js-utils-kit/core':
-        specifier: workspace:*
-        version: 'link:'
       '@js-utils-kit/env':
         specifier: workspace:*
         version: link:../env
