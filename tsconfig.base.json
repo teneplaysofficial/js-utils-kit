@@ -9,7 +9,7 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "importHelpers": true,
-    "skipLibCheck": true,
+    "skipLibCheck": false,
     "types": ["vitest", "node"]
   }
 }
