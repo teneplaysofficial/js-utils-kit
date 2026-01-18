@@ -1,3 +1,7 @@
-export * from '@js-utils-kit/types';
+/**
+ * Environment utilities
+ *
+ * @module env
+ */
 export * from './getRunTimeEnvironment';
 export * from './isCI';

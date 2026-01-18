@@ -1,4 +1,8 @@
-export * from '@js-utils-kit/types';
+/**
+ * Array utilities
+ *
+ * @module array
+ */
 export * from './chunk';
 export * from './compact';
 export * from './lastElement';

@@ -1,4 +1,8 @@
-export * from '@js-utils-kit/types';
+/**
+ * Number utilities
+ *
+ * @module number
+ */
 export * from './clamp';
 export * from './getMilliseconds';
 export * from './isEven';

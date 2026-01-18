@@ -1,4 +1,8 @@
-export * from '@js-utils-kit/types';
+/**
+ * Validation utilities
+ *
+ * @module valid
+ */
 export * from './endsWithPunctuation';
 export * from './hasWhitespace';
 export * from './isAlphabetic';

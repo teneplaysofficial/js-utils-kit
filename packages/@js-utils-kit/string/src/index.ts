@@ -1,4 +1,8 @@
-export * from '@js-utils-kit/types';
+/**
+ * String utilities
+ *
+ * @module string
+ */
 export * from './capitalize';
 export * from './countChars';
 export * from './countFrequencies';

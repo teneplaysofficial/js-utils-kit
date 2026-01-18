@@ -1,2 +1,6 @@
-export * from '@js-utils-kit/types';
+/**
+ * File system utilities
+ *
+ * @module fs
+ */
 export * from './createArchive';
