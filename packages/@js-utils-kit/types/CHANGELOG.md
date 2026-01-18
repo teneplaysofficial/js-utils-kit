@@ -1,5 +1,13 @@
 # @js-utils-kit/types
 
+## 1.1.0
+
+### Minor Changes
+
+- [#74](https://github.com/teneplaysofficial/js-utils-kit/pull/74) [`b0534bb`](https://github.com/teneplaysofficial/js-utils-kit/commit/b0534bb9494679de4e5c3916c0824b91d9bab237) Thanks [@teneplaysofficial](https://github.com/teneplaysofficial)! - Add a `Falsy` type representing all JavaScript falsy values.
+
+- Dependency sync
+
 ## 1.0.0
 
 ### Major Changes
