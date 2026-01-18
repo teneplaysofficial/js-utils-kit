@@ -1,7 +1,6 @@
 import { glob, readFile, writeFile } from 'node:fs/promises';
 import { EOL } from 'node:os';
 import { basename } from 'node:path';
-import sylog from 'sylog';
 import pkg from '../package.json' with { type: 'json' };
 
 try {
@@ -42,16 +41,16 @@ try {
   if (!args.has('-f')) {
     if (missing.length) {
       safeExit = false;
-      sylog.warn('Missing packages in core:', missing.join(', '));
-      sylog.info('Run with "-f" to automatically add missing packages');
+      console.warn('Missing packages in core:', missing.join(', '));
+      console.info('Run with "-f" to automatically add missing packages');
     }
 
     if (engineIssues.length) {
       safeExit = false;
-      sylog.warn(
+      console.warn(
         `Engine mismatch in ${engineIssues.map((d) => d.pkgPath.split(/[/\\]/)[1]).join(', ')}`,
       );
-      sylog.info('Run with "-f" to automatically fix engines field in all packages');
+      console.info('Run with "-f" to automatically fix engines field in all packages');
     }
   }
 
@@ -73,7 +72,7 @@ try {
       ) + EOL,
     );
 
-    sylog.success('Core package.json updated successfully!');
+    console.success('Core package.json updated successfully!');
 
     for (const { pkgPath, pkgJson } of engineIssues) {
       await writeFile(
@@ -87,11 +86,11 @@ try {
           2,
         ) + EOL,
       );
-      sylog.success(`Updated engines in ${pkgPath.split(/[/\\]/)[1]}`);
+      console.success(`Updated engines in ${pkgPath.split(/[/\\]/)[1]}`);
     }
   }
 
   process.exit(safeExit ? 0 : 1);
 } catch (error) {
-  sylog.error(error.message);
+  console.error(error.message);
 }

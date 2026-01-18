@@ -37,7 +37,6 @@
   },
   "dependencies": {
     "@js-utils-kit/env": "workspace:*",
-    "ansilory": "catalog:",
     "figlet": "catalog:"
   }
 }

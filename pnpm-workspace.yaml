@@ -2,6 +2,5 @@ packages:
   - packages/**
 
 catalog:
-  ansilory: ^2.0.1
   archiver: ^7.0.1
   figlet: ^1.9.4
