@@ -1,5 +1,11 @@
 # juk-cli
 
+## 0.1.1
+
+### Patch Changes
+
+- [`ea5b7bd`](https://github.com/teneplaysofficial/js-utils-kit/commit/ea5b7bd8a36cee854d2236161399d1624dca782b) Thanks [@teneplaysofficial](https://github.com/teneplaysofficial)! - Fix missing CLI banner and shebang
+
 ## 0.1.0
 
 ### Minor Changes
