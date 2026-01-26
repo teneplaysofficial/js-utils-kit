@@ -110,6 +110,8 @@ importers:
 
   packages/@js-utils-kit/charset: {}
 
+  packages/@js-utils-kit/constants: {}
+
   packages/@js-utils-kit/core:
     dependencies:
       '@js-utils-kit/array':
@@ -118,6 +120,9 @@ importers:
       '@js-utils-kit/charset':
         specifier: workspace:*
         version: link:../charset
+      '@js-utils-kit/constants':
+        specifier: workspace:*
+        version: link:../constants
       '@js-utils-kit/env':
         specifier: workspace:*
         version: link:../env
@@ -174,7 +179,11 @@ importers:
 
   packages/@js-utils-kit/system: {}
 
-  packages/@js-utils-kit/types: {}
+  packages/@js-utils-kit/types:
+    dependencies:
+      '@js-utils-kit/constants':
+        specifier: workspace:*
+        version: link:../constants
 
   packages/@js-utils-kit/valid:
     dependencies:

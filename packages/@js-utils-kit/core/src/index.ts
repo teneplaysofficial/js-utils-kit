@@ -5,6 +5,7 @@
  */
 export * from '@js-utils-kit/array';
 export * from '@js-utils-kit/charset';
+export * from '@js-utils-kit/constants';
 export * from '@js-utils-kit/env';
 export * from '@js-utils-kit/fs';
 export * from '@js-utils-kit/number';
