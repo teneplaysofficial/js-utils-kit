@@ -3,11 +3,13 @@
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
-      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "inputs": ["$TURBO_DEFAULT$"],
+      "env": ["NODE_ENV"],
       "outputs": ["dist/**"]
     },
     "test": {
       "inputs": ["$TURBO_DEFAULT$"],
+      "env": ["NODE_ENV"],
       "cache": true
     }
   }
