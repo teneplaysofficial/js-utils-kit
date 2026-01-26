@@ -10,7 +10,7 @@ const maxFlagLength = Math.max(...options.map((opt) => opt.flags.length));
 
 export default function printHelp() {
   console.log(`
-'Usage:' ${binName} [options]
+Usage: ${binName} [options]
 
 Options:
 ${options.map((opt) => `  ${opt.flags.padEnd(maxFlagLength)}  ${opt.desc}`).join('\n')}
