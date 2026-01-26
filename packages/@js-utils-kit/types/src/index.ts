@@ -9,5 +9,6 @@ export * from './CreateArchiveOptions';
 export * from './Environment';
 export * from './Falsy';
 export * from './Hour';
+export * from './HttpStatusCode';
 export * from './MinuteOrSecond';
 export * from './Trim';
