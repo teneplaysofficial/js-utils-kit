@@ -1,0 +1,42 @@
+{
+  "name": "juk-cli",
+  "displayName": "JS Utils Kit CLI",
+  "version": "0.0.0",
+  "description": "command line interface utilities",
+  "private": false,
+  "license": "MIT",
+  "author": {
+    "name": "Sriman",
+    "email": "136729116+TenEplaysOfficial@users.noreply.github.com",
+    "url": "https://tene.vercel.app"
+  },
+  "homepage": "https://github.com/teneplaysofficial/js-utils-kit/tree/main/packages/juk-cli#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/teneplaysofficial/js-utils-kit",
+    "directory": "packages/juk-cli"
+  },
+  "bugs": {
+    "url": "https://github.com/teneplaysofficial/js-utils-kit/issues"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "type": "module",
+  "bin": {
+    "juk-cli": "dist/index.mjs",
+    "juk": "dist/index.mjs",
+    "js-utils-kit": "dist/index.mjs",
+    "utils": "dist/index.mjs"
+  },
+  "scripts": {
+    "build": "tsdown"
+  },
+  "dependencies": {
+    "@js-utils-kit/env": "workspace:*",
+    "figlet": "catalog:"
+  }
+}

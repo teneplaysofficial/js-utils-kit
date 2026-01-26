@@ -9,6 +9,9 @@ catalogs:
     archiver:
       specifier: ^7.0.1
       version: 7.0.1
+    figlet:
+      specifier: ^1.9.4
+      version: 1.10.0
 
 importers:
   .:
@@ -196,6 +199,15 @@ importers:
       '@js-utils-kit/core':
         specifier: workspace:*
         version: link:../@js-utils-kit/core
+
+  packages/juk-cli:
+    dependencies:
+      '@js-utils-kit/env':
+        specifier: workspace:*
+        version: link:../@js-utils-kit/env
+      figlet:
+        specifier: 'catalog:'
+        version: 1.10.0
 
 packages:
   '@babel/generator@8.0.0-beta.4':
@@ -2253,6 +2265,14 @@ packages:
     peerDependenciesMeta:
       picomatch:
         optional: true
+
+  figlet@1.10.0:
+    resolution:
+      {
+        integrity: sha512-aktIwEZZ6Gp9AWdMXW4YCi0J2Ahuxo67fNJRUIWD81w8pQ0t9TS8FFpbl27ChlTLF06VkwjDesZSzEVzN75rzA==,
+      }
+    engines: { node: '>= 17.0.0' }
+    hasBin: true
 
   file-entry-cache@8.0.0:
     resolution:
@@ -5415,6 +5435,10 @@ snapshots:
   fdir@6.5.0(picomatch@4.0.3):
     optionalDependencies:
       picomatch: 4.0.3
+
+  figlet@1.10.0:
+    dependencies:
+      commander: 14.0.2
 
   file-entry-cache@8.0.0:
     dependencies:

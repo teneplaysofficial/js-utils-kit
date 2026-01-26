@@ -3,3 +3,4 @@ packages:
 
 catalog:
   archiver: ^7.0.1
+  figlet: ^1.9.4
