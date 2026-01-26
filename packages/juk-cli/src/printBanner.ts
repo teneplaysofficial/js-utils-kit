@@ -1,9 +1,9 @@
 import { pkg } from './constant';
 import figlet from 'figlet';
 
-export default async function printBanner() {
+export default function printBanner() {
   try {
-    const data = await figlet.text(pkg.displayName || pkg.name, { font: 'Slant' });
+    const data = figlet.textSync(pkg.displayName || pkg.name, { font: 'Slant' });
 
     if (!data) {
       console.error('Failed to generate ASCII banner');

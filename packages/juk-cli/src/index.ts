@@ -32,7 +32,7 @@ if (args.has('--is-ci')) {
   exit(isCI ? 0 : 1);
 }
 
-await printBanner();
+printBanner();
 
 printHelp();
 exit(0);
