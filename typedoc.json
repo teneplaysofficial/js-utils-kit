@@ -9,6 +9,7 @@
     "packages/@js-utils-kit/fs/src/index.ts",
     "packages/@js-utils-kit/env/src/index.ts",
     "packages/@js-utils-kit/core/src/index.ts",
+    "packages/@js-utils-kit/constants/src/index.ts",
     "packages/@js-utils-kit/charset/src/index.ts",
     "packages/@js-utils-kit/array/src/index.ts"
   ],

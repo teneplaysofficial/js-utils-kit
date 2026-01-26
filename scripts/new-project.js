@@ -99,6 +99,10 @@ async function createLibrary() {
     JSON.stringify(
       {
         extends: '../../../tsconfig.base.json',
+        compilerOptions: {
+          composite: true,
+          rootDir: 'src',
+        },
         include: ['src', 'test'],
       },
       null,

@@ -52,6 +52,7 @@
   "dependencies": {
     "@js-utils-kit/array": "workspace:*",
     "@js-utils-kit/charset": "workspace:*",
+    "@js-utils-kit/constants": "workspace:*",
     "@js-utils-kit/env": "workspace:*",
     "@js-utils-kit/fs": "workspace:*",
     "@js-utils-kit/number": "workspace:*",
