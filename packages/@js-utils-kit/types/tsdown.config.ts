@@ -6,6 +6,7 @@ export default defineConfig([
     format: ['esm', 'cjs'],
     minify: true,
     dts: true,
+    inlineOnly: false,
     exports: {
       customExports(pkg) {
         delete pkg['./package.json'];
