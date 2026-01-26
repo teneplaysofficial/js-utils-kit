@@ -79,7 +79,11 @@ export const HTTP_STATUS = {
   /** Resource not modified */
   NOT_MODIFIED: 304,
 
-  /** Use proxy (deprecated) */
+  /**
+   * Use proxy.
+   *
+   * @deprecated
+   */
   USE_PROXY: 305,
 
   /** Temporary redirect */
