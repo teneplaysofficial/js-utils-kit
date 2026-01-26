@@ -17,7 +17,7 @@ importers:
   .:
     dependencies:
       archiver:
-        specifier: ^7.0.1
+        specifier: 'catalog:'
         version: 7.0.1
       figlet:
         specifier: 'catalog:'

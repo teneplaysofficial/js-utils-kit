@@ -10,7 +10,9 @@ const rawArgs = process.argv.slice(2);
 const invalidFlags = rawArgs.filter((arg) => !knownFlags.includes(arg));
 
 if (invalidFlags.length) {
-  console.error(`Unknown flag(s): ${invalidFlags.join(', ')}`);
+  console.error(
+    `Unknown flag(s): ${invalidFlags.join(', ')}\nRun 'juk-cli --help' for usage information.`,
+  );
   exit(1);
 }
 
