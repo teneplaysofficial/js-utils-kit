@@ -1,5 +1,16 @@
 # @js-utils-kit/array
 
+## 0.2.0
+
+### Minor Changes
+
+- Dependency sync
+
+### Patch Changes
+
+- Updated dependencies [[`25a7c22`](https://github.com/teneplaysofficial/js-utils-kit/commit/25a7c224f6078da2847990a6e57e463c09a65a3e)]:
+  - @js-utils-kit/types@1.2.0
+
 ## 0.1.0
 
 ### Minor Changes

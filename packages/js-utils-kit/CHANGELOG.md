@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.2.0
+
+### Minor Changes
+
+- Dependency sync
+
+### Patch Changes
+
+- Updated dependencies [[`b6af799`](https://github.com/teneplaysofficial/js-utils-kit/commit/b6af79973aa30da62987930472c9d4e76eed0a13)]:
+  - @js-utils-kit/core@1.3.0
+
 ## 1.1.0
 
 ### Minor Changes
