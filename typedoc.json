@@ -1,18 +1,7 @@
 {
-  "entryPoints": [
-    "packages/@js-utils-kit/valid/src/index.ts",
-    "packages/@js-utils-kit/types/src/index.ts",
-    "packages/@js-utils-kit/system/src/index.ts",
-    "packages/@js-utils-kit/string/src/index.ts",
-    "packages/@js-utils-kit/object/src/index.ts",
-    "packages/@js-utils-kit/number/src/index.ts",
-    "packages/@js-utils-kit/fs/src/index.ts",
-    "packages/@js-utils-kit/env/src/index.ts",
-    "packages/@js-utils-kit/core/src/index.ts",
-    "packages/@js-utils-kit/constants/src/index.ts",
-    "packages/@js-utils-kit/charset/src/index.ts",
-    "packages/@js-utils-kit/array/src/index.ts"
-  ],
+  "entryPoints": ["packages/@js-utils-kit/core/src/index.ts"],
+  "entryPointStrategy": "expand",
+  "sort": ["alphabetical"],
   "readme": "./packages/@js-utils-kit/core/README.md",
   "gitRemote": "origin",
   "gitRevision": "main",
