@@ -15,6 +15,13 @@ catalogs:
 
 importers:
   .:
+    dependencies:
+      archiver:
+        specifier: 'catalog:'
+        version: 7.0.1
+      figlet:
+        specifier: 'catalog:'
+        version: 1.10.0
     devDependencies:
       '@changesets/changelog-github':
         specifier: ^0.5.2
