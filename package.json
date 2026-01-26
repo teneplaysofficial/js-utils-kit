@@ -59,7 +59,8 @@
     "*.{js,ts,json,md}": "eslint --fix"
   },
   "dependencies": {
-    "archiver": "^7.0.1"
+    "archiver": "catalog:",
+    "figlet": "catalog:"
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.5.2",

@@ -10,7 +10,7 @@ catalogs:
       specifier: ^7.0.1
       version: 7.0.1
     figlet:
-      specifier: ^1.9.4
+      specifier: ^1.10.0
       version: 1.10.0
 
 importers:
@@ -19,6 +19,9 @@ importers:
       archiver:
         specifier: ^7.0.1
         version: 7.0.1
+      figlet:
+        specifier: 'catalog:'
+        version: 1.10.0
     devDependencies:
       '@changesets/changelog-github':
         specifier: ^0.5.2
