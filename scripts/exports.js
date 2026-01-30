@@ -1,33 +1,61 @@
 import { createWriteStream } from 'node:fs';
-import { glob, readFile } from 'node:fs/promises';
+import { glob, readFile, stat } from 'node:fs/promises';
 import { EOL } from 'node:os';
 import { basename, join } from 'node:path';
 
-for await (const dir of glob('packages/@js-utils-kit/*')) {
-  const output = createWriteStream(join(dir, 'src', 'index.ts'));
-  const pkg = JSON.parse(await readFile(join(dir, 'package.json'), 'utf-8'));
+const normalize = (p) => p.replace(/\\/g, '/');
+const sortPaths = (a, b) => normalize(a).localeCompare(normalize(b));
 
-  output.write(
-    `/**
-* ${pkg.description}
-*
-* @module ${pkg.name.split('/')[1]}
-*/` + EOL,
-  );
+async function generateIndex(dir, isRoot = false) {
+  const output = createWriteStream(join(dir, 'index.ts'));
 
-  for (const [dep] of Object.entries(pkg.dependencies ?? {}).sort(([a], [b]) =>
-    a.localeCompare(b),
-  )) {
-    if (dep.startsWith('@js-utils-kit/') && dir.endsWith('core')) {
-      output.write(`export * from '${dep}';` + EOL);
+  if (isRoot) {
+    const pkg = JSON.parse(await readFile(join(dir, '..', 'package.json'), 'utf-8'));
+
+    output.write(
+      `/**
+ * ${pkg.description}
+ *
+ * @module ${pkg.name.split('/')[1]}
+ */${EOL}`,
+    );
+
+    if (pkg.name === '@js-utils-kit/core') {
+      for (const dep of Object.keys(pkg.dependencies ?? {}).sort(sortPaths)) {
+        if (dep.startsWith('@js-utils-kit/') && dir.endsWith('src')) {
+          output.write(`export * from '${dep}';${EOL}`);
+        }
+      }
     }
   }
 
-  for (const file of (
-    await Array.fromAsync(glob(`${dir}/src/*`, { exclude: ['**/index.ts'] }))
-  ).sort((a, b) => a.localeCompare(b))) {
-    output.write(`export * from './${basename(file, '.ts')}';` + EOL);
+  const entries = await Array.fromAsync(glob(join(dir, '*'), { exclude: ['**/index.ts'] }));
+
+  const folders = [];
+  const files = [];
+
+  for (const entry of entries) {
+    const s = await stat(entry);
+    if (s.isDirectory()) folders.push(entry);
+    else if (entry.endsWith('.ts')) files.push(entry);
   }
 
-  output.end();
+  // folders first
+  for (const folder of folders.sort(sortPaths)) {
+    const name = basename(folder);
+    output.write(`export * from './${name}/index';${EOL}`);
+    await generateIndex(folder);
+  }
+
+  // files second
+  for (const file of files.sort(sortPaths)) {
+    output.write(`export * from './${basename(file, '.ts')}';${EOL}`);
+  }
+
+  await new Promise((resolve) => output.end(resolve));
+}
+
+// Generate index files for all packages
+for await (const pkgDir of glob('packages/@js-utils-kit/*')) {
+  await generateIndex(join(pkgDir, 'src'), true);
 }
