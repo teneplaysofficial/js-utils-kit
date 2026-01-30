@@ -1,5 +1,16 @@
 # juk-cli
 
+## 0.2.0
+
+### Minor Changes
+
+- Dependency sync
+
+### Patch Changes
+
+- Updated dependencies [[`480c790`](https://github.com/teneplaysofficial/js-utils-kit/commit/480c79079c93f5a4b273ca9844eb165df861643f)]:
+  - @js-utils-kit/env@1.4.0
+
 ## 0.1.1
 
 ### Patch Changes

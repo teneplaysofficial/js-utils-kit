@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.3.0
+
+### Minor Changes
+
+- Dependency sync
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @js-utils-kit/core@1.4.0
+
 ## 1.2.0
 
 ### Minor Changes
