@@ -28,7 +28,7 @@ export * from './isSnakeCase';
 export * from './isString';
 export * from './isTest';
 export * from './isTruthy';
+export * from './isURL';
 export * from './isUndefinedOrNull';
 export * from './isUpperCase';
-export * from './isURL';
 export * from './startsWithUppercase';
