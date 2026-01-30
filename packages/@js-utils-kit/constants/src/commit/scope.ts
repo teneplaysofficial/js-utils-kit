@@ -1,15 +1,13 @@
 /**
  * Map of supported commit scopes and their descriptions.
  *
- * @format
- * Scopes provide additional context for a commit, typically used as: `type(scope): message`
+ * @remarks
+ * - Scopes provide additional context for a commit, typically used as: `type(scope): message`
+ * - Keys represent the allowed scope identifiers.
+ * - Values describe the area of the codebase the scope applies to.
  *
  * @example
  * `feat(api): add pagination support`
- *
- * @remarks
- * - Keys represent the allowed scope identifiers.
- * - Values describe the area of the codebase the scope applies to.
  */
 export const COMMIT_SCOPES = {
   accessibility: 'Accessibility improvements (a11y)',
