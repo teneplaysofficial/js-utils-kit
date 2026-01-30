@@ -119,7 +119,11 @@ importers:
 
   packages/@js-utils-kit/charset: {}
 
-  packages/@js-utils-kit/constants: {}
+  packages/@js-utils-kit/constants:
+    dependencies:
+      '@js-utils-kit/types':
+        specifier: workspace:*
+        version: link:../types
 
   packages/@js-utils-kit/core:
     dependencies:
@@ -188,11 +192,7 @@ importers:
 
   packages/@js-utils-kit/system: {}
 
-  packages/@js-utils-kit/types:
-    dependencies:
-      '@js-utils-kit/constants':
-        specifier: workspace:*
-        version: link:../constants
+  packages/@js-utils-kit/types: {}
 
   packages/@js-utils-kit/valid:
     dependencies:

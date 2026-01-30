@@ -37,7 +37,5 @@
   "scripts": {
     "build": "tsdown"
   },
-  "dependencies": {
-    "@js-utils-kit/constants": "workspace:*"
-  }
+  "dependencies": {}
 }
