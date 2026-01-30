@@ -108,15 +108,15 @@ export const COMMIT_SCOPES = {
 } as const;
 
 /**
- * List of all supported commit scope values.
- *
- * Useful for validation, autocomplete, or CLI prompts.
- */
-export const COMMIT_SCOPE_VALUES = Object.keys(COMMIT_SCOPES) as CommitScope[];
-
-/**
  * Union type of all supported commit scopes.
  *
  * Derived from the keys of {@link COMMIT_SCOPES}.
  */
 export type CommitScope = keyof typeof COMMIT_SCOPES;
+
+/**
+ * List of all supported commit scope values.
+ *
+ * Useful for validation, autocomplete, or CLI prompts.
+ */
+export const COMMIT_SCOPE_VALUES = Object.keys(COMMIT_SCOPES) as CommitScope[];

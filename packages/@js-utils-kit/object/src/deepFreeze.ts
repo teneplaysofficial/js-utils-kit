@@ -107,7 +107,7 @@ export function deepFreeze<T>(
    * @internal
    */
   visited = new WeakSet<object>(),
-) {
+): Readonly<T> {
   if (obj === null || (typeof obj !== 'object' && typeof obj !== 'function')) {
     return obj;
   }

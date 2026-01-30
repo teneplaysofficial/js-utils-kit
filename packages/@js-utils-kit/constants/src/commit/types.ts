@@ -495,13 +495,6 @@ export const COMMIT_TYPES = {
 } as const satisfies Record<string, CommitTypeMeta>;
 
 /**
- * List of all supported commit type values.
- *
- * Useful for validation, selection prompts, and tooling.
- */
-export const COMMIT_TYPE_VALUES = Object.keys(COMMIT_TYPES) as CommitType[];
-
-/**
  * Union type of all supported commit types.
  *
  * Includes standard types (feat, fix, etc.) and the special `BREAKING CHANGE` marker.
@@ -509,3 +502,10 @@ export const COMMIT_TYPE_VALUES = Object.keys(COMMIT_TYPES) as CommitType[];
  * Derived from the keys of {@link COMMIT_TYPES}.
  */
 export type CommitType = keyof typeof COMMIT_TYPES;
+
+/**
+ * List of all supported commit type values.
+ *
+ * Useful for validation, selection prompts, and tooling.
+ */
+export const COMMIT_TYPE_VALUES = Object.keys(COMMIT_TYPES) as CommitType[];

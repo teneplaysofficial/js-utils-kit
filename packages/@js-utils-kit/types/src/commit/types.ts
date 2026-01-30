@@ -11,7 +11,7 @@ export interface CommitTypeMeta {
    * - feat
    * - fix
    * - chore
-   * - BREAKING CHANGE).
+   * - BREAKING CHANGE.
    */
   type: string;
 
