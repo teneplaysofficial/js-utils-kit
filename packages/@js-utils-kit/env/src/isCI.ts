@@ -16,13 +16,11 @@ const KEYS = [
   'BUILDKITE',
   'CF_BUILD_ID',
   'CF_PAGES',
-  'CI',
   'CI_XCODE_PROJECT',
   'CIRCLECI',
   'CIRRUS_CI',
   'CM_BUILD_ID',
   'CODEBUILD_BUILD_ARN',
-  'CONTINUOUS_INTEGRATION',
   'DRONE',
   'DSARI',
   'EARTHLY_CI',
@@ -39,7 +37,6 @@ const KEYS = [
   'MAGNUM',
   'NETLIFY',
   'NEVERCODE',
-  'NODE',
   'NOW_BUILDER',
   'PROW_JOB_ID',
   'RELEASE_BUILD_ID',
@@ -59,18 +56,33 @@ const KEYS = [
   'XCS',
 ] as const;
 
+/** Generic CI flags (can be set by tools like npx) */
+const GENERIC_KEYS = ['CI', 'CONTINUOUS_INTEGRATION'] as const;
+
 /** CI provider identifiers exposed via the `CI_NAME` */
 const NAMES = ['codeship', 'sourcehut', 'woodpecker'] as const;
 
-const check = (key: string) =>
-  key in env && env[key] != null && env[key] !== '0' && env[key].toLowerCase() !== 'false';
+const check = (key: string) => {
+  const value = env[key] ?? env[key.toUpperCase()] ?? env[key.toLowerCase()];
+
+  return value != null && value !== '0' && value.toLowerCase() !== 'false';
+};
+
+const hasProviderKey = KEYS.some(check);
 
 /**
  * Determines whether the current runtime environment is a Continuous Integration (CI) environment.
  *
- * Detection is performed by:
- * 1. Checking for known CI-specific environment variables
- * 2. Checking value-based CI identifiers via `CI_NAME`
+ * Detection is conservative to avoid false positives in local development.
+ * It works as follows:
+ *
+ * 1. Immediately returns `true` if a known CI provider environment variable is present
+ *    (e.g. GitHub Actions, GitLab CI, CircleCI, etc.).
+ * 2. If only generic CI flags (such as `CI` or `CONTINUOUS_INTEGRATION`) are present,
+ *    they are considered valid **only when** backed by a real CI provider signal
+ *    or a known `CI_NAME` identifier.
+ *
+ * This prevents tools like `npx`, npm, or local shells from incorrectly causing CI detection while preserving correct behavior in real CI environments.
  *
  * @example
  * ```ts
@@ -79,11 +91,13 @@ const check = (key: string) =>
  * }
  * ```
  *
- * @returns `true` if running inside a CI environment
+ * @returns `true` if running inside a CI environment, otherwise `false`.
  */
 export const isCI =
-  KEYS.some(check) ||
-  (typeof env.CI_NAME === 'string' &&
-    NAMES.includes(env.CI_NAME.toLowerCase() as (typeof NAMES)[number]));
+  hasProviderKey ||
+  (GENERIC_KEYS.some(check) &&
+    (hasProviderKey ||
+      (typeof env.CI_NAME === 'string' &&
+        NAMES.includes(env.CI_NAME.toLowerCase() as (typeof NAMES)[number]))));
 
 export default isCI;
