@@ -21,9 +21,7 @@ async function generateIndex(dir, isRoot = false) {
     );
 
     if (pkg.name === '@js-utils-kit/core') {
-      for (const [dep] of Object.entries(pkg.dependencies ?? {}).sort(([a], [b]) =>
-        a.localeCompare(b, 'en'),
-      )) {
+      for (const dep of Object.keys(pkg.dependencies ?? {}).sort(sortPaths)) {
         if (dep.startsWith('@js-utils-kit/') && dir.endsWith('src')) {
           output.write(`export * from '${dep}';${EOL}`);
         }
@@ -42,21 +40,22 @@ async function generateIndex(dir, isRoot = false) {
     else if (entry.endsWith('.ts')) files.push(entry);
   }
 
-  // folders
+  // folders first
   for (const folder of folders.sort(sortPaths)) {
     const name = basename(folder);
     output.write(`export * from './${name}/index';${EOL}`);
     await generateIndex(folder);
   }
 
-  // files
+  // files second
   for (const file of files.sort(sortPaths)) {
     output.write(`export * from './${basename(file, '.ts')}';${EOL}`);
   }
 
-  output.end();
+  await new Promise((resolve) => output.end(resolve));
 }
 
+// Generate index files for all packages
 for await (const pkgDir of glob('packages/@js-utils-kit/*')) {
   await generateIndex(join(pkgDir, 'src'), true);
 }
