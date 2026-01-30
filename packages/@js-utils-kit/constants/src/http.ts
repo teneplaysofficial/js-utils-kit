@@ -1,3 +1,5 @@
+import { HttpStatusCode } from '@js-utils-kit/types';
+
 /**
  * List of supported HTTP request methods.
  */
@@ -214,4 +216,4 @@ export const HTTP_STATUS = {
 
   /** Network authentication required */
   NETWORK_AUTHENTICATION_REQUIRED: 511,
-} as const;
+} as const satisfies Record<string, HttpStatusCode>;

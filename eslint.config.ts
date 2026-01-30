@@ -1,4 +1,3 @@
-import path from 'path';
 import { fileURLToPath } from 'url';
 import js from '@eslint/js';
 import globals from 'globals';
@@ -25,7 +24,7 @@ export default defineConfig([
     files: ['**/*.{ts,mts,cts}'],
     languageOptions: {
       parserOptions: {
-        project: path.resolve(process.cwd(), './tsconfig.base.json'),
+        project: ['./tsconfig.base.json', './packages/**/*/tsconfig.json'],
         tsconfigRootDir: process.cwd(),
       },
     },
@@ -55,6 +54,13 @@ export default defineConfig([
   {
     files: ['**/CHANGELOG.md'],
     rules: {
+      'markdown/no-missing-label-refs': 'off',
+    },
+  },
+  {
+    files: ['.changeset/**/*.md'],
+    rules: {
+      'markdown/heading-increment': 'off',
       'markdown/no-missing-label-refs': 'off',
     },
   },

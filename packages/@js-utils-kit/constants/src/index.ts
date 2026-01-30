@@ -3,6 +3,7 @@
  *
  * @module constants
  */
+export * from './commit/index';
 export * from './charset';
 export * from './http';
 export * from './math';
