@@ -1,0 +1,1360 @@
+{
+  "generatedAt": "2/4/2026, 4:39:59 PM",
+  "summary": {
+    "totalExports": 147,
+    "deprecatedExports": 0,
+    "classExports": 0,
+    "functionExports": 65,
+    "variableExports": 71,
+    "typeExports": 10,
+    "valueExports": 136,
+    "totalPackages": 11
+  },
+  "exports": {
+    "@js-utils-kit/array": [
+      {
+        "name": "chunk",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/array/src/chunk.ts",
+        "line": 15,
+        "column": 240
+      },
+      {
+        "name": "compact",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/array/src/compact.ts",
+        "line": 19,
+        "column": 383
+      },
+      {
+        "name": "lastElement",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/array/src/lastElement.ts",
+        "line": 13,
+        "column": 208
+      },
+      {
+        "name": "unique",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/array/src/unique.ts",
+        "line": 31,
+        "column": 680
+      }
+    ],
+    "@js-utils-kit/charset": [
+      {
+        "name": "alphanumeric",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/charset/src/alphanumeric.ts",
+        "line": 15,
+        "column": 367
+      },
+      {
+        "name": "digits",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/charset/src/digits.ts",
+        "line": 11,
+        "column": 178
+      },
+      {
+        "name": "lowercase",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/charset/src/lowercase.ts",
+        "line": 11,
+        "column": 194
+      },
+      {
+        "name": "uppercase",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/charset/src/uppercase.ts",
+        "line": 11,
+        "column": 194
+      }
+    ],
+    "@js-utils-kit/constants": [
+      {
+        "name": "LOWERCASE_ALPHABET",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/charset.ts",
+        "line": 4,
+        "column": 39
+      },
+      {
+        "name": "UPPERCASE_ALPHABET",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/charset.ts",
+        "line": 9,
+        "column": 143
+      },
+      {
+        "name": "DIGITS",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/charset.ts",
+        "line": 14,
+        "column": 239
+      },
+      {
+        "name": "ALPHANUMERIC",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/charset.ts",
+        "line": 19,
+        "column": 312
+      },
+      {
+        "name": "HTTP_METHODS",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/http.ts",
+        "line": 6,
+        "column": 106
+      },
+      {
+        "name": "HTTP_STATUS",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/http.ts",
+        "line": 26,
+        "column": 369
+      },
+      {
+        "name": "PI",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/math.ts",
+        "line": 4,
+        "column": 62
+      },
+      {
+        "name": "TAU",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/math.ts",
+        "line": 9,
+        "column": 132
+      },
+      {
+        "name": "E",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/math.ts",
+        "line": 14,
+        "column": 225
+      },
+      {
+        "name": "SQRT_2",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/math.ts",
+        "line": 19,
+        "column": 280
+      },
+      {
+        "name": "SQRT_1_2",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/math.ts",
+        "line": 24,
+        "column": 348
+      },
+      {
+        "name": "LN_2",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/math.ts",
+        "line": 31,
+        "column": 448
+      },
+      {
+        "name": "LN_10",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/math.ts",
+        "line": 38,
+        "column": 542
+      },
+      {
+        "name": "LOG2_E",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/math.ts",
+        "line": 45,
+        "column": 650
+      },
+      {
+        "name": "LOG10_E",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/math.ts",
+        "line": 54,
+        "column": 789
+      },
+      {
+        "name": "MAX_SAFE_INT",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/numbers.ts",
+        "line": 4,
+        "column": 33
+      },
+      {
+        "name": "MIN_SAFE_INT",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/numbers.ts",
+        "line": 9,
+        "column": 120
+      },
+      {
+        "name": "MAX_VALUE",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/numbers.ts",
+        "line": 14,
+        "column": 215
+      },
+      {
+        "name": "MIN_VALUE",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/numbers.ts",
+        "line": 19,
+        "column": 310
+      },
+      {
+        "name": "EPSILON",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/numbers.ts",
+        "line": 24,
+        "column": 420
+      },
+      {
+        "name": "POSITIVE_INFINITY",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/numbers.ts",
+        "line": 29,
+        "column": 496
+      },
+      {
+        "name": "NEGATIVE_INFINITY",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/numbers.ts",
+        "line": 34,
+        "column": 576
+      },
+      {
+        "name": "DEFAULT_RADIX",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/numbers.ts",
+        "line": 39,
+        "column": 666
+      },
+      {
+        "name": "SPEED_OF_LIGHT",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/physics.ts",
+        "line": 4,
+        "column": 43
+      },
+      {
+        "name": "GRAVITY",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/physics.ts",
+        "line": 9,
+        "column": 123
+      },
+      {
+        "name": "PLANCK",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/physics.ts",
+        "line": 14,
+        "column": 190
+      },
+      {
+        "name": "GAS",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/physics.ts",
+        "line": 19,
+        "column": 276
+      },
+      {
+        "name": "NEW_LINE",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 4,
+        "column": 31
+      },
+      {
+        "name": "TAB",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 9,
+        "column": 88
+      },
+      {
+        "name": "SPACE",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 14,
+        "column": 142
+      },
+      {
+        "name": "EMPTY_STRING",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 19,
+        "column": 203
+      },
+      {
+        "name": "SECOND",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/time.ts",
+        "line": 4,
+        "column": 39
+      },
+      {
+        "name": "MINUTE",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/time.ts",
+        "line": 9,
+        "column": 108
+      },
+      {
+        "name": "HOUR",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/time.ts",
+        "line": 14,
+        "column": 181
+      },
+      {
+        "name": "DAY",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/time.ts",
+        "line": 19,
+        "column": 251
+      },
+      {
+        "name": "WEEK",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/time.ts",
+        "line": 24,
+        "column": 319
+      },
+      {
+        "name": "MONTH_AVG",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/time.ts",
+        "line": 29,
+        "column": 393
+      },
+      {
+        "name": "YEAR",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/time.ts",
+        "line": 34,
+        "column": 492
+      },
+      {
+        "name": "KM_TO_M",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/units.ts",
+        "line": 6,
+        "column": 70
+      },
+      {
+        "name": "M_TO_CM",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/units.ts",
+        "line": 11,
+        "column": 142
+      },
+      {
+        "name": "CM_TO_MM",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/units.ts",
+        "line": 16,
+        "column": 217
+      },
+      {
+        "name": "KG_TO_G",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/units.ts",
+        "line": 21,
+        "column": 284
+      },
+      {
+        "name": "TON_TO_KG",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/units.ts",
+        "line": 26,
+        "column": 352
+      },
+      {
+        "name": "DEG_TO_RAD",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/units.ts",
+        "line": 31,
+        "column": 423
+      },
+      {
+        "name": "RAD_TO_DEG",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/units.ts",
+        "line": 36,
+        "column": 498
+      },
+      {
+        "name": "COMMIT_SCOPES",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/commit/scope.ts",
+        "line": 12,
+        "column": 349
+      },
+      {
+        "name": "CommitScope",
+        "declarationKind": "TypeAliasDeclaration",
+        "exportKind": "type",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/commit/scope.ts",
+        "line": 113,
+        "column": 4376
+      },
+      {
+        "name": "COMMIT_SCOPE_VALUES",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/commit/scope.ts",
+        "line": 120,
+        "column": 4544
+      },
+      {
+        "name": "COMMIT_TYPES",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/commit/types.ts",
+        "line": 12,
+        "column": 298
+      },
+      {
+        "name": "CommitType",
+        "declarationKind": "TypeAliasDeclaration",
+        "exportKind": "type",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/commit/types.ts",
+        "line": 504,
+        "column": 11590
+      },
+      {
+        "name": "COMMIT_TYPE_VALUES",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/commit/types.ts",
+        "line": 511,
+        "column": 11757
+      }
+    ],
+    "@js-utils-kit/env": [
+      {
+        "name": "getRunTimeEnvironment",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/env/src/getRunTimeEnvironment.ts",
+        "line": 16,
+        "column": 338
+      },
+      {
+        "name": "isCI",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/env/src/isCI.ts",
+        "line": 96,
+        "column": 2310
+      }
+    ],
+    "@js-utils-kit/fs": [
+      {
+        "name": "createArchive",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/fs/src/createArchive.ts",
+        "line": 30,
+        "column": 771
+      }
+    ],
+    "@js-utils-kit/number": [
+      {
+        "name": "clamp",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/number/src/clamp.ts",
+        "line": 15,
+        "column": 294
+      },
+      {
+        "name": "getMilliseconds",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/number/src/getMilliseconds.ts",
+        "line": 17,
+        "column": 487
+      },
+      {
+        "name": "isEven",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/number/src/isEven.ts",
+        "line": 12,
+        "column": 175
+      },
+      {
+        "name": "isOdd",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/number/src/isOdd.ts",
+        "line": 12,
+        "column": 171
+      },
+      {
+        "name": "randomFloat",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/number/src/randomFloat.ts",
+        "line": 12,
+        "column": 230
+      },
+      {
+        "name": "randomInt",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/number/src/randomInt.ts",
+        "line": 12,
+        "column": 209
+      }
+    ],
+    "@js-utils-kit/object": [
+      {
+        "name": "deepFreeze",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/object/src/deepFreeze.ts",
+        "line": 99,
+        "column": 2007
+      },
+      {
+        "name": "mergeObj",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/object/src/mergeObj.ts",
+        "line": 39,
+        "column": 1361
+      }
+    ],
+    "@js-utils-kit/string": [
+      {
+        "name": "capitalize",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/string/src/capitalize.ts",
+        "line": 14,
+        "column": 355
+      },
+      {
+        "name": "countChars",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/string/src/countChars.ts",
+        "line": 19,
+        "column": 510
+      },
+      {
+        "name": "countFrequencies",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/string/src/countFrequencies.ts",
+        "line": 19,
+        "column": 367
+      },
+      {
+        "name": "countLines",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/string/src/countLines.ts",
+        "line": 18,
+        "column": 371
+      },
+      {
+        "name": "countSubstring",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/string/src/countSubstring.ts",
+        "line": 19,
+        "column": 438
+      },
+      {
+        "name": "countWords",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/string/src/countWords.ts",
+        "line": 15,
+        "column": 306
+      },
+      {
+        "name": "longestWord",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/string/src/longestWord.ts",
+        "line": 22,
+        "column": 675
+      },
+      {
+        "name": "longestWordLength",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/string/src/longestWordLength.ts",
+        "line": 22,
+        "column": 655
+      },
+      {
+        "name": "padLeft",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/string/src/padLeft.ts",
+        "line": 14,
+        "column": 453
+      },
+      {
+        "name": "padRight",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/string/src/padRight.ts",
+        "line": 14,
+        "column": 458
+      },
+      {
+        "name": "repeatString",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/string/src/repeatString.ts",
+        "line": 14,
+        "column": 341
+      },
+      {
+        "name": "shortestWord",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/string/src/shortestWord.ts",
+        "line": 22,
+        "column": 611
+      },
+      {
+        "name": "shortestWordLength",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/string/src/shortestWordLength.ts",
+        "line": 21,
+        "column": 557
+      },
+      {
+        "name": "splitString",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/string/src/splitString.ts",
+        "line": 19,
+        "column": 601
+      },
+      {
+        "name": "stripSymbols",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/string/src/stripSymbols.ts",
+        "line": 19,
+        "column": 628
+      },
+      {
+        "name": "trim",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/string/src/trim.ts",
+        "line": 41,
+        "column": 1466
+      },
+      {
+        "name": "truncate",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/string/src/truncate.ts",
+        "line": 14,
+        "column": 452
+      },
+      {
+        "name": "uniqueChars",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/string/src/uniqueChars.ts",
+        "line": 15,
+        "column": 272
+      }
+    ],
+    "@js-utils-kit/system": [
+      {
+        "name": "ARCHITECTURE",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/system/src/cpu.ts",
+        "line": 8,
+        "column": 95
+      },
+      {
+        "name": "CPUCores",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/system/src/cpu.ts",
+        "line": 13,
+        "column": 205
+      },
+      {
+        "name": "CPUModel",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/system/src/cpu.ts",
+        "line": 18,
+        "column": 278
+      },
+      {
+        "name": "homeDir",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/system/src/info.ts",
+        "line": 4,
+        "column": 67
+      },
+      {
+        "name": "cwd",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/system/src/info.ts",
+        "line": 7,
+        "column": 147
+      },
+      {
+        "name": "nodePath",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/system/src/info.ts",
+        "line": 10,
+        "column": 241
+      },
+      {
+        "name": "argv",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/system/src/info.ts",
+        "line": 13,
+        "column": 321
+      },
+      {
+        "name": "env",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/system/src/info.ts",
+        "line": 20,
+        "column": 452
+      },
+      {
+        "name": "totalMemory",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/system/src/memory.ts",
+        "line": 4,
+        "column": 73
+      },
+      {
+        "name": "freeMemory",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/system/src/memory.ts",
+        "line": 7,
+        "column": 147
+      },
+      {
+        "name": "PROCESS_MEMORY_USAGE",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/system/src/memory.ts",
+        "line": 10,
+        "column": 244
+      },
+      {
+        "name": "PLATFORM",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/system/src/platform.ts",
+        "line": 6,
+        "column": 79
+      },
+      {
+        "name": "isMac",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/system/src/platform.ts",
+        "line": 11,
+        "column": 202
+      },
+      {
+        "name": "isLinux",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/system/src/platform.ts",
+        "line": 16,
+        "column": 319
+      },
+      {
+        "name": "isWindows",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/system/src/platform.ts",
+        "line": 21,
+        "column": 439
+      },
+      {
+        "name": "isAndroid",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/system/src/platform.ts",
+        "line": 26,
+        "column": 561
+      },
+      {
+        "name": "systemInfo",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/system/src/systemInfo.ts",
+        "line": 7,
+        "column": 231
+      },
+      {
+        "name": "NODE_VERSION",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/system/src/version.ts",
+        "line": 13,
+        "column": 223
+      },
+      {
+        "name": "NODE_MAJOR_VERSION",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/system/src/version.ts",
+        "line": 27,
+        "column": 521
+      },
+      {
+        "name": "RUNTIME_VERSIONS",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/system/src/version.ts",
+        "line": 37,
+        "column": 824
+      }
+    ],
+    "@js-utils-kit/types": [
+      {
+        "name": "ArchiveFormat",
+        "declarationKind": "TypeAliasDeclaration",
+        "exportKind": "type",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/types/src/ArchiveFormat.ts",
+        "line": 4,
+        "column": 38
+      },
+      {
+        "name": "ArchiverOptions",
+        "declarationKind": "ExportSpecifier",
+        "exportKind": "unknown",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/types/src/ArchiverOptions.ts",
+        "line": 3,
+        "column": 45
+      },
+      {
+        "name": "CreateArchiveOptions",
+        "declarationKind": "InterfaceDeclaration",
+        "exportKind": "type",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/types/src/CreateArchiveOptions.ts",
+        "line": 7,
+        "column": 128
+      },
+      {
+        "name": "Environment",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/types/src/Environment.ts",
+        "line": 14,
+        "column": 480
+      },
+      {
+        "name": "Falsy",
+        "declarationKind": "TypeAliasDeclaration",
+        "exportKind": "type",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/types/src/Falsy.ts",
+        "line": 13,
+        "column": 210
+      },
+      {
+        "name": "Hour",
+        "declarationKind": "TypeAliasDeclaration",
+        "exportKind": "type",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/types/src/Hour.ts",
+        "line": 7,
+        "column": 100
+      },
+      {
+        "name": "HttpStatusCode",
+        "declarationKind": "TypeAliasDeclaration",
+        "exportKind": "type",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/types/src/HttpStatusCode.ts",
+        "line": 15,
+        "column": 341
+      },
+      {
+        "name": "MinuteOrSecond",
+        "declarationKind": "TypeAliasDeclaration",
+        "exportKind": "type",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/types/src/MinuteOrSecond.ts",
+        "line": 7,
+        "column": 99
+      },
+      {
+        "name": "Trim",
+        "declarationKind": "InterfaceDeclaration",
+        "exportKind": "type",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/types/src/Trim.ts",
+        "line": 4,
+        "column": 108
+      },
+      {
+        "name": "CommitTypeMeta",
+        "declarationKind": "InterfaceDeclaration",
+        "exportKind": "type",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/types/src/commit/types.ts",
+        "line": 6,
+        "column": 89
+      }
+    ],
+    "@js-utils-kit/valid": [
+      {
+        "name": "endsWithPunctuation",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/valid/src/endsWithPunctuation.ts",
+        "line": 13,
+        "column": 294
+      },
+      {
+        "name": "hasWhitespace",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/valid/src/hasWhitespace.ts",
+        "line": 12,
+        "column": 222
+      },
+      {
+        "name": "isAlphabetic",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/valid/src/isAlphabetic.ts",
+        "line": 13,
+        "column": 297
+      },
+      {
+        "name": "isArray",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/valid/src/isArray.ts",
+        "line": 18,
+        "column": 439
+      },
+      {
+        "name": "isBrowser",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/valid/src/isBrowser.ts",
+        "line": 16,
+        "column": 399
+      },
+      {
+        "name": "isCamelCase",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/valid/src/isCamelCase.ts",
+        "line": 12,
+        "column": 208
+      },
+      {
+        "name": "isDefined",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/valid/src/isDefined.ts",
+        "line": 14,
+        "column": 297
+      },
+      {
+        "name": "isDev",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/valid/src/isDev.ts",
+        "line": 17,
+        "column": 347
+      },
+      {
+        "name": "isEmail",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/valid/src/isEmail.ts",
+        "line": 27,
+        "column": 825
+      },
+      {
+        "name": "isEmpty",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/valid/src/isEmpty.ts",
+        "line": 30,
+        "column": 683
+      },
+      {
+        "name": "isEmptyObject",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/valid/src/isEmptyObject.ts",
+        "line": 16,
+        "column": 398
+      },
+      {
+        "name": "isFalsy",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/valid/src/isFalsy.ts",
+        "line": 31,
+        "column": 533
+      },
+      {
+        "name": "isKebabCase",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/valid/src/isKebabCase.ts",
+        "line": 12,
+        "column": 212
+      },
+      {
+        "name": "isLowerCase",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/valid/src/isLowerCase.ts",
+        "line": 12,
+        "column": 209
+      },
+      {
+        "name": "isNode",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/valid/src/isNode.ts",
+        "line": 19,
+        "column": 529
+      },
+      {
+        "name": "isNonEmptyObject",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/valid/src/isNonEmptyObject.ts",
+        "line": 16,
+        "column": 429
+      },
+      {
+        "name": "isNonEmptyString",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/valid/src/isNonEmptyString.ts",
+        "line": 27,
+        "column": 972
+      },
+      {
+        "name": "isNumericString",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/valid/src/isNumericString.ts",
+        "line": 29,
+        "column": 1184
+      },
+      {
+        "name": "isObject",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/valid/src/isObject.ts",
+        "line": 17,
+        "column": 379
+      },
+      {
+        "name": "isPascalCase",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/valid/src/isPascalCase.ts",
+        "line": 12,
+        "column": 212
+      },
+      {
+        "name": "isProd",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/valid/src/isProd.ts",
+        "line": 17,
+        "column": 331
+      },
+      {
+        "name": "isSnakeCase",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/valid/src/isSnakeCase.ts",
+        "line": 12,
+        "column": 212
+      },
+      {
+        "name": "isString",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/valid/src/isString.ts",
+        "line": 25,
+        "column": 648
+      },
+      {
+        "name": "isTest",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/valid/src/isTest.ts",
+        "line": 17,
+        "column": 313
+      },
+      {
+        "name": "isTruthy",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/valid/src/isTruthy.ts",
+        "line": 31,
+        "column": 580
+      },
+      {
+        "name": "isUndefinedOrNull",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/valid/src/isUndefinedOrNull.ts",
+        "line": 14,
+        "column": 307
+      },
+      {
+        "name": "isUpperCase",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/valid/src/isUpperCase.ts",
+        "line": 12,
+        "column": 209
+      },
+      {
+        "name": "isURL",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/valid/src/isURL.ts",
+        "line": 17,
+        "column": 509
+      },
+      {
+        "name": "startsWithUppercase",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/valid/src/startsWithUppercase.ts",
+        "line": 12,
+        "column": 249
+      }
+    ]
+  }
+}
