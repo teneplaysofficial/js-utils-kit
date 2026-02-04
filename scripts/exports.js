@@ -225,7 +225,4 @@ assertNoDuplicates(project);
 
 const result = collectExports(project);
 
-await writeFile(
-  join(ROOT, 'exports.json'),
-  JSON.stringify({ generatedAt: new Date().toLocaleString(), ...result }, null, 2),
-);
+await writeFile(join(ROOT, 'exports.json'), JSON.stringify({ ...result }, null, 2));
