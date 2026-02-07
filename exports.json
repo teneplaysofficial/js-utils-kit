@@ -477,7 +477,7 @@
         "exportKind": "type",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/commit/types.ts",
-        "line": 504
+        "line": 505
       },
       {
         "name": "COMMIT_TYPE_VALUES",
@@ -485,7 +485,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/commit/types.ts",
-        "line": 511
+        "line": 512
       }
     ],
     "@js-utils-kit/env": [
