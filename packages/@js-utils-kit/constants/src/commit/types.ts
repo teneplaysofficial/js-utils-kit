@@ -419,7 +419,7 @@ export const COMMIT_TYPES = {
 
   optimization: {
     type: 'optimization',
-    title: 'Optimizations',
+    title: 'Optimization Improvements',
     icon: '🚀',
     description: 'Code or runtime optimizations',
     allowsBreakingChange: false,
