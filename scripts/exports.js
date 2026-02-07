@@ -199,7 +199,6 @@ const collectExports = (project) => {
         deprecated,
         filePath: rel(f.getFilePath()),
         line: d.getStartLineNumber(),
-        column: d.getStartLinePos(),
       });
 
       stats.totalExports++;

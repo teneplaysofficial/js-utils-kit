@@ -17,8 +17,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/array/src/chunk.ts",
-        "line": 15,
-        "column": 240
+        "line": 15
       },
       {
         "name": "compact",
@@ -26,8 +25,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/array/src/compact.ts",
-        "line": 19,
-        "column": 383
+        "line": 19
       },
       {
         "name": "lastElement",
@@ -35,8 +33,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/array/src/lastElement.ts",
-        "line": 13,
-        "column": 208
+        "line": 13
       },
       {
         "name": "unique",
@@ -44,8 +41,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/array/src/unique.ts",
-        "line": 31,
-        "column": 680
+        "line": 31
       }
     ],
     "@js-utils-kit/charset": [
@@ -55,8 +51,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/charset/src/alphanumeric.ts",
-        "line": 15,
-        "column": 367
+        "line": 15
       },
       {
         "name": "digits",
@@ -64,8 +59,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/charset/src/digits.ts",
-        "line": 11,
-        "column": 178
+        "line": 11
       },
       {
         "name": "lowercase",
@@ -73,8 +67,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/charset/src/lowercase.ts",
-        "line": 11,
-        "column": 194
+        "line": 11
       },
       {
         "name": "uppercase",
@@ -82,8 +75,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/charset/src/uppercase.ts",
-        "line": 11,
-        "column": 194
+        "line": 11
       }
     ],
     "@js-utils-kit/constants": [
@@ -93,8 +85,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/charset.ts",
-        "line": 4,
-        "column": 39
+        "line": 4
       },
       {
         "name": "UPPERCASE_ALPHABET",
@@ -102,8 +93,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/charset.ts",
-        "line": 9,
-        "column": 143
+        "line": 9
       },
       {
         "name": "DIGITS",
@@ -111,8 +101,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/charset.ts",
-        "line": 14,
-        "column": 239
+        "line": 14
       },
       {
         "name": "ALPHANUMERIC",
@@ -120,8 +109,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/charset.ts",
-        "line": 19,
-        "column": 312
+        "line": 19
       },
       {
         "name": "HTTP_METHODS",
@@ -129,8 +117,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/http.ts",
-        "line": 6,
-        "column": 106
+        "line": 6
       },
       {
         "name": "HTTP_STATUS",
@@ -138,8 +125,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/http.ts",
-        "line": 26,
-        "column": 369
+        "line": 26
       },
       {
         "name": "PI",
@@ -147,8 +133,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/math.ts",
-        "line": 4,
-        "column": 62
+        "line": 4
       },
       {
         "name": "TAU",
@@ -156,8 +141,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/math.ts",
-        "line": 9,
-        "column": 132
+        "line": 9
       },
       {
         "name": "E",
@@ -165,8 +149,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/math.ts",
-        "line": 14,
-        "column": 225
+        "line": 14
       },
       {
         "name": "SQRT_2",
@@ -174,8 +157,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/math.ts",
-        "line": 19,
-        "column": 280
+        "line": 19
       },
       {
         "name": "SQRT_1_2",
@@ -183,8 +165,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/math.ts",
-        "line": 24,
-        "column": 348
+        "line": 24
       },
       {
         "name": "LN_2",
@@ -192,8 +173,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/math.ts",
-        "line": 31,
-        "column": 448
+        "line": 31
       },
       {
         "name": "LN_10",
@@ -201,8 +181,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/math.ts",
-        "line": 38,
-        "column": 542
+        "line": 38
       },
       {
         "name": "LOG2_E",
@@ -210,8 +189,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/math.ts",
-        "line": 45,
-        "column": 650
+        "line": 45
       },
       {
         "name": "LOG10_E",
@@ -219,8 +197,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/math.ts",
-        "line": 54,
-        "column": 789
+        "line": 54
       },
       {
         "name": "MAX_SAFE_INT",
@@ -228,8 +205,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/numbers.ts",
-        "line": 4,
-        "column": 33
+        "line": 4
       },
       {
         "name": "MIN_SAFE_INT",
@@ -237,8 +213,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/numbers.ts",
-        "line": 9,
-        "column": 120
+        "line": 9
       },
       {
         "name": "MAX_VALUE",
@@ -246,8 +221,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/numbers.ts",
-        "line": 14,
-        "column": 215
+        "line": 14
       },
       {
         "name": "MIN_VALUE",
@@ -255,8 +229,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/numbers.ts",
-        "line": 19,
-        "column": 310
+        "line": 19
       },
       {
         "name": "EPSILON",
@@ -264,8 +237,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/numbers.ts",
-        "line": 24,
-        "column": 420
+        "line": 24
       },
       {
         "name": "POSITIVE_INFINITY",
@@ -273,8 +245,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/numbers.ts",
-        "line": 29,
-        "column": 496
+        "line": 29
       },
       {
         "name": "NEGATIVE_INFINITY",
@@ -282,8 +253,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/numbers.ts",
-        "line": 34,
-        "column": 576
+        "line": 34
       },
       {
         "name": "DEFAULT_RADIX",
@@ -291,8 +261,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/numbers.ts",
-        "line": 39,
-        "column": 666
+        "line": 39
       },
       {
         "name": "SPEED_OF_LIGHT",
@@ -300,8 +269,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/physics.ts",
-        "line": 4,
-        "column": 43
+        "line": 4
       },
       {
         "name": "GRAVITY",
@@ -309,8 +277,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/physics.ts",
-        "line": 9,
-        "column": 123
+        "line": 9
       },
       {
         "name": "PLANCK",
@@ -318,8 +285,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/physics.ts",
-        "line": 14,
-        "column": 190
+        "line": 14
       },
       {
         "name": "GAS",
@@ -327,8 +293,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/physics.ts",
-        "line": 19,
-        "column": 276
+        "line": 19
       },
       {
         "name": "NEW_LINE",
@@ -336,8 +301,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
-        "line": 4,
-        "column": 31
+        "line": 4
       },
       {
         "name": "TAB",
@@ -345,8 +309,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
-        "line": 9,
-        "column": 88
+        "line": 9
       },
       {
         "name": "SPACE",
@@ -354,8 +317,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
-        "line": 14,
-        "column": 142
+        "line": 14
       },
       {
         "name": "EMPTY_STRING",
@@ -363,8 +325,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
-        "line": 19,
-        "column": 203
+        "line": 19
       },
       {
         "name": "SECOND",
@@ -372,8 +333,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/time.ts",
-        "line": 4,
-        "column": 39
+        "line": 4
       },
       {
         "name": "MINUTE",
@@ -381,8 +341,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/time.ts",
-        "line": 9,
-        "column": 108
+        "line": 9
       },
       {
         "name": "HOUR",
@@ -390,8 +349,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/time.ts",
-        "line": 14,
-        "column": 181
+        "line": 14
       },
       {
         "name": "DAY",
@@ -399,8 +357,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/time.ts",
-        "line": 19,
-        "column": 251
+        "line": 19
       },
       {
         "name": "WEEK",
@@ -408,8 +365,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/time.ts",
-        "line": 24,
-        "column": 319
+        "line": 24
       },
       {
         "name": "MONTH_AVG",
@@ -417,8 +373,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/time.ts",
-        "line": 29,
-        "column": 393
+        "line": 29
       },
       {
         "name": "YEAR",
@@ -426,8 +381,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/time.ts",
-        "line": 34,
-        "column": 492
+        "line": 34
       },
       {
         "name": "KM_TO_M",
@@ -435,8 +389,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/units.ts",
-        "line": 6,
-        "column": 70
+        "line": 6
       },
       {
         "name": "M_TO_CM",
@@ -444,8 +397,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/units.ts",
-        "line": 11,
-        "column": 142
+        "line": 11
       },
       {
         "name": "CM_TO_MM",
@@ -453,8 +405,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/units.ts",
-        "line": 16,
-        "column": 217
+        "line": 16
       },
       {
         "name": "KG_TO_G",
@@ -462,8 +413,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/units.ts",
-        "line": 21,
-        "column": 284
+        "line": 21
       },
       {
         "name": "TON_TO_KG",
@@ -471,8 +421,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/units.ts",
-        "line": 26,
-        "column": 352
+        "line": 26
       },
       {
         "name": "DEG_TO_RAD",
@@ -480,8 +429,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/units.ts",
-        "line": 31,
-        "column": 423
+        "line": 31
       },
       {
         "name": "RAD_TO_DEG",
@@ -489,8 +437,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/units.ts",
-        "line": 36,
-        "column": 498
+        "line": 36
       },
       {
         "name": "COMMIT_SCOPES",
@@ -498,8 +445,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/commit/scope.ts",
-        "line": 12,
-        "column": 349
+        "line": 12
       },
       {
         "name": "CommitScope",
@@ -507,8 +453,7 @@
         "exportKind": "type",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/commit/scope.ts",
-        "line": 113,
-        "column": 4376
+        "line": 113
       },
       {
         "name": "COMMIT_SCOPE_VALUES",
@@ -516,8 +461,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/commit/scope.ts",
-        "line": 120,
-        "column": 4544
+        "line": 120
       },
       {
         "name": "COMMIT_TYPES",
@@ -525,8 +469,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/commit/types.ts",
-        "line": 12,
-        "column": 298
+        "line": 12
       },
       {
         "name": "CommitType",
@@ -534,8 +477,7 @@
         "exportKind": "type",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/commit/types.ts",
-        "line": 504,
-        "column": 11590
+        "line": 504
       },
       {
         "name": "COMMIT_TYPE_VALUES",
@@ -543,8 +485,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/commit/types.ts",
-        "line": 511,
-        "column": 11757
+        "line": 511
       }
     ],
     "@js-utils-kit/env": [
@@ -554,8 +495,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/env/src/getRunTimeEnvironment.ts",
-        "line": 16,
-        "column": 338
+        "line": 16
       },
       {
         "name": "isCI",
@@ -563,8 +503,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/env/src/isCI.ts",
-        "line": 96,
-        "column": 2310
+        "line": 96
       }
     ],
     "@js-utils-kit/fs": [
@@ -574,8 +513,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/fs/src/createArchive.ts",
-        "line": 30,
-        "column": 771
+        "line": 30
       }
     ],
     "@js-utils-kit/number": [
@@ -585,8 +523,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/number/src/clamp.ts",
-        "line": 15,
-        "column": 294
+        "line": 15
       },
       {
         "name": "getMilliseconds",
@@ -594,8 +531,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/number/src/getMilliseconds.ts",
-        "line": 17,
-        "column": 487
+        "line": 17
       },
       {
         "name": "isEven",
@@ -603,8 +539,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/number/src/isEven.ts",
-        "line": 12,
-        "column": 175
+        "line": 12
       },
       {
         "name": "isOdd",
@@ -612,8 +547,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/number/src/isOdd.ts",
-        "line": 12,
-        "column": 171
+        "line": 12
       },
       {
         "name": "randomFloat",
@@ -621,8 +555,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/number/src/randomFloat.ts",
-        "line": 12,
-        "column": 230
+        "line": 12
       },
       {
         "name": "randomInt",
@@ -630,8 +563,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/number/src/randomInt.ts",
-        "line": 12,
-        "column": 209
+        "line": 12
       }
     ],
     "@js-utils-kit/object": [
@@ -641,8 +573,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/object/src/deepFreeze.ts",
-        "line": 99,
-        "column": 2007
+        "line": 99
       },
       {
         "name": "mergeObj",
@@ -650,8 +581,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/object/src/mergeObj.ts",
-        "line": 39,
-        "column": 1361
+        "line": 39
       }
     ],
     "@js-utils-kit/string": [
@@ -661,8 +591,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/string/src/capitalize.ts",
-        "line": 14,
-        "column": 355
+        "line": 14
       },
       {
         "name": "countChars",
@@ -670,8 +599,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/string/src/countChars.ts",
-        "line": 19,
-        "column": 510
+        "line": 19
       },
       {
         "name": "countFrequencies",
@@ -679,8 +607,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/string/src/countFrequencies.ts",
-        "line": 19,
-        "column": 367
+        "line": 19
       },
       {
         "name": "countLines",
@@ -688,8 +615,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/string/src/countLines.ts",
-        "line": 18,
-        "column": 371
+        "line": 18
       },
       {
         "name": "countSubstring",
@@ -697,8 +623,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/string/src/countSubstring.ts",
-        "line": 19,
-        "column": 438
+        "line": 19
       },
       {
         "name": "countWords",
@@ -706,8 +631,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/string/src/countWords.ts",
-        "line": 15,
-        "column": 306
+        "line": 15
       },
       {
         "name": "longestWord",
@@ -715,8 +639,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/string/src/longestWord.ts",
-        "line": 22,
-        "column": 675
+        "line": 22
       },
       {
         "name": "longestWordLength",
@@ -724,8 +647,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/string/src/longestWordLength.ts",
-        "line": 22,
-        "column": 655
+        "line": 22
       },
       {
         "name": "padLeft",
@@ -733,8 +655,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/string/src/padLeft.ts",
-        "line": 14,
-        "column": 453
+        "line": 14
       },
       {
         "name": "padRight",
@@ -742,8 +663,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/string/src/padRight.ts",
-        "line": 14,
-        "column": 458
+        "line": 14
       },
       {
         "name": "repeatString",
@@ -751,8 +671,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/string/src/repeatString.ts",
-        "line": 14,
-        "column": 341
+        "line": 14
       },
       {
         "name": "shortestWord",
@@ -760,8 +679,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/string/src/shortestWord.ts",
-        "line": 22,
-        "column": 611
+        "line": 22
       },
       {
         "name": "shortestWordLength",
@@ -769,8 +687,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/string/src/shortestWordLength.ts",
-        "line": 21,
-        "column": 557
+        "line": 21
       },
       {
         "name": "splitString",
@@ -778,8 +695,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/string/src/splitString.ts",
-        "line": 19,
-        "column": 601
+        "line": 19
       },
       {
         "name": "stripSymbols",
@@ -787,8 +703,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/string/src/stripSymbols.ts",
-        "line": 19,
-        "column": 628
+        "line": 19
       },
       {
         "name": "trim",
@@ -796,8 +711,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/string/src/trim.ts",
-        "line": 41,
-        "column": 1466
+        "line": 41
       },
       {
         "name": "truncate",
@@ -805,8 +719,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/string/src/truncate.ts",
-        "line": 14,
-        "column": 452
+        "line": 14
       },
       {
         "name": "uniqueChars",
@@ -814,8 +727,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/string/src/uniqueChars.ts",
-        "line": 15,
-        "column": 272
+        "line": 15
       }
     ],
     "@js-utils-kit/system": [
@@ -825,8 +737,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/system/src/cpu.ts",
-        "line": 8,
-        "column": 95
+        "line": 8
       },
       {
         "name": "CPUCores",
@@ -834,8 +745,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/system/src/cpu.ts",
-        "line": 13,
-        "column": 205
+        "line": 13
       },
       {
         "name": "CPUModel",
@@ -843,8 +753,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/system/src/cpu.ts",
-        "line": 18,
-        "column": 278
+        "line": 18
       },
       {
         "name": "homeDir",
@@ -852,8 +761,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/system/src/info.ts",
-        "line": 4,
-        "column": 67
+        "line": 4
       },
       {
         "name": "cwd",
@@ -861,8 +769,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/system/src/info.ts",
-        "line": 7,
-        "column": 147
+        "line": 7
       },
       {
         "name": "nodePath",
@@ -870,8 +777,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/system/src/info.ts",
-        "line": 10,
-        "column": 241
+        "line": 10
       },
       {
         "name": "argv",
@@ -879,8 +785,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/system/src/info.ts",
-        "line": 13,
-        "column": 321
+        "line": 13
       },
       {
         "name": "env",
@@ -888,8 +793,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/system/src/info.ts",
-        "line": 20,
-        "column": 452
+        "line": 20
       },
       {
         "name": "totalMemory",
@@ -897,8 +801,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/system/src/memory.ts",
-        "line": 4,
-        "column": 73
+        "line": 4
       },
       {
         "name": "freeMemory",
@@ -906,8 +809,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/system/src/memory.ts",
-        "line": 7,
-        "column": 147
+        "line": 7
       },
       {
         "name": "PROCESS_MEMORY_USAGE",
@@ -915,8 +817,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/system/src/memory.ts",
-        "line": 10,
-        "column": 244
+        "line": 10
       },
       {
         "name": "PLATFORM",
@@ -924,8 +825,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/system/src/platform.ts",
-        "line": 6,
-        "column": 79
+        "line": 6
       },
       {
         "name": "isMac",
@@ -933,8 +833,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/system/src/platform.ts",
-        "line": 11,
-        "column": 202
+        "line": 11
       },
       {
         "name": "isLinux",
@@ -942,8 +841,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/system/src/platform.ts",
-        "line": 16,
-        "column": 319
+        "line": 16
       },
       {
         "name": "isWindows",
@@ -951,8 +849,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/system/src/platform.ts",
-        "line": 21,
-        "column": 439
+        "line": 21
       },
       {
         "name": "isAndroid",
@@ -960,8 +857,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/system/src/platform.ts",
-        "line": 26,
-        "column": 561
+        "line": 26
       },
       {
         "name": "systemInfo",
@@ -969,8 +865,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/system/src/systemInfo.ts",
-        "line": 7,
-        "column": 231
+        "line": 7
       },
       {
         "name": "NODE_VERSION",
@@ -978,8 +873,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/system/src/version.ts",
-        "line": 13,
-        "column": 223
+        "line": 13
       },
       {
         "name": "NODE_MAJOR_VERSION",
@@ -987,8 +881,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/system/src/version.ts",
-        "line": 27,
-        "column": 521
+        "line": 27
       },
       {
         "name": "RUNTIME_VERSIONS",
@@ -996,8 +889,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/system/src/version.ts",
-        "line": 37,
-        "column": 824
+        "line": 37
       }
     ],
     "@js-utils-kit/types": [
@@ -1007,8 +899,7 @@
         "exportKind": "type",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/types/src/ArchiveFormat.ts",
-        "line": 4,
-        "column": 38
+        "line": 4
       },
       {
         "name": "ArchiverOptions",
@@ -1016,8 +907,7 @@
         "exportKind": "unknown",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/types/src/ArchiverOptions.ts",
-        "line": 3,
-        "column": 45
+        "line": 3
       },
       {
         "name": "CreateArchiveOptions",
@@ -1025,8 +915,7 @@
         "exportKind": "type",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/types/src/CreateArchiveOptions.ts",
-        "line": 7,
-        "column": 128
+        "line": 7
       },
       {
         "name": "Environment",
@@ -1034,8 +923,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/types/src/Environment.ts",
-        "line": 14,
-        "column": 480
+        "line": 14
       },
       {
         "name": "Falsy",
@@ -1043,8 +931,7 @@
         "exportKind": "type",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/types/src/Falsy.ts",
-        "line": 13,
-        "column": 210
+        "line": 13
       },
       {
         "name": "Hour",
@@ -1052,8 +939,7 @@
         "exportKind": "type",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/types/src/Hour.ts",
-        "line": 7,
-        "column": 100
+        "line": 7
       },
       {
         "name": "HttpStatusCode",
@@ -1061,8 +947,7 @@
         "exportKind": "type",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/types/src/HttpStatusCode.ts",
-        "line": 15,
-        "column": 341
+        "line": 15
       },
       {
         "name": "MinuteOrSecond",
@@ -1070,8 +955,7 @@
         "exportKind": "type",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/types/src/MinuteOrSecond.ts",
-        "line": 7,
-        "column": 99
+        "line": 7
       },
       {
         "name": "Trim",
@@ -1079,8 +963,7 @@
         "exportKind": "type",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/types/src/Trim.ts",
-        "line": 4,
-        "column": 108
+        "line": 4
       },
       {
         "name": "CommitTypeMeta",
@@ -1088,8 +971,7 @@
         "exportKind": "type",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/types/src/commit/types.ts",
-        "line": 6,
-        "column": 89
+        "line": 6
       }
     ],
     "@js-utils-kit/valid": [
@@ -1099,8 +981,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/endsWithPunctuation.ts",
-        "line": 13,
-        "column": 294
+        "line": 13
       },
       {
         "name": "hasWhitespace",
@@ -1108,8 +989,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/hasWhitespace.ts",
-        "line": 12,
-        "column": 222
+        "line": 12
       },
       {
         "name": "isAlphabetic",
@@ -1117,8 +997,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/isAlphabetic.ts",
-        "line": 13,
-        "column": 297
+        "line": 13
       },
       {
         "name": "isArray",
@@ -1126,8 +1005,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/isArray.ts",
-        "line": 18,
-        "column": 439
+        "line": 18
       },
       {
         "name": "isBrowser",
@@ -1135,8 +1013,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/isBrowser.ts",
-        "line": 16,
-        "column": 399
+        "line": 16
       },
       {
         "name": "isCamelCase",
@@ -1144,8 +1021,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/isCamelCase.ts",
-        "line": 12,
-        "column": 208
+        "line": 12
       },
       {
         "name": "isDefined",
@@ -1153,8 +1029,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/isDefined.ts",
-        "line": 14,
-        "column": 297
+        "line": 14
       },
       {
         "name": "isDev",
@@ -1162,8 +1037,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/isDev.ts",
-        "line": 17,
-        "column": 347
+        "line": 17
       },
       {
         "name": "isEmail",
@@ -1171,8 +1045,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/isEmail.ts",
-        "line": 27,
-        "column": 825
+        "line": 27
       },
       {
         "name": "isEmpty",
@@ -1180,8 +1053,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/isEmpty.ts",
-        "line": 30,
-        "column": 683
+        "line": 30
       },
       {
         "name": "isEmptyObject",
@@ -1189,8 +1061,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/isEmptyObject.ts",
-        "line": 16,
-        "column": 398
+        "line": 16
       },
       {
         "name": "isFalsy",
@@ -1198,8 +1069,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/isFalsy.ts",
-        "line": 31,
-        "column": 533
+        "line": 31
       },
       {
         "name": "isKebabCase",
@@ -1207,8 +1077,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/isKebabCase.ts",
-        "line": 12,
-        "column": 212
+        "line": 12
       },
       {
         "name": "isLowerCase",
@@ -1216,8 +1085,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/isLowerCase.ts",
-        "line": 12,
-        "column": 209
+        "line": 12
       },
       {
         "name": "isNode",
@@ -1225,8 +1093,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/isNode.ts",
-        "line": 19,
-        "column": 529
+        "line": 19
       },
       {
         "name": "isNonEmptyObject",
@@ -1234,8 +1101,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/isNonEmptyObject.ts",
-        "line": 16,
-        "column": 429
+        "line": 16
       },
       {
         "name": "isNonEmptyString",
@@ -1243,8 +1109,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/isNonEmptyString.ts",
-        "line": 27,
-        "column": 972
+        "line": 27
       },
       {
         "name": "isNumericString",
@@ -1252,8 +1117,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/isNumericString.ts",
-        "line": 29,
-        "column": 1184
+        "line": 29
       },
       {
         "name": "isObject",
@@ -1261,8 +1125,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/isObject.ts",
-        "line": 17,
-        "column": 379
+        "line": 17
       },
       {
         "name": "isPascalCase",
@@ -1270,8 +1133,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/isPascalCase.ts",
-        "line": 12,
-        "column": 212
+        "line": 12
       },
       {
         "name": "isProd",
@@ -1279,8 +1141,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/isProd.ts",
-        "line": 17,
-        "column": 331
+        "line": 17
       },
       {
         "name": "isSnakeCase",
@@ -1288,8 +1149,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/isSnakeCase.ts",
-        "line": 12,
-        "column": 212
+        "line": 12
       },
       {
         "name": "isString",
@@ -1297,8 +1157,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/isString.ts",
-        "line": 25,
-        "column": 648
+        "line": 25
       },
       {
         "name": "isTest",
@@ -1306,8 +1165,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/isTest.ts",
-        "line": 17,
-        "column": 313
+        "line": 17
       },
       {
         "name": "isTruthy",
@@ -1315,8 +1173,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/isTruthy.ts",
-        "line": 31,
-        "column": 580
+        "line": 31
       },
       {
         "name": "isUndefinedOrNull",
@@ -1324,8 +1181,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/isUndefinedOrNull.ts",
-        "line": 14,
-        "column": 307
+        "line": 14
       },
       {
         "name": "isUpperCase",
@@ -1333,8 +1189,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/isUpperCase.ts",
-        "line": 12,
-        "column": 209
+        "line": 12
       },
       {
         "name": "isURL",
@@ -1342,8 +1197,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/isURL.ts",
-        "line": 17,
-        "column": 509
+        "line": 17
       },
       {
         "name": "startsWithUppercase",
@@ -1351,8 +1205,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/startsWithUppercase.ts",
-        "line": 12,
-        "column": 249
+        "line": 12
       }
     ]
   }
