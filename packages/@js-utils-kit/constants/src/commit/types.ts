@@ -12,7 +12,7 @@ import { CommitTypeMeta } from '@js-utils-kit/types';
 export const COMMIT_TYPES = {
   feat: {
     type: 'feat',
-    title: 'Feature',
+    title: 'Features',
     icon: '✨',
     description: 'Introduce a new feature',
     allowsBreakingChange: true,
@@ -20,9 +20,10 @@ export const COMMIT_TYPES = {
     isReleaseRelevant: true,
     deprecated: false,
   },
+
   fix: {
     type: 'fix',
-    title: 'Bug Fix',
+    title: 'Bug Fixes',
     icon: '🐛',
     description: 'Fix a bug',
     allowsBreakingChange: true,
@@ -44,7 +45,7 @@ export const COMMIT_TYPES = {
 
   style: {
     type: 'style',
-    title: 'Style',
+    title: 'Styling',
     icon: '🎨',
     description: 'Formatting or style changes that do not affect code behavior',
     allowsBreakingChange: false,
@@ -55,7 +56,7 @@ export const COMMIT_TYPES = {
 
   refactor: {
     type: 'refactor',
-    title: 'Refactor',
+    title: 'Refactors',
     icon: '🧹',
     description: 'Code change that neither fixes a bug nor adds a feature',
     allowsBreakingChange: true,
@@ -66,7 +67,7 @@ export const COMMIT_TYPES = {
 
   perf: {
     type: 'perf',
-    title: 'Performance',
+    title: 'Performance Improvements',
     icon: '⚡',
     description: 'Improve performance',
     allowsBreakingChange: true,
@@ -88,7 +89,7 @@ export const COMMIT_TYPES = {
 
   build: {
     type: 'build',
-    title: 'Build',
+    title: 'Build System',
     icon: '🏗️',
     description: 'Changes affecting build system or dependencies',
     allowsBreakingChange: false,
@@ -99,7 +100,7 @@ export const COMMIT_TYPES = {
 
   ci: {
     type: 'ci',
-    title: 'CI',
+    title: 'Continuous Integration',
     icon: '🤖',
     description: 'CI/CD related changes',
     allowsBreakingChange: false,
@@ -110,7 +111,7 @@ export const COMMIT_TYPES = {
 
   chore: {
     type: 'chore',
-    title: 'Chore',
+    title: 'Chores',
     icon: '🔧',
     description: 'Maintenance tasks',
     allowsBreakingChange: false,
@@ -121,7 +122,7 @@ export const COMMIT_TYPES = {
 
   revert: {
     type: 'revert',
-    title: 'Revert',
+    title: 'Reverts',
     icon: '⏪',
     description: 'Revert a previous commit',
     allowsBreakingChange: false,
@@ -132,7 +133,7 @@ export const COMMIT_TYPES = {
 
   deps: {
     type: 'deps',
-    title: 'Dependencies',
+    title: 'Dependency Updates',
     icon: '📦',
     description: 'Update, add, or remove dependencies',
     allowsBreakingChange: false,
@@ -154,7 +155,7 @@ export const COMMIT_TYPES = {
 
   security: {
     type: 'security',
-    title: 'Security',
+    title: 'Security Fixes',
     icon: '🔒',
     description: 'Security fixes or vulnerability mitigation',
     allowsBreakingChange: true,
@@ -165,7 +166,7 @@ export const COMMIT_TYPES = {
 
   types: {
     type: 'types',
-    title: 'Types',
+    title: 'Type Changes',
     icon: '📐',
     description: 'Type definitions or TypeScript-related changes',
     allowsBreakingChange: false,
@@ -176,7 +177,7 @@ export const COMMIT_TYPES = {
 
   lint: {
     type: 'lint',
-    title: 'Lint',
+    title: 'Linting',
     icon: '🧹',
     description: 'Linting rules or fixes',
     allowsBreakingChange: false,
@@ -187,7 +188,7 @@ export const COMMIT_TYPES = {
 
   format: {
     type: 'format',
-    title: 'Format',
+    title: 'Formatting',
     icon: '🖌️',
     description: 'Code formatting changes (prettier, etc.)',
     allowsBreakingChange: false,
@@ -198,7 +199,7 @@ export const COMMIT_TYPES = {
 
   release: {
     type: 'release',
-    title: 'Release',
+    title: 'Release Process',
     icon: '🏷️',
     description: 'Release-related changes (versioning, tags, changelog)',
     allowsBreakingChange: false,
@@ -209,7 +210,7 @@ export const COMMIT_TYPES = {
 
   meta: {
     type: 'meta',
-    title: 'Meta',
+    title: 'Repository Meta',
     icon: '🧩',
     description: 'Repository metadata (README, templates, tooling)',
     allowsBreakingChange: false,
@@ -231,7 +232,7 @@ export const COMMIT_TYPES = {
 
   hotfix: {
     type: 'hotfix',
-    title: 'Hotfix',
+    title: 'Hotfixes',
     icon: '🚑',
     description: 'Critical production fix applied quickly',
     allowsBreakingChange: true,
@@ -242,7 +243,7 @@ export const COMMIT_TYPES = {
 
   version: {
     type: 'version',
-    title: 'Version',
+    title: 'Versioning',
     icon: '🔢',
     description: 'Version bumps without code changes',
     allowsBreakingChange: false,
@@ -253,7 +254,7 @@ export const COMMIT_TYPES = {
 
   workflow: {
     type: 'workflow',
-    title: 'Workflow',
+    title: 'Workflows',
     icon: '🔁',
     description: 'Workflow-related changes (GitHub Actions, hooks)',
     allowsBreakingChange: false,
@@ -264,7 +265,7 @@ export const COMMIT_TYPES = {
 
   package: {
     type: 'package',
-    title: 'Package',
+    title: 'Package Changes',
     icon: '📦',
     description: 'Package-level changes in a monorepo',
     allowsBreakingChange: false,
@@ -275,7 +276,7 @@ export const COMMIT_TYPES = {
 
   workspace: {
     type: 'workspace',
-    title: 'Workspace',
+    title: 'Workspace Changes',
     icon: '🧱',
     description: 'Workspace or monorepo configuration changes',
     allowsBreakingChange: false,
@@ -286,7 +287,7 @@ export const COMMIT_TYPES = {
 
   api: {
     type: 'api',
-    title: 'API',
+    title: 'API Changes',
     icon: '🔌',
     description: 'API surface or contract changes',
     allowsBreakingChange: true,
@@ -297,7 +298,7 @@ export const COMMIT_TYPES = {
 
   'BREAKING CHANGE': {
     type: 'BREAKING CHANGE',
-    title: 'Breaking Change',
+    title: 'Breaking Changes',
     icon: '💥',
     description: 'An explicit breaking change as defined by the Conventional Commits specification',
     allowsBreakingChange: true,
@@ -308,7 +309,7 @@ export const COMMIT_TYPES = {
 
   db: {
     type: 'db',
-    title: 'Database',
+    title: 'Database Changes',
     icon: '🗄️',
     description: 'Database schema, migrations, or queries',
     allowsBreakingChange: true,
@@ -319,7 +320,7 @@ export const COMMIT_TYPES = {
 
   data: {
     type: 'data',
-    title: 'Data',
+    title: 'Data Changes',
     icon: '📊',
     description: 'Data fixes, seeds, or transformations',
     allowsBreakingChange: false,
@@ -330,7 +331,7 @@ export const COMMIT_TYPES = {
 
   ui: {
     type: 'ui',
-    title: 'UI',
+    title: 'UI Changes',
     icon: '🎨',
     description: 'UI-related changes',
     allowsBreakingChange: false,
@@ -341,7 +342,7 @@ export const COMMIT_TYPES = {
 
   ux: {
     type: 'ux',
-    title: 'UX',
+    title: 'UX Improvements',
     icon: '🧠',
     description: 'User experience improvements',
     allowsBreakingChange: false,
@@ -352,7 +353,7 @@ export const COMMIT_TYPES = {
 
   accessibility: {
     type: 'accessibility',
-    title: 'Accessibility',
+    title: 'Accessibility Improvements',
     icon: '♿',
     description: 'Accessibility improvements (a11y)',
     allowsBreakingChange: false,
@@ -363,7 +364,7 @@ export const COMMIT_TYPES = {
 
   backend: {
     type: 'backend',
-    title: 'Backend',
+    title: 'Backend Changes',
     icon: '🖥️',
     description: 'Backend logic changes',
     allowsBreakingChange: true,
@@ -374,7 +375,7 @@ export const COMMIT_TYPES = {
 
   frontend: {
     type: 'frontend',
-    title: 'Frontend',
+    title: 'Frontend Changes',
     icon: '🌐',
     description: 'Frontend logic changes',
     allowsBreakingChange: false,
@@ -407,7 +408,7 @@ export const COMMIT_TYPES = {
 
   stability: {
     type: 'stability',
-    title: 'Stability',
+    title: 'Stability Improvements',
     icon: '🛡️',
     description: 'Stability and reliability improvements',
     allowsBreakingChange: false,
@@ -418,7 +419,7 @@ export const COMMIT_TYPES = {
 
   optimization: {
     type: 'optimization',
-    title: 'Optimization',
+    title: 'Optimizations',
     icon: '🚀',
     description: 'Code or runtime optimizations',
     allowsBreakingChange: false,
@@ -473,7 +474,7 @@ export const COMMIT_TYPES = {
 
   migration: {
     type: 'migration',
-    title: 'Migration',
+    title: 'Migrations',
     icon: '🚚',
     description: 'Migration-related changes',
     allowsBreakingChange: true,
@@ -484,7 +485,7 @@ export const COMMIT_TYPES = {
 
   rollback: {
     type: 'rollback',
-    title: 'Rollback',
+    title: 'Rollbacks',
     icon: '↩️',
     description: 'Rollback changes after a bad release',
     allowsBreakingChange: false,
