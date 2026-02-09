@@ -32,21 +32,18 @@ export default defineConfig([
   },
   {
     files: ['**/*.json'],
-    plugins: { json },
     language: 'json/json',
-    extends: ['json/recommended'],
+    extends: [json.configs.recommended],
   },
   {
     files: ['**/*.json5'],
-    plugins: { json },
     language: 'json/json5',
-    extends: ['json/recommended'],
+    extends: [json.configs.recommended],
   },
   {
     files: ['**/*.md'],
-    plugins: { markdown },
     language: 'markdown/gfm',
-    extends: ['markdown/recommended'],
+    extends: [markdown.configs.recommended],
   },
   {
     ignores: ['README.md'],
