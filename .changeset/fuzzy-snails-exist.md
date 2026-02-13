@@ -32,28 +32,28 @@ They are no longer callable (remove `()` from usages).
 - import { isDev, isProd, isTest, isNode, isBrowser } from "@js-utils-kit/valid";
 + import { isDev, isProd, isTest, isNode, isBrowser } from "@js-utils-kit/env";
 
-- if (isDev()) {
-+ if (isDev) {
+- if(isDev()) {
++ if(isDev) {
     ...
 }
 
-- if (isProd()) {
-+ if (isProd) {
+- if(isProd()) {
++ if(isProd) {
     ...
 }
 
-- if (isTest()) {
-+ if (isTest) {
+- if(isTest()) {
++ if(isTest) {
     ...
 }
 
-- if (isNode()) {
-+ if (isNode) {
+- if(isNode()) {
++ if(isNode) {
     ...
 }
 
-- if(isBrowser()){
-+ if(isBrowser){
+- if(isBrowser()) {
++ if(isBrowser) {
     ...
 }
 ```

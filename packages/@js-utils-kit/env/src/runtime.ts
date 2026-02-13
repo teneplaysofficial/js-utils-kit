@@ -32,7 +32,8 @@ export const isBrowser: boolean =
  * }
  * ```
  */
-export const isDev: boolean = process.env.NODE_ENV === Environment.DEV;
+export const isDev: boolean =
+  typeof process !== 'undefined' && process.env.NODE_ENV === Environment.DEV;
 
 /**
  * Checks if the current environment is production.
@@ -48,7 +49,8 @@ export const isDev: boolean = process.env.NODE_ENV === Environment.DEV;
  * }
  * ```
  */
-export const isProd: boolean = process.env.NODE_ENV === Environment.PROD;
+export const isProd: boolean =
+  typeof process !== 'undefined' && process.env.NODE_ENV === Environment.PROD;
 
 /**
  * Checks if the current environment is testing.
@@ -64,7 +66,8 @@ export const isProd: boolean = process.env.NODE_ENV === Environment.PROD;
  * }
  * ```
  */
-export const isTest: boolean = process.env.NODE_ENV === Environment.TEST;
+export const isTest: boolean =
+  typeof process !== 'undefined' && process.env.NODE_ENV === Environment.TEST;
 
 /**
  * Checks if the current runtime environment is Node.js.
@@ -85,4 +88,4 @@ export const isTest: boolean = process.env.NODE_ENV === Environment.TEST;
  * @see {@link https://nodejs.org/api/process.html | Node.js process documentation}
  */
 export const isNode: boolean =
-  typeof process !== 'undefined' && process.versions !== null && process.versions.node !== null;
+  typeof process !== 'undefined' && process.versions != null && process.versions.node != null;

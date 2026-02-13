@@ -7,23 +7,22 @@ afterAll(() => {
   process.env.NODE_ENV = originalEnv;
 });
 
-async function loadRuntime() {
-  vi.resetModules();
-  return await import('../src/runtime');
-}
-
 beforeEach(() => {
   vi.resetModules();
 });
 
+async function loadRuntime() {
+  return await import('../src/runtime');
+}
+
 describe('isDev', () => {
-  it('isDev returns true when NODE_ENV is development', async () => {
+  it('returns true when NODE_ENV is development', async () => {
     process.env.NODE_ENV = Environment.DEV;
     const { isDev } = await loadRuntime();
     expect(isDev).toBe(true);
   });
 
-  it('isDev returns false when not development', async () => {
+  it('returns false otherwise', async () => {
     process.env.NODE_ENV = Environment.TEST;
     const { isDev } = await loadRuntime();
     expect(isDev).toBe(false);
@@ -31,7 +30,7 @@ describe('isDev', () => {
 });
 
 describe('isProd', () => {
-  it('isProd returns true when NODE_ENV is production', async () => {
+  it('returns true when NODE_ENV is production', async () => {
     process.env.NODE_ENV = Environment.PROD;
     const { isProd } = await loadRuntime();
     expect(isProd).toBe(true);
@@ -39,7 +38,7 @@ describe('isProd', () => {
 });
 
 describe('isTest', () => {
-  it('isTest returns true when NODE_ENV is test', async () => {
+  it('returns true when NODE_ENV is test', async () => {
     process.env.NODE_ENV = Environment.TEST;
     const { isTest } = await loadRuntime();
     expect(isTest).toBe(true);
@@ -47,8 +46,9 @@ describe('isTest', () => {
 });
 
 describe('isNode', () => {
-  it('isNode returns true in Node.js', async () => {
-    const { isNode } = await loadRuntime();
+  it('returns true in Node.js environment', async () => {
+    const { isNode, isBrowser } = await loadRuntime();
     expect(isNode).toBe(true);
+    expect(isBrowser).toBe(false);
   });
 });
