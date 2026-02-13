@@ -527,7 +527,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/env/src/runtime.ts",
-        "line": 51
+        "line": 52
       },
       {
         "name": "isTest",
@@ -535,7 +535,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/env/src/runtime.ts",
-        "line": 67
+        "line": 69
       },
       {
         "name": "isNode",
@@ -543,7 +543,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/env/src/runtime.ts",
-        "line": 87
+        "line": 90
       }
     ],
     "@js-utils-kit/fs": [
