@@ -197,11 +197,7 @@ importers:
 
   packages/@js-utils-kit/types: {}
 
-  packages/@js-utils-kit/valid:
-    dependencies:
-      '@js-utils-kit/types':
-        specifier: workspace:*
-        version: link:../types
+  packages/@js-utils-kit/valid: {}
 
   packages/js-utils-kit:
     dependencies:

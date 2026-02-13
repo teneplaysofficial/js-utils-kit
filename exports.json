@@ -3,8 +3,8 @@
     "totalExports": 147,
     "deprecatedExports": 0,
     "classExports": 0,
-    "functionExports": 65,
-    "variableExports": 71,
+    "functionExports": 60,
+    "variableExports": 76,
     "typeExports": 10,
     "valueExports": 136,
     "totalPackages": 11
@@ -504,6 +504,46 @@
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/env/src/isCI.ts",
         "line": 96
+      },
+      {
+        "name": "isBrowser",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/env/src/runtime.ts",
+        "line": 18
+      },
+      {
+        "name": "isDev",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/env/src/runtime.ts",
+        "line": 35
+      },
+      {
+        "name": "isProd",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/env/src/runtime.ts",
+        "line": 52
+      },
+      {
+        "name": "isTest",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/env/src/runtime.ts",
+        "line": 69
+      },
+      {
+        "name": "isNode",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/env/src/runtime.ts",
+        "line": 90
       }
     ],
     "@js-utils-kit/fs": [
@@ -1008,14 +1048,6 @@
         "line": 18
       },
       {
-        "name": "isBrowser",
-        "declarationKind": "FunctionDeclaration",
-        "exportKind": "function",
-        "deprecated": false,
-        "filePath": "packages/@js-utils-kit/valid/src/isBrowser.ts",
-        "line": 16
-      },
-      {
         "name": "isCamelCase",
         "declarationKind": "FunctionDeclaration",
         "exportKind": "function",
@@ -1030,14 +1062,6 @@
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/isDefined.ts",
         "line": 14
-      },
-      {
-        "name": "isDev",
-        "declarationKind": "FunctionDeclaration",
-        "exportKind": "function",
-        "deprecated": false,
-        "filePath": "packages/@js-utils-kit/valid/src/isDev.ts",
-        "line": 17
       },
       {
         "name": "isEmail",
@@ -1088,14 +1112,6 @@
         "line": 12
       },
       {
-        "name": "isNode",
-        "declarationKind": "FunctionDeclaration",
-        "exportKind": "function",
-        "deprecated": false,
-        "filePath": "packages/@js-utils-kit/valid/src/isNode.ts",
-        "line": 19
-      },
-      {
         "name": "isNonEmptyObject",
         "declarationKind": "FunctionDeclaration",
         "exportKind": "function",
@@ -1136,14 +1152,6 @@
         "line": 12
       },
       {
-        "name": "isProd",
-        "declarationKind": "FunctionDeclaration",
-        "exportKind": "function",
-        "deprecated": false,
-        "filePath": "packages/@js-utils-kit/valid/src/isProd.ts",
-        "line": 17
-      },
-      {
         "name": "isSnakeCase",
         "declarationKind": "FunctionDeclaration",
         "exportKind": "function",
@@ -1158,14 +1166,6 @@
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/isString.ts",
         "line": 25
-      },
-      {
-        "name": "isTest",
-        "declarationKind": "FunctionDeclaration",
-        "exportKind": "function",
-        "deprecated": false,
-        "filePath": "packages/@js-utils-kit/valid/src/isTest.ts",
-        "line": 17
       },
       {
         "name": "isTruthy",
