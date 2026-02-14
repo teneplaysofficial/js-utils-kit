@@ -44,7 +44,5 @@
     "build": "tsdown",
     "test": "vitest run"
   },
-  "dependencies": {
-    "@js-utils-kit/types": "workspace:*"
-  }
+  "dependencies": {}
 }
