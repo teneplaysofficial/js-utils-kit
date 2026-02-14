@@ -4,8 +4,8 @@ import path from 'path';
  * Converts a file system path to POSIX format.
  *
  * @remarks
- * - On Windows, all backslashes (`\`) are replaced with forward slashes (`/`).
- * - On other platforms, the input is returned with normalized forward slashes.
+ * - Replaces all backslashes (`\`) with forward slashes (`/`).
+ * - Does NOT perform full path normalization (e.g., resolving `.` or `..` segments).
  *
  * @returns The path using POSIX separators (`/`).
  *
