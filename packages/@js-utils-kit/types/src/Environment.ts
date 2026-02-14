@@ -22,4 +22,5 @@ export const Environment = {
   UNKNOWN: 'unknown',
 } as const;
 
+// eslint-disable-next-line no-redeclare
 export type Environment = (typeof Environment)[keyof typeof Environment];

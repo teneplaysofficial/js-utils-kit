@@ -74,6 +74,8 @@
     "@types/archiver": "^7.0.0",
     "@types/figlet": "^1.7.0",
     "@types/node": "^24.10.1",
+    "@typescript-eslint/eslint-plugin": "^8.55.0",
+    "@typescript-eslint/parser": "^8.55.0",
     "@vitest/coverage-v8": "^4.0.14",
     "dts-bundle-generator": "^9.5.1",
     "eslint": "^10.0.0",
@@ -90,7 +92,6 @@
     "turbo": "^2.6.1",
     "typedoc": "^0.28.14",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.48.0",
     "vitest": "^4.0.14"
   }
 }
