@@ -67,16 +67,18 @@
     "@changesets/parse": "^0.4.2",
     "@clack/prompts": "^1.0.0",
     "@eslint/compat": "^2.0.0",
-    "@eslint/js": "^9.39.1",
+    "@eslint/js": "^10.0.0",
     "@eslint/json": "^1.0.0",
     "@eslint/markdown": "^7.5.1",
     "@manypkg/get-packages": "^3.1.0",
     "@types/archiver": "^7.0.0",
     "@types/figlet": "^1.7.0",
     "@types/node": "^24.10.1",
+    "@typescript-eslint/eslint-plugin": "^8.55.0",
+    "@typescript-eslint/parser": "^8.55.0",
     "@vitest/coverage-v8": "^4.0.14",
     "dts-bundle-generator": "^9.5.1",
-    "eslint": "^9.39.1",
+    "eslint": "^10.0.0",
     "globals": "^17.0.0",
     "husky": "^9.1.7",
     "jiti": "^2.6.1",
@@ -90,7 +92,6 @@
     "turbo": "^2.6.1",
     "typedoc": "^0.28.14",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.48.0",
     "vitest": "^4.0.14"
   }
 }

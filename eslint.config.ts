@@ -1,11 +1,13 @@
 import { fileURLToPath } from 'url';
 import js from '@eslint/js';
 import globals from 'globals';
-import tseslint from 'typescript-eslint';
+import tsParser from '@typescript-eslint/parser';
+import tsPlugin from '@typescript-eslint/eslint-plugin';
 import json from '@eslint/json';
 import markdown from '@eslint/markdown';
 import { defineConfig } from 'eslint/config';
 import { includeIgnoreFile } from '@eslint/compat';
+import { Linter } from 'eslint';
 
 const gitignorePath = fileURLToPath(new URL('.gitignore', import.meta.url));
 
@@ -18,17 +20,23 @@ export default defineConfig([
   },
   {
     files: ['**/*.{js,mjs,cjs,ts,mts,cts}'],
-    languageOptions: { globals: { ...globals.browser, ...globals.node } },
+    languageOptions: { globals: { ...globals.browser, ...globals.node, NodeJS: 'readonly' } },
   },
   {
     files: ['**/*.{ts,mts,cts}'],
     languageOptions: {
+      parser: tsParser,
       parserOptions: {
         project: ['./tsconfig.base.json', './packages/**/*/tsconfig.json'],
         tsconfigRootDir: process.cwd(),
       },
     },
-    extends: [tseslint.configs.recommendedTypeChecked],
+    plugins: {
+      '@typescript-eslint': tsPlugin as unknown as Linter,
+    },
+    rules: {
+      ...tsPlugin.configs['recommended-type-checked'].rules,
+    },
   },
   {
     files: ['**/*.json'],
