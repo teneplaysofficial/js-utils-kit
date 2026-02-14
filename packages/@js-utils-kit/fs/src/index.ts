@@ -4,3 +4,4 @@
  * @module fs
  */
 export * from './createArchive';
+export * from './path';

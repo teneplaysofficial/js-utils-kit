@@ -1,12 +1,12 @@
 {
   "summary": {
-    "totalExports": 147,
+    "totalExports": 150,
     "deprecatedExports": 0,
     "classExports": 0,
-    "functionExports": 60,
+    "functionExports": 63,
     "variableExports": 76,
     "typeExports": 10,
-    "valueExports": 136,
+    "valueExports": 139,
     "totalPackages": 11
   },
   "exports": {
@@ -554,6 +554,30 @@
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/fs/src/createArchive.ts",
         "line": 30
+      },
+      {
+        "name": "toPosixPath",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/fs/src/path.ts",
+        "line": 24
+      },
+      {
+        "name": "toWinPath",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/fs/src/path.ts",
+        "line": 50
+      },
+      {
+        "name": "toPlatformPath",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/fs/src/path.ts",
+        "line": 74
       }
     ],
     "@js-utils-kit/number": [
