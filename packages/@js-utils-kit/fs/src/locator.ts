@@ -1,20 +1,19 @@
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { hasCommonJSFilename } from './env';
 
 /**
- * Returns the absolute file path of the currently executing module.
+ * Returns the absolute file path of a module.
  *
  * @remarks
- * This utility works in both:
+ * This utility supports both:
  * - **ESM** → pass `import.meta.url`
- * - **CommonJS** → falls back to `__filename`
+ * - **CommonJS** → pass `__filename`
  *
- * It is safe for npm packages and resolves based on the physical file location.
+ * The path MUST be explicitly provided. Automatic runtime detection is intentionally not performed to avoid incorrect module resolution.
  *
- * @returns Absolute path to the current module file.
+ * @returns Absolute path to the provided module file.
  *
- * @throws {Error} If executed in ESM without providing `metaUrl`.
+ * @throws {Error} If `metaUrlOrPath` is not provided.
  *
  * @example ESM usage
  * ```ts
@@ -24,32 +23,28 @@ import { hasCommonJSFilename } from './env';
  *
  * @example CommonJS usage
  * ```ts
- * const file = locateModuleFile();
+ * const file = locateModuleFile(__filename);
  * console.log(file);
  * ```
  */
 export function locateModuleFile(
-  /** `import.meta.url` when using ESM */
-  metaUrl?: string,
+  /** `import.meta.url` (ESM) or `__filename` (CJS) */
+  metaUrlOrPath: string,
 ): string {
-  if (metaUrl) {
-    return fileURLToPath(metaUrl);
+  if (!metaUrlOrPath) {
+    throw new Error('locateModuleFile requires import.meta.url (ESM) or __filename (CJS).');
   }
 
-  if (hasCommonJSFilename) {
-    return __filename;
-  }
-
-  throw new Error('Unable to determine module file path; Pass import.meta.url in ESM.');
+  return metaUrlOrPath.startsWith('file:') ? fileURLToPath(metaUrlOrPath) : metaUrlOrPath;
 }
 
 /**
- * Returns the absolute directory path of the currently executing module.
+ * Returns the absolute directory path of a module.
  *
  * @remarks
- * Internally derives the path from {@link locateModuleFile}.
+ * Internally derives the directory from {@link locateModuleFile}.
  *
- * @returns Absolute directory path of the current module.
+ * @returns Absolute directory path.
  *
  * @example ESM
  * ```ts
@@ -58,29 +53,34 @@ export function locateModuleFile(
  *
  * @example CommonJS
  * ```ts
- * const dir = locateModuleDirectory();
+ * const dir = locateModuleDirectory(__filename);
  * ```
  */
+
 export function locateModuleDirectory(
-  /** `import.meta.url` when using ESM */
-  metaUrl?: string,
+  /** `import.meta.url` (ESM) or `__filename` (CJS) */
+  metaUrlOrPath: string,
 ) {
-  return path.dirname(locateModuleFile(metaUrl));
+  return path.dirname(locateModuleFile(metaUrlOrPath));
 }
 
 /**
- * Resolves a relative path from the current module's directory.
+ * Resolves a path relative to the provided module's directory.
  *
  * @remarks
  * Useful for loading internal assets such as:
  * - `.hbs` templates
  * - JSON files
  * - SQL schemas
- * - static resources bundled in npm packages
+ * - bundled static resources
  *
- * Unlike `process.cwd()`, this resolves relative to the module file location, making it safe inside `node_modules`.
+ * Unlike `process.cwd()`, this resolves relative to the module
+ * file location, making it safe for usage inside `node_modules`.
  *
  * @returns Absolute resolved path.
+ *
+ * @throws {Error}
+ * If module path is not provided.
  *
  * @example ESM
  * ```ts
@@ -92,14 +92,17 @@ export function locateModuleDirectory(
  *
  * @example CommonJS
  * ```ts
- * const templatePath = resolveModuleRelative("../templates/welcome.hbs");
+ * const templatePath = resolveModuleRelative(
+ *   "../templates/welcome.hbs",
+ *   __filename
+ * );
  * ```
  */
 export function resolveModuleRelative(
-  /** Relative path from the current module file */
+  /** Path relative to the module directory */
   relativePath: string,
-  /** `import.meta.url` when using ESM */
-  metaUrl?: string,
+  /** `import.meta.url` (ESM) or `__filename` (CJS) */
+  metaUrlOrPath: string,
 ) {
-  return path.resolve(locateModuleDirectory(metaUrl), relativePath);
+  return path.resolve(locateModuleDirectory(metaUrlOrPath), relativePath);
 }
