@@ -104,5 +104,13 @@ export function resolveModuleRelative(
   /** `import.meta.url` (ESM) or `__filename` (CJS) */
   metaUrlOrPath: string,
 ) {
-  return path.resolve(locateModuleDirectory(metaUrlOrPath), relativePath);
+  const baseDir = locateModuleDirectory(metaUrlOrPath);
+  const resolvedPath = path.resolve(baseDir, relativePath);
+  const relative = path.relative(baseDir, resolvedPath);
+
+  if (relative.startsWith('..')) {
+    throw new Error('Resolved path escapes module directory.');
+  }
+
+  return resolvedPath;
 }

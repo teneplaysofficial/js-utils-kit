@@ -51,21 +51,13 @@ describe('locateModuleDirectory', () => {
 });
 
 describe('resolveModuleRelative', () => {
-  it('resolves relative path from ESM module', () => {
-    const resolved = resolveModuleRelative('../src/locator.ts', import.meta.url);
+  it('resolves relative path within same directory (ESM)', () => {
+    const resolved = resolveModuleRelative('./locator.test.ts', import.meta.url);
 
-    expect(path.isAbsolute(resolved)).toBe(true);
-    expect(resolved).toContain(path.join('src', 'locator'));
+    expect(resolved).toBe(path.join(__dirname, 'locator.test.ts'));
   });
 
-  it('resolves relative path from CommonJS module', () => {
-    const resolved = resolveModuleRelative('../src/locator.ts', __filename);
-
-    expect(path.isAbsolute(resolved)).toBe(true);
-    expect(resolved).toContain(path.join('src', 'locator'));
-  });
-
-  it('resolves simple relative file in same directory', () => {
+  it('resolves relative path within same directory (CommonJS)', () => {
     const resolved = resolveModuleRelative('./locator.test.ts', __filename);
 
     expect(resolved).toBe(path.join(__dirname, 'locator.test.ts'));
@@ -73,7 +65,21 @@ describe('resolveModuleRelative', () => {
 
   it('throws if module path is not provided', () => {
     expect(() =>
-      resolveModuleRelative('../src/locator.ts', undefined as unknown as string),
+      resolveModuleRelative('./locator.test.ts', undefined as unknown as string),
     ).toThrow();
+  });
+
+  it('throws when attempting directory traversal outside module root', () => {
+    expect(() => resolveModuleRelative('../../../../etc/passwd', __filename)).toThrow(
+      /escapes module directory/i,
+    );
+  });
+
+  it('throws when absolute path escapes module root', () => {
+    const outsidePath = path.resolve(__dirname, '../..');
+
+    expect(() => resolveModuleRelative(outsidePath, __filename)).toThrow(
+      /escapes module directory/i,
+    );
   });
 });

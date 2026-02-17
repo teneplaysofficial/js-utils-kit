@@ -569,7 +569,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/fs/src/locator.ts",
-        "line": 31
+        "line": 30
       },
       {
         "name": "locateModuleDirectory",
@@ -577,7 +577,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/fs/src/locator.ts",
-        "line": 64
+        "line": 60
       },
       {
         "name": "resolveModuleRelative",
@@ -585,7 +585,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/fs/src/locator.ts",
-        "line": 98
+        "line": 101
       },
       {
         "name": "toPosixPath",
