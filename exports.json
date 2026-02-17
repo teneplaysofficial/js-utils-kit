@@ -1,12 +1,12 @@
 {
   "summary": {
-    "totalExports": 150,
+    "totalExports": 154,
     "deprecatedExports": 0,
     "classExports": 0,
-    "functionExports": 63,
-    "variableExports": 76,
+    "functionExports": 66,
+    "variableExports": 77,
     "typeExports": 10,
-    "valueExports": 139,
+    "valueExports": 143,
     "totalPackages": 11
   },
   "exports": {
@@ -554,6 +554,38 @@
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/fs/src/createArchive.ts",
         "line": 30
+      },
+      {
+        "name": "hasCommonJSFilename",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/fs/src/env.ts",
+        "line": 19
+      },
+      {
+        "name": "locateModuleFile",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/fs/src/locator.ts",
+        "line": 30
+      },
+      {
+        "name": "locateModuleDirectory",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/fs/src/locator.ts",
+        "line": 60
+      },
+      {
+        "name": "resolveModuleRelative",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/fs/src/locator.ts",
+        "line": 101
       },
       {
         "name": "toPosixPath",
