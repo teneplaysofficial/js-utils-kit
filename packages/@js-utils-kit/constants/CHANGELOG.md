@@ -1,5 +1,31 @@
 # @js-utils-kit/constants
 
+## 0.2.1
+
+### Patch Changes
+
+- [#100](https://github.com/teneplaysofficial/js-utils-kit/pull/100) [`f1e4b53`](https://github.com/teneplaysofficial/js-utils-kit/commit/f1e4b53e4955cc4bf35b64ee742442f7d0e0b799) Thanks [@teneplaysofficial](https://github.com/teneplaysofficial)! - Update commit type titles to be changelog-friendly.
+
+  Commit type titles now use plural, release-oriented headings such as
+  **Features**, **Bug Fixes**, and **Chores**, making generated changelogs
+  clearer and more consistent.
+
+  This is a display-only change and does not affect commit parsing,
+  types, or release logic.
+
+  ```diff
+  - ## Feature
+  + ## Features
+
+  - ## Bug Fix
+  + ## Bug Fixes
+
+  - ## Chore
+  + ## Chores
+  ```
+
+- Dependency sync
+
 ## 0.2.0
 
 ### Minor Changes
