@@ -1,5 +1,26 @@
 # @js-utils-kit/fs
 
+## 1.4.0
+
+### Minor Changes
+
+- [#106](https://github.com/teneplaysofficial/js-utils-kit/pull/106) [`c124905`](https://github.com/teneplaysofficial/js-utils-kit/commit/c124905b24181197cd5039279f019a83fc03ae0e) Thanks [@teneplaysofficial](https://github.com/teneplaysofficial)! - Add cross-platform path conversion utilities:
+  - toPosixPath
+  - toWinPath
+  - toPlatformPath
+
+- [#110](https://github.com/teneplaysofficial/js-utils-kit/pull/110) [`75531aa`](https://github.com/teneplaysofficial/js-utils-kit/commit/75531aadaa2d25e1208a1afad284ea8ae8a7ba79) Thanks [@teneplaysofficial](https://github.com/teneplaysofficial)! - Add cross-runtime module location utilities.
+
+  New utils:
+  - `hasCommonJSFilename`
+  - `locateModuleFile`
+  - `locateModuleDirectory`
+  - `resolveModuleRelative`
+
+  These utilities safely resolve module file paths and directories in both ESM and CommonJS environments.
+
+- Dependency sync
+
 ## 1.3.0
 
 ### Minor Changes
