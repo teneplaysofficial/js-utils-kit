@@ -4,7 +4,7 @@ _Modular JavaScript utilities with type support_
 
 [![Publish](https://github.com/teneplaysofficial/js-utils-kit/actions/workflows/publish.yml/badge.svg)](https://github.com/teneplaysofficial/js-utils-kit/actions/workflows/publish.yml)
 [![ci](https://github.com/teneplaysofficial/js-utils-kit/actions/workflows/ci.yml/badge.svg)](https://github.com/TenEplaysOfficial/js-utils-kit)
-[![codecov](https://codecov.io/github/teneplaysofficial/js-utils-kit/graph/badge.svg?token=9CEFGKSU2S)](https://github.com/TenEplaysOfficial/js-utils-kit)
+[![codecov](https://codecov.io/github/teneplaysofficial/js-utils-kit/graph/badge.svg?token=9CEFGKSU2S)](https://app.codecov.io/gh/teneplaysofficial/js-utils-kit/tree/main)
 [![npm version](https://img.shields.io/npm/v/@js-utils-kit/core.svg?logo=npm&color=brightgreen)](https://www.npmjs.com/package/@js-utils-kit/core)
 [![Downloads](https://img.shields.io/npm/dt/@js-utils-kit/core?logo=npm)](https://www.npmjs.com/package/@js-utils-kit/core)
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/teneplaysofficial/js-utils-kit/main.svg)](https://results.pre-commit.ci/latest/github/teneplaysofficial/js-utils-kit/main)
@@ -61,8 +61,8 @@ Full documentation is available at [js-utils.js.org](https://js-utils.js.org/mod
 
 ## Contributing
 
-We welcome contributions whether it's fixing bugs, adding utilities, improving docs, or writing tests. See [CONTRIBUTING.md](../../CONTRIBUTING.md) for guidelines and join our [GitHub Discussions](https://github.com/teneplaysofficial/js-utils-kit/discussions) to share ideas or propose features.
+We welcome contributions whether it's fixing bugs, adding utilities, improving docs, or writing tests. See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines and join our [GitHub Discussions](https://github.com/teneplaysofficial/js-utils-kit/discussions) to share ideas or propose features.
 
 ## License
 
-Released under the [MIT License](../../LICENSE)
+Released under the [MIT License](LICENSE)
