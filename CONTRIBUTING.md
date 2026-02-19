@@ -258,6 +258,7 @@ Before submitting a PR, ensure:
 - [ ] All tests pass (`pnpm test`)
 - [ ] The project builds successfully (`pnpm build`)
 - [ ] No unintended breaking changes
+- [ ] The utility is compatible with both ESM and CJS
 - [ ] Public exports are correct
 - [ ] Documentation updated (if needed)
 
