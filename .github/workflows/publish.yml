@@ -26,7 +26,6 @@ jobs:
       NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       NPM_CONFIG_PROVENANCE: true
     outputs:
-      docs-folder: docs
       published: ${{ steps.changesets.outputs.published }}
     steps:
       - uses: actions/checkout@v6
@@ -35,7 +34,6 @@ jobs:
       - uses: ./.github/actions/setup
       - run: |
           pnpm build
-          pnpm build:docs
           echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
           pnpm release:sync
 
@@ -46,10 +44,6 @@ jobs:
           version: pnpm changeset version
           publish: pnpm changeset publish
 
-      - uses: actions/upload-pages-artifact@v4
-        with:
-          path: ./docs
-
   deploy:
     needs: publish
     if: needs.publish.outputs.published == 'true'
@@ -58,6 +52,24 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - uses: actions/checkout@v6
+      - uses: ./.github/actions/setup
+      - name: Build documentation
+        run: |
+          pnpm build
+          pnpm build:docs
+      - name: Run tests
+        run: pnpm vitest run --coverage
+      - name: Copy test coverage to docs folder
+        run: |
+          mkdir -p docs
+          cp -r coverage docs/
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload documentation artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: ./docs
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
