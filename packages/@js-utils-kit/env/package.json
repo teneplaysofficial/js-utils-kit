@@ -1,6 +1,6 @@
 {
   "name": "@js-utils-kit/env",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "Environment utilities",
   "private": false,
   "license": "MIT",
@@ -30,8 +30,8 @@
   "types": "./dist/index.d.cts",
   "exports": {
     ".": {
-      "require": "./dist/index.cjs",
-      "import": "./dist/index.mjs"
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
     }
   },
   "scripts": {

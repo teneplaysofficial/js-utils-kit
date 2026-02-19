@@ -1,6 +1,6 @@
 {
   "name": "@js-utils-kit/core",
-  "version": "1.4.0",
+  "version": "2.0.0",
   "description": "Essential JavaScript helpers",
   "license": "MIT",
   "private": false,
@@ -42,8 +42,8 @@
   "types": "./dist/index.d.cts",
   "exports": {
     ".": {
-      "require": "./dist/index.cjs",
-      "import": "./dist/index.mjs"
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
     }
   },
   "scripts": {
