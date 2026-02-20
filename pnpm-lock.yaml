@@ -1905,13 +1905,6 @@ packages:
         integrity: sha512-IfEDxwoWIjkeXL1eXcDiow4UbKjhLdq6/EuSVR9GMN7KVH3r9gQ83e73hsz1Nd1T3ijd5xv1wcWRYO+D6kCI2w==,
       }
 
-  commander@14.0.2:
-    resolution:
-      {
-        integrity: sha512-TywoWNNRbhoD0BXs1P3ZEScW8W5iKrnbithIl0YH+uCmBd0QpPOA8yc82DS3BIE5Ma6FnBVUsJ7wVUDz4dvOWQ==,
-      }
-    engines: { node: '>=20' }
-
   commander@14.0.3:
     resolution:
       {
@@ -5209,8 +5202,6 @@ snapshots:
 
   colorette@2.0.20: {}
 
-  commander@14.0.2: {}
-
   commander@14.0.3: {}
 
   compress-commons@6.0.2:
@@ -5447,7 +5438,7 @@ snapshots:
 
   figlet@1.10.0:
     dependencies:
-      commander: 14.0.2
+      commander: 14.0.3
 
   file-entry-cache@8.0.0:
     dependencies:
