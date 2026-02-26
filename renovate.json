@@ -1,7 +1,4 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "gitIgnoredAuthors": [
-    "pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>"
-  ],
   "extends": ["local>teneplaysofficial/renovate-config"]
 }
