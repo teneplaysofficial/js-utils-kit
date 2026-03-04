@@ -26,7 +26,7 @@ jobs:
       - uses: actions/checkout@v6
       - uses: ./.github/actions/setup
       - run: |
-          pnpm build
+          pnpm sync
           pnpm gen
           pnpm fmt
 
@@ -46,7 +46,7 @@ jobs:
             echo ""
             git --no-pager diff
             echo ""
-            echo "::error::Generated or formatted files are out of date. Please run 'pnpm gen' and 'pnpm fmt' locally."
+            echo "::error::Generated or formatted files are out of date. Please run 'pnpm sync', 'pnpm gen' and 'pnpm fmt' locally."
             exit 1
           else
             echo "No changes detected. All generated files are up to date."

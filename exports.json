@@ -1,12 +1,12 @@
 {
   "summary": {
-    "totalExports": 154,
+    "totalExports": 158,
     "deprecatedExports": 0,
     "classExports": 0,
     "functionExports": 66,
-    "variableExports": 77,
-    "typeExports": 10,
-    "valueExports": 143,
+    "variableExports": 80,
+    "typeExports": 11,
+    "valueExports": 146,
     "totalPackages": 11
   },
   "exports": {
@@ -294,6 +294,38 @@
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/physics.ts",
         "line": 19
+      },
+      {
+        "name": "SHEBANG",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/shebang.ts",
+        "line": 1
+      },
+      {
+        "name": "SPDX",
+        "declarationKind": "TypeAliasDeclaration",
+        "exportKind": "type",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/spdx-license.ts",
+        "line": 3
+      },
+      {
+        "name": "SPDX_LICENSE_IDENTIFIERS",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/spdx-license.ts",
+        "line": 16
+      },
+      {
+        "name": "SPDX_LICENSE",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/spdx-license.ts",
+        "line": 751
       },
       {
         "name": "NEW_LINE",

@@ -9,6 +9,8 @@ export * from './http';
 export * from './math';
 export * from './numbers';
 export * from './physics';
+export * from './shebang';
+export * from './spdx-license';
 export * from './symbols';
 export * from './time';
 export * from './units';
