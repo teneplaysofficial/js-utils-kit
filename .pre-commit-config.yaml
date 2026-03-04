@@ -19,3 +19,5 @@ repos:
     rev: v1.0.0
     hooks:
       - id: prettier
+        additional_dependencies:
+          - '@tenedev/prettier-config@1.1.1'

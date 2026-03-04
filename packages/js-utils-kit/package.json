@@ -3,17 +3,6 @@
   "displayName": "JS Utils Kit",
   "version": "2.0.0",
   "description": "Essential JavaScript helpers",
-  "license": "MIT",
-  "private": false,
-  "repository": "https://github.com/teneplaysofficial/js-utils-kit",
-  "bugs": {
-    "url": "https://github.com/teneplaysofficial/js-utils-kit/issues"
-  },
-  "author": {
-    "name": "Sriman",
-    "email": "136729116+TenEplaysOfficial@users.noreply.github.com",
-    "url": "https://tene.vercel.app"
-  },
   "keywords": [
     "javascript",
     "utils",
@@ -36,19 +25,30 @@
     "date",
     "type-check"
   ],
-  "type": "module",
+  "repository": "https://github.com/teneplaysofficial/js-utils-kit",
+  "bugs": {
+    "url": "https://github.com/teneplaysofficial/js-utils-kit/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Sriman",
+    "email": "136729116+TenEplaysOfficial@users.noreply.github.com",
+    "url": "https://tene.vercel.app"
+  },
+  "private": false,
   "files": [
     "dist"
   ],
+  "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
-  "types": "./dist/index.d.cts",
   "exports": {
     ".": {
       "import": "./dist/index.mjs",
       "require": "./dist/index.cjs"
     }
   },
+  "types": "./dist/index.d.cts",
   "scripts": {
     "build": "tsdown"
   },
