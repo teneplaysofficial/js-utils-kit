@@ -1,5 +1,16 @@
 # @js-utils-kit/env
 
+## 1.6.0
+
+### Minor Changes
+
+- Dependency sync
+
+### Patch Changes
+
+- Updated dependencies [[`919cf6e`](https://github.com/teneplaysofficial/js-utils-kit/commit/919cf6e8e6f9761c77a2ce12b187a009bc8f0631)]:
+  - @js-utils-kit/types@1.4.0
+
 ## 1.5.0
 
 ### Minor Changes

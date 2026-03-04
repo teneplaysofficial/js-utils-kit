@@ -1,5 +1,13 @@
 # @js-utils-kit/types
 
+## 1.4.0
+
+### Minor Changes
+
+- [#124](https://github.com/teneplaysofficial/js-utils-kit/pull/124) [`919cf6e`](https://github.com/teneplaysofficial/js-utils-kit/commit/919cf6e8e6f9761c77a2ce12b187a009bc8f0631) Thanks [@teneplaysofficial](https://github.com/teneplaysofficial)! - Add a comprehensive `PackageJson` TypeScript type representing the full `package.json` schema
+
+- Dependency sync
+
 ## 1.3.0
 
 ### Minor Changes
