@@ -35,6 +35,7 @@
     }
   },
   "scripts": {
+    "sync": "jiti scripts/spdx.ts",
     "build": "tsdown"
   },
   "dependencies": {

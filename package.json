@@ -31,6 +31,7 @@
     "prepare": "husky",
     "test": "turbo run test -- --coverage",
     "prebuild": "rimraf --glob \"packages/**/dist\"",
+    "sync": "turbo run sync",
     "build": "turbo run build",
     "build:docs": "typedoc --tsconfig tsconfig.base.json && node -e \"require('node:fs').cpSync('google88133773e6f7fb4f.html', 'docs/google88133773e6f7fb4f.html')\"",
     "gen": "pnpm gen:exports",
