@@ -30,7 +30,7 @@
   "scripts": {
     "prebuild": "rimraf --glob \"packages/**/dist\"",
     "build": "turbo run build",
-    "build:docs": "typedoc --tsconfig tsconfig.base.json && node -e \"require('node:fs').cpSync('google88133773e6f7fb4f.html', 'docs/google88133773e6f7fb4f.html')\"",
+    "build:docs": "typedoc --tsconfig tsconfig.base.json",
     "changeset": "changeset",
     "checks": "node scripts/checks.js",
     "fmt": "prettier --write .",

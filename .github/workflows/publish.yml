@@ -60,10 +60,12 @@ jobs:
           pnpm build:docs
       - name: Run tests
         run: pnpm vitest run --coverage
-      - name: Copy test coverage to docs folder
+      - name: Copy content files to docs
         run: |
           mkdir -p docs
           cp -r coverage docs/
+          cp google88133773e6f7fb4f.html docs/google88133773e6f7fb4f.html
+          cp exports.json docs/exports.json
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload documentation artifact
