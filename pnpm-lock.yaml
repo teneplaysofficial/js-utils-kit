@@ -193,6 +193,15 @@ importers:
 
   packages/@js-utils-kit/object: {}
 
+  packages/@js-utils-kit/pm:
+    dependencies:
+      '@js-utils-kit/fs':
+        specifier: workspace:*
+        version: link:../fs
+      '@js-utils-kit/types':
+        specifier: workspace:*
+        version: link:../types
+
   packages/@js-utils-kit/string:
     dependencies:
       '@js-utils-kit/types':

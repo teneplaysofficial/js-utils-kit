@@ -1,13 +1,13 @@
 {
   "summary": {
-    "totalExports": 158,
+    "totalExports": 165,
     "deprecatedExports": 0,
     "classExports": 0,
-    "functionExports": 66,
+    "functionExports": 68,
     "variableExports": 80,
-    "typeExports": 11,
-    "valueExports": 146,
-    "totalPackages": 11
+    "typeExports": 16,
+    "valueExports": 148,
+    "totalPackages": 12
   },
   "exports": {
     "@js-utils-kit/array": [
@@ -596,6 +596,14 @@
         "line": 19
       },
       {
+        "name": "exists",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/fs/src/file.ts",
+        "line": 4
+      },
+      {
         "name": "locateModuleFile",
         "declarationKind": "FunctionDeclaration",
         "exportKind": "function",
@@ -710,6 +718,40 @@
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/object/src/mergeObj.ts",
         "line": 39
+      }
+    ],
+    "@js-utils-kit/pm": [
+      {
+        "name": "detectPM",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/pm/src/pm.ts",
+        "line": 45
+      },
+      {
+        "name": "PackageManager",
+        "declarationKind": "TypeAliasDeclaration",
+        "exportKind": "type",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/pm/src/types.ts",
+        "line": 1
+      },
+      {
+        "name": "DetectPMOptions",
+        "declarationKind": "InterfaceDeclaration",
+        "exportKind": "type",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/pm/src/types.ts",
+        "line": 6
+      },
+      {
+        "name": "DetectPMResult",
+        "declarationKind": "InterfaceDeclaration",
+        "exportKind": "type",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/pm/src/types.ts",
+        "line": 46
       }
     ],
     "@js-utils-kit/string": [
@@ -1086,6 +1128,14 @@
         "line": 7
       },
       {
+        "name": "PackageJson",
+        "declarationKind": "TypeAliasDeclaration",
+        "exportKind": "type",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/types/src/PackageJson.ts",
+        "line": 56
+      },
+      {
         "name": "Trim",
         "declarationKind": "InterfaceDeclaration",
         "exportKind": "type",
@@ -1100,6 +1150,14 @@
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/types/src/commit/types.ts",
         "line": 6
+      },
+      {
+        "name": "DeepPartial",
+        "declarationKind": "TypeAliasDeclaration",
+        "exportKind": "type",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/types/src/utils/DeepPartial.ts",
+        "line": 1
       }
     ],
     "@js-utils-kit/valid": [
