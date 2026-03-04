@@ -4,6 +4,9 @@ import { exists } from '@js-utils-kit/fs';
 import { PackageJson } from '@js-utils-kit/types';
 import { DetectPMOptions, DetectPMResult, PackageManager } from './types';
 
+/** List of JavaScript package managers */
+export const PACKAGE_MANAGERS = ['npm', 'pnpm', 'yarn', 'bun'] as const;
+
 /**
  * Detect the package manager used in a project directory.
  *
@@ -51,9 +54,9 @@ export async function detectPM({
   const ua = process.env.npm_config_user_agent;
 
   if (ua?.startsWith('pnpm')) name = 'pnpm';
-  if (ua?.startsWith('yarn')) name = 'yarn';
-  if (ua?.startsWith('bun')) name = 'bun';
-  if (ua?.startsWith('npm')) name = 'npm';
+  else if (ua?.startsWith('yarn')) name = 'yarn';
+  else if (ua?.startsWith('bun')) name = 'bun';
+  else if (ua?.startsWith('npm')) name = 'npm';
 
   if (lockfile) {
     const [isNpm, isPnpm, isYarn, isBun, isBunb] = await Promise.all([
@@ -74,7 +77,12 @@ export async function detectPM({
     try {
       const pkg = JSON.parse(await readFile(resolve(cwd, 'package.json'), 'utf-8')) as PackageJson;
 
-      if (pkg.packageManager) name = pkg.packageManager.split('@')[0] as PackageManager;
+      if (pkg.packageManager) {
+        const pm = pkg.packageManager.split('@')[0] as PackageManager;
+        if (PACKAGE_MANAGERS.includes(pm)) {
+          name = pm;
+        }
+      }
     } catch {
       //
     }

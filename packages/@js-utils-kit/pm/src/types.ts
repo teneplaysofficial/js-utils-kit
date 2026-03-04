@@ -1,4 +1,6 @@
-export type PackageManager = 'npm' | 'yarn' | 'pnpm' | 'bun';
+import { PACKAGE_MANAGERS } from './pm';
+
+export type PackageManager = (typeof PACKAGE_MANAGERS)[number];
 
 /**
  * Options for {@link detectPM}
