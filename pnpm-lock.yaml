@@ -157,6 +157,9 @@ importers:
       '@js-utils-kit/object':
         specifier: workspace:*
         version: link:../object
+      '@js-utils-kit/pm':
+        specifier: workspace:*
+        version: link:../pm
       '@js-utils-kit/string':
         specifier: workspace:*
         version: link:../string
