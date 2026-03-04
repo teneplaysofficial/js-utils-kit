@@ -157,6 +157,9 @@ importers:
       '@js-utils-kit/object':
         specifier: workspace:*
         version: link:../object
+      '@js-utils-kit/pm':
+        specifier: workspace:*
+        version: link:../pm
       '@js-utils-kit/string':
         specifier: workspace:*
         version: link:../string
@@ -192,6 +195,15 @@ importers:
         version: link:../types
 
   packages/@js-utils-kit/object: {}
+
+  packages/@js-utils-kit/pm:
+    dependencies:
+      '@js-utils-kit/fs':
+        specifier: workspace:*
+        version: link:../fs
+      '@js-utils-kit/types':
+        specifier: workspace:*
+        version: link:../types
 
   packages/@js-utils-kit/string:
     dependencies:

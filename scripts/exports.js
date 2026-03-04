@@ -166,6 +166,13 @@ const collectExports = (project) => {
     variableExports: 0,
     typeExports: 0,
   };
+  const exportNames = {
+    classExports: [],
+    functionExports: [],
+    variableExports: [],
+    typeExports: [],
+    deprecatedExports: [],
+  };
 
   for (const f of project.getSourceFiles()) {
     if (f.getBaseName() === 'index.ts') continue;
@@ -186,11 +193,24 @@ const collectExports = (project) => {
       const kind = classify(d);
       const deprecated = isDeprecated(d);
 
-      if (kind === 'type') stats.typeExports++;
-      if (kind === 'function') stats.functionExports++;
-      if (kind === 'class') stats.classExports++;
-      if (kind === 'variable') stats.variableExports++;
-      if (deprecated) stats.deprecatedExports++;
+      if (kind === 'type') {
+        stats.typeExports++;
+        exportNames.typeExports.push(name);
+      } else if (kind === 'function') {
+        stats.functionExports++;
+        exportNames.functionExports.push(name);
+      } else if (kind === 'class') {
+        stats.classExports++;
+        exportNames.classExports.push(name);
+      } else if (kind === 'variable') {
+        stats.variableExports++;
+        exportNames.variableExports.push(name);
+      }
+
+      if (deprecated) {
+        stats.deprecatedExports++;
+        exportNames.deprecatedExports.push(name);
+      }
 
       exports[pkg].push({
         name,
@@ -211,6 +231,7 @@ const collectExports = (project) => {
       valueExports: stats.functionExports + stats.classExports + stats.variableExports,
       totalPackages: Object.keys(exports).length,
     },
+    exportNames,
     exports,
   };
 };
