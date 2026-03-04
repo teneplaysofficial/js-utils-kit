@@ -1,5 +1,23 @@
 # @js-utils-kit/core
 
+## 2.1.0
+
+### Minor Changes
+
+- Dependency sync
+
+### Patch Changes
+
+- Updated dependencies [[`919cf6e`](https://github.com/teneplaysofficial/js-utils-kit/commit/919cf6e8e6f9761c77a2ce12b187a009bc8f0631), [`919cf6e`](https://github.com/teneplaysofficial/js-utils-kit/commit/919cf6e8e6f9761c77a2ce12b187a009bc8f0631), [`9e71b82`](https://github.com/teneplaysofficial/js-utils-kit/commit/9e71b828ab5e0a8cc638b8fb5b7d936d5ba0a0b9), [`919cf6e`](https://github.com/teneplaysofficial/js-utils-kit/commit/919cf6e8e6f9761c77a2ce12b187a009bc8f0631)]:
+  - @js-utils-kit/pm@0.1.0
+  - @js-utils-kit/types@1.4.0
+  - @js-utils-kit/constants@0.3.0
+  - @js-utils-kit/fs@1.5.0
+  - @js-utils-kit/array@0.4.0
+  - @js-utils-kit/env@1.6.0
+  - @js-utils-kit/number@1.4.0
+  - @js-utils-kit/string@1.4.0
+
 ## 2.0.0
 
 ### Major Changes

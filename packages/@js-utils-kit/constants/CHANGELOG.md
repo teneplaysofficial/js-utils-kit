@@ -1,5 +1,20 @@
 # @js-utils-kit/constants
 
+## 0.3.0
+
+### Minor Changes
+
+- Dependency sync
+
+- [#121](https://github.com/teneplaysofficial/js-utils-kit/pull/121) [`9e71b82`](https://github.com/teneplaysofficial/js-utils-kit/commit/9e71b828ab5e0a8cc638b8fb5b7d936d5ba0a0b9) Thanks [@teneplaysofficial](https://github.com/teneplaysofficial)! - Add ready-to-use SHEBANG constants and SPDX license identifier mappings.
+  - Added `SHEBANG` constants with preset shebang lines for common shells and runtimes to simplify script creation.
+  - Added SPDX license constants including type definitions and a comprehensive mapping of license identifiers.
+
+### Patch Changes
+
+- Updated dependencies [[`919cf6e`](https://github.com/teneplaysofficial/js-utils-kit/commit/919cf6e8e6f9761c77a2ce12b187a009bc8f0631)]:
+  - @js-utils-kit/types@1.4.0
+
 ## 0.2.1
 
 ### Patch Changes

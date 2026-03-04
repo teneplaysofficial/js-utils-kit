@@ -1,5 +1,18 @@
 # @js-utils-kit/fs
 
+## 1.5.0
+
+### Minor Changes
+
+- Dependency sync
+
+- [#124](https://github.com/teneplaysofficial/js-utils-kit/pull/124) [`919cf6e`](https://github.com/teneplaysofficial/js-utils-kit/commit/919cf6e8e6f9761c77a2ce12b187a009bc8f0631) Thanks [@teneplaysofficial](https://github.com/teneplaysofficial)! - Add `exists(path)` utility to check whether a file or directory exists.
+
+### Patch Changes
+
+- Updated dependencies [[`919cf6e`](https://github.com/teneplaysofficial/js-utils-kit/commit/919cf6e8e6f9761c77a2ce12b187a009bc8f0631)]:
+  - @js-utils-kit/types@1.4.0
+
 ## 1.4.0
 
 ### Minor Changes

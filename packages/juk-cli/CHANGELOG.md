@@ -1,5 +1,16 @@
 # juk-cli
 
+## 0.4.0
+
+### Minor Changes
+
+- Dependency sync
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @js-utils-kit/env@1.6.0
+
 ## 0.3.0
 
 ### Minor Changes
