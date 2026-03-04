@@ -3,8 +3,6 @@
   "displayName": "JS Utils Kit",
   "version": "0.5.4",
   "description": "Essential JavaScript helpers",
-  "license": "MIT",
-  "private": true,
   "homepage": "https://js-utils.js.org",
   "repository": {
     "type": "git",
@@ -14,49 +12,40 @@
   "bugs": {
     "url": "https://github.com/teneplaysofficial/js-utils-kit/issues"
   },
+  "license": "MIT",
   "author": {
     "name": "Sriman",
     "email": "136729116+TenEplaysOfficial@users.noreply.github.com",
     "url": "https://tene.vercel.app"
   },
+  "private": true,
+  "packageManager": "pnpm@10.30.3",
   "files": [
     "dist"
   ],
+  "type": "module",
   "engines": {
     "node": ">=22"
   },
-  "type": "module",
-  "packageManager": "pnpm@10.30.3",
   "scripts": {
-    "prepare": "husky",
-    "test": "turbo run test -- --coverage",
     "prebuild": "rimraf --glob \"packages/**/dist\"",
-    "sync": "turbo run sync",
     "build": "turbo run build",
     "build:docs": "typedoc --tsconfig tsconfig.base.json && node -e \"require('node:fs').cpSync('google88133773e6f7fb4f.html', 'docs/google88133773e6f7fb4f.html')\"",
-    "gen": "pnpm gen:exports",
-    "gen:new": "node scripts/new-project.js",
-    "gen:exports": "node scripts/exports.js",
-    "checks": "node scripts/checks.js",
     "changeset": "changeset",
-    "release:sync": "node scripts/sync-dependent-bumps.js",
-    "version": "changeset version",
-    "publish": "changeset publish",
+    "checks": "node scripts/checks.js",
+    "fmt": "prettier --write .",
+    "fmt:check": "prettier --check .",
+    "gen": "pnpm gen:exports",
+    "gen:exports": "node scripts/exports.js",
+    "gen:new": "node scripts/new-project.js",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "fmt": "prettier --write .",
-    "fmt:check": "prettier --check ."
-  },
-  "prettier": {
-    "semi": true,
-    "singleQuote": true,
-    "printWidth": 100,
-    "trailingComma": "all",
-    "tabWidth": 2
-  },
-  "lint-staged": {
-    "*": "prettier --write --ignore-unknown",
-    "*.{js,ts,json,md}": "eslint --fix"
+    "prepare": "husky",
+    "publish": "changeset publish",
+    "release:sync": "node scripts/sync-dependent-bumps.js",
+    "sync": "turbo run sync",
+    "test": "turbo run test -- --coverage",
+    "version": "changeset version"
   },
   "dependencies": {
     "archiver": "catalog:",
@@ -72,6 +61,7 @@
     "@eslint/json": "^1.0.1",
     "@eslint/markdown": "^7.5.1",
     "@manypkg/get-packages": "^3.1.0",
+    "@tenedev/prettier-config": "^1.1.1",
     "@types/archiver": "^7.0.0",
     "@types/figlet": "^1.7.0",
     "@types/node": "^24.10.13",
@@ -94,5 +84,10 @@
     "typedoc": "^0.28.17",
     "typescript": "^5.9.3",
     "vitest": "^4.0.18"
+  },
+  "prettier": "@tenedev/prettier-config",
+  "lint-staged": {
+    "*": "prettier --write --ignore-unknown",
+    "*.{js,ts,json,md}": "eslint --fix"
   }
 }
