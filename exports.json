@@ -1,12 +1,12 @@
 {
   "summary": {
-    "totalExports": 166,
+    "totalExports": 177,
     "deprecatedExports": 0,
     "classExports": 0,
-    "functionExports": 68,
+    "functionExports": 79,
     "variableExports": 81,
     "typeExports": 16,
-    "valueExports": 149,
+    "valueExports": 160,
     "totalPackages": 12
   },
   "exportNames": {
@@ -20,6 +20,17 @@
       "digits",
       "lowercase",
       "uppercase",
+      "envRef",
+      "setEnv",
+      "removeEnv",
+      "hasEnv",
+      "getEnv",
+      "getEnvOr",
+      "appendEnv",
+      "prependEnv",
+      "toggleEnv",
+      "isEnvEmpty",
+      "setEnvMany",
       "getRunTimeEnvironment",
       "createArchive",
       "exists",
@@ -696,6 +707,94 @@
       }
     ],
     "@js-utils-kit/env": [
+      {
+        "name": "envRef",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/env/src/env.ts",
+        "line": 26
+      },
+      {
+        "name": "setEnv",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/env/src/env.ts",
+        "line": 44
+      },
+      {
+        "name": "removeEnv",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/env/src/env.ts",
+        "line": 65
+      },
+      {
+        "name": "hasEnv",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/env/src/env.ts",
+        "line": 86
+      },
+      {
+        "name": "getEnv",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/env/src/env.ts",
+        "line": 105
+      },
+      {
+        "name": "getEnvOr",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/env/src/env.ts",
+        "line": 123
+      },
+      {
+        "name": "appendEnv",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/env/src/env.ts",
+        "line": 146
+      },
+      {
+        "name": "prependEnv",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/env/src/env.ts",
+        "line": 170
+      },
+      {
+        "name": "toggleEnv",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/env/src/env.ts",
+        "line": 197
+      },
+      {
+        "name": "isEnvEmpty",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/env/src/env.ts",
+        "line": 223
+      },
+      {
+        "name": "setEnvMany",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/env/src/env.ts",
+        "line": 246
+      },
       {
         "name": "getRunTimeEnvironment",
         "declarationKind": "FunctionDeclaration",

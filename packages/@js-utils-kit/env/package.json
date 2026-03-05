@@ -39,6 +39,7 @@
     "test": "vitest run"
   },
   "dependencies": {
+    "@js-utils-kit/system": "workspace:*",
     "@js-utils-kit/types": "workspace:*"
   }
 }
