@@ -175,6 +175,9 @@ importers:
 
   packages/@js-utils-kit/env:
     dependencies:
+      '@js-utils-kit/system':
+        specifier: workspace:*
+        version: link:../system
       '@js-utils-kit/types':
         specifier: workspace:*
         version: link:../types
