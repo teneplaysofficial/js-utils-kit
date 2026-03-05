@@ -87,7 +87,7 @@ export function hasEnv(
   /** Environment variable name */
   k: string,
 ) {
-  return k in env;
+  return Object.hasOwn(env, k);
 }
 
 /**
@@ -124,7 +124,7 @@ export function getEnvOr(
   /** Environment variable name */
   k: string,
   /**  Default value if variable is not set */
-  fallback?: string,
+  fallback: string,
 ) {
   return getEnv(k) ?? fallback;
 }
@@ -152,7 +152,7 @@ export function appendEnv(
   sep = delimiter,
 ) {
   const current = getEnv(k);
-  setEnv(k, current ? `${current}${sep}${v}` : v);
+  setEnv(k, [current, v].filter(Boolean).join(sep));
 }
 
 /**
@@ -176,7 +176,7 @@ export function prependEnv(
   sep = delimiter,
 ) {
   const current = getEnv(k);
-  setEnv(k, current ? `${v}${sep}${current}` : v);
+  setEnv(k, [v, current].filter(Boolean).join(sep));
 }
 
 /**
