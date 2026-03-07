@@ -15,6 +15,7 @@
  *
  * @returns A new object containing deeply merged keys and values.
  *
+ * @deprecated Use {@link deepMerge} instead.
  *
  * @example
  * ```ts

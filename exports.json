@@ -1,12 +1,12 @@
 {
   "summary": {
-    "totalExports": 177,
-    "deprecatedExports": 0,
+    "totalExports": 180,
+    "deprecatedExports": 1,
     "classExports": 0,
-    "functionExports": 79,
+    "functionExports": 80,
     "variableExports": 81,
-    "typeExports": 16,
-    "valueExports": 160,
+    "typeExports": 18,
+    "valueExports": 161,
     "totalPackages": 12
   },
   "exportNames": {
@@ -47,6 +47,7 @@
       "randomFloat",
       "randomInt",
       "deepFreeze",
+      "deepMerge",
       "mergeObj",
       "detectPM",
       "capitalize",
@@ -177,6 +178,7 @@
     ],
     "typeExports": [
       "SPDX",
+      "DeepMergeOptions",
       "PackageManager",
       "DetectPMOptions",
       "DetectPMResult",
@@ -187,13 +189,16 @@
       "HttpStatusCode",
       "MinuteOrSecond",
       "PackageJson",
+      "PlainObject",
       "Trim",
       "CommitScope",
       "CommitType",
       "CommitTypeMeta",
       "DeepPartial"
     ],
-    "deprecatedExports": []
+    "deprecatedExports": [
+      "mergeObj"
+    ]
   },
   "exports": {
     "@js-utils-kit/array": [
@@ -986,12 +991,28 @@
         "line": 99
       },
       {
-        "name": "mergeObj",
+        "name": "deepMerge",
         "declarationKind": "FunctionDeclaration",
         "exportKind": "function",
         "deprecated": false,
+        "filePath": "packages/@js-utils-kit/object/src/deepMerge.ts",
+        "line": 91
+      },
+      {
+        "name": "DeepMergeOptions",
+        "declarationKind": "InterfaceDeclaration",
+        "exportKind": "type",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/object/src/deepMerge.ts",
+        "line": 7
+      },
+      {
+        "name": "mergeObj",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": true,
         "filePath": "packages/@js-utils-kit/object/src/mergeObj.ts",
-        "line": 39
+        "line": 40
       }
     ],
     "@js-utils-kit/pm": [
@@ -1416,6 +1437,14 @@
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/types/src/PackageJson.ts",
         "line": 56
+      },
+      {
+        "name": "PlainObject",
+        "declarationKind": "TypeAliasDeclaration",
+        "exportKind": "type",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/types/src/PlainObject.ts",
+        "line": 2
       },
       {
         "name": "Trim",

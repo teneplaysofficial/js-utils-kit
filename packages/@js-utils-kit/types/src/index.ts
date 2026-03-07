@@ -13,4 +13,5 @@ export * from './Hour';
 export * from './HttpStatusCode';
 export * from './MinuteOrSecond';
 export * from './PackageJson';
+export * from './PlainObject';
 export * from './Trim';
