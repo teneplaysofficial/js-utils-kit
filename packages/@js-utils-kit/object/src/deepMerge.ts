@@ -20,7 +20,7 @@ export interface DeepMergeOptions {
 const OPTION_KEYS = ['arrayStrategy'] as const satisfies readonly (keyof DeepMergeOptions)[];
 
 function isDeepMergeOptions(value: DeepMergeOptions) {
-  if (!isObject(value) || isArray(value)) return false;
+  if (!isObject(value)) return false;
 
   const keys = Object.keys(value);
 
@@ -109,6 +109,8 @@ export function deepMerge<T extends PlainObject>(
     if (!isObject(param)) continue;
 
     for (const key of Object.keys(param)) {
+      if (key === '__proto__' || key === 'constructor' || key === 'prototype') continue;
+
       const incoming = (param as PlainObject)[key];
       const existing = result[key];
 
@@ -132,7 +134,7 @@ export function deepMerge<T extends PlainObject>(
       }
 
       // Object
-      if (isObject(incoming) && !isArray(incoming)) {
+      if (isObject(incoming)) {
         result[key] =
           isObject(existing) && !Array.isArray(existing)
             ? deepMerge(existing as PlainObject, incoming as PlainObject, {
