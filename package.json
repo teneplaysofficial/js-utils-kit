@@ -30,7 +30,7 @@
   "scripts": {
     "prebuild": "rimraf --glob \"packages/**/dist\"",
     "build": "turbo run build",
-    "build:docs": "typedoc --tsconfig tsconfig.base.json",
+    "build:docs": "typedoc",
     "changeset": "changeset",
     "checks": "node scripts/checks.js",
     "fmt": "prettier --write .",

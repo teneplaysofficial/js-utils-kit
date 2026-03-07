@@ -10,7 +10,7 @@ const posix = (p) => p.split(sep).join('/');
 const rel = (p) => posix(relative(ROOT, p));
 
 const project = new Project({
-  tsConfigFilePath: join(ROOT, 'tsconfig.base.json'),
+  tsConfigFilePath: join(ROOT, 'tsconfig.json'),
   skipAddingFilesFromTsConfig: true,
   manipulationSettings: { quoteKind: QuoteKind.Single },
 });

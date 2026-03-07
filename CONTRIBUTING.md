@@ -19,7 +19,7 @@ js-utils-kit/
 ├── packages/              # All publishable/internal packages
 ├── scripts/               # Build & development tooling
 ├── eslint.config.ts       # ESLint configuration
-├── tsconfig.base.json     # Base TypeScript config
+├── tsconfig.json          # TypeScript config
 ├── turbo.json             # Turbo pipeline config
 ├── typedoc.json           # Documentation config
 ├── pnpm-workspace.yaml    # Workspace definition

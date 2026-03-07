@@ -197,7 +197,14 @@ importers:
         specifier: workspace:*
         version: link:../types
 
-  packages/@js-utils-kit/object: {}
+  packages/@js-utils-kit/object:
+    dependencies:
+      '@js-utils-kit/types':
+        specifier: workspace:*
+        version: link:../types
+      '@js-utils-kit/valid':
+        specifier: workspace:*
+        version: link:../valid
 
   packages/@js-utils-kit/pm:
     dependencies:
