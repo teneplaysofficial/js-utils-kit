@@ -1,5 +1,13 @@
 # @js-utils-kit/types
 
+## 1.5.0
+
+### Minor Changes
+
+- [#129](https://github.com/teneplaysofficial/js-utils-kit/pull/129) [`c757aa9`](https://github.com/teneplaysofficial/js-utils-kit/commit/c757aa9dee5c478088b2342a645df196c566128d) Thanks [@teneplaysofficial](https://github.com/teneplaysofficial)! - Add `PlainObject` type representing a generic JavaScript object with arbitrary property keys
+
+- Dependency sync
+
 ## 1.4.0
 
 ### Minor Changes
