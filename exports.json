@@ -196,9 +196,7 @@
       "CommitTypeMeta",
       "DeepPartial"
     ],
-    "deprecatedExports": [
-      "mergeObj"
-    ]
+    "deprecatedExports": ["mergeObj"]
   },
   "exports": {
     "@js-utils-kit/array": [
