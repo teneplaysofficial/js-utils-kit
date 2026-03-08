@@ -1,5 +1,56 @@
 # @js-utils-kit/object
 
+## 1.2.0
+
+### Minor Changes
+
+- [#129](https://github.com/teneplaysofficial/js-utils-kit/pull/129) [`c757aa9`](https://github.com/teneplaysofficial/js-utils-kit/commit/c757aa9dee5c478088b2342a645df196c566128d) Thanks [@teneplaysofficial](https://github.com/teneplaysofficial)! - Add `deepMerge` utility for recursively merging objects with configurable array strategies (`replace`, `concat`, `merge`).
+
+  Deprecate `mergeObj` in favor of `deepMerge`.
+
+  #### Migration
+
+  ```diff
+  - import { mergeObj } from "@js-utils-kit/object";
+  + import { deepMerge } from "@js-utils-kit/object";
+
+  - const result = mergeObj(
+  -   false,
+  -   { a: 1 },
+  -   { b: 2 }
+  - );
+  + const result = deepMerge(
+  +   { a: 1 },
+  +   { b: 2 }
+  + );
+
+  - mergeObj(
+  -   true,
+  -   { items: [1, 2] },
+  -   { items: [3] }
+  - );
+  + deepMerge(
+  +   { items: [1, 2] },
+  +   { items: [3] },
+  +   { arrayStrategy: "concat" }
+  + );
+  ```
+
+  ```diff
+  - mergeObj(true, ...)
+  + deepMerge(..., { arrayStrategy: "concat" })
+
+  - mergeObj(false, ...)
+  + deepMerge(...)
+  ```
+
+- Dependency sync
+
+### Patch Changes
+
+- Updated dependencies [[`c757aa9`](https://github.com/teneplaysofficial/js-utils-kit/commit/c757aa9dee5c478088b2342a645df196c566128d)]:
+  - @js-utils-kit/types@1.5.0
+
 ## 1.1.0
 
 ### Minor Changes

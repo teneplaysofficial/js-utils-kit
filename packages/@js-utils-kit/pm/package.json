@@ -1,6 +1,6 @@
 {
   "name": "@js-utils-kit/pm",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Utilities for detecting and interacting with JavaScript package managers",
   "homepage": "https://js-utils.js.org",
   "repository": {
