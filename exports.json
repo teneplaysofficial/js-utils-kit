@@ -1,12 +1,12 @@
 {
   "summary": {
-    "totalExports": 180,
+    "totalExports": 181,
     "deprecatedExports": 1,
     "classExports": 0,
-    "functionExports": 80,
+    "functionExports": 81,
     "variableExports": 81,
     "typeExports": 18,
-    "valueExports": 161,
+    "valueExports": 162,
     "totalPackages": 12
   },
   "exportNames": {
@@ -15,6 +15,7 @@
       "chunk",
       "compact",
       "lastElement",
+      "sum",
       "unique",
       "alphanumeric",
       "digits",
@@ -223,6 +224,14 @@
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/array/src/lastElement.ts",
         "line": 13
+      },
+      {
+        "name": "sum",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/array/src/sum.ts",
+        "line": 52
       },
       {
         "name": "unique",
