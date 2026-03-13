@@ -94,7 +94,7 @@ export function deepMerge<T extends PlainObject>(
    *
    * The last argument may optionally be a {@link DeepMergeOptions} object.
    */
-  ...params: (T | DeepMergeOptions)[]
+  ...params: (T | Partial<T> | DeepMergeOptions | null | undefined)[]
 ): T {
   let options: DeepMergeOptions = {};
 
