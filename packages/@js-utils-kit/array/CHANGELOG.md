@@ -1,5 +1,18 @@
 # @js-utils-kit/array
 
+## 0.6.0
+
+### Minor Changes
+
+- [#137](https://github.com/teneplaysofficial/js-utils-kit/pull/137) [`7eed96f`](https://github.com/teneplaysofficial/js-utils-kit/commit/7eed96f166448f75cd05546cfde0786ae2ba4c41) Thanks [@teneplaysofficial](https://github.com/teneplaysofficial)! - Add `sum` utility for calculating totals from arrays.
+
+  Features:
+  - Supports flat and nested arrays.
+  - Supports summing values from objects using a key.
+  - Ignores `null` and `undefined` values during summation.
+
+- Dependency sync
+
 ## 0.5.0
 
 ### Minor Changes
