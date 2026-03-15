@@ -1,5 +1,13 @@
 # @js-utils-kit/object
 
+## 1.2.1
+
+### Patch Changes
+
+- [#135](https://github.com/teneplaysofficial/js-utils-kit/pull/135) [`6b2217a`](https://github.com/teneplaysofficial/js-utils-kit/commit/6b2217a0ae15681825e5c0082e14230b13baafdb) Thanks [@teneplaysofficial](https://github.com/teneplaysofficial)! - Allow `null` and `undefined` values in `deepMerge` parameters. These values are now safely ignored during merging.
+
+- Dependency sync
+
 ## 1.2.0
 
 ### Minor Changes
