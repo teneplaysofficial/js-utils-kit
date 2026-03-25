@@ -82,7 +82,7 @@
     "tsdown": "^0.21.2",
     "turbo": "^2.8.16",
     "typedoc": "^0.28.17",
-    "typescript": "^5.9.3",
+    "typescript": "^6.0.0",
     "vitest": "^4.1.0"
   },
   "prettier": "@tenedev/prettier-config",
