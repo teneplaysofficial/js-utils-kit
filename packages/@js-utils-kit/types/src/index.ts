@@ -5,7 +5,6 @@
  */
 export * from './commit/index';
 export * from './ArchiveFormat';
-export * from './ArchiverOptions';
 export * from './CreateArchiveOptions';
 export * from './Environment';
 export * from './Falsy';
