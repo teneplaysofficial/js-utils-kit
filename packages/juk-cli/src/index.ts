@@ -4,7 +4,7 @@ import { Flag } from './types';
 import { pkg } from './constant';
 import printHelp from './printHelp';
 import { isCI } from '@js-utils-kit/env';
-import printBanner from './printBanner';
+import { print } from 'echo-banner';
 
 const rawArgs = process.argv.slice(2);
 const invalidFlags = rawArgs.filter((arg) => !knownFlags.includes(arg));
@@ -32,7 +32,9 @@ if (args.has('--is-ci')) {
   exit(isCI ? 0 : 1);
 }
 
-printBanner();
+await print({
+  pkg,
+});
 
 printHelp();
 exit(0);
