@@ -47,10 +47,6 @@
     "test": "turbo run test -- --coverage",
     "version": "changeset version"
   },
-  "dependencies": {
-    "archiver": "catalog:",
-    "figlet": "catalog:"
-  },
   "devDependencies": {
     "@changesets/changelog-github": "^0.6.0",
     "@changesets/cli": "^2.30.0",
@@ -63,12 +59,10 @@
     "@manypkg/get-packages": "^3.1.0",
     "@tenedev/prettier-config": "^1.2.0",
     "@types/archiver": "^7.0.0",
-    "@types/figlet": "^1.7.0",
     "@types/node": "^25.5.0",
     "@typescript-eslint/eslint-plugin": "^8.57.0",
     "@typescript-eslint/parser": "^8.57.0",
     "@vitest/coverage-v8": "^4.1.0",
-    "dts-bundle-generator": "^9.5.1",
     "eslint": "^10.0.3",
     "globals": "^17.4.0",
     "husky": "^9.1.7",
@@ -76,7 +70,6 @@
     "lint-staged": "^16.3.3",
     "prettier": "^3.8.1",
     "rimraf": "^6.1.3",
-    "rollup": "^4.59.0",
     "sylog": "^2.1.1",
     "ts-morph": "^27.0.2",
     "tsdown": "^0.21.2",

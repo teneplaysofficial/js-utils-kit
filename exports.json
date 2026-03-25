@@ -1,6 +1,6 @@
 {
   "summary": {
-    "totalExports": 181,
+    "totalExports": 180,
     "deprecatedExports": 1,
     "classExports": 0,
     "functionExports": 81,
@@ -1380,14 +1380,6 @@
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/types/src/ArchiveFormat.ts",
         "line": 4
-      },
-      {
-        "name": "ArchiverOptions",
-        "declarationKind": "ExportSpecifier",
-        "exportKind": "unknown",
-        "deprecated": false,
-        "filePath": "packages/@js-utils-kit/types/src/ArchiverOptions.ts",
-        "line": 3
       },
       {
         "name": "CreateArchiveOptions",
