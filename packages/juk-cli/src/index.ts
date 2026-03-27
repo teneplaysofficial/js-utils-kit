@@ -32,7 +32,6 @@ if (args.has('--is-ci')) {
   exit(isCI ? 0 : 1);
 }
 
- 
 await print({
   pkg,
 });
