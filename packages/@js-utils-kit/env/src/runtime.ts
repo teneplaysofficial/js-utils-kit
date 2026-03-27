@@ -33,7 +33,7 @@ export const isBrowser: boolean =
  * ```
  */
 export const isDev: boolean =
-  typeof process !== 'undefined' && process.env.NODE_ENV === Environment.DEV;
+  typeof process !== 'undefined' && process.env['NODE_ENV'] === Environment.DEV;
 
 /**
  * Checks if the current environment is production.
@@ -50,7 +50,7 @@ export const isDev: boolean =
  * ```
  */
 export const isProd: boolean =
-  typeof process !== 'undefined' && process.env.NODE_ENV === Environment.PROD;
+  typeof process !== 'undefined' && process.env['NODE_ENV'] === Environment.PROD;
 
 /**
  * Checks if the current environment is testing.
@@ -67,7 +67,7 @@ export const isProd: boolean =
  * ```
  */
 export const isTest: boolean =
-  typeof process !== 'undefined' && process.env.NODE_ENV === Environment.TEST;
+  typeof process !== 'undefined' && process.env['NODE_ENV'] === Environment.TEST;
 
 /**
  * Checks if the current runtime environment is Node.js.

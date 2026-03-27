@@ -97,5 +97,5 @@ export const isCI =
   hasProviderKey ||
   (GENERIC_KEYS.some(check) &&
     (hasProviderKey ||
-      (typeof env.CI_NAME === 'string' &&
-        NAMES.includes(env.CI_NAME.toLowerCase() as (typeof NAMES)[number]))));
+      (typeof env['CI_NAME'] === 'string' &&
+        NAMES.includes(env['CI_NAME'].toLowerCase() as (typeof NAMES)[number]))));

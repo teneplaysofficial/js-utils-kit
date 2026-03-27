@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import archiver from 'archiver';
 import type { Archiver } from 'archiver';
-import { CreateArchiveOptions } from '@js-utils-kit/types';
+import type { CreateArchiveOptions } from '@js-utils-kit/types';
 
 /**
  * Creates a {@link ArchiveFormat } archive from a specified directory.

@@ -14,7 +14,7 @@ import { Environment } from '@js-utils-kit/types';
  * ```
  */
 export function getRunTimeEnvironment(): Environment {
-  switch (process.env.NODE_ENV) {
+  switch (process.env['NODE_ENV']) {
     case Environment.PROD:
       return Environment.PROD;
     case Environment.DEV:

@@ -1,4 +1,4 @@
-import { Trim } from '@js-utils-kit/types';
+import type { Trim } from '@js-utils-kit/types';
 
 /**
  * Trims whitespace from a string with methods for leading and trailing and normalizing whitespace.

@@ -36,7 +36,7 @@ export function isEmail(
 
   if (parts.length !== 2) return false;
 
-  const [local, domain] = parts;
+  const [local, domain] = parts as [string, string];
 
   if (local.length === 0 || local.length > 64) return false;
 

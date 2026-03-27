@@ -16,11 +16,11 @@ const mockReadFile = vi.mocked(readFile);
 
 beforeEach(() => {
   vi.clearAllMocks();
-  delete process.env.npm_config_user_agent;
+  delete process.env['npm_config_user_agent'];
 });
 
 it('detects npm from user agent', async () => {
-  process.env.npm_config_user_agent = 'npm/10.0.0';
+  process.env['npm_config_user_agent'] = 'npm/10.0.0';
 
   const result = await detectPM({
     lockfile: false,
@@ -32,7 +32,7 @@ it('detects npm from user agent', async () => {
 });
 
 it('detects yarn from user agent', async () => {
-  process.env.npm_config_user_agent = 'yarn/1.22.0';
+  process.env['npm_config_user_agent'] = 'yarn/1.22.0';
 
   const result = await detectPM({
     lockfile: false,
@@ -44,7 +44,7 @@ it('detects yarn from user agent', async () => {
 });
 
 it('detects bun from user agent', async () => {
-  process.env.npm_config_user_agent = 'bun/1.1.0';
+  process.env['npm_config_user_agent'] = 'bun/1.1.0';
 
   const result = await detectPM({
     lockfile: false,
@@ -56,7 +56,7 @@ it('detects bun from user agent', async () => {
 });
 
 it('detects pnpm from user agent', async () => {
-  process.env.npm_config_user_agent = 'pnpm/9.0.0';
+  process.env['npm_config_user_agent'] = 'pnpm/9.0.0';
 
   const result = await detectPM({
     lockfile: false,

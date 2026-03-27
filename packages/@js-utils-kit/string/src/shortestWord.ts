@@ -33,5 +33,5 @@ export function shortestWord(
 
   const unique = [...new Set(shortest)];
 
-  return unique.length === 1 ? unique[0] : unique;
+  return unique.length === 1 ? unique[0]! : unique;
 }
