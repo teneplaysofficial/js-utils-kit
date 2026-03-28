@@ -1,4 +1,5 @@
 import { readFile, writeFile } from 'node:fs/promises';
+import type { JsonReplacer } from '@js-utils-kit/types';
 
 /**
  * Parse a JSON string into a typed value.
@@ -43,11 +44,13 @@ export function stringifyJson(
      */
     replacer = null,
   }: {
-    replacer?: Parameters<typeof JSON.stringify>[1];
+    replacer?: JsonReplacer;
     space?: Parameters<typeof JSON.stringify>[2];
   } = {},
 ) {
-  return JSON.stringify(v, replacer, space);
+  if (typeof replacer === 'function') return JSON.stringify(v, replacer, space);
+  else if (Array.isArray(replacer)) return JSON.stringify(v, replacer, space);
+  return JSON.stringify(v, null, space);
 }
 
 /**
@@ -95,7 +98,7 @@ export async function writeJsonFile(
      */
     replacer = null,
   }: {
-    replacer?: Parameters<typeof JSON.stringify>[1];
+    replacer?: JsonReplacer;
     space?: Parameters<typeof JSON.stringify>[2];
   } = {},
 ) {

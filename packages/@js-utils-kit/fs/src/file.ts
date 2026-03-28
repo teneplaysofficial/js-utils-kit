@@ -56,7 +56,8 @@ export async function getContentSize(
   path: PathLike,
 ) {
   try {
-    return (await stat(path)).size;
+    const size = (await stat(path)).size;
+    return typeof size === 'number' ? size : 0;
   } catch {
     return 0;
   }
