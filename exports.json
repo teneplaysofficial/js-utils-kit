@@ -1,12 +1,12 @@
 {
   "summary": {
-    "totalExports": 181,
+    "totalExports": 188,
     "deprecatedExports": 1,
     "classExports": 0,
-    "functionExports": 81,
+    "functionExports": 88,
     "variableExports": 81,
     "typeExports": 18,
-    "valueExports": 162,
+    "valueExports": 169,
     "totalPackages": 12
   },
   "exportNames": {
@@ -35,6 +35,13 @@
       "getRunTimeEnvironment",
       "createArchive",
       "exists",
+      "isFile",
+      "isDirectory",
+      "getContentSize",
+      "parseJson",
+      "stringifyJson",
+      "readJsonFile",
+      "writeJsonFile",
       "locateModuleFile",
       "locateModuleDirectory",
       "resolveModuleRelative",
@@ -887,7 +894,63 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/fs/src/file.ts",
-        "line": 4
+        "line": 5
+      },
+      {
+        "name": "isFile",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/fs/src/file.ts",
+        "line": 22
+      },
+      {
+        "name": "isDirectory",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/fs/src/file.ts",
+        "line": 38
+      },
+      {
+        "name": "getContentSize",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/fs/src/file.ts",
+        "line": 54
+      },
+      {
+        "name": "parseJson",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/fs/src/json.ts",
+        "line": 13
+      },
+      {
+        "name": "stringifyJson",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/fs/src/json.ts",
+        "line": 29
+      },
+      {
+        "name": "readJsonFile",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/fs/src/json.ts",
+        "line": 63
+      },
+      {
+        "name": "writeJsonFile",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/fs/src/json.ts",
+        "line": 79
       },
       {
         "name": "locateModuleFile",
