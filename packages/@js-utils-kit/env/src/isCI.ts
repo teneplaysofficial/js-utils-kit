@@ -99,5 +99,3 @@ export const isCI =
     (hasProviderKey ||
       (typeof env['CI_NAME'] === 'string' &&
         NAMES.includes(env['CI_NAME'].toLowerCase() as (typeof NAMES)[number]))));
-
-export default isCI;
