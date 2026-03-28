@@ -1,5 +1,24 @@
 # @js-utils-kit/env
 
+## 2.0.0
+
+### Major Changes
+
+- [#150](https://github.com/teneplaysofficial/js-utils-kit/pull/150) [`c7851c9`](https://github.com/teneplaysofficial/js-utils-kit/commit/c7851c9e507422a8ef7638f03993792a9a1b1ba8) Thanks [@teneplaysofficial](https://github.com/teneplaysofficial)! - Removed the default export for `isCI`. It is now available only as a named export.
+
+  ```diff
+  - import isCI from '@js-utils-kit/env';
+  + import { isCI } from '@js-utils-kit/env';
+  ```
+
+- Dependency sync
+
+### Patch Changes
+
+- Updated dependencies [[`e00b16e`](https://github.com/teneplaysofficial/js-utils-kit/commit/e00b16ef6a1ec31996d7af256a2a09e12965f868), [`e00b16e`](https://github.com/teneplaysofficial/js-utils-kit/commit/e00b16ef6a1ec31996d7af256a2a09e12965f868)]:
+  - @js-utils-kit/system@1.0.1
+  - @js-utils-kit/types@1.6.0
+
 ## 1.7.0
 
 ### Minor Changes
