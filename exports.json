@@ -1499,7 +1499,7 @@
         "exportKind": "type",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/types/src/json.ts",
-        "line": 2
+        "line": 12
       },
       {
         "name": "MinuteOrSecond",
