@@ -67,7 +67,7 @@ jobs:
           cp google88133773e6f7fb4f.html docs/google88133773e6f7fb4f.html
           cp exports.json docs/exports.json
       - name: Configure Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6
       - name: Upload documentation artifact
         uses: actions/upload-pages-artifact@v4
         with:
