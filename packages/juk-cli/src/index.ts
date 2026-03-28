@@ -32,7 +32,7 @@ if (args.has('--is-ci')) {
   exit(isCI ? 0 : 1);
 }
 
-// eslint-disable-next-line @typescript-eslint/no-unsafe-call
+ 
 await print({
   pkg,
 });

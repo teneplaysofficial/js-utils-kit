@@ -48,7 +48,8 @@
     "version": "changeset version"
   },
   "dependencies": {
-    "archiver": "catalog:"
+    "archiver": "catalog:",
+    "echo-banner": "catalog:"
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.6.0",

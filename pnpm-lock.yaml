@@ -19,6 +19,9 @@ importers:
       archiver:
         specifier: 'catalog:'
         version: 7.0.1
+      echo-banner:
+        specifier: 'catalog:'
+        version: 0.3.0
     devDependencies:
       '@changesets/changelog-github':
         specifier: ^0.6.0
