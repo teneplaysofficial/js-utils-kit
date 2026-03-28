@@ -1,8 +1,8 @@
 import { readFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { exists } from '@js-utils-kit/fs';
-import { PackageJson } from '@js-utils-kit/types';
-import { DetectPMOptions, DetectPMResult, PackageManager } from './types';
+import type { PackageJson } from '@js-utils-kit/types';
+import type { DetectPMOptions, DetectPMResult, PackageManager } from './types';
 
 /** List of JavaScript package managers */
 export const PACKAGE_MANAGERS = ['npm', 'pnpm', 'yarn', 'bun'] as const;
@@ -51,7 +51,7 @@ export async function detectPM({
   packageJson = true,
 }: DetectPMOptions = {}): Promise<DetectPMResult> {
   let name: PackageManager | undefined;
-  const ua = process.env.npm_config_user_agent;
+  const ua = process.env['npm_config_user_agent'];
 
   if (ua?.startsWith('pnpm')) name = 'pnpm';
   else if (ua?.startsWith('yarn')) name = 'yarn';
@@ -88,7 +88,7 @@ export async function detectPM({
     }
 
   return {
-    name,
+    ...(name != undefined && { name }),
     isPackageManager: name != null,
     isNpm: name === 'npm',
     isPnpm: name === 'pnpm',

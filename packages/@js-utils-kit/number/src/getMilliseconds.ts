@@ -1,4 +1,4 @@
-import { Hour, MinuteOrSecond } from '@js-utils-kit/types';
+import type { Hour, MinuteOrSecond } from '@js-utils-kit/types';
 
 /**
  * Converts a time duration (days, hours, minutes, seconds) into total milliseconds.

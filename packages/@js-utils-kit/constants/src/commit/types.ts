@@ -1,4 +1,4 @@
-import { CommitTypeMeta } from '@js-utils-kit/types';
+import type { CommitTypeMeta } from '@js-utils-kit/types';
 
 /**
  * Map of supported commit types and their metadata.

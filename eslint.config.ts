@@ -35,7 +35,7 @@ export default defineConfig([
       '@typescript-eslint': tsPlugin as unknown as Linter,
     },
     rules: {
-      ...tsPlugin.configs['recommended-type-checked'].rules,
+      ...tsPlugin.configs['recommended-type-checked']?.rules,
     },
   },
   {

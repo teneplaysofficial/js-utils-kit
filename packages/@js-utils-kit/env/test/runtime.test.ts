@@ -1,10 +1,10 @@
 import { afterAll, beforeEach, describe, expect, it, vi } from 'vitest';
 import { Environment } from '@js-utils-kit/types';
 
-const originalEnv = process.env.NODE_ENV;
+const originalEnv = process.env['NODE_ENV'];
 
 afterAll(() => {
-  process.env.NODE_ENV = originalEnv;
+  process.env['NODE_ENV'] = originalEnv;
 });
 
 beforeEach(() => {
@@ -17,13 +17,13 @@ async function loadRuntime() {
 
 describe('isDev', () => {
   it('returns true when NODE_ENV is development', async () => {
-    process.env.NODE_ENV = Environment.DEV;
+    process.env['NODE_ENV'] = Environment.DEV;
     const { isDev } = await loadRuntime();
     expect(isDev).toBe(true);
   });
 
   it('returns false otherwise', async () => {
-    process.env.NODE_ENV = Environment.TEST;
+    process.env['NODE_ENV'] = Environment.TEST;
     const { isDev } = await loadRuntime();
     expect(isDev).toBe(false);
   });
@@ -31,7 +31,7 @@ describe('isDev', () => {
 
 describe('isProd', () => {
   it('returns true when NODE_ENV is production', async () => {
-    process.env.NODE_ENV = Environment.PROD;
+    process.env['NODE_ENV'] = Environment.PROD;
     const { isProd } = await loadRuntime();
     expect(isProd).toBe(true);
   });
@@ -39,7 +39,7 @@ describe('isProd', () => {
 
 describe('isTest', () => {
   it('returns true when NODE_ENV is test', async () => {
-    process.env.NODE_ENV = Environment.TEST;
+    process.env['NODE_ENV'] = Environment.TEST;
     const { isTest } = await loadRuntime();
     expect(isTest).toBe(true);
   });

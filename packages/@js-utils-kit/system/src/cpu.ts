@@ -15,4 +15,4 @@ export const CPUCores: number = cpus().length;
 /**
  * Get CPU model
  */
-export const CPUModel: string = cpus()[0].model;
+export const CPUModel: string = cpus()[0]?.model ?? 'Unknown CPU';

@@ -33,5 +33,5 @@ export function longestWord(
 
   const unique = [...new Set(longest)];
 
-  return unique.length === 1 ? unique[0] : unique;
+  return unique.length === 1 ? unique[0]! : unique;
 }

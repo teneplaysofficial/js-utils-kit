@@ -1,4 +1,4 @@
-import { Falsy } from '@js-utils-kit/types';
+import type { Falsy } from '@js-utils-kit/types';
 
 /**
  * Removes all falsy values from an array.
