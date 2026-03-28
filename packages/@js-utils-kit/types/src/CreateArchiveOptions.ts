@@ -1,5 +1,5 @@
-import { ArchiverOptions } from 'archiver';
-import { ArchiveFormat } from './ArchiveFormat';
+import type { ArchiverOptions } from 'archiver';
+import type { ArchiveFormat } from './ArchiveFormat';
 
 /**
  * Configuration options.

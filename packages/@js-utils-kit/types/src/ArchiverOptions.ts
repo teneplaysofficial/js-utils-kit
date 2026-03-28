@@ -1,3 +1,3 @@
-import { ArchiverOptions } from 'archiver';
+import type { ArchiverOptions } from 'archiver';
 
-export { ArchiverOptions };
+export type { ArchiverOptions };

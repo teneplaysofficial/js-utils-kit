@@ -1,4 +1,4 @@
-import { DeepPartial } from './utils/DeepPartial';
+import type { DeepPartial } from './utils/DeepPartial';
 
 type Person =
   | string

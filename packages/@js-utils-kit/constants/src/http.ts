@@ -1,4 +1,4 @@
-import { HttpStatusCode } from '@js-utils-kit/types';
+import type { HttpStatusCode } from '@js-utils-kit/types';
 
 /**
  * List of supported HTTP request methods.

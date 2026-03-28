@@ -1,4 +1,4 @@
-import { PlainObject } from '@js-utils-kit/types';
+import type { PlainObject } from '@js-utils-kit/types';
 import { isArray, isObject } from '@js-utils-kit/valid';
 
 /**

@@ -1,6 +1,6 @@
 import process, { exit } from 'node:process';
 import { knownFlags } from './flags';
-import { Flag } from './types';
+import type { Flag } from './types';
 import { pkg } from './constant';
 import printHelp from './printHelp';
 import { isCI } from '@js-utils-kit/env';
