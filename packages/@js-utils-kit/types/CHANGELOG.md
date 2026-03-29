@@ -1,5 +1,13 @@
 # @js-utils-kit/types
 
+## 1.6.0
+
+### Minor Changes
+
+- [#152](https://github.com/teneplaysofficial/js-utils-kit/pull/152) [`e00b16e`](https://github.com/teneplaysofficial/js-utils-kit/commit/e00b16ef6a1ec31996d7af256a2a09e12965f868) Thanks [@teneplaysofficial](https://github.com/teneplaysofficial)! - Add `JsonReplacer` type, supporting `function/array/null` forms, improving type safety & DX, and avoiding TS overload inference issues with `JSON.stringify` while using `Parameters<typeof JSON.stringify>[1]`
+
+- Dependency sync
+
 ## 1.5.0
 
 ### Minor Changes

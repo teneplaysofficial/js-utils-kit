@@ -1,5 +1,16 @@
 # @js-utils-kit/constants
 
+## 0.5.0
+
+### Minor Changes
+
+- Dependency sync
+
+### Patch Changes
+
+- Updated dependencies [[`e00b16e`](https://github.com/teneplaysofficial/js-utils-kit/commit/e00b16ef6a1ec31996d7af256a2a09e12965f868)]:
+  - @js-utils-kit/types@1.6.0
+
 ## 0.4.0
 
 ### Minor Changes

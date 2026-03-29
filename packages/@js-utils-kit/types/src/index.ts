@@ -11,6 +11,7 @@ export * from './Environment';
 export * from './Falsy';
 export * from './Hour';
 export * from './HttpStatusCode';
+export * from './json';
 export * from './MinuteOrSecond';
 export * from './PackageJson';
 export * from './PlainObject';

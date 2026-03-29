@@ -1,12 +1,12 @@
 {
   "summary": {
-    "totalExports": 181,
+    "totalExports": 189,
     "deprecatedExports": 1,
     "classExports": 0,
-    "functionExports": 81,
+    "functionExports": 88,
     "variableExports": 81,
-    "typeExports": 18,
-    "valueExports": 162,
+    "typeExports": 19,
+    "valueExports": 169,
     "totalPackages": 12
   },
   "exportNames": {
@@ -35,6 +35,13 @@
       "getRunTimeEnvironment",
       "createArchive",
       "exists",
+      "isFile",
+      "isDirectory",
+      "getContentSize",
+      "parseJson",
+      "stringifyJson",
+      "readJsonFile",
+      "writeJsonFile",
       "locateModuleFile",
       "locateModuleDirectory",
       "resolveModuleRelative",
@@ -188,6 +195,7 @@
       "Falsy",
       "Hour",
       "HttpStatusCode",
+      "JsonReplacer",
       "MinuteOrSecond",
       "PackageJson",
       "PlainObject",
@@ -887,7 +895,63 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/fs/src/file.ts",
-        "line": 4
+        "line": 5
+      },
+      {
+        "name": "isFile",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/fs/src/file.ts",
+        "line": 22
+      },
+      {
+        "name": "isDirectory",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/fs/src/file.ts",
+        "line": 38
+      },
+      {
+        "name": "getContentSize",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/fs/src/file.ts",
+        "line": 54
+      },
+      {
+        "name": "parseJson",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/fs/src/json.ts",
+        "line": 14
+      },
+      {
+        "name": "stringifyJson",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/fs/src/json.ts",
+        "line": 30
+      },
+      {
+        "name": "readJsonFile",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/fs/src/json.ts",
+        "line": 66
+      },
+      {
+        "name": "writeJsonFile",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/fs/src/json.ts",
+        "line": 82
       },
       {
         "name": "locateModuleFile",
@@ -1428,6 +1492,14 @@
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/types/src/HttpStatusCode.ts",
         "line": 15
+      },
+      {
+        "name": "JsonReplacer",
+        "declarationKind": "TypeAliasDeclaration",
+        "exportKind": "type",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/types/src/json.ts",
+        "line": 12
       },
       {
         "name": "MinuteOrSecond",
