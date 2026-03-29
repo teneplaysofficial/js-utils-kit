@@ -3,5 +3,6 @@
  *
  * @module pm
  */
+export * from './constants';
 export * from './pm';
 export * from './types';

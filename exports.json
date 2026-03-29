@@ -1,12 +1,12 @@
 {
   "summary": {
-    "totalExports": 189,
+    "totalExports": 191,
     "deprecatedExports": 1,
     "classExports": 0,
     "functionExports": 88,
-    "variableExports": 81,
-    "typeExports": 19,
-    "valueExports": 169,
+    "variableExports": 82,
+    "typeExports": 20,
+    "valueExports": 170,
     "totalPackages": 12
   },
   "exportNames": {
@@ -157,6 +157,7 @@
       "isTest",
       "isNode",
       "hasCommonJSFilename",
+      "PM_COMMANDS",
       "PACKAGE_MANAGERS",
       "trim",
       "ARCHITECTURE",
@@ -187,6 +188,7 @@
     "typeExports": [
       "SPDX",
       "DeepMergeOptions",
+      "PMCommand",
       "PackageManager",
       "DetectPMOptions",
       "DetectPMResult",
@@ -1087,6 +1089,22 @@
       }
     ],
     "@js-utils-kit/pm": [
+      {
+        "name": "PMCommand",
+        "declarationKind": "TypeAliasDeclaration",
+        "exportKind": "type",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/pm/src/constants.ts",
+        "line": 3
+      },
+      {
+        "name": "PM_COMMANDS",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/pm/src/constants.ts",
+        "line": 15
+      },
       {
         "name": "detectPM",
         "declarationKind": "FunctionDeclaration",
