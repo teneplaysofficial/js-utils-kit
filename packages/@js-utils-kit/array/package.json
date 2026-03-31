@@ -6,7 +6,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/teneplaysofficial/js-utils-kit",
-    "directory": "packages/array"
+    "directory": "packages/@js-utils-kit/array"
   },
   "bugs": {
     "url": "https://github.com/teneplaysofficial/js-utils-kit/issues"

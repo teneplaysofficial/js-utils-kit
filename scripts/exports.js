@@ -1,9 +1,12 @@
 import { access, readdir, readFile, writeFile } from 'node:fs/promises';
+import { EOL } from 'node:os';
 import { join, relative, sep } from 'node:path';
 import { Node, Project, QuoteKind } from 'ts-morph';
 
 const ROOT = process.cwd();
-const PACKAGES_DIR = join(ROOT, 'packages', '@js-utils-kit');
+const PACKAGES_DIRS = [join(ROOT, 'packages')];
+const IGNORE_PACKAGE_DIRS = ['js-utils-kit', 'juk-cli'];
+const IGNORE_SRC_DIRS = ['utils'];
 
 const sortPaths = (a, b) => a.localeCompare(b);
 const posix = (p) => p.split(sep).join('/');
@@ -16,7 +19,9 @@ const project = new Project({
 });
 
 project.addSourceFilesAtPaths([
-  'packages/@js-utils-kit/**/src/**/*.ts',
+  'packages/**/src/**/*.ts',
+  '!packages/js-utils-kit',
+  '!packages/juk-cli',
   '!**/index.ts',
   '!**/node_modules/**',
 ]);
@@ -27,12 +32,14 @@ const getPackageName = (file) => {
 
   if (i === -1) return 'unknown';
 
-  const scope = p[i + 1];
-  const name = p[i + 2];
+  const scopeOrName = p[i + 1];
+  const maybeName = p[i + 2];
 
-  if (!scope || !name) return 'unknown';
+  if (scopeOrName?.startsWith('@') && maybeName) {
+    return `${scopeOrName}/${maybeName}`;
+  }
 
-  return `${scope}/${name}`;
+  return scopeOrName ?? 'unknown';
 };
 
 const readPkg = async (dir) => JSON.parse(await readFile(join(dir, 'package.json'), 'utf8'));
@@ -41,14 +48,14 @@ const header = (pkg) =>
   `/**
  * ${pkg.description ?? ''}
  *
- * @module ${pkg.name.split('/')[1]}
+ * @module ${pkg.name.split('/')[1] ?? pkg.name}
  */`;
 
 const listDir = async (dir) => {
   const e = await readdir(dir, { withFileTypes: true });
   return {
     dirs: e
-      .filter((d) => d.isDirectory())
+      .filter((d) => d.isDirectory() && !IGNORE_SRC_DIRS.includes(d.name))
       .map((d) => d.name)
       .sort(sortPaths),
     files: e
@@ -58,8 +65,13 @@ const listDir = async (dir) => {
   };
 };
 
-const ensureIndex = (file) =>
-  project.getSourceFile(file) ?? project.createSourceFile(file, '', { overwrite: true });
+const ensureIndex = (file) => {
+  const existing = project.getSourceFile(file);
+
+  if (existing) existing.delete();
+
+  return project.createSourceFile(file, '', { overwrite: true });
+};
 
 const generateIndex = async (dir, root = false) => {
   const { dirs, files } = await listDir(dir);
@@ -81,14 +93,11 @@ const generateIndex = async (dir, root = false) => {
   }
 
   for (const d of dirs) {
-    const child = join(dir, d, 'index.ts');
-    try {
-      await access(child);
-      sf.addExportDeclaration({ moduleSpecifier: `./${d}/index` });
-      await generateIndex(join(dir, d));
-    } catch {
-      //
-    }
+    const childDir = join(dir, d);
+
+    await generateIndex(childDir);
+
+    sf.addExportDeclaration({ moduleSpecifier: `./${d}/index` });
   }
 
   files.forEach((f) => sf.addExportDeclaration({ moduleSpecifier: `./${f}` }));
@@ -225,6 +234,12 @@ const collectExports = (project) => {
     }
   }
 
+  exportNames.classExports.sort(sortPaths);
+  exportNames.functionExports.sort(sortPaths);
+  exportNames.variableExports.sort(sortPaths);
+  exportNames.typeExports.sort(sortPaths);
+  exportNames.deprecatedExports.sort(sortPaths);
+
   return {
     summary: {
       ...stats,
@@ -236,8 +251,37 @@ const collectExports = (project) => {
   };
 };
 
-for (const d of await readdir(PACKAGES_DIR, { withFileTypes: true })) {
-  if (d.isDirectory()) await generateIndex(join(PACKAGES_DIR, d.name, 'src'), true);
+for (const BASE_DIR of PACKAGES_DIRS) {
+  const entries = await readdir(BASE_DIR, { withFileTypes: true });
+
+  for (const d of entries) {
+    if (!d.isDirectory() || IGNORE_PACKAGE_DIRS.includes(d.name)) continue;
+
+    const pkgDir = join(BASE_DIR, d.name);
+
+    try {
+      await access(join(pkgDir, 'src'));
+      await generateIndex(join(pkgDir, 'src'), true);
+      continue;
+    } catch {
+      // not direct package, maybe scoped (@js-utils-kit)
+    }
+
+    const nested = await readdir(pkgDir, { withFileTypes: true });
+
+    for (const sub of nested) {
+      if (!sub.isDirectory()) continue;
+
+      const subPkgDir = join(pkgDir, sub.name);
+
+      try {
+        await access(join(subPkgDir, 'src'));
+        await generateIndex(join(subPkgDir, 'src'), true);
+      } catch {
+        //
+      }
+    }
+  }
 }
 
 await project.save();
@@ -245,4 +289,4 @@ assertNoDuplicates(project);
 
 const result = collectExports(project);
 
-await writeFile(join(ROOT, 'exports.json'), JSON.stringify({ ...result }, null, 2));
+await writeFile(join(ROOT, 'exports.json'), JSON.stringify({ ...result }, null, 2) + EOL);
