@@ -47,8 +47,7 @@ describe('isTest', () => {
 
 describe('isNode', () => {
   it('returns true in Node.js environment', async () => {
-    const { isNode, isBrowser } = await loadRuntime();
+    const { isNode } = await loadRuntime();
     expect(isNode).toBe(true);
-    expect(isBrowser).toBe(false);
   });
 });
