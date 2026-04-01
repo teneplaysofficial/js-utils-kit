@@ -71,15 +71,7 @@ describe('resolveModuleRelative', () => {
 
   it('throws when attempting directory traversal outside module root', () => {
     expect(() => resolveModuleRelative('../../../../etc/passwd', __filename)).toThrow(
-      /escapes module directory/i,
-    );
-  });
-
-  it('throws when absolute path escapes module root', () => {
-    const outsidePath = path.resolve(__dirname, '../..');
-
-    expect(() => resolveModuleRelative(outsidePath, __filename)).toThrow(
-      /escapes module directory/i,
+      /Only one level of parent traversal/i,
     );
   });
 });

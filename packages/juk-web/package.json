@@ -41,6 +41,6 @@
   "types": "./dist/index.d.cts",
   "scripts": {
     "build": "tsdown",
-    "test": "vitest run  --environment happy-dom"
+    "test": "vitest run"
   }
 }

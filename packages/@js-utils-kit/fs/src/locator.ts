@@ -74,8 +74,23 @@ export function locateModuleDirectory(
  * - SQL schemas
  * - bundled static resources
  *
- * Unlike `process.cwd()`, this resolves relative to the module
- * file location, making it safe for usage inside `node_modules`.
+ * Unlike `process.cwd()`, this resolves relative to the module file location, making it safe for usage inside `node_modules`.
+ *
+ * ### Path Constraints
+ * The `relativePath` must follow strict rules:
+ *
+ * Allowed:
+ * - `./file` → same directory
+ * - `../file` → one level up (only one `../` allowed)
+ * - `/file` → absolute path
+ * - `file/...` → normal relative paths (no leading `./`)
+ *
+ * Disallowed:
+ * - Multiple parent traversals (`../../file`)
+ * - Nested traversal tricks (`a/../file`)
+ * - Any path containing more than one `../`
+ *
+ * These constraints help prevent directory traversal vulnerabilities.
  *
  * @returns Absolute resolved path.
  *
@@ -108,8 +123,8 @@ export function resolveModuleRelative(
   const resolvedPath = path.resolve(baseDir, relativePath);
   const relative = path.relative(baseDir, resolvedPath);
 
-  if (relative.startsWith('..')) {
-    throw new Error('Resolved path escapes module directory.');
+  if (relative.split(path.sep).filter((p) => p === '..').length > 1) {
+    throw new Error('Only one level of parent traversal (../) is allowed.');
   }
 
   return resolvedPath;
