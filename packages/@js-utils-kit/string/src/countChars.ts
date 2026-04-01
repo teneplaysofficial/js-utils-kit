@@ -26,5 +26,5 @@ export function countChars(
     return [...str].filter((c) => c === char).length;
   }
 
-  return splitString(str).length;
+  return splitString(str,'').length;
 }
