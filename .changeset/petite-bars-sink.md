@@ -1,4 +1,5 @@
 ---
+'juk-web': minor
 '@js-utils-kit/env': major
 ---
 
