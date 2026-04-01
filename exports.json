@@ -977,7 +977,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/fs/src/locator.ts",
-        "line": 101
+        "line": 116
       },
       {
         "name": "toPosixPath",

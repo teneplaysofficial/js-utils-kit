@@ -119,12 +119,13 @@ export function resolveModuleRelative(
   /** `import.meta.url` (ESM) or `__filename` (CJS) */
   metaUrlOrPath: string,
 ) {
-  if (!/^(?:\.\/.+|\.\.\/(?!.*\.\.\/)[^./][^]*|\/.+|[^./][^]*(?<!\/\.\.))$/.test(relativePath)) {
-    throw new Error('Only one level of parent traversal (../) is allowed.');
-  }
-
   const baseDir = locateModuleDirectory(metaUrlOrPath);
   const resolvedPath = path.resolve(baseDir, relativePath);
+  const relative = path.relative(baseDir, resolvedPath);
+
+  if (relative.split(path.sep).filter((p) => p === '..').length > 1) {
+    throw new Error('Only one level of parent traversal (../) is allowed.');
+  }
 
   return resolvedPath;
 }
