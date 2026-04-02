@@ -1145,7 +1145,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/string/src/countChars.ts",
-        "line": 19
+        "line": 23
       },
       {
         "name": "countFrequencies",
