@@ -37,6 +37,6 @@
   },
   "dependencies": {
     "@js-utils-kit/env": "workspace:*",
-    "figlet": "catalog:"
+    "echo-banner": "catalog:"
   }
 }
