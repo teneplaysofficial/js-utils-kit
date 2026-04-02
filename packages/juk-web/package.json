@@ -1,12 +1,17 @@
 {
-  "name": "@js-utils-kit/system",
-  "version": "1.0.1",
-  "description": "System utilities",
-  "homepage": "https://js-utils.js.org",
+  "name": "juk-web",
+  "version": "0.0.0",
+  "description": "Web utilities for JavaScript",
+  "keywords": [
+    "javascript",
+    "utils",
+    "web",
+    "web-utils"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/teneplaysofficial/js-utils-kit",
-    "directory": "packages/@js-utils-kit/system"
+    "directory": "packages/juk-web"
   },
   "bugs": {
     "url": "https://github.com/teneplaysofficial/js-utils-kit/issues"
@@ -14,7 +19,7 @@
   "license": "MIT",
   "author": {
     "name": "Sriman",
-    "email": "136729116+TenEplaysOfficial@users.noreply.github.com",
+    "email": "136729116+teneplaysofficial@users.noreply.github.com",
     "url": "https://tene.vercel.app"
   },
   "private": false,
@@ -24,19 +29,18 @@
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
+  "browser": "./dist/index.iife.js",
   "exports": {
     ".": {
       "import": "./dist/index.mjs",
       "require": "./dist/index.cjs"
     }
   },
+  "unpkg": "./dist/index.iife.js",
+  "jsdelivr": "./dist/index.iife.js",
   "types": "./dist/index.d.cts",
-  "engines": {
-    "node": ">=22"
-  },
   "scripts": {
     "build": "tsdown",
     "test": "vitest run"
-  },
-  "dependencies": {}
+  }
 }
