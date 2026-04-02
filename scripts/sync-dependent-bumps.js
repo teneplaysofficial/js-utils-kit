@@ -10,7 +10,7 @@ const cwd = process.cwd();
 const changesetDir = path.join(cwd, '.changeset');
 
 zylog.config = {
-  prefixinfo: 'sync-deps',
+  prefix: 'sync-deps',
 };
 
 if (!fs.existsSync(changesetDir)) {
