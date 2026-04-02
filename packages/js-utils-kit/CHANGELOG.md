@@ -1,5 +1,43 @@
 # Changelog
 
+## 4.0.0
+
+### Major Changes
+
+- [#155](https://github.com/teneplaysofficial/js-utils-kit/pull/155) [`ae4c3ab`](https://github.com/teneplaysofficial/js-utils-kit/commit/ae4c3ab07de129980ec4187cec071d742de09fdc) Thanks [@teneplaysofficial](https://github.com/teneplaysofficial)! - Relocate `isBrowser` from `@js-utils-kit/env` to `juk-web`.
+
+  **Migration**
+
+  ```diff
+  - import { isBrowser } from '@js-utils-kit/env'
+  + import { isBrowser } from 'juk-web'
+  ```
+
+### Patch Changes
+
+- [#158](https://github.com/teneplaysofficial/js-utils-kit/pull/158) [`82eab17`](https://github.com/teneplaysofficial/js-utils-kit/commit/82eab17054934b5373f243a0f98bc98fd1b50a3a) Thanks [@teneplaysofficial](https://github.com/teneplaysofficial)! - Correct character counting for whitespace and unicode (fixes spaces, tabs, newlines, and emoji handling).
+
+  **Before**
+  - Whitespace could be inconsistently counted
+
+  **After**
+  - All characters are counted correctly:
+    - spaces
+    - tabs (`\t`)
+    - newlines (`\n`)
+    - unicode characters (emoji, symbols, etc.)
+
+- [#157](https://github.com/teneplaysofficial/js-utils-kit/pull/157) [`d329b4e`](https://github.com/teneplaysofficial/js-utils-kit/commit/d329b4e1f0f37b5877e7e66beca65c2c4d528f96) Thanks [@teneplaysofficial](https://github.com/teneplaysofficial)! - Improve safety and validation in `resolveModuleRelative`
+  - Enforces stricter rules for relative paths
+  - Allow a single parent traversal (`../file`)
+  - Prevents multiple parent traversals (`../../`)
+  - Blocks unsafe patterns like nested traversal (`a/../file`)
+  - Ensures resolved paths cannot escape the module directory
+  - Improves documentation with clear path constraints
+
+- Updated dependencies [[`82eab17`](https://github.com/teneplaysofficial/js-utils-kit/commit/82eab17054934b5373f243a0f98bc98fd1b50a3a), [`ae4c3ab`](https://github.com/teneplaysofficial/js-utils-kit/commit/ae4c3ab07de129980ec4187cec071d742de09fdc), [`d329b4e`](https://github.com/teneplaysofficial/js-utils-kit/commit/d329b4e1f0f37b5877e7e66beca65c2c4d528f96)]:
+  - @js-utils-kit/core@4.0.0
+
 ## 3.0.0
 
 ### Major Changes

@@ -1,5 +1,21 @@
 # @js-utils-kit/string
 
+## 1.6.1
+
+### Patch Changes
+
+- [#158](https://github.com/teneplaysofficial/js-utils-kit/pull/158) [`82eab17`](https://github.com/teneplaysofficial/js-utils-kit/commit/82eab17054934b5373f243a0f98bc98fd1b50a3a) Thanks [@teneplaysofficial](https://github.com/teneplaysofficial)! - Correct character counting for whitespace and unicode (fixes spaces, tabs, newlines, and emoji handling).
+
+  **Before**
+  - Whitespace could be inconsistently counted
+
+  **After**
+  - All characters are counted correctly:
+    - spaces
+    - tabs (`\t`)
+    - newlines (`\n`)
+    - unicode characters (emoji, symbols, etc.)
+
 ## 1.6.0
 
 ### Minor Changes

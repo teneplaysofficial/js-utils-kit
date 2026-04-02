@@ -1,7 +1,7 @@
 {
   "name": "juk-cli",
   "displayName": "JS Utils Kit CLI",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "command line interface utilities",
   "homepage": "https://github.com/teneplaysofficial/js-utils-kit/tree/main/packages/juk-cli#readme",
   "repository": {
