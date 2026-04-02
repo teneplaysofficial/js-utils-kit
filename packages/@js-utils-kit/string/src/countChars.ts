@@ -5,7 +5,13 @@ import { splitString } from './splitString';
  *
  * @remarks
  * - If `char` is provided, only that character’s occurrences are counted.
- * - If `char` is omitted, the function counts the number of substrings returned by {@link splitString} (similar to a word count).
+ * - If `char` is omitted, counts total characters in the string.
+ * - All characters are included in the count:
+ *   - spaces
+ *   - tabs (`\t`)
+ *   - newlines (`\n`)
+ *   - unicode characters (emoji, symbols, etc.)
+ * - Internally uses {@link splitString}.
  *
  * @returns Number of characters or character occurrences.
  *
@@ -23,8 +29,8 @@ export function countChars(
   char?: string,
 ): number {
   if (char) {
-    return [...str].filter((c) => c === char).length;
+    return splitString(str, '').filter((c) => c === char).length;
   }
 
-  return splitString(str,'').length;
+  return splitString(str, '').length;
 }
