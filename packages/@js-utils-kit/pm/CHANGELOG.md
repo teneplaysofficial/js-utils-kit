@@ -1,5 +1,12 @@
 # @js-utils-kit/pm
 
+## 0.3.1
+
+### Patch Changes
+
+- Updated dependencies [[`d329b4e`](https://github.com/teneplaysofficial/js-utils-kit/commit/d329b4e1f0f37b5877e7e66beca65c2c4d528f96)]:
+  - @js-utils-kit/fs@1.7.1
+
 ## 0.3.0
 
 ### Minor Changes

@@ -1,5 +1,18 @@
 # @js-utils-kit/env
 
+## 3.0.0
+
+### Major Changes
+
+- [#155](https://github.com/teneplaysofficial/js-utils-kit/pull/155) [`ae4c3ab`](https://github.com/teneplaysofficial/js-utils-kit/commit/ae4c3ab07de129980ec4187cec071d742de09fdc) Thanks [@teneplaysofficial](https://github.com/teneplaysofficial)! - Relocate `isBrowser` from `@js-utils-kit/env` to `juk-web`.
+
+  **Migration**
+
+  ```diff
+  - import { isBrowser } from '@js-utils-kit/env'
+  + import { isBrowser } from 'juk-web'
+  ```
+
 ## 2.0.0
 
 ### Major Changes
