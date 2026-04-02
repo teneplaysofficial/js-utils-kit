@@ -1,124 +1,113 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import matter from 'gray-matter';
 import parseChangesetFile from '@changesets/parse';
 import { getPackages } from '@manypkg/get-packages';
-import sylog from 'sylog';
+import zylog from 'zylog';
 
 const BUMP_PRIORITY = { patch: 0, minor: 1, major: 2 };
 const cwd = process.cwd();
 const changesetDir = path.join(cwd, '.changeset');
 
-sylog.setLevels({
-  info: 'sync-deps',
-});
+zylog.config = {
+  prefix: 'sync-deps',
+};
 
 if (!fs.existsSync(changesetDir)) {
-  sylog.info('no .changeset directory, exiting');
+  zylog.info('no .changeset directory, exiting');
   process.exit(0);
 }
 
-sylog.info('starting');
+zylog.info('scanning .changeset directory for changeset files');
 
 const { packages } = await getPackages(cwd);
 
-sylog.info('workspace packages:', packages.length);
-
 const files = fs.readdirSync(changesetDir).filter((f) => f.endsWith('.md') && f !== 'README.md');
 
-sylog.info('changeset files found:', files.length);
+zylog.info('changeset files found:', files.length);
 
-const explicitBumps = new Map();
+let updatedFiles = 0;
 
 for (const file of files) {
-  const content = fs.readFileSync(path.join(changesetDir, file), 'utf-8');
+  const filePath = path.join(changesetDir, file);
+  const raw = fs.readFileSync(filePath, 'utf-8');
 
-  if (!content.startsWith('---')) continue;
+  if (!raw.startsWith('---')) continue;
 
-  const { releases } = parseChangesetFile(content);
+  const parsedChangeset = parseChangesetFile(raw);
+  const localBumps = new Map(parsedChangeset.releases.map((r) => [r.name, r.type]));
+  const packageBumps = new Map(localBumps);
+  const MAX_ITERATIONS = packages.length + 5;
+  let changed = true;
+  let iterations = 0;
 
-  for (const r of releases) {
-    const prev = explicitBumps.get(r.name);
-    if (!prev || BUMP_PRIORITY[r.type] > BUMP_PRIORITY[prev]) {
-      explicitBumps.set(r.name, r.type);
-    }
-  }
-}
+  while (changed) {
+    changed = false;
+    iterations++;
 
-sylog.info('explicit bumps:', explicitBumps.size);
+    if (iterations > MAX_ITERATIONS) break;
 
-const packageBumps = new Map(explicitBumps);
+    for (const pkg of packages) {
+      const name = pkg.packageJson.name;
+      if (!name || (name !== 'js-utils-kit' && name !== '@js-utils-kit/core')) continue;
 
-let changed = true;
-let iterations = 0;
-const MAX_ITERATIONS = packages.length + 5;
+      const deps = {
+        ...pkg.packageJson.dependencies,
+        ...pkg.packageJson.peerDependencies,
+      };
 
-while (changed) {
-  changed = false;
-  iterations++;
+      let highest = null;
 
-  if (iterations > MAX_ITERATIONS) {
-    console.warn('[sync-deps] max iterations reached, stopping propagation');
-    break;
-  }
+      for (const dep of Object.keys(deps || {})) {
+        if (!dep.startsWith('@js-utils-kit/')) continue;
 
-  for (const pkg of packages) {
-    const name = pkg.packageJson.name;
-    if (!name) continue;
+        const bump = packageBumps.get(dep);
 
-    const deps = {
-      ...pkg.packageJson.dependencies,
-      ...pkg.packageJson.peerDependencies,
-    };
-
-    let highest = null;
-
-    for (const dep of Object.keys(deps || {})) {
-      if (dep === name) continue;
-
-      const bump = packageBumps.get(dep);
-      if (bump && (!highest || BUMP_PRIORITY[bump] > BUMP_PRIORITY[highest])) {
-        highest = bump;
+        if (bump && (!highest || BUMP_PRIORITY[bump] > BUMP_PRIORITY[highest])) {
+          highest = bump;
+        }
       }
-    }
 
-    if (!highest) continue;
+      if (!highest) continue;
 
-    const current = packageBumps.get(name);
+      const current = packageBumps.get(name);
 
-    if (current !== highest) {
       if (!current || BUMP_PRIORITY[highest] > BUMP_PRIORITY[current]) {
         packageBumps.set(name, highest);
         changed = true;
       }
     }
   }
-}
 
-sylog.info('propagation iterations:', iterations);
-sylog.info('final bump count:', packageBumps.size);
+  const parsed = matter(raw);
+  const data = parsed.data;
+  const content = parsed.content;
 
-let didChange = false;
-for (const [name, type] of packageBumps.entries()) {
-  const explicit = explicitBumps.get(name);
-  if (!explicit || BUMP_PRIORITY[type] > BUMP_PRIORITY[explicit]) {
-    didChange = true;
-    break;
+  let updated = false;
+
+  for (const [pkgName, bumpType] of packageBumps.entries()) {
+    if (pkgName !== 'js-utils-kit' && pkgName !== '@js-utils-kit/core') continue;
+
+    const existing = data[pkgName];
+
+    if (!existing || BUMP_PRIORITY[bumpType] > BUMP_PRIORITY[existing]) {
+      data[pkgName] = bumpType;
+      updated = true;
+    }
   }
+
+  if (!updated) continue;
+
+  const newFile = matter.stringify(content, data);
+
+  fs.writeFileSync(filePath, newFile);
+
+  zylog.info('updated changeset:', file);
+  updatedFiles++;
 }
 
-if (!didChange) {
-  sylog.info('no derived bumps, nothing to write');
-  process.exit(0);
+if (updatedFiles === 0) {
+  zylog.success('No files needed updating');
+} else {
+  zylog.success('Updated files:', updatedFiles);
 }
-
-const frontmatter =
-  '---\n' +
-  [...packageBumps.entries()].map(([name, type]) => `"${name}": ${type}`).join('\n') +
-  '\n---\n\nDependency sync\n';
-
-const filePath = path.join(changesetDir, `sync-deps-${Date.now()}.md`);
-
-fs.writeFileSync(filePath, frontmatter);
-
-sylog.info('wrote synced changeset:', path.basename(filePath));
-sylog.info('done');

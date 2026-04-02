@@ -1,5 +1,7 @@
 ---
 '@js-utils-kit/fs': patch
+'@js-utils-kit/core': patch
+js-utils-kit: patch
 ---
 
 Improve safety and validation in `resolveModuleRelative`
