@@ -1,6 +1,8 @@
 ---
 'juk-web': minor
 '@js-utils-kit/env': major
+'@js-utils-kit/core': major
+js-utils-kit: major
 ---
 
 Relocate `isBrowser` from `@js-utils-kit/env` to `juk-web`.
