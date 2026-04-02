@@ -28,9 +28,13 @@ export function countChars(
   /** Optional character to count. */
   char?: string,
 ): number {
-  if (char) {
-    return splitString(str, '').filter((c) => c === char).length;
+  if (char !== undefined && Array.from(char).length !== 1) {
+    throw new Error('char must be a single Unicode code point');
   }
 
-  return splitString(str, '').length;
+  if (char) {
+    return Array.from(str).filter((c) => c === char).length;
+  }
+
+  return Array.from(str).length;
 }
