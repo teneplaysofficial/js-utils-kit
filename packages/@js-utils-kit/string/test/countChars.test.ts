@@ -54,6 +54,7 @@ it('should handle special characters', () => {
 });
 
 it('should handle unicode characters', () => {
-  expect(countChars('🙂')).toBe(2);
-  expect(countChars('🙂🙂')).toBe(4);
+  expect(countChars('🙂')).toBe(1);
+  expect(countChars('🙂🙂')).toBe(2);
+  expect(countChars('🙂🙂', '🙂')).toBe(2);
 });

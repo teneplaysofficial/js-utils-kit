@@ -1,5 +1,3 @@
-import { splitString } from './splitString';
-
 /**
  * Counts characters in a string.
  *
@@ -28,9 +26,11 @@ export function countChars(
   /** Optional character to count. */
   char?: string,
 ): number {
+  const chars = Array.from(str);
+
   if (char) {
-    return splitString(str, '').filter((c) => c === char).length;
+    return chars.filter((c) => c === char).length;
   }
 
-  return splitString(str, '').length;
+  return chars.length;
 }
