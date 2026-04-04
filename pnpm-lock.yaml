@@ -54,8 +54,8 @@ importers:
         specifier: ^1.2.0
         version: 1.2.0(prettier@3.8.1)
       '@tenedev/tsconfig':
-        specifier: ^0.0.3
-        version: 0.0.3(typescript@6.0.2)
+        specifier: ^0.0.4
+        version: 0.0.4(typescript@6.0.2)
       '@types/archiver':
         specifier: ^7.0.0
         version: 7.0.0
@@ -1016,10 +1016,10 @@ packages:
     peerDependencies:
       prettier: 3.x
 
-  '@tenedev/tsconfig@0.0.3':
+  '@tenedev/tsconfig@0.0.4':
     resolution:
       {
-        integrity: sha512-EozJjH3g2l8Hju0hDj0sH+WfGxjATe6v0SWbRZ6FTFsJ+PN0ZcSnqKVgr4v79o96Baos0sIfZUeXgO9nm/I8Ug==,
+        integrity: sha512-A+mPafgjHfGOl8WFIn5fT3xfRI9Ycx9gLIDIWAc24CEe+Lw63KdZitRR7yrQ0SVDvVq/W/A5LwhGglHjXVPOpw==,
       }
     engines: { node: '>=14.17' }
     peerDependencies:
@@ -4746,7 +4746,7 @@ snapshots:
       prettier-plugin-packagejson: 3.0.2(prettier@3.8.1)
       sort-package-keys: 2.0.0
 
-  '@tenedev/tsconfig@0.0.3(typescript@6.0.2)':
+  '@tenedev/tsconfig@0.0.4(typescript@6.0.2)':
     dependencies:
       typescript: 6.0.2
 
