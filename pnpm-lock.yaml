@@ -163,6 +163,9 @@ importers:
       '@js-utils-kit/pm':
         specifier: workspace:*
         version: link:../pm
+      '@js-utils-kit/regex':
+        specifier: workspace:*
+        version: link:../regex
       '@js-utils-kit/string':
         specifier: workspace:*
         version: link:../string
@@ -218,6 +221,8 @@ importers:
         specifier: workspace:*
         version: link:../types
 
+  packages/@js-utils-kit/regex: {}
+
   packages/@js-utils-kit/string:
     dependencies:
       '@js-utils-kit/types':
@@ -228,7 +233,11 @@ importers:
 
   packages/@js-utils-kit/types: {}
 
-  packages/@js-utils-kit/valid: {}
+  packages/@js-utils-kit/valid:
+    dependencies:
+      '@js-utils-kit/regex':
+        specifier: workspace:*
+        version: link:../regex
 
   packages/js-utils-kit:
     dependencies:

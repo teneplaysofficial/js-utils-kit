@@ -1,13 +1,13 @@
 {
   "summary": {
-    "totalExports": 189,
+    "totalExports": 192,
     "deprecatedExports": 1,
     "classExports": 0,
     "functionExports": 88,
-    "variableExports": 81,
+    "variableExports": 84,
     "typeExports": 19,
-    "valueExports": 169,
-    "totalPackages": 13
+    "valueExports": 172,
+    "totalPackages": 14
   },
   "exportNames": {
     "classExports": [],
@@ -118,6 +118,9 @@
       "DEG_TO_RAD",
       "DIGITS",
       "E",
+      "EMAIL_DOMAIN_REGEX",
+      "EMAIL_LOCAL_PART_REGEX",
+      "EMAIL_REGEX",
       "EMPTY_STRING",
       "env",
       "Environment",
@@ -1130,6 +1133,32 @@
         "line": 47
       }
     ],
+    "@js-utils-kit/regex": [
+      {
+        "name": "EMAIL_LOCAL_PART_REGEX",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/regex/src/email.ts",
+        "line": 21
+      },
+      {
+        "name": "EMAIL_DOMAIN_REGEX",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/regex/src/email.ts",
+        "line": 46
+      },
+      {
+        "name": "EMAIL_REGEX",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/regex/src/email.ts",
+        "line": 72
+      }
+    ],
     "@js-utils-kit/string": [
       {
         "name": "capitalize",
@@ -1607,7 +1636,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/isEmail.ts",
-        "line": 27
+        "line": 29
       },
       {
         "name": "isEmpty",

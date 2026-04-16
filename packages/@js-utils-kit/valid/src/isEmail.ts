@@ -1,3 +1,5 @@
+import { EMAIL_DOMAIN_REGEX, EMAIL_LOCAL_PART_REGEX } from '@js-utils-kit/regex';
+
 /**
  * Checks whether a given string is a valid email address.
  *
@@ -32,22 +34,14 @@ export function isEmail(
 
   if (value.length > 254) return false;
 
-  const parts = value.split('@');
+  const [local, domain, ...rest] = value.split('@');
 
-  if (parts.length !== 2) return false;
+  if (!local || !domain || rest.length) return false;
 
-  const [local, domain] = parts as [string, string];
-
-  if (local.length === 0 || local.length > 64) return false;
-
-  if (domain.length === 0 || domain.length > 255) return false;
-
-  const emailRegex = /^[a-zA-Z0-9_%+-]+(\.[a-zA-Z0-9_%+-]+)*$/;
-  const domainRegex =
-    /^(?!.*\.\.)(?!-)[A-Za-z0-9-]{1,63}(?<!-)(\.[A-Za-z0-9-]{1,63}(?<!-))*\.[A-Za-z]{2,}$/;
-
-  if (!emailRegex.test(local)) return false;
-  if (!domainRegex.test(domain)) return false;
-
-  return true;
+  return (
+    local.length <= 64 &&
+    domain.length <= 255 &&
+    EMAIL_LOCAL_PART_REGEX.test(local) &&
+    EMAIL_DOMAIN_REGEX.test(domain)
+  );
 }
