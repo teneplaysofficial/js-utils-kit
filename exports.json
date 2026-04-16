@@ -1,12 +1,12 @@
 {
   "summary": {
-    "totalExports": 192,
+    "totalExports": 196,
     "deprecatedExports": 1,
     "classExports": 0,
     "functionExports": 88,
-    "variableExports": 84,
+    "variableExports": 88,
     "typeExports": 19,
-    "valueExports": 172,
+    "valueExports": 176,
     "totalPackages": 14
   },
   "exportNames": {
@@ -122,17 +122,21 @@
       "EMAIL_LOCAL_PART_REGEX",
       "EMAIL_REGEX",
       "EMPTY_STRING",
+      "ENDS_WITH_PUNCTUATION_REGEX",
       "env",
       "Environment",
       "EPSILON",
       "freeMemory",
       "GAS",
       "GRAVITY",
+      "HAS_WHITESPACE_REGEX",
       "hasCommonJSFilename",
       "homeDir",
       "HOUR",
       "HTTP_METHODS",
       "HTTP_STATUS",
+      "IS_ALPHA_REGEX",
+      "IS_ALPHA_UNICODE_REGEX",
       "isAndroid",
       "isBrowser",
       "isCI",
@@ -1157,6 +1161,38 @@
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/regex/src/email.ts",
         "line": 72
+      },
+      {
+        "name": "ENDS_WITH_PUNCTUATION_REGEX",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/regex/src/endsWithPunctuation.ts",
+        "line": 20
+      },
+      {
+        "name": "HAS_WHITESPACE_REGEX",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/regex/src/hasWhitespace.ts",
+        "line": 23
+      },
+      {
+        "name": "IS_ALPHA_REGEX",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/regex/src/isAlpha.ts",
+        "line": 23
+      },
+      {
+        "name": "IS_ALPHA_UNICODE_REGEX",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/regex/src/isAlphaUnicode.ts",
+        "line": 26
       }
     ],
     "@js-utils-kit/string": [
@@ -1588,7 +1624,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/endsWithPunctuation.ts",
-        "line": 13
+        "line": 15
       },
       {
         "name": "hasWhitespace",
@@ -1596,7 +1632,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/hasWhitespace.ts",
-        "line": 12
+        "line": 14
       },
       {
         "name": "isAlphabetic",
@@ -1604,7 +1640,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/isAlphabetic.ts",
-        "line": 13
+        "line": 15
       },
       {
         "name": "isArray",
