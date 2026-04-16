@@ -1154,12 +1154,20 @@
         "line": 22
       },
       {
+        "name": "IS_ALPHA_UNICODE_REGEX",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/regex/src/alpha.ts",
+        "line": 47
+      },
+      {
         "name": "LOWERCASE_ALPHA_REGEX",
         "declarationKind": "VariableDeclaration",
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/regex/src/alpha.ts",
-        "line": 45
+        "line": 70
       },
       {
         "name": "UPPERCASE_ALPHA_REGEX",
@@ -1167,7 +1175,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/regex/src/alpha.ts",
-        "line": 68
+        "line": 93
       },
       {
         "name": "STARTS_WITH_UPPERCASE_REGEX",
@@ -1175,7 +1183,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/regex/src/alpha.ts",
-        "line": 89
+        "line": 114
       },
       {
         "name": "CAMEL_CASE_REGEX",
@@ -1191,15 +1199,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/regex/src/cases.ts",
-        "line": 45
-      },
-      {
-        "name": "IS_ALPHA_UNICODE_REGEX",
-        "declarationKind": "VariableDeclaration",
-        "exportKind": "variable",
-        "deprecated": false,
-        "filePath": "packages/@js-utils-kit/regex/src/cases.ts",
-        "line": 70
+        "line": 40
       },
       {
         "name": "PASCAL_CASE_REGEX",
@@ -1207,7 +1207,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/regex/src/cases.ts",
-        "line": 90
+        "line": 60
       },
       {
         "name": "SNAKE_CASE_REGEX",
@@ -1215,7 +1215,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/regex/src/cases.ts",
-        "line": 114
+        "line": 84
       },
       {
         "name": "EMAIL_LOCAL_PART_REGEX",

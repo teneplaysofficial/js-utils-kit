@@ -15,7 +15,7 @@
  * CAMEL_CASE_REGEX.test("hello_world"); // false
  * ```
  */
-export const CAMEL_CASE_REGEX = /^[a-z][a-z0-9]+(?:[A-Z][a-z0-9]+)+$/;
+export const CAMEL_CASE_REGEX = /^[a-z][a-z0-9]*(?:[A-Z][a-z0-9]*)+$/;
 
 /**
  * Matches strict kebab-case strings.
@@ -25,11 +25,6 @@ export const CAMEL_CASE_REGEX = /^[a-z][a-z0-9]+(?:[A-Z][a-z0-9]+)+$/;
  * - Words are separated by single hyphens (`-`)
  * - Does not start or end with a hyphen
  * - Does not contain consecutive hyphens
- *
- * Pattern:
- * - `^[a-z0-9]+`           → starts with lowercase letters or numbers
- * - `(?:-[a-z0-9]+)*`      → zero or more `-word` groups
- * - `$`                    → end of string
  *
  * @example
  * ```ts
