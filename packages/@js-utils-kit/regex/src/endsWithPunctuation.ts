@@ -4,7 +4,7 @@
  * Uses Unicode property escapes (`\p{P}`) to detect any punctuation from any language/script, not just ASCII.
  *
  * Pattern:
- * - `\p{P}` → ნებისმიერი Unicode punctuation character
+ * - `\p{P}` → any Unicode punctuation character
  * - `$`     → end of string anchor
  * - `u`     → enables Unicode mode
  *
