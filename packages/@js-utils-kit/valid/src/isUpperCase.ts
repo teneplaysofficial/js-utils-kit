@@ -1,3 +1,5 @@
+import { UPPERCASE_ALPHA_REGEX } from '@js-utils-kit/regex';
+
 /**
  * Checks if a string contains only uppercase letters.
  *
@@ -13,5 +15,5 @@ export function isUpperCase(
   /** The input string */
   value: string,
 ): boolean {
-  return /^[A-Z]+$/.test(value);
+  return UPPERCASE_ALPHA_REGEX.test(value);
 }
