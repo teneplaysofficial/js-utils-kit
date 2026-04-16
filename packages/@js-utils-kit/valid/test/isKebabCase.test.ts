@@ -1,14 +1,56 @@
-import { expect, it } from 'vitest';
+import { describe, expect, it } from 'vitest';
 import { isKebabCase } from '../src';
 
-it('returns true for kebab-case strings', () => {
-  expect(isKebabCase('my-variable')).toBe(true);
-  expect(isKebabCase('one-two-three')).toBe(true);
+describe('valid cases', () => {
+  it('accepts standard kebab-case', () => {
+    expect(isKebabCase('hello-world')).toBe(true);
+    expect(isKebabCase('my-variable-name')).toBe(true);
+  });
+
+  it('accepts numbers', () => {
+    expect(isKebabCase('hello-world-123')).toBe(true);
+    expect(isKebabCase('a1-b2-c3')).toBe(true);
+  });
+
+  it('accepts single word', () => {
+    expect(isKebabCase('hello')).toBe(true);
+  });
 });
 
-it('returns false for other cases', () => {
-  expect(isKebabCase('MyVariable')).toBe(false);
-  expect(isKebabCase('my_variable')).toBe(false);
-  expect(isKebabCase('myVariable')).toBe(false);
-  expect(isKebabCase('my--variable')).toBe(false);
+describe('invalid cases', () => {
+  it('rejects uppercase', () => {
+    expect(isKebabCase('Hello-world')).toBe(false);
+  });
+
+  it('rejects snake_case', () => {
+    expect(isKebabCase('hello_world')).toBe(false);
+  });
+
+  it('rejects camelCase', () => {
+    expect(isKebabCase('helloWorld')).toBe(false);
+  });
+
+  it('rejects leading hyphen', () => {
+    expect(isKebabCase('-hello-world')).toBe(false);
+  });
+
+  it('rejects trailing hyphen', () => {
+    expect(isKebabCase('hello-world-')).toBe(false);
+  });
+
+  it('rejects consecutive hyphens', () => {
+    expect(isKebabCase('hello--world')).toBe(false);
+  });
+
+  it('rejects spaces', () => {
+    expect(isKebabCase('hello world')).toBe(false);
+  });
+
+  it('rejects special characters', () => {
+    expect(isKebabCase('hello-world!')).toBe(false);
+  });
+
+  it('rejects empty string', () => {
+    expect(isKebabCase('')).toBe(false);
+  });
 });

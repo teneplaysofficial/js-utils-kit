@@ -1,3 +1,5 @@
+import { LOWERCASE_ALPHA_REGEX } from '@js-utils-kit/regex';
+
 /**
  * Checks if a string contains only lowercase letters.
  *
@@ -13,5 +15,5 @@ export function isLowerCase(
   /** The input string */
   value: string,
 ): boolean {
-  return /^[a-z]+$/.test(value);
+  return LOWERCASE_ALPHA_REGEX.test(value);
 }

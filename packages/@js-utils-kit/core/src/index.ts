@@ -11,6 +11,7 @@ export * from '@js-utils-kit/fs';
 export * from '@js-utils-kit/number';
 export * from '@js-utils-kit/object';
 export * from '@js-utils-kit/pm';
+export * from '@js-utils-kit/regex';
 export * from '@js-utils-kit/string';
 export * from '@js-utils-kit/system';
 export * from '@js-utils-kit/types';

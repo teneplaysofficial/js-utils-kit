@@ -1,18 +1,12 @@
 {
-  "name": "@js-utils-kit/valid",
-  "version": "2.0.0",
-  "description": "Validation utilities",
-  "keywords": [
-    "validation",
-    "predicate",
-    "checks",
-    "utility"
-  ],
+  "name": "@js-utils-kit/regex",
+  "version": "0.0.0",
+  "description": "Regular Expression utilities",
   "homepage": "https://js-utils.js.org",
   "repository": {
     "type": "git",
     "url": "https://github.com/teneplaysofficial/js-utils-kit",
-    "directory": "packages/@js-utils-kit/valid"
+    "directory": "packages/@js-utils-kit/regex"
   },
   "bugs": {
     "url": "https://github.com/teneplaysofficial/js-utils-kit/issues"
@@ -44,7 +38,5 @@
     "build": "tsdown",
     "test": "vitest run"
   },
-  "dependencies": {
-    "@js-utils-kit/regex": "workspace:*"
-  }
+  "dependencies": {}
 }

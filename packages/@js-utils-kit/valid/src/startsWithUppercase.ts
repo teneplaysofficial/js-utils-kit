@@ -1,3 +1,5 @@
+import { STARTS_WITH_UPPERCASE_REGEX } from '@js-utils-kit/regex';
+
 /**
  * Checks if a string starts with an uppercase letter.
  *
@@ -13,5 +15,5 @@ export function startsWithUppercase(
   /** The input string to check */
   value: string,
 ): boolean {
-  return /^[A-Z]/.test(value);
+  return STARTS_WITH_UPPERCASE_REGEX.test(value);
 }

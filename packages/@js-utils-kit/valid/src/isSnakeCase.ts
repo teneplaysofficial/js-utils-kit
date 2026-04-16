@@ -1,3 +1,5 @@
+import { SNAKE_CASE_REGEX } from '@js-utils-kit/regex';
+
 /**
  * Checks if a string is in snake_case format.
  *
@@ -13,5 +15,5 @@ export function isSnakeCase(
   /** The input string */
   value: string,
 ): boolean {
-  return /^[a-z0-9]+(_[a-z0-9]+)*$/.test(value);
+  return SNAKE_CASE_REGEX.test(value);
 }

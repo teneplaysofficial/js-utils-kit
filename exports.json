@@ -1,13 +1,13 @@
 {
   "summary": {
-    "totalExports": 189,
+    "totalExports": 203,
     "deprecatedExports": 1,
     "classExports": 0,
     "functionExports": 88,
-    "variableExports": 81,
+    "variableExports": 95,
     "typeExports": 19,
-    "valueExports": 169,
-    "totalPackages": 13
+    "valueExports": 183,
+    "totalPackages": 14
   },
   "exportNames": {
     "classExports": [],
@@ -105,6 +105,7 @@
       "ALPHANUMERIC",
       "ARCHITECTURE",
       "argv",
+      "CAMEL_CASE_REGEX",
       "CM_TO_MM",
       "COMMIT_SCOPE_VALUES",
       "COMMIT_SCOPES",
@@ -118,18 +119,25 @@
       "DEG_TO_RAD",
       "DIGITS",
       "E",
+      "EMAIL_DOMAIN_REGEX",
+      "EMAIL_LOCAL_PART_REGEX",
+      "EMAIL_REGEX",
       "EMPTY_STRING",
+      "ENDS_WITH_PUNCTUATION_REGEX",
       "env",
       "Environment",
       "EPSILON",
       "freeMemory",
       "GAS",
       "GRAVITY",
+      "HAS_WHITESPACE_REGEX",
       "hasCommonJSFilename",
       "homeDir",
       "HOUR",
       "HTTP_METHODS",
       "HTTP_STATUS",
+      "IS_ALPHA_REGEX",
+      "IS_ALPHA_UNICODE_REGEX",
       "isAndroid",
       "isBrowser",
       "isCI",
@@ -140,12 +148,14 @@
       "isProd",
       "isTest",
       "isWindows",
+      "KEBAB_CASE_REGEX",
       "KG_TO_G",
       "KM_TO_M",
       "LN_10",
       "LN_2",
       "LOG10_E",
       "LOG2_E",
+      "LOWERCASE_ALPHA_REGEX",
       "LOWERCASE_ALPHABET",
       "M_TO_CM",
       "MAX_SAFE_INT",
@@ -160,6 +170,7 @@
       "NODE_VERSION",
       "nodePath",
       "PACKAGE_MANAGERS",
+      "PASCAL_CASE_REGEX",
       "PI",
       "PLANCK",
       "PLATFORM",
@@ -169,17 +180,20 @@
       "RUNTIME_VERSIONS",
       "SECOND",
       "SHEBANG",
+      "SNAKE_CASE_REGEX",
       "SPACE",
       "SPDX_LICENSE",
       "SPDX_LICENSE_IDENTIFIERS",
       "SPEED_OF_LIGHT",
       "SQRT_1_2",
       "SQRT_2",
+      "STARTS_WITH_UPPERCASE_REGEX",
       "TAB",
       "TAU",
       "TON_TO_KG",
       "totalMemory",
       "trim",
+      "UPPERCASE_ALPHA_REGEX",
       "UPPERCASE_ALPHABET",
       "WEEK",
       "YEAR"
@@ -1130,6 +1144,120 @@
         "line": 47
       }
     ],
+    "@js-utils-kit/regex": [
+      {
+        "name": "IS_ALPHA_REGEX",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/regex/src/alpha.ts",
+        "line": 22
+      },
+      {
+        "name": "IS_ALPHA_UNICODE_REGEX",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/regex/src/alpha.ts",
+        "line": 47
+      },
+      {
+        "name": "LOWERCASE_ALPHA_REGEX",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/regex/src/alpha.ts",
+        "line": 70
+      },
+      {
+        "name": "UPPERCASE_ALPHA_REGEX",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/regex/src/alpha.ts",
+        "line": 93
+      },
+      {
+        "name": "STARTS_WITH_UPPERCASE_REGEX",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/regex/src/alpha.ts",
+        "line": 114
+      },
+      {
+        "name": "CAMEL_CASE_REGEX",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/regex/src/cases.ts",
+        "line": 18
+      },
+      {
+        "name": "KEBAB_CASE_REGEX",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/regex/src/cases.ts",
+        "line": 40
+      },
+      {
+        "name": "PASCAL_CASE_REGEX",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/regex/src/cases.ts",
+        "line": 60
+      },
+      {
+        "name": "SNAKE_CASE_REGEX",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/regex/src/cases.ts",
+        "line": 84
+      },
+      {
+        "name": "EMAIL_LOCAL_PART_REGEX",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/regex/src/email.ts",
+        "line": 21
+      },
+      {
+        "name": "EMAIL_DOMAIN_REGEX",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/regex/src/email.ts",
+        "line": 46
+      },
+      {
+        "name": "EMAIL_REGEX",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/regex/src/email.ts",
+        "line": 72
+      },
+      {
+        "name": "ENDS_WITH_PUNCTUATION_REGEX",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/regex/src/endsWithPunctuation.ts",
+        "line": 20
+      },
+      {
+        "name": "HAS_WHITESPACE_REGEX",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/regex/src/hasWhitespace.ts",
+        "line": 23
+      }
+    ],
     "@js-utils-kit/string": [
       {
         "name": "capitalize",
@@ -1559,7 +1687,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/endsWithPunctuation.ts",
-        "line": 13
+        "line": 15
       },
       {
         "name": "hasWhitespace",
@@ -1567,7 +1695,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/hasWhitespace.ts",
-        "line": 12
+        "line": 14
       },
       {
         "name": "isAlphabetic",
@@ -1575,7 +1703,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/isAlphabetic.ts",
-        "line": 13
+        "line": 15
       },
       {
         "name": "isArray",
@@ -1591,7 +1719,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/isCamelCase.ts",
-        "line": 12
+        "line": 16
       },
       {
         "name": "isDefined",
@@ -1607,7 +1735,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/isEmail.ts",
-        "line": 27
+        "line": 29
       },
       {
         "name": "isEmpty",
@@ -1639,7 +1767,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/isKebabCase.ts",
-        "line": 12
+        "line": 28
       },
       {
         "name": "isLowerCase",
@@ -1647,7 +1775,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/isLowerCase.ts",
-        "line": 12
+        "line": 14
       },
       {
         "name": "isNonEmptyObject",
@@ -1687,7 +1815,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/isPascalCase.ts",
-        "line": 12
+        "line": 14
       },
       {
         "name": "isSnakeCase",
@@ -1695,7 +1823,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/isSnakeCase.ts",
-        "line": 12
+        "line": 14
       },
       {
         "name": "isString",
@@ -1727,7 +1855,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/isUpperCase.ts",
-        "line": 12
+        "line": 14
       },
       {
         "name": "isURL",
@@ -1743,7 +1871,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/startsWithUppercase.ts",
-        "line": 12
+        "line": 14
       }
     ]
   }

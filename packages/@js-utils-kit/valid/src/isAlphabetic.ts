@@ -1,3 +1,5 @@
+import { IS_ALPHA_REGEX } from '@js-utils-kit/regex';
+
 /**
  * Checks if a string contains only alphabetic characters (A–Z, a–z).
  *
@@ -14,5 +16,5 @@ export function isAlphabetic(
   /** The string to check */
   value: string,
 ): boolean {
-  return /^[a-zA-Z]+$/.test(value);
+  return IS_ALPHA_REGEX.test(value);
 }
