@@ -1,5 +1,51 @@
 # @js-utils-kit/core
 
+## 5.0.0
+
+### Major Changes
+
+- [#167](https://github.com/teneplaysofficial/js-utils-kit/pull/167) [`42bed98`](https://github.com/teneplaysofficial/js-utils-kit/commit/42bed982054ee2c84da302141b9ec08441ae996d) Thanks [@teneplaysofficial](https://github.com/teneplaysofficial)! - Enforce stricter case validation rules via shared regex package
+
+  ### Changes
+  - `CAMEL_CASE_REGEX` now requires **at least one uppercase transition**
+    - Previously valid: `"hello"`
+    - Now invalid: `"hello"`
+    - Still valid: `"helloWorld"`
+  - `PASCAL_CASE_REGEX` now requires **at least two segments**
+    - Previously valid: `"Hello"`
+    - Now invalid: `"Hello"`
+    - Still valid: `"HelloWorld"`
+  - Migrated to `@js-utils-kit/regex` for all regex patterns
+  - Enforced stricter rules for:
+    - `camelCase`
+    - `PascalCase`
+    - `snake_case`
+    - `kebab-case`
+
+  ### Affected exports
+  - `CAMEL_CASE_REGEX`
+  - `PASCAL_CASE_REGEX`
+  - `isCamelCase`
+  - `isPascalCase`
+
+  ### Impact
+  - These changes modify validation behavior and will cause some previously valid inputs to fail.
+  - Downstream consumers **must audit usages** of:
+    - `isCamelCase`
+    - `isPascalCase`
+    - direct usage of the regex constants
+
+### Minor Changes
+
+- [#167](https://github.com/teneplaysofficial/js-utils-kit/pull/167) [`42bed98`](https://github.com/teneplaysofficial/js-utils-kit/commit/42bed982054ee2c84da302141b9ec08441ae996d) Thanks [@teneplaysofficial](https://github.com/teneplaysofficial)! - Introduce regex utilities package
+
+### Patch Changes
+
+- Updated dependencies [[`42bed98`](https://github.com/teneplaysofficial/js-utils-kit/commit/42bed982054ee2c84da302141b9ec08441ae996d), [`42bed98`](https://github.com/teneplaysofficial/js-utils-kit/commit/42bed982054ee2c84da302141b9ec08441ae996d)]:
+  - @js-utils-kit/valid@3.0.0
+  - @js-utils-kit/regex@0.1.0
+  - @js-utils-kit/object@1.3.1
+
 ## 4.0.0
 
 ### Major Changes
