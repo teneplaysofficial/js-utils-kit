@@ -1,12 +1,12 @@
 {
   "summary": {
-    "totalExports": 203,
-    "deprecatedExports": 1,
+    "totalExports": 202,
+    "deprecatedExports": 0,
     "classExports": 0,
-    "functionExports": 88,
+    "functionExports": 87,
     "variableExports": 95,
     "typeExports": 19,
-    "valueExports": 183,
+    "valueExports": 182,
     "totalPackages": 14
   },
   "exportNames": {
@@ -70,7 +70,6 @@
       "longestWord",
       "longestWordLength",
       "lowercase",
-      "mergeObj",
       "padLeft",
       "padRight",
       "parseJson",
@@ -219,7 +218,7 @@
       "SPDX",
       "Trim"
     ],
-    "deprecatedExports": ["mergeObj"]
+    "deprecatedExports": []
   },
   "exports": {
     "juk-web": [
@@ -1092,14 +1091,6 @@
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/object/src/deepMerge.ts",
         "line": 7
-      },
-      {
-        "name": "mergeObj",
-        "declarationKind": "FunctionDeclaration",
-        "exportKind": "function",
-        "deprecated": true,
-        "filePath": "packages/@js-utils-kit/object/src/mergeObj.ts",
-        "line": 40
       }
     ],
     "@js-utils-kit/pm": [
