@@ -130,7 +130,6 @@
       "GAS",
       "GRAVITY",
       "HAS_WHITESPACE_REGEX",
-      "hasCommonJSFilename",
       "homeDir",
       "HOUR",
       "HTTP_METHODS",
@@ -140,6 +139,7 @@
       "isAndroid",
       "isBrowser",
       "isCI",
+      "isCommonJS",
       "isDev",
       "isLinux",
       "isMac",
@@ -885,6 +885,14 @@
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/env/src/runtime.ts",
         "line": 72
+      },
+      {
+        "name": "isCommonJS",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/env/src/runtime.ts",
+        "line": 99
       }
     ],
     "@js-utils-kit/fs": [
@@ -895,14 +903,6 @@
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/fs/src/createArchive.ts",
         "line": 30
-      },
-      {
-        "name": "hasCommonJSFilename",
-        "declarationKind": "VariableDeclaration",
-        "exportKind": "variable",
-        "deprecated": false,
-        "filePath": "packages/@js-utils-kit/fs/src/env.ts",
-        "line": 19
       },
       {
         "name": "exists",
