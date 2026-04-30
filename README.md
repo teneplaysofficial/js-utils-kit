@@ -1,4 +1,4 @@
-# js-utils-kit
+# Js Utils Kit
 
 > Modular, typed, and tree-shakable JavaScript utilities.
 
