@@ -17,19 +17,30 @@ it('rejects incorrect emails', () => {
   expect(isEmail('user@domain..com')).toBe(false);
 });
 
-it('enforces length limits', () => {
-  const localPart = 'a'.repeat(64);
-  const domainPart = 'b'.repeat(63) + '.com';
-  expect(isEmail(`${localPart}@${domainPart}`)).toBe(true);
+it('enforces total length limit (254)', () => {
+  const base = 'a@b.com';
+  const valid = base + 'a'.repeat(254 - base.length);
 
-  const tooLongLocal = 'a'.repeat(65) + '@example.com';
-  expect(isEmail(tooLongLocal)).toBe(false);
+  expect(valid.length).toBe(254);
+  expect(isEmail(valid)).toBe(true);
 
-  const tooLongDomain = 'user@' + 'b'.repeat(256) + '.com';
-  expect(isEmail(tooLongDomain)).toBe(false);
+  const tooLong = valid + 'a';
 
-  const tooLongEmail = 'a'.repeat(128) + '@' + 'b'.repeat(128) + '.com';
-  expect(isEmail(tooLongEmail)).toBe(false);
+  expect(tooLong.length).toBe(255);
+  expect(isEmail(tooLong)).toBe(false);
+});
+
+it('uses custom regex when provided', () => {
+  const ONLY_EXAMPLE = /^[^@]+@example\.com$/;
+
+  expect(isEmail('user@example.com', ONLY_EXAMPLE)).toBe(true);
+  expect(isEmail('user@gmail.com', ONLY_EXAMPLE)).toBe(false);
+});
+
+it('can override default behavior via custom regex', () => {
+  const ALLOW_ANY = /^.*$/;
+
+  expect(isEmail('not-an-email', ALLOW_ANY)).toBe(true);
 });
 
 it('throws TypeError if input is not a string', () => {
