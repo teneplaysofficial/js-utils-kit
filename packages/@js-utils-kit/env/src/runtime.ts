@@ -71,3 +71,35 @@ export const isTest: boolean =
  */
 export const isNode: boolean =
   typeof process !== 'undefined' && process.versions != null && process.versions.node != null;
+
+/**
+ * Determines whether the current runtime is executing in a CommonJS environment.
+ *
+ * @remarks
+ * This performs multiple checks to improve reliability:
+ * - `module.exports` existence (primary CJS signal)
+ * - `exports` object presence
+ * - `require` function availability
+ * - `__filename` and `__dirname` variables
+ *
+ * No single check is fully reliable across all bundlers/transpilers,
+ * so a combination is used.
+ *
+ * @returns `true` if the runtime is very likely CommonJS, otherwise `false`.
+ *
+ * @example
+ * ```ts
+ * if (isCommonJS) {
+ *   console.log("Running in CommonJS");
+ * } else {
+ *   console.log("Running in ESM");
+ * }
+ * ```
+ */
+export const isCommonJS =
+  typeof module !== 'undefined' &&
+  typeof module.exports !== 'undefined' &&
+  typeof exports !== 'undefined' &&
+  typeof require === 'function' &&
+  typeof __filename !== 'undefined' &&
+  typeof __dirname !== 'undefined';

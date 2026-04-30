@@ -1,12 +1,12 @@
 {
   "summary": {
-    "totalExports": 203,
-    "deprecatedExports": 1,
+    "totalExports": 204,
+    "deprecatedExports": 0,
     "classExports": 0,
-    "functionExports": 88,
-    "variableExports": 95,
+    "functionExports": 87,
+    "variableExports": 97,
     "typeExports": 19,
-    "valueExports": 183,
+    "valueExports": 184,
     "totalPackages": 14
   },
   "exportNames": {
@@ -70,7 +70,6 @@
       "longestWord",
       "longestWordLength",
       "lowercase",
-      "mergeObj",
       "padLeft",
       "padRight",
       "parseJson",
@@ -122,6 +121,8 @@
       "EMAIL_DOMAIN_REGEX",
       "EMAIL_LOCAL_PART_REGEX",
       "EMAIL_REGEX",
+      "EMAIL_REGEX_PRESETS",
+      "EMAIL_UNICODE_REGEX",
       "EMPTY_STRING",
       "ENDS_WITH_PUNCTUATION_REGEX",
       "env",
@@ -131,7 +132,6 @@
       "GAS",
       "GRAVITY",
       "HAS_WHITESPACE_REGEX",
-      "hasCommonJSFilename",
       "homeDir",
       "HOUR",
       "HTTP_METHODS",
@@ -141,6 +141,7 @@
       "isAndroid",
       "isBrowser",
       "isCI",
+      "isCommonJS",
       "isDev",
       "isLinux",
       "isMac",
@@ -219,7 +220,7 @@
       "SPDX",
       "Trim"
     ],
-    "deprecatedExports": ["mergeObj"]
+    "deprecatedExports": []
   },
   "exports": {
     "juk-web": [
@@ -886,6 +887,14 @@
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/env/src/runtime.ts",
         "line": 72
+      },
+      {
+        "name": "isCommonJS",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/env/src/runtime.ts",
+        "line": 99
       }
     ],
     "@js-utils-kit/fs": [
@@ -896,14 +905,6 @@
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/fs/src/createArchive.ts",
         "line": 30
-      },
-      {
-        "name": "hasCommonJSFilename",
-        "declarationKind": "VariableDeclaration",
-        "exportKind": "variable",
-        "deprecated": false,
-        "filePath": "packages/@js-utils-kit/fs/src/env.ts",
-        "line": 19
       },
       {
         "name": "exists",
@@ -1092,14 +1093,6 @@
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/object/src/deepMerge.ts",
         "line": 7
-      },
-      {
-        "name": "mergeObj",
-        "declarationKind": "FunctionDeclaration",
-        "exportKind": "function",
-        "deprecated": true,
-        "filePath": "packages/@js-utils-kit/object/src/mergeObj.ts",
-        "line": 40
       }
     ],
     "@js-utils-kit/pm": [
@@ -1240,6 +1233,22 @@
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/regex/src/email.ts",
         "line": 72
+      },
+      {
+        "name": "EMAIL_UNICODE_REGEX",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/regex/src/email.ts",
+        "line": 105
+      },
+      {
+        "name": "EMAIL_REGEX_PRESETS",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/regex/src/email.ts",
+        "line": 118
       },
       {
         "name": "ENDS_WITH_PUNCTUATION_REGEX",
@@ -1735,7 +1744,7 @@
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/valid/src/isEmail.ts",
-        "line": 29
+        "line": 38
       },
       {
         "name": "isEmpty",
