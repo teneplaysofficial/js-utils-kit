@@ -50,8 +50,8 @@ packages += (
 
       const pkg = JSON.parse(await readFile(`${dir}/package.json`, 'utf-8'));
 
-      const versionBadge = `[![npm version](https://img.shields.io/npm/v/${pkg.name}.svg?label=&style=flat&color=brightgreen)](https://www.npmjs.com/package/${pkg.name})`;
-      const downloadBadge = `[![Downloads](https://img.shields.io/npm/dt/${pkg.name}?label=&style=flat)](https://www.npmjs.com/package/${pkg.name})`;
+      const versionBadge = `[![npm version](https://img.shields.io/npm/v/${pkg.name}.svg?label=&style=flat)](https://www.npmjs.com/package/${pkg.name})`;
+      const downloadBadge = `[![Downloads](https://img.shields.io/npm/dt/${pkg.name}?label=&style=flat&color=informational)](https://www.npmjs.com/package/${pkg.name})`;
 
       return `| [\`${pkg.name}\`](https://www.npmjs.com/package/${pkg.name}) | ${versionBadge} | ${downloadBadge} | ${pkg.description} |`;
     }),
