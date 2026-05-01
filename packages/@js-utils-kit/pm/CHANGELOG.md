@@ -1,5 +1,14 @@
 # @js-utils-kit/pm
 
+## 0.3.2
+
+### Patch Changes
+
+- [#177](https://github.com/teneplaysofficial/js-utils-kit/pull/177) [`d6af860`](https://github.com/teneplaysofficial/js-utils-kit/commit/d6af860560d9a3bc6204560f0cf7111bc8e5ca23) Thanks [@teneplaysofficial](https://github.com/teneplaysofficial)! - Refactor `detectPM` to use `name != null` for consistent null/undefined handling in conditional spreading.
+
+- Updated dependencies [[`004efdb`](https://github.com/teneplaysofficial/js-utils-kit/commit/004efdb6ace7e0d33583075610b5cfc43af334fc)]:
+  - @js-utils-kit/fs@2.0.0
+
 ## 0.3.1
 
 ### Patch Changes

@@ -1,5 +1,77 @@
 # Changelog
 
+## 5.0.0
+
+### Major Changes
+
+- [#167](https://github.com/teneplaysofficial/js-utils-kit/pull/167) [`42bed98`](https://github.com/teneplaysofficial/js-utils-kit/commit/42bed982054ee2c84da302141b9ec08441ae996d) Thanks [@teneplaysofficial](https://github.com/teneplaysofficial)! - Enforce stricter case validation rules via shared regex package
+
+  ### Changes
+  - `CAMEL_CASE_REGEX` now requires **at least one uppercase transition**
+    - Previously valid: `"hello"`
+    - Now invalid: `"hello"`
+    - Still valid: `"helloWorld"`
+  - `PASCAL_CASE_REGEX` now requires **at least two segments**
+    - Previously valid: `"Hello"`
+    - Now invalid: `"Hello"`
+    - Still valid: `"HelloWorld"`
+  - Migrated to `@js-utils-kit/regex` for all regex patterns
+  - Enforced stricter rules for:
+    - `camelCase`
+    - `PascalCase`
+    - `snake_case`
+    - `kebab-case`
+
+  ### Affected exports
+  - `CAMEL_CASE_REGEX`
+  - `PASCAL_CASE_REGEX`
+  - `isCamelCase`
+  - `isPascalCase`
+
+  ### Impact
+  - These changes modify validation behavior and will cause some previously valid inputs to fail.
+  - Downstream consumers **must audit usages** of:
+    - `isCamelCase`
+    - `isPascalCase`
+    - direct usage of the regex constants
+
+- [#174](https://github.com/teneplaysofficial/js-utils-kit/pull/174) [`004efdb`](https://github.com/teneplaysofficial/js-utils-kit/commit/004efdb6ace7e0d33583075610b5cfc43af334fc) Thanks [@teneplaysofficial](https://github.com/teneplaysofficial)! - Improve and Relocate CommonJS Detection
+
+  The previous `hasCommonJSFilename` utility has been removed from `@js-utils-kit/fs` and replaced with a more robust `isCommonJS` helper in `@js-utils-kit/env`. Unlike the old implementation, which only checked for `__filename`, the new version uses multiple runtime signals (`module.exports`, `require`, `exports`, `__filename`, and `__dirname`) to provide a more reliable indication of a CommonJS environment. Update your imports to use `isCommonJS` from `@js-utils-kit/env`.
+
+  ```diff
+  - import { hasCommonJSFilename } from '@js-utils-kit/fs';
+  + import { isCommonJS } from '@js-utils-kit/env';
+
+  - if (hasCommonJSFilename) {
+  + if (isCommonJS) {
+     console.log('Running in CommonJS environment');
+   } else {
+     console.log('Running in ESM environment');
+   }
+  ```
+
+- [#174](https://github.com/teneplaysofficial/js-utils-kit/pull/174) [`004efdb`](https://github.com/teneplaysofficial/js-utils-kit/commit/004efdb6ace7e0d33583075610b5cfc43af334fc) Thanks [@teneplaysofficial](https://github.com/teneplaysofficial)! - Remove deprecated `mergeObj` function and replace it with [`deepMerge`](https://js-utils.js.org/functions/deepMerge.html).
+
+### Minor Changes
+
+- [#167](https://github.com/teneplaysofficial/js-utils-kit/pull/167) [`42bed98`](https://github.com/teneplaysofficial/js-utils-kit/commit/42bed982054ee2c84da302141b9ec08441ae996d) Thanks [@teneplaysofficial](https://github.com/teneplaysofficial)! - Introduce regex utilities package
+
+### Patch Changes
+
+- [#177](https://github.com/teneplaysofficial/js-utils-kit/pull/177) [`d6af860`](https://github.com/teneplaysofficial/js-utils-kit/commit/d6af860560d9a3bc6204560f0cf7111bc8e5ca23) Thanks [@teneplaysofficial](https://github.com/teneplaysofficial)! - Refactor `detectPM` to use `name != null` for consistent null/undefined handling in conditional spreading.
+
+- [#174](https://github.com/teneplaysofficial/js-utils-kit/pull/174) [`004efdb`](https://github.com/teneplaysofficial/js-utils-kit/commit/004efdb6ace7e0d33583075610b5cfc43af334fc) Thanks [@teneplaysofficial](https://github.com/teneplaysofficial)! - Simplify Email Validation Using Centralized Regex
+  - Replaces manual email parsing and validation logic with a single regex-based approach using [`EMAIL_REGEX`](https://js-utils.js.org/variables/EMAIL_REGEX.html). This reduces complexity and improves maintainability by delegating validation responsibility to a centralized regex.
+  - Updates Typedoc to reflect the new behavior:
+    - Removes explicit local and domain length enforcement from the function
+    - Clarifies that validation is fully handled by the regex
+    - Adds support and documentation for custom regex overrides
+  - No breaking changes, but validation behavior may differ slightly due to removal of manual checks.
+
+- Updated dependencies [[`42bed98`](https://github.com/teneplaysofficial/js-utils-kit/commit/42bed982054ee2c84da302141b9ec08441ae996d), [`004efdb`](https://github.com/teneplaysofficial/js-utils-kit/commit/004efdb6ace7e0d33583075610b5cfc43af334fc), [`d6af860`](https://github.com/teneplaysofficial/js-utils-kit/commit/d6af860560d9a3bc6204560f0cf7111bc8e5ca23), [`004efdb`](https://github.com/teneplaysofficial/js-utils-kit/commit/004efdb6ace7e0d33583075610b5cfc43af334fc), [`004efdb`](https://github.com/teneplaysofficial/js-utils-kit/commit/004efdb6ace7e0d33583075610b5cfc43af334fc), [`42bed98`](https://github.com/teneplaysofficial/js-utils-kit/commit/42bed982054ee2c84da302141b9ec08441ae996d)]:
+  - @js-utils-kit/core@5.0.0
+
 ## 4.0.0
 
 ### Major Changes
