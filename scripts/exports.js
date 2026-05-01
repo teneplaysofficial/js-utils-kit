@@ -78,7 +78,9 @@ const generateIndex = async (dir, root = false) => {
   const indexPath = join(dir, 'index.ts');
   const sf = ensureIndex(indexPath);
 
-  sf.getStatements().forEach((s) => s.remove());
+  sf.getStatements().forEach((s) => {
+    s.remove();
+  });
 
   if (root) {
     const pkg = await readPkg(join(dir, '..'));
@@ -88,7 +90,9 @@ const generateIndex = async (dir, root = false) => {
       Object.keys(pkg.dependencies ?? {})
         .filter((d) => d.startsWith('@js-utils-kit/'))
         .sort(sortPaths)
-        .forEach((d) => sf.addExportDeclaration({ moduleSpecifier: d }));
+        .forEach((d) => {
+          sf.addExportDeclaration({ moduleSpecifier: d });
+        });
     }
   }
 
@@ -100,7 +104,9 @@ const generateIndex = async (dir, root = false) => {
     sf.addExportDeclaration({ moduleSpecifier: `./${d}/index` });
   }
 
-  files.forEach((f) => sf.addExportDeclaration({ moduleSpecifier: `./${f}` }));
+  files.forEach((f) => {
+    sf.addExportDeclaration({ moduleSpecifier: `./${f}` });
+  });
   await sf.save();
 };
 
@@ -159,7 +165,9 @@ const assertNoDuplicates = (project) => {
   console.error('\n❌ Export collisions detected\n');
   conflicts.forEach(([n, f]) => {
     console.error(n);
-    f.forEach((p, i) => console.error(`  ${i + 1}. ${p}`));
+    f.forEach((p, i) => {
+      console.error(`  ${i + 1}. ${p}`);
+    });
     console.error('');
   });
   process.exit(1);

@@ -1,7 +1,7 @@
-import { text, log, isCancel, confirm } from '@clack/prompts';
 import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
-import { join } from 'node:path';
 import { EOL } from 'node:os';
+import { join } from 'node:path';
+import { confirm, isCancel, log, text } from '@clack/prompts';
 import rootPkg from '../package.json' with { type: 'json' };
 
 const args = process.argv.slice(2);

@@ -1,5 +1,5 @@
-import { afterAll, beforeEach, describe, expect, it, vi } from 'vitest';
 import { Environment } from '@js-utils-kit/types';
+import { afterAll, beforeEach, describe, expect, it, vi } from 'vitest';
 
 const originalEnv = process.env['NODE_ENV'];
 

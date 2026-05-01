@@ -1,4 +1,4 @@
-import { it, expect } from 'vitest';
+import { expect, it } from 'vitest';
 import { chunk } from '../src';
 
 it('splits an array into equal-sized chunks', () => {

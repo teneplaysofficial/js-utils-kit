@@ -1,4 +1,4 @@
-import { it, expect } from 'vitest';
+import { expect, it } from 'vitest';
 import { isFalsy } from '../src';
 
 it('returns true for false', () => {

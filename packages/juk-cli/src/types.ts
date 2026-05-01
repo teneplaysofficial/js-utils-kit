@@ -1,4 +1,4 @@
-import { options } from './flags';
+import type { options } from './flags';
 
 type RawFlag = (typeof options)[number]['flags'];
 

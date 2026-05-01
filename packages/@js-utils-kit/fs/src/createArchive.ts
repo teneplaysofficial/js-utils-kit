@@ -1,8 +1,8 @@
-import fs from 'fs';
-import path from 'path';
-import archiver from 'archiver';
-import type { Archiver } from 'archiver';
+import fs from 'node:fs';
+import path from 'node:path';
 import type { CreateArchiveOptions } from '@js-utils-kit/types';
+import type { Archiver } from 'archiver';
+import archiver from 'archiver';
 
 /**
  * Creates a {@link ArchiveFormat } archive from a specified directory.

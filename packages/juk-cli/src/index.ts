@@ -1,10 +1,10 @@
 import process, { exit } from 'node:process';
-import { knownFlags } from './flags';
-import type { Flag } from './types';
-import { pkg } from './constant';
-import printHelp from './printHelp';
 import { isCI } from '@js-utils-kit/env';
+import { pkg } from './constant';
+import { knownFlags } from './flags';
 import printBanner from './printBanner';
+import printHelp from './printHelp';
+import type { Flag } from './types';
 
 const rawArgs = process.argv.slice(2);
 const invalidFlags = rawArgs.filter((arg) => !knownFlags.includes(arg));

@@ -1,4 +1,4 @@
-import { it, expect } from 'vitest';
+import { expect, it } from 'vitest';
 import { unique } from '../src';
 
 it('removes duplicate primitive values while preserving order', () => {

@@ -1,6 +1,6 @@
+import { Environment } from '@js-utils-kit/types';
 import { expect, it } from 'vitest';
 import { getRunTimeEnvironment } from '../src';
-import { Environment } from '@js-utils-kit/types';
 
 it('returns Environment.UNKNOWN for unrecognized value', () => {
   process.env['NODE_ENV'] = 'staging';
