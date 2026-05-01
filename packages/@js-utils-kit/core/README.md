@@ -38,7 +38,7 @@ console.log(clamp(150, 0, 100)); // 100
 console.log(capitalize('hello world')); // 'Hello World'
 console.log(unique([1, 2, 2, 3])); // [1, 2, 3]
 console.log(isEmpty({})); // true
-console.log(isBrowser()); // true/false
+console.log(isBrowser); // true/false
 ```
 
 or
@@ -50,7 +50,7 @@ console.log(kit.clamp(150, 0, 100)); // 100
 console.log(kit.capitalize('hello')); // 'Hello'
 console.log(kit.unique([1, 1, 2])); // [1, 2]
 console.log(kit.isEmpty({})); // true
-console.log(kit.isNode()); // true/false
+console.log(kit.isNode); // true/false
 ```
 
 ## Documentation
