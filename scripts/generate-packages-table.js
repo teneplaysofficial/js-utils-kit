@@ -1,5 +1,6 @@
 import { glob, readFile, writeFile } from 'node:fs/promises';
 import { EOL } from 'node:os';
+import ignore from 'ignore';
 import { rewriteMdComment } from 'rewrite.md';
 import { colors } from 'use-colors';
 import zylog from 'zylog';
@@ -11,37 +12,13 @@ let packages = `
 |--------|:--------:|:-----------:|------------|
 `;
 
-function parseGitignore(content) {
-  return content
-    .split('\n')
-    .map((l) => l.trim())
-    .filter((l) => l && !l.startsWith('#'));
-}
+const toPosix = (p) => p.replace(/\\/g, '/');
 
-function normalize(p) {
-  return p.replace(/\\/g, '/');
-}
-
-function isIgnored(path, rules) {
-  const p = normalize(path);
-
-  return rules.some((rule) => {
-    const r = normalize(rule);
-
-    if (r.endsWith('/')) {
-      const dir = r.slice(0, -1);
-      return p.split('/').includes(dir);
-    }
-
-    return p.endsWith(r) || p.split('/').includes(r);
-  });
-}
-
-const rules = parseGitignore(await readFile('.gitignore', 'utf-8'));
+const rules = ignore().add(await readFile('.gitignore', 'utf-8'));
 
 const pkgDirs = (await Array.fromAsync(glob('packages/**/package.json')))
-  .filter((p) => !isIgnored(p, rules))
-  .map((p) => normalize(p).replace(/\/package\.json$/, ''));
+  .filter((p) => !rules.ignores(p))
+  .map((p) => toPosix(p).replace(/\/package\.json$/, ''));
 
 packages += (
   await Promise.all(
