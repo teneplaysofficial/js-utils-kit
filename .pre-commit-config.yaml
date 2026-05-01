@@ -18,6 +18,7 @@ repos:
   - repo: https://github.com/teneplaysofficial/pre-commit
     rev: v1.0.3
     hooks:
+      - id: biome
       - id: prettier
         additional_dependencies:
           - '@tenedev/prettier-config@1.2.0'

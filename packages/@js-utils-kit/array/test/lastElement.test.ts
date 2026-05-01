@@ -1,4 +1,4 @@
-import { it, expect } from 'vitest';
+import { expect, it } from 'vitest';
 import { lastElement } from '../src';
 
 it('returns the last element of an array', () => {

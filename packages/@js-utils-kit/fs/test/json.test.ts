@@ -1,6 +1,6 @@
 import { readFile, writeFile } from 'node:fs/promises';
-import { describe, it, expect, vi, beforeEach } from 'vitest';
-import { parseJson, stringifyJson, readJsonFile, writeJsonFile } from '../src';
+import { beforeEach, describe, expect, it, vi } from 'vitest';
+import { parseJson, readJsonFile, stringifyJson, writeJsonFile } from '../src';
 
 vi.mock('node:fs/promises', () => ({
   readFile: vi.fn(),

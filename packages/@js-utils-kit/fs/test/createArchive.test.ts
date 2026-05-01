@@ -1,4 +1,4 @@
-import fs from 'fs';
+import fs from 'node:fs';
 import archiver from 'archiver';
 import { beforeEach, expect, it, type Mock, vi } from 'vitest';
 import { createArchive } from '../src';

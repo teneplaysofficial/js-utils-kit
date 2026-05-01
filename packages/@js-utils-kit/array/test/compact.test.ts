@@ -1,4 +1,4 @@
-import { it, expect } from 'vitest';
+import { expect, it } from 'vitest';
 import { compact } from '../src';
 
 it('removes all falsy values from an array', () => {

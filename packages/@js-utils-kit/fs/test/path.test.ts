@@ -1,5 +1,5 @@
-import path from 'path';
-import { describe, it, expect } from 'vitest';
+import path from 'node:path';
+import { describe, expect, it } from 'vitest';
 import { toPlatformPath, toPosixPath, toWinPath } from '../src';
 
 describe('toPosixPath', () => {

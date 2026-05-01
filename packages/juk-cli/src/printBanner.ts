@@ -1,5 +1,5 @@
-import { pkg } from './constant';
 import figlet from 'figlet';
+import { pkg } from './constant';
 
 export default function printBanner() {
   try {

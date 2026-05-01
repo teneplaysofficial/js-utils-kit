@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 // @ts-nocheck
 
-import { it, expect } from 'vitest';
+import { expect, it } from 'vitest';
 import { deepFreeze } from '../src';
 
 it('returns primitives unchanged', () => {

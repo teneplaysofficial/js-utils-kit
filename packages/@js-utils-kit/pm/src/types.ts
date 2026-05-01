@@ -1,4 +1,4 @@
-import { PACKAGE_MANAGERS } from './pm';
+import type { PACKAGE_MANAGERS } from './pm';
 
 export type PackageManager = (typeof PACKAGE_MANAGERS)[number];
 

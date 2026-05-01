@@ -1,6 +1,6 @@
-import path from 'path';
-import { describe, it, expect } from 'vitest';
-import { locateModuleFile, locateModuleDirectory, resolveModuleRelative } from '../src';
+import path from 'node:path';
+import { describe, expect, it } from 'vitest';
+import { locateModuleDirectory, locateModuleFile, resolveModuleRelative } from '../src';
 
 describe('locateModuleFile', () => {
   it('returns absolute path when using ESM import.meta.url', () => {

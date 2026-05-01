@@ -1,7 +1,7 @@
 import type { Stats } from 'node:fs';
-import { exists, getContentSize, isDirectory, isFile } from '../src';
 import { access, stat } from 'node:fs/promises';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
+import { exists, getContentSize, isDirectory, isFile } from '../src';
 
 vi.mock('node:fs/promises', () => ({
   access: vi.fn(),

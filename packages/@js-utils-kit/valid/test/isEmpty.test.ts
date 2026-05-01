@@ -1,4 +1,4 @@
-import { it, expect } from 'vitest';
+import { expect, it } from 'vitest';
 import { isEmpty } from '../src';
 
 it('returns true for null and undefined', () => {

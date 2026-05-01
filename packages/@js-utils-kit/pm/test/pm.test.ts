@@ -1,7 +1,7 @@
-import { exists } from '@js-utils-kit/fs';
-import { detectPM } from '../src';
 import { readFile } from 'node:fs/promises';
+import { exists } from '@js-utils-kit/fs';
 import { beforeEach, expect, it, vi } from 'vitest';
+import { detectPM } from '../src';
 
 vi.mock('node:fs/promises', () => ({
   readFile: vi.fn(),

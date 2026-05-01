@@ -88,7 +88,7 @@ export async function detectPM({
     }
 
   return {
-    ...(name != undefined && { name }),
+    ...(name != null && { name }),
     isPackageManager: name != null,
     isNpm: name === 'npm',
     isPnpm: name === 'pnpm',

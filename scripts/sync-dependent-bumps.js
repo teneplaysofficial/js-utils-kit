@@ -1,8 +1,8 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import matter from 'gray-matter';
 import parseChangesetFile from '@changesets/parse';
 import { getPackages } from '@manypkg/get-packages';
+import matter from 'gray-matter';
 import zylog from 'zylog';
 
 const BUMP_PRIORITY = { patch: 0, minor: 1, major: 2 };
