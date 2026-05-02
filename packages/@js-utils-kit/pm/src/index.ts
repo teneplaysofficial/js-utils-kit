@@ -3,5 +3,6 @@
  *
  * @module pm
  */
+export * from './cmds';
 export * from './pm';
 export * from './types';
