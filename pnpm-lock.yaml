@@ -208,6 +208,9 @@ importers:
       '@js-utils-kit/types':
         specifier: workspace:*
         version: link:../types
+      '@js-utils-kit/valid':
+        specifier: workspace:*
+        version: link:../valid
 
   packages/@js-utils-kit/regex: {}
 

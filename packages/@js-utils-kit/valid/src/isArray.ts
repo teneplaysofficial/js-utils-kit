@@ -17,7 +17,7 @@ import { isDefined } from './isDefined';
  */
 export function isArray<T>(
   /** The value to check */
-  value: T,
-): boolean {
+  value: T | T[],
+): value is T[] {
   return isDefined(value) && Array.isArray(value);
 }
