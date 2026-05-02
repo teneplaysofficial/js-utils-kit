@@ -93,4 +93,4 @@ jobs:
       - run: |
           pnpm build
       - name: Release Preview
-        run: pnpm dlx pkg-pr-new publish './packages/**'
+        run: pnpm dlx pkg-pr-new publish './packages/**' --packageManager=npm,pnpm,yarn,bun
