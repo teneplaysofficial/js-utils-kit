@@ -1,5 +1,25 @@
 # @js-utils-kit/env
 
+## 3.1.0
+
+### Minor Changes
+
+- [#174](https://github.com/teneplaysofficial/js-utils-kit/pull/174) [`004efdb`](https://github.com/teneplaysofficial/js-utils-kit/commit/004efdb6ace7e0d33583075610b5cfc43af334fc) Thanks [@teneplaysofficial](https://github.com/teneplaysofficial)! - Improve and Relocate CommonJS Detection
+
+  The previous `hasCommonJSFilename` utility has been removed from `@js-utils-kit/fs` and replaced with a more robust `isCommonJS` helper in `@js-utils-kit/env`. Unlike the old implementation, which only checked for `__filename`, the new version uses multiple runtime signals (`module.exports`, `require`, `exports`, `__filename`, and `__dirname`) to provide a more reliable indication of a CommonJS environment. Update your imports to use `isCommonJS` from `@js-utils-kit/env`.
+
+  ```diff
+  - import { hasCommonJSFilename } from '@js-utils-kit/fs';
+  + import { isCommonJS } from '@js-utils-kit/env';
+
+  - if (hasCommonJSFilename) {
+  + if (isCommonJS) {
+     console.log('Running in CommonJS environment');
+   } else {
+     console.log('Running in ESM environment');
+   }
+  ```
+
 ## 3.0.0
 
 ### Major Changes

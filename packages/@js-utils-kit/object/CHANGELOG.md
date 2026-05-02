@@ -1,5 +1,16 @@
 # @js-utils-kit/object
 
+## 2.0.0
+
+### Major Changes
+
+- [#174](https://github.com/teneplaysofficial/js-utils-kit/pull/174) [`004efdb`](https://github.com/teneplaysofficial/js-utils-kit/commit/004efdb6ace7e0d33583075610b5cfc43af334fc) Thanks [@teneplaysofficial](https://github.com/teneplaysofficial)! - Remove deprecated `mergeObj` function and replace it with [`deepMerge`](https://js-utils.js.org/functions/deepMerge.html).
+
+### Patch Changes
+
+- Updated dependencies [[`42bed98`](https://github.com/teneplaysofficial/js-utils-kit/commit/42bed982054ee2c84da302141b9ec08441ae996d), [`004efdb`](https://github.com/teneplaysofficial/js-utils-kit/commit/004efdb6ace7e0d33583075610b5cfc43af334fc)]:
+  - @js-utils-kit/valid@3.0.0
+
 ## 1.3.0
 
 ### Minor Changes

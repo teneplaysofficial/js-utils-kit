@@ -1,5 +1,53 @@
 # @js-utils-kit/valid
 
+## 3.0.0
+
+### Major Changes
+
+- [#167](https://github.com/teneplaysofficial/js-utils-kit/pull/167) [`42bed98`](https://github.com/teneplaysofficial/js-utils-kit/commit/42bed982054ee2c84da302141b9ec08441ae996d) Thanks [@teneplaysofficial](https://github.com/teneplaysofficial)! - Enforce stricter case validation rules via shared regex package
+
+  ### Changes
+  - `CAMEL_CASE_REGEX` now requires **at least one uppercase transition**
+    - Previously valid: `"hello"`
+    - Now invalid: `"hello"`
+    - Still valid: `"helloWorld"`
+  - `PASCAL_CASE_REGEX` now requires **at least two segments**
+    - Previously valid: `"Hello"`
+    - Now invalid: `"Hello"`
+    - Still valid: `"HelloWorld"`
+  - Migrated to `@js-utils-kit/regex` for all regex patterns
+  - Enforced stricter rules for:
+    - `camelCase`
+    - `PascalCase`
+    - `snake_case`
+    - `kebab-case`
+
+  ### Affected exports
+  - `CAMEL_CASE_REGEX`
+  - `PASCAL_CASE_REGEX`
+  - `isCamelCase`
+  - `isPascalCase`
+
+  ### Impact
+  - These changes modify validation behavior and will cause some previously valid inputs to fail.
+  - Downstream consumers **must audit usages** of:
+    - `isCamelCase`
+    - `isPascalCase`
+    - direct usage of the regex constants
+
+### Patch Changes
+
+- [#174](https://github.com/teneplaysofficial/js-utils-kit/pull/174) [`004efdb`](https://github.com/teneplaysofficial/js-utils-kit/commit/004efdb6ace7e0d33583075610b5cfc43af334fc) Thanks [@teneplaysofficial](https://github.com/teneplaysofficial)! - Simplify Email Validation Using Centralized Regex
+  - Replaces manual email parsing and validation logic with a single regex-based approach using [`EMAIL_REGEX`](https://js-utils.js.org/variables/EMAIL_REGEX.html). This reduces complexity and improves maintainability by delegating validation responsibility to a centralized regex.
+  - Updates Typedoc to reflect the new behavior:
+    - Removes explicit local and domain length enforcement from the function
+    - Clarifies that validation is fully handled by the regex
+    - Adds support and documentation for custom regex overrides
+  - No breaking changes, but validation behavior may differ slightly due to removal of manual checks.
+
+- Updated dependencies [[`42bed98`](https://github.com/teneplaysofficial/js-utils-kit/commit/42bed982054ee2c84da302141b9ec08441ae996d)]:
+  - @js-utils-kit/regex@0.1.0
+
 ## 2.0.0
 
 ### Major Changes
