@@ -6,6 +6,7 @@
 [![ci](https://github.com/teneplaysofficial/js-utils-kit/actions/workflows/ci.yml/badge.svg)](https://github.com/TenEplaysOfficial/js-utils-kit)
 [![codecov](https://codecov.io/github/teneplaysofficial/js-utils-kit/graph/badge.svg?token=9CEFGKSU2S)](https://app.codecov.io/gh/teneplaysofficial/js-utils-kit/tree/main)
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/teneplaysofficial/js-utils-kit/main.svg)](https://results.pre-commit.ci/latest/github/teneplaysofficial/js-utils-kit/main)
+[![pkg.pr.new](https://pkg.pr.new/badge/teneplaysofficial/js-utils-kit)](https://pkg.pr.new/~/teneplaysofficial/js-utils-kit)
 
 ## Overview
 
