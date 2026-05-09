@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitest/config';
 
 const isTurbo = process.env['INIT_CWD'];
+const exclude = ['**/node_modules/**'];
 
 export default defineConfig(() => {
   if (isTurbo) {
@@ -10,6 +11,7 @@ export default defineConfig(() => {
       },
       test: {
         environment: isTurbo.includes('juk-web') ? 'happy-dom' : 'node',
+        exclude,
       },
     };
   }
@@ -24,6 +26,7 @@ export default defineConfig(() => {
           test: {
             name: 'dom',
             include: ['packages/juk-web/**/*.test.ts'],
+            exclude,
             environment: 'happy-dom',
           },
         },
@@ -31,7 +34,7 @@ export default defineConfig(() => {
           test: {
             name: 'node',
             include: ['packages/**/*.test.ts'],
-            exclude: ['packages/juk-web/**/*.test.ts'],
+            exclude: ['packages/juk-web/**/*.test.ts', ...exclude],
             environment: 'node',
           },
         },

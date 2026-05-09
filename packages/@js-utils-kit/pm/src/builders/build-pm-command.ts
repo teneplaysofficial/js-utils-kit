@@ -86,5 +86,7 @@ export function buildPmCommand(
 
   if (!base) return;
 
-  return args ? `${base} ${isArray(args) ? args.join(' ') : args}` : base;
+  const joinedArgs = isArray(args) ? args.join(' ') : args;
+
+  return joinedArgs ? `${base} ${joinedArgs}` : base;
 }

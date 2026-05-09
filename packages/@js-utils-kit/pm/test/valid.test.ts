@@ -1,12 +1,21 @@
+import { NODE_BUILTIN_MODULES } from '@js-utils-kit/constants';
 import { describe, expect, INVALID_PACKAGE_NAMES, it, VALID_PACKAGE_NAMES } from '@repo/test-utils';
 import { isValidPackageName } from '../src';
 
-describe('isValidNpmPackageName', () => {
+describe('isValidPackageName', () => {
   it.each(VALID_PACKAGE_NAMES)('should return true for valid package name "%s"', (name) => {
     expect(isValidPackageName(name)).toBe(true);
   });
 
-  it.each(INVALID_PACKAGE_NAMES)('should return false for invalid package name "%s"', (name) => {
-    expect(isValidPackageName(name)).toBe(false);
-  });
+  it.each(INVALID_PACKAGE_NAMES.concat(NODE_BUILTIN_MODULES))(
+    'should return false for invalid package name "%s"',
+    (name) => {
+      expect(isValidPackageName(name)).toBe(false);
+    },
+  );
+
+  (it.each([{}, [], null, undefined, true, false, Boolean, Object, Array, Set, Map]),
+    (name: never) => {
+      expect(isValidPackageName(name)).toBe(false);
+    });
 });

@@ -9,7 +9,15 @@ export const yarnCommands = {
     /** Install development dependency package(s) */
     dev: 'yarn add -D',
 
-    /** Install global package(s) */
+    /**
+     * Install global package(s).
+     *
+     * @remarks
+     * This command is only supported in Yarn Classic (v1).
+     *
+     * Yarn Berry (v2+) removed support for global commands.
+     * Using `npm install -g` is recommended for global installation.
+     */
     global: 'yarn global add',
   },
 
@@ -18,7 +26,15 @@ export const yarnCommands = {
     /** Remove installed package(s) */
     default: 'yarn remove',
 
-    /** Remove globally installed package(s) */
+    /**
+     * Remove globally installed package(s).
+     *
+     * @remarks
+     * This command is only supported in Yarn Classic (v1).
+     *
+     * Yarn Berry (v2+) removed support for global commands.
+     * Using `npm install -g` is recommended for global installation.
+     */
     global: 'yarn global remove',
   },
 } as const satisfies PmCommandMap;

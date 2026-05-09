@@ -13,10 +13,10 @@ import { yarnCommands } from './yarn';
  *
  * @example
  * ```ts
- * PM_COMMANDS.npm.install
+ * PM_COMMANDS.npm.install.default
  * // "npm install"
  *
- * PM_COMMANDS.pnpm.uninstall
+ * PM_COMMANDS.pnpm.uninstall.default
  * // "pnpm remove"
  * ```
  */

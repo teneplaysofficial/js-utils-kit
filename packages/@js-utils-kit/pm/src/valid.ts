@@ -1,4 +1,8 @@
+import { NODE_BUILTIN_MODULES } from '@js-utils-kit/constants';
 import { NPM_PACKAGE_NAME_REGEX } from '@js-utils-kit/regex';
+
+/** The maximum permitted length for an npm package name */
+export const MAX_NPM_PACKAGE_NAME_LENGTH = 214 as const;
 
 /**
  * Checks whether a string is a valid npm package name.
@@ -7,19 +11,23 @@ import { NPM_PACKAGE_NAME_REGEX } from '@js-utils-kit/regex';
  *
  * @example
  * ```ts
- * isValidNpmPackageName('react');
+ * isValidPackageName('react');
  * // true
  *
- * isValidNpmPackageName('@types/node');
+ * isValidPackageName('@types/node');
  * // true
  *
- * isValidNpmPackageName('React');
+ * isValidPackageName('React');
  * // false
  * ```
  */
 export function isValidPackageName(
   /** Package name to validate */
   value: string,
-): boolean {
-  return NPM_PACKAGE_NAME_REGEX.test(value);
+) {
+  return (
+    typeof value === 'string' &&
+    !(NODE_BUILTIN_MODULES?.includes(value as never) ?? false) &&
+    NPM_PACKAGE_NAME_REGEX.test(value)
+  );
 }
