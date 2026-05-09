@@ -2,7 +2,8 @@
   "extends": "@tenedev/tsconfig",
   "compilerOptions": {
     "paths": {
-      "@js-utils-kit/*": ["./packages/@js-utils-kit/*/src"]
+      "@js-utils-kit/*": ["./packages/@js-utils-kit/*/src"],
+      "@repo/*": ["./internal/*/src"]
     }
   }
 }

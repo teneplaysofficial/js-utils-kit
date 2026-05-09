@@ -6,3 +6,4 @@
 export * from './cmds';
 export * from './pm';
 export * from './types';
+export * from './valid';

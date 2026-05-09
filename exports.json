@@ -1,12 +1,12 @@
 {
   "summary": {
-    "totalExports": 206,
+    "totalExports": 209,
     "deprecatedExports": 0,
     "classExports": 0,
-    "functionExports": 87,
-    "variableExports": 98,
+    "functionExports": 89,
+    "variableExports": 99,
     "typeExports": 20,
-    "valueExports": 185,
+    "valueExports": 188,
     "totalPackages": 14
   },
   "exportNames": {
@@ -14,6 +14,7 @@
     "functionExports": [
       "alphanumeric",
       "appendEnv",
+      "buildPmCommand",
       "capitalize",
       "chunk",
       "clamp",
@@ -64,6 +65,7 @@
       "isUndefinedOrNull",
       "isUpperCase",
       "isURL",
+      "isValidPackageName",
       "lastElement",
       "locateModuleDirectory",
       "locateModuleFile",
@@ -170,6 +172,7 @@
       "NODE_MAJOR_VERSION",
       "NODE_VERSION",
       "nodePath",
+      "NPM_PACKAGE_NAME_REGEX",
       "PACKAGE_MANAGERS",
       "PASCAL_CASE_REGEX",
       "PI",
@@ -1099,12 +1102,20 @@
     ],
     "@js-utils-kit/pm": [
       {
+        "name": "buildPmCommand",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/pm/src/cmds.ts",
+        "line": 91
+      },
+      {
         "name": "PmCommands",
         "declarationKind": "TypeAliasDeclaration",
         "exportKind": "type",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/pm/src/cmds.ts",
-        "line": 5
+        "line": 7
       },
       {
         "name": "PM_COMMANDS",
@@ -1112,7 +1123,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/pm/src/cmds.ts",
-        "line": 7
+        "line": 25
       },
       {
         "name": "detectPM",
@@ -1153,6 +1164,14 @@
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/pm/src/types.ts",
         "line": 47
+      },
+      {
+        "name": "isValidPackageName",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/pm/src/valid.ts",
+        "line": 20
       }
     ],
     "@js-utils-kit/regex": [
@@ -1283,6 +1302,14 @@
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/regex/src/hasWhitespace.ts",
         "line": 23
+      },
+      {
+        "name": "NPM_PACKAGE_NAME_REGEX",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/regex/src/pm.ts",
+        "line": 21
       }
     ],
     "@js-utils-kit/string": [

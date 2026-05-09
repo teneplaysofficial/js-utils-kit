@@ -4,4 +4,4 @@
 js-utils-kit: minor
 ---
 
-Add `PM_COMMANDS` mapping and `buildPmCommand` utility for generating package manager command strings.
+Add `PM_COMMANDS`, `buildPmCommand`, and `isValidPackageName` utilities for generating package manager commands and validating npm package names using `NPM_PACKAGE_NAME_REGEX`.

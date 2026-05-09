@@ -5,6 +5,9 @@ const isTurbo = process.env['INIT_CWD'];
 export default defineConfig(() => {
   if (isTurbo) {
     return {
+      resolve: {
+        tsconfigPaths: true,
+      },
       test: {
         environment: isTurbo.includes('juk-web') ? 'happy-dom' : 'node',
       },
@@ -12,6 +15,9 @@ export default defineConfig(() => {
   }
 
   return {
+    resolve: {
+      tsconfigPaths: true,
+    },
     test: {
       projects: [
         {

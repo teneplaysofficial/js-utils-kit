@@ -111,6 +111,8 @@ importers:
         specifier: ^0.1.0
         version: 0.1.0
 
+  internal/test-utils: {}
+
   packages/@js-utils-kit/array:
     dependencies:
       '@js-utils-kit/types':
@@ -205,6 +207,9 @@ importers:
       '@js-utils-kit/fs':
         specifier: workspace:*
         version: link:../fs
+      '@js-utils-kit/regex':
+        specifier: workspace:*
+        version: link:../regex
       '@js-utils-kit/types':
         specifier: workspace:*
         version: link:../types

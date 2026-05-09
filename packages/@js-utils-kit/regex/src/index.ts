@@ -8,3 +8,4 @@ export * from './cases';
 export * from './email';
 export * from './endsWithPunctuation';
 export * from './hasWhitespace';
+export * from './pm';
