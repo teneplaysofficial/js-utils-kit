@@ -1,12 +1,12 @@
 {
   "summary": {
-    "totalExports": 209,
+    "totalExports": 217,
     "deprecatedExports": 0,
     "classExports": 0,
     "functionExports": 89,
-    "variableExports": 99,
-    "typeExports": 20,
-    "valueExports": 188,
+    "variableExports": 103,
+    "typeExports": 24,
+    "valueExports": 192,
     "totalPackages": 14
   },
   "exportNames": {
@@ -106,6 +106,7 @@
       "ALPHANUMERIC",
       "ARCHITECTURE",
       "argv",
+      "bunCommands",
       "CAMEL_CASE_REGEX",
       "CM_TO_MM",
       "COMMIT_SCOPE_VALUES",
@@ -173,12 +174,14 @@
       "NODE_VERSION",
       "nodePath",
       "NPM_PACKAGE_NAME_REGEX",
+      "npmCommands",
       "PACKAGE_MANAGERS",
       "PASCAL_CASE_REGEX",
       "PI",
       "PLANCK",
       "PLATFORM",
       "PM_COMMANDS",
+      "pnpmCommands",
       "POSITIVE_INFINITY",
       "PROCESS_MEMORY_USAGE",
       "RAD_TO_DEG",
@@ -201,6 +204,7 @@
       "UPPERCASE_ALPHA_REGEX",
       "UPPERCASE_ALPHABET",
       "WEEK",
+      "yarnCommands",
       "YEAR"
     ],
     "typeExports": [
@@ -221,7 +225,11 @@
       "PackageJson",
       "PackageManager",
       "PlainObject",
+      "PmCommandMap",
       "PmCommands",
+      "PmCommandsRegistry",
+      "PmCommandVariant",
+      "PmCommandVariants",
       "SPDX",
       "Trim"
     ],
@@ -1102,30 +1110,6 @@
     ],
     "@js-utils-kit/pm": [
       {
-        "name": "buildPmCommand",
-        "declarationKind": "FunctionDeclaration",
-        "exportKind": "function",
-        "deprecated": false,
-        "filePath": "packages/@js-utils-kit/pm/src/cmds.ts",
-        "line": 91
-      },
-      {
-        "name": "PmCommands",
-        "declarationKind": "TypeAliasDeclaration",
-        "exportKind": "type",
-        "deprecated": false,
-        "filePath": "packages/@js-utils-kit/pm/src/cmds.ts",
-        "line": 7
-      },
-      {
-        "name": "PM_COMMANDS",
-        "declarationKind": "VariableDeclaration",
-        "exportKind": "variable",
-        "deprecated": false,
-        "filePath": "packages/@js-utils-kit/pm/src/cmds.ts",
-        "line": 25
-      },
-      {
         "name": "detectPM",
         "declarationKind": "FunctionDeclaration",
         "exportKind": "function",
@@ -1166,12 +1150,100 @@
         "line": 47
       },
       {
+        "name": "PmCommandVariant",
+        "declarationKind": "TypeAliasDeclaration",
+        "exportKind": "type",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/pm/src/types.ts",
+        "line": 74
+      },
+      {
+        "name": "PmCommandVariants",
+        "declarationKind": "TypeAliasDeclaration",
+        "exportKind": "type",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/pm/src/types.ts",
+        "line": 77
+      },
+      {
+        "name": "PmCommands",
+        "declarationKind": "TypeAliasDeclaration",
+        "exportKind": "type",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/pm/src/types.ts",
+        "line": 82
+      },
+      {
+        "name": "PmCommandMap",
+        "declarationKind": "TypeAliasDeclaration",
+        "exportKind": "type",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/pm/src/types.ts",
+        "line": 87
+      },
+      {
+        "name": "PmCommandsRegistry",
+        "declarationKind": "TypeAliasDeclaration",
+        "exportKind": "type",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/pm/src/types.ts",
+        "line": 94
+      },
+      {
         "name": "isValidPackageName",
         "declarationKind": "FunctionDeclaration",
         "exportKind": "function",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/pm/src/valid.ts",
         "line": 20
+      },
+      {
+        "name": "buildPmCommand",
+        "declarationKind": "FunctionDeclaration",
+        "exportKind": "function",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/pm/src/builders/build-pm-command.ts",
+        "line": 56
+      },
+      {
+        "name": "bunCommands",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/pm/src/commands/bun.ts",
+        "line": 3
+      },
+      {
+        "name": "npmCommands",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/pm/src/commands/npm.ts",
+        "line": 3
+      },
+      {
+        "name": "pnpmCommands",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/pm/src/commands/pnpm.ts",
+        "line": 3
+      },
+      {
+        "name": "PM_COMMANDS",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/pm/src/commands/registry.ts",
+        "line": 23
+      },
+      {
+        "name": "yarnCommands",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/pm/src/commands/yarn.ts",
+        "line": 3
       }
     ],
     "@js-utils-kit/regex": [
