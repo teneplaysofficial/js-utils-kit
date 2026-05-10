@@ -1,7 +1,7 @@
 /**
  * Validation utilities
  *
- * @module valid
+ * @module Validation
  */
 export * from './endsWithPunctuation';
 export * from './hasWhitespace';

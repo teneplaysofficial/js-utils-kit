@@ -1,6 +1,6 @@
 /**
  * Web utilities for JavaScript
  *
- * @module juk-web
+ * @module Browser
  */
 export * from './checks';

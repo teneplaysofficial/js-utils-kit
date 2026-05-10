@@ -1,5 +1,6 @@
 {
   "name": "@js-utils-kit/constants",
+  "displayName": "Constants",
   "version": "0.5.0",
   "description": "Commonly used constants utilities",
   "homepage": "https://js-utils.js.org",

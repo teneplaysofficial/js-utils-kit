@@ -1,7 +1,7 @@
 /**
  * Character Sets utilities
  *
- * @module charset
+ * @module Charset
  */
 export * from './alphanumeric';
 export * from './digits';

@@ -1,7 +1,7 @@
 /**
  * Commonly used constants utilities
  *
- * @module constants
+ * @module Constants
  */
 export * from './commit/index';
 export * from './charset';

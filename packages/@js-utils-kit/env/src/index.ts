@@ -1,7 +1,7 @@
 /**
  * Environment utilities
  *
- * @module env
+ * @module Environment
  */
 export * from './env';
 export * from './getRunTimeEnvironment';

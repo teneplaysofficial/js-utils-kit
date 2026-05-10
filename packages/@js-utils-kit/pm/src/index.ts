@@ -1,7 +1,7 @@
 /**
  * Utilities for detecting and interacting with JavaScript package managers
  *
- * @module pm
+ * @module Package Manager
  */
 export * from './pm';
 export * from './types';

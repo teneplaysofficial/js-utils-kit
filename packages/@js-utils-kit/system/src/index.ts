@@ -1,7 +1,7 @@
 /**
  * System utilities
  *
- * @module system
+ * @module System
  */
 export * from './cpu';
 export * from './info';
