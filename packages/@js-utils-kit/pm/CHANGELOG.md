@@ -1,5 +1,18 @@
 # @js-utils-kit/pm
 
+## 0.4.0
+
+### Minor Changes
+
+- [#184](https://github.com/teneplaysofficial/js-utils-kit/pull/184) [`58b4795`](https://github.com/teneplaysofficial/js-utils-kit/commit/58b47959ef6c893ee56a649269b2a101f7bf7f07) Thanks [@teneplaysofficial](https://github.com/teneplaysofficial)! - Add `PM_COMMANDS`, `buildPmCommand`, and `isValidPackageName` utilities for generating package manager commands and validating npm package names using `NPM_PACKAGE_NAME_REGEX`.
+
+### Patch Changes
+
+- Updated dependencies [[`58b4795`](https://github.com/teneplaysofficial/js-utils-kit/commit/58b47959ef6c893ee56a649269b2a101f7bf7f07), [`58b4795`](https://github.com/teneplaysofficial/js-utils-kit/commit/58b47959ef6c893ee56a649269b2a101f7bf7f07), [`58b4795`](https://github.com/teneplaysofficial/js-utils-kit/commit/58b47959ef6c893ee56a649269b2a101f7bf7f07)]:
+  - @js-utils-kit/valid@3.0.1
+  - @js-utils-kit/constants@0.6.0
+  - @js-utils-kit/regex@0.2.0
+
 ## 0.3.2
 
 ### Patch Changes
