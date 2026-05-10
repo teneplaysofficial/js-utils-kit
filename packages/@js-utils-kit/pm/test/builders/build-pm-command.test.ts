@@ -14,7 +14,7 @@ describe('default commands', () => {
     expect(buildPmCommand('yarn', 'install', 'vitest')).toBe('yarn add vitest');
   });
 
-  it('should return base command without args', () => {
+  it('should return base command without args and when variant is default', () => {
     expect(buildPmCommand('npm', 'install')).toBe('npm install');
   });
 });
@@ -66,6 +66,10 @@ describe('invalid cases', () => {
 
   it('should return undefined when command variant does not exist', () => {
     expect(buildPmCommand('npm', 'install', 'typescript', 'unknown' as never)).toBeUndefined();
+  });
+
+  it('should return undefined for non-default variant on string command', () => {
+    expect(buildPmCommand('npm', 'init' as never, undefined, 'dev')).toBeUndefined();
   });
 });
 

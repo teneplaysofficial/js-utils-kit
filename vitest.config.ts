@@ -24,7 +24,7 @@ export default defineConfig(() => {
       projects: [
         {
           test: {
-            name: 'dom',
+            name: 'DOM',
             include: ['packages/juk-web/**/*.test.ts'],
             exclude,
             environment: 'happy-dom',
@@ -32,7 +32,7 @@ export default defineConfig(() => {
         },
         {
           test: {
-            name: 'node',
+            name: 'NODE',
             include: ['packages/**/*.test.ts'],
             exclude: ['packages/juk-web/**/*.test.ts', ...exclude],
             environment: 'node',

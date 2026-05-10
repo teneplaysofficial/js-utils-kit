@@ -77,12 +77,18 @@ export function buildPmCommand(
 ): string | undefined {
   if (!PACKAGE_MANAGERS.includes(pm)) return;
 
-  const base =
-    typeof PM_COMMANDS[pm][command] === 'string'
-      ? variant === 'default'
-        ? PM_COMMANDS[pm][command]
-        : undefined
-      : (PM_COMMANDS[pm][command] as PmCommandVariants | undefined)?.[variant];
+  /**
+   * Removed because all commands currently use variant objects.
+   * Restore this logic if string command support is added.
+   */
+  // const base =
+  //   typeof PM_COMMANDS[pm][command] === 'string'
+  //     ? variant === 'default'
+  //       ? PM_COMMANDS[pm][command]
+  //       : undefined
+  //     : (PM_COMMANDS[pm][command] as PmCommandVariants)?.[variant];
+
+  const base = (PM_COMMANDS[pm][command] as PmCommandVariants)?.[variant];
 
   if (!base) return;
 

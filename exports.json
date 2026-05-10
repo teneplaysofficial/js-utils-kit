@@ -460,7 +460,7 @@
         "exportKind": "type",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/node.ts",
-        "line": 91
+        "line": 90
       },
       {
         "name": "MAX_SAFE_INT",
