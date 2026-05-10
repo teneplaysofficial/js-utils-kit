@@ -87,6 +87,6 @@
   "prettier": "@tenedev/prettier-config",
   "lint-staged": {
     "*": "prettier --write --ignore-unknown",
-    "*.{js,ts,json,md}": "pnpm run lint:fix"
+    "*.{js,ts,json}": "pnpm run lint:fix"
   }
 }

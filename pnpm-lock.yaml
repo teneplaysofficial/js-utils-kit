@@ -111,6 +111,8 @@ importers:
         specifier: ^0.1.0
         version: 0.1.0
 
+  internal/test-utils: {}
+
   packages/@js-utils-kit/array:
     dependencies:
       '@js-utils-kit/types':
@@ -202,14 +204,31 @@ importers:
 
   packages/@js-utils-kit/pm:
     dependencies:
+      '@js-utils-kit/constants':
+        specifier: workspace:*
+        version: link:../constants
       '@js-utils-kit/fs':
         specifier: workspace:*
         version: link:../fs
+      '@js-utils-kit/regex':
+        specifier: workspace:*
+        version: link:../regex
       '@js-utils-kit/types':
         specifier: workspace:*
         version: link:../types
+      '@js-utils-kit/valid':
+        specifier: workspace:*
+        version: link:../valid
+    devDependencies:
+      '@repo/test-utils':
+        specifier: workspace:*
+        version: link:../../../internal/test-utils
 
-  packages/@js-utils-kit/regex: {}
+  packages/@js-utils-kit/regex:
+    devDependencies:
+      '@repo/test-utils':
+        specifier: workspace:*
+        version: link:../../../internal/test-utils
 
   packages/@js-utils-kit/string:
     dependencies:

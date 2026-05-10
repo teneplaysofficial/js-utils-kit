@@ -69,3 +69,26 @@ export interface DetectPMResult {
   /** True if bun is detected */
   isBun: boolean;
 }
+
+/** Supported package manager command variants */
+export type PmCommandVariant = 'default' | 'dev' | 'global';
+
+/** Mapping of command variants to their CLI command strings */
+export type PmCommandVariants = Partial<Record<PmCommandVariant, string>>;
+
+type Action = 'install';
+
+/** Supported package manager commands */
+export type PmCommands = Action | `un${Action}`;
+
+/**
+ * Mapping of package manager actions to their CLI command strings.
+ */
+export type PmCommandMap = Partial<Record<PmCommands, PmCommandVariants>>;
+
+/**
+ * Registry of all supported package manager command maps.
+ *
+ * Each package manager is mapped to its own {@link PmCommandMap}.
+ */
+export type PmCommandsRegistry = Record<PackageManager, PmCommandMap>;

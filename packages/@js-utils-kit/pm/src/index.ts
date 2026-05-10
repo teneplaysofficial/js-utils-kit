@@ -3,5 +3,8 @@
  *
  * @module pm
  */
+export * from './builders/index';
+export * from './commands/index';
 export * from './pm';
 export * from './types';
+export * from './valid';
