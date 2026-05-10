@@ -14,8 +14,19 @@ describe('isValidPackageName', () => {
     },
   );
 
-  (it.each([{}, [], null, undefined, true, false, Boolean, Object, Array, Set, Map]),
-    (name: never) => {
-      expect(isValidPackageName(name)).toBe(false);
-    });
+  it.each([
+    [{}],
+    [[]],
+    [null],
+    [undefined],
+    [true],
+    [false],
+    [Boolean],
+    [Object],
+    [Array],
+    [Set],
+    [Map],
+  ])('should return false for non-string input %s', (name) => {
+    expect(isValidPackageName(name as never)).toBe(false);
+  });
 });

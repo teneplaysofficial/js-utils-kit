@@ -34,6 +34,9 @@ export const VALID_PACKAGE_NAMES = [
   '@scope/pkg',
   '@scope/pkg.name',
   '@scope/pkg_name',
+  '@scope-org/pkg_name',
+  '@scope.org/pkg_name',
+  '@scope_org/pkg_name',
   '@scope/pkgname',
   '@scope123/pkg-123',
 
@@ -82,6 +85,10 @@ export const INVALID_PACKAGE_NAMES = [
   '--pkg',
 
   // invalid scoped starts
+  '@scope./.pkg',
+  '@scope_/.pkg',
+  '@scope-/.pkg',
+  '@scope?/.pkg',
   '@scope/.pkg',
   '@scope/-pkg',
   '@scope/_pkg',
