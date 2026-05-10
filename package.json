@@ -71,7 +71,7 @@
     "husky": "^9.1.7",
     "ignore": "^7.0.5",
     "jiti": "^2.6.1",
-    "lint-staged": "^16.3.3",
+    "lint-staged": "^17.0.0",
     "prettier": "^3.8.1",
     "rewrite.md": "^1.0.0",
     "rimraf": "^6.1.3",
