@@ -1,5 +1,11 @@
 # @js-utils-kit/constants
 
+## 0.6.0
+
+### Minor Changes
+
+- [#184](https://github.com/teneplaysofficial/js-utils-kit/pull/184) [`58b4795`](https://github.com/teneplaysofficial/js-utils-kit/commit/58b47959ef6c893ee56a649269b2a101f7bf7f07) Thanks [@teneplaysofficial](https://github.com/teneplaysofficial)! - Add `NODE_BUILTIN_MODULES` constant and `NodeBuiltinModule` type for validating and working with Node.js builtin module names.
+
 ## 0.5.0
 
 ### Minor Changes

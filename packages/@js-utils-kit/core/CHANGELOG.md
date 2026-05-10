@@ -1,5 +1,26 @@
 # @js-utils-kit/core
 
+## 5.1.0
+
+### Minor Changes
+
+- [#184](https://github.com/teneplaysofficial/js-utils-kit/pull/184) [`58b4795`](https://github.com/teneplaysofficial/js-utils-kit/commit/58b47959ef6c893ee56a649269b2a101f7bf7f07) Thanks [@teneplaysofficial](https://github.com/teneplaysofficial)! - Add `PM_COMMANDS`, `buildPmCommand`, and `isValidPackageName` utilities for generating package manager commands and validating npm package names using `NPM_PACKAGE_NAME_REGEX`.
+
+- [#184](https://github.com/teneplaysofficial/js-utils-kit/pull/184) [`58b4795`](https://github.com/teneplaysofficial/js-utils-kit/commit/58b47959ef6c893ee56a649269b2a101f7bf7f07) Thanks [@teneplaysofficial](https://github.com/teneplaysofficial)! - Add `NODE_BUILTIN_MODULES` constant and `NodeBuiltinModule` type for validating and working with Node.js builtin module names.
+
+- [#184](https://github.com/teneplaysofficial/js-utils-kit/pull/184) [`58b4795`](https://github.com/teneplaysofficial/js-utils-kit/commit/58b47959ef6c893ee56a649269b2a101f7bf7f07) Thanks [@teneplaysofficial](https://github.com/teneplaysofficial)! - Add `NPM_PACKAGE_NAME_REGEX` for validating scoped and unscoped npm package names following npm naming conventions, including support for lowercase letters, numbers, `.`, `-`, and `_`.
+
+### Patch Changes
+
+- [#184](https://github.com/teneplaysofficial/js-utils-kit/pull/184) [`58b4795`](https://github.com/teneplaysofficial/js-utils-kit/commit/58b47959ef6c893ee56a649269b2a101f7bf7f07) Thanks [@teneplaysofficial](https://github.com/teneplaysofficial)! - Improve `isArray` typing for correct type narrowing.
+
+- Updated dependencies [[`58b4795`](https://github.com/teneplaysofficial/js-utils-kit/commit/58b47959ef6c893ee56a649269b2a101f7bf7f07), [`58b4795`](https://github.com/teneplaysofficial/js-utils-kit/commit/58b47959ef6c893ee56a649269b2a101f7bf7f07), [`58b4795`](https://github.com/teneplaysofficial/js-utils-kit/commit/58b47959ef6c893ee56a649269b2a101f7bf7f07), [`58b4795`](https://github.com/teneplaysofficial/js-utils-kit/commit/58b47959ef6c893ee56a649269b2a101f7bf7f07)]:
+  - @js-utils-kit/valid@3.0.1
+  - @js-utils-kit/pm@0.4.0
+  - @js-utils-kit/constants@0.6.0
+  - @js-utils-kit/regex@0.2.0
+  - @js-utils-kit/object@2.0.1
+
 ## 5.0.0
 
 ### Major Changes

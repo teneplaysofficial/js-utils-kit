@@ -1,5 +1,12 @@
 # @js-utils-kit/object
 
+## 2.0.1
+
+### Patch Changes
+
+- Updated dependencies [[`58b4795`](https://github.com/teneplaysofficial/js-utils-kit/commit/58b47959ef6c893ee56a649269b2a101f7bf7f07)]:
+  - @js-utils-kit/valid@3.0.1
+
 ## 2.0.0
 
 ### Major Changes
