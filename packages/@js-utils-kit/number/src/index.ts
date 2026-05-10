@@ -1,7 +1,7 @@
 /**
  * Number utilities
  *
- * @module number
+ * @module Numbers
  */
 export * from './clamp';
 export * from './getMilliseconds';

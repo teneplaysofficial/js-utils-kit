@@ -1,5 +1,6 @@
 {
   "name": "@js-utils-kit/env",
+  "displayName": "Environment",
   "version": "3.1.0",
   "description": "Environment utilities",
   "homepage": "https://js-utils.js.org",

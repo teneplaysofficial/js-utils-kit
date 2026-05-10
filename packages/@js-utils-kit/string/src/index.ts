@@ -1,7 +1,7 @@
 /**
  * String utilities
  *
- * @module string
+ * @module Strings
  */
 export * from './capitalize';
 export * from './countChars';

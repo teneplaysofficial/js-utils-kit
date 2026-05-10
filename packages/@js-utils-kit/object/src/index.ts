@@ -1,7 +1,7 @@
 /**
  * Object utilities
  *
- * @module object
+ * @module Objects
  */
 export * from './deepFreeze';
 export * from './deepMerge';

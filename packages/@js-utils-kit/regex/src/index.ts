@@ -1,7 +1,7 @@
 /**
  * Regular Expression utilities
  *
- * @module regex
+ * @module Regex
  */
 export * from './alpha';
 export * from './cases';

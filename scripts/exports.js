@@ -2,6 +2,7 @@ import { access, readdir, readFile, writeFile } from 'node:fs/promises';
 import { EOL } from 'node:os';
 import { join, relative, sep } from 'node:path';
 import { Node, Project, QuoteKind } from 'ts-morph';
+import zylog from 'zylog';
 
 const ROOT = process.cwd();
 const PACKAGES_DIRS = [join(ROOT, 'packages')];
@@ -12,11 +13,15 @@ const sortPaths = (a, b) => a.localeCompare(b);
 const posix = (p) => p.split(sep).join('/');
 const rel = (p) => posix(relative(ROOT, p));
 
+zylog.info('Initializing export generation');
+
 const project = new Project({
   tsConfigFilePath: join(ROOT, 'tsconfig.json'),
   skipAddingFilesFromTsConfig: true,
   manipulationSettings: { quoteKind: QuoteKind.Single },
 });
+
+zylog.info('Loading source files');
 
 project.addSourceFilesAtPaths([
   'packages/**/src/**/*.ts',
@@ -25,6 +30,8 @@ project.addSourceFilesAtPaths([
   '!**/index.ts',
   '!**/node_modules/**',
 ]);
+
+zylog.success(`Loaded ${project.getSourceFiles().length} source files`);
 
 const getPackageName = (file) => {
   const p = posix(file).split('/');
@@ -48,7 +55,7 @@ const header = (pkg) =>
   `/**
  * ${pkg.description ?? ''}
  *
- * @module ${pkg.name.split('/')[1] ?? pkg.name}
+ * @module ${pkg.displayName || pkg.name.split('/')[1] || pkg.name}
  */`;
 
 const listDir = async (dir) => {
@@ -68,12 +75,17 @@ const listDir = async (dir) => {
 const ensureIndex = (file) => {
   const existing = project.getSourceFile(file);
 
-  if (existing) existing.delete();
+  if (existing) {
+    zylog.warn(`Replacing existing ${rel(file)}`);
+    existing.delete();
+  }
 
   return project.createSourceFile(file, '', { overwrite: true });
 };
 
 const generateIndex = async (dir, root = false) => {
+  zylog.info(`Generating index for ${rel(dir)}`);
+
   const { dirs, files } = await listDir(dir);
   const indexPath = join(dir, 'index.ts');
   const sf = ensureIndex(indexPath);
@@ -84,9 +96,13 @@ const generateIndex = async (dir, root = false) => {
 
   if (root) {
     const pkg = await readPkg(join(dir, '..'));
+
+    zylog.success(`Loaded package ${pkg.name}`);
+
     sf.addStatements(header(pkg));
 
     if (pkg.name === '@js-utils-kit/core') {
+      zylog.info('Adding core package re-exports');
       Object.keys(pkg.dependencies ?? {})
         .filter((d) => d.startsWith('@js-utils-kit/'))
         .sort(sortPaths)
@@ -99,6 +115,8 @@ const generateIndex = async (dir, root = false) => {
   for (const d of dirs) {
     const childDir = join(dir, d);
 
+    zylog.info(`Processing directory ${rel(childDir)}`);
+
     await generateIndex(childDir);
 
     sf.addExportDeclaration({ moduleSpecifier: `./${d}/index` });
@@ -107,7 +125,10 @@ const generateIndex = async (dir, root = false) => {
   files.forEach((f) => {
     sf.addExportDeclaration({ moduleSpecifier: `./${f}` });
   });
+
   await sf.save();
+
+  zylog.success(`Saved ${rel(indexPath)}`);
 };
 
 const classify = (d) => {
@@ -131,6 +152,8 @@ const isDeprecated = (d) =>
     ?.some((c) => c.getText().includes('@deprecated'));
 
 const assertNoDuplicates = (project) => {
+  zylog.info('Checking export collisions');
+
   const map = new Map();
 
   for (const f of project.getSourceFiles()) {
@@ -160,20 +183,25 @@ const assertNoDuplicates = (project) => {
   }
 
   const conflicts = [...map.entries()].filter(([, f]) => f.length > 1);
-  if (!conflicts.length) return;
+  if (!conflicts.length) {
+    zylog.success('No export collisions detected');
+    return;
+  }
 
-  console.error('\n❌ Export collisions detected\n');
+  zylog.error('Export collisions detected');
   conflicts.forEach(([n, f]) => {
-    console.error(n);
+    zylog.error(n);
     f.forEach((p, i) => {
-      console.error(`  ${i + 1}. ${p}`);
+      zylog.error(`  ${i + 1}. ${p}`);
     });
-    console.error('');
+    zylog.error('');
   });
   process.exit(1);
 };
 
 const collectExports = (project) => {
+  zylog.info('Collecting exports');
+
   const exports = {};
   const stats = {
     totalExports: 0,
@@ -260,19 +288,27 @@ const collectExports = (project) => {
 };
 
 for (const BASE_DIR of PACKAGES_DIRS) {
+  zylog.info(`Scanning ${rel(BASE_DIR)}`);
+
   const entries = await readdir(BASE_DIR, { withFileTypes: true });
 
   for (const d of entries) {
-    if (!d.isDirectory() || IGNORE_PACKAGE_DIRS.includes(d.name)) continue;
+    if (!d.isDirectory() || IGNORE_PACKAGE_DIRS.includes(d.name)) {
+      zylog.warn(`Skipping package ${d.name}`);
+      continue;
+    }
 
     const pkgDir = join(BASE_DIR, d.name);
 
     try {
       await access(join(pkgDir, 'src'));
+
+      zylog.success(`Found package source ${rel(pkgDir)}`);
+
       await generateIndex(join(pkgDir, 'src'), true);
       continue;
     } catch {
-      // not direct package, maybe scoped (@js-utils-kit)
+      zylog.warn(`No direct src found in ${rel(pkgDir)}`);
     }
 
     const nested = await readdir(pkgDir, { withFileTypes: true });
@@ -284,17 +320,33 @@ for (const BASE_DIR of PACKAGES_DIRS) {
 
       try {
         await access(join(subPkgDir, 'src'));
+
+        zylog.success(`Found scoped package source ${rel(subPkgDir)}`);
+
         await generateIndex(join(subPkgDir, 'src'), true);
       } catch {
-        //
+        zylog.warn(`Missing src directory in ${rel(subPkgDir)}`);
       }
     }
   }
 }
 
+zylog.info('Saving project files');
+
 await project.save();
+
+zylog.success('Project files saved');
+
 assertNoDuplicates(project);
 
 const result = collectExports(project);
 
+zylog.success(
+  `Collected ${result.summary.totalExports} exports from ${result.summary.totalPackages} packages`,
+);
+
+zylog.info('Writing exports.json');
+
 await writeFile(join(ROOT, 'exports.json'), JSON.stringify({ ...result }, null, 2) + EOL);
+
+zylog.success('exports.json written successfully');

@@ -1,5 +1,6 @@
 {
   "name": "juk-web",
+  "displayName": "Browser",
   "version": "0.1.0",
   "description": "Web utilities for JavaScript",
   "keywords": [

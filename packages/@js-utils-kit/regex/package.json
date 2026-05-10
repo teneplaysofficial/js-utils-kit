@@ -1,5 +1,6 @@
 {
   "name": "@js-utils-kit/regex",
+  "displayName": "Regex",
   "version": "0.1.0",
   "description": "Regular Expression utilities",
   "homepage": "https://js-utils.js.org",

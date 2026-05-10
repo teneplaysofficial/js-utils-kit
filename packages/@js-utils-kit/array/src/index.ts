@@ -1,7 +1,7 @@
 /**
  * Array utilities
  *
- * @module array
+ * @module Arrays
  */
 export * from './chunk';
 export * from './compact';

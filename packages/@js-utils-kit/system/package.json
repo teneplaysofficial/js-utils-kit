@@ -1,5 +1,6 @@
 {
   "name": "@js-utils-kit/system",
+  "displayName": "System",
   "version": "1.0.1",
   "description": "System utilities",
   "homepage": "https://js-utils.js.org",

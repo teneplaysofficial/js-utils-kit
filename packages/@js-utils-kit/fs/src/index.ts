@@ -1,7 +1,7 @@
 /**
  * File system utilities
  *
- * @module fs
+ * @module File System
  */
 export * from './createArchive';
 export * from './file';

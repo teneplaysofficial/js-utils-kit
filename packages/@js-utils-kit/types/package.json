@@ -1,5 +1,6 @@
 {
   "name": "@js-utils-kit/types",
+  "displayName": "Types",
   "version": "1.6.0",
   "description": "Type Declarations",
   "homepage": "https://js-utils.js.org",

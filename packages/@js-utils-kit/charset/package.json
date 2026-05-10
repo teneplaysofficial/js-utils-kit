@@ -1,5 +1,6 @@
 {
   "name": "@js-utils-kit/charset",
+  "displayName": "Charset",
   "version": "1.0.0",
   "description": "Character Sets utilities",
   "homepage": "https://js-utils.js.org",

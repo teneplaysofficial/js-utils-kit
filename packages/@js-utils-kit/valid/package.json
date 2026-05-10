@@ -1,5 +1,6 @@
 {
   "name": "@js-utils-kit/valid",
+  "displayName": "Validation",
   "version": "3.0.0",
   "description": "Validation utilities",
   "keywords": [

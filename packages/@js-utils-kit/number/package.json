@@ -1,5 +1,6 @@
 {
   "name": "@js-utils-kit/number",
+  "displayName": "Numbers",
   "version": "1.6.0",
   "description": "Number utilities",
   "homepage": "https://js-utils.js.org",

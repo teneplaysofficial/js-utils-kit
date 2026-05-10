@@ -1,7 +1,7 @@
 /**
  * Type Declarations
  *
- * @module types
+ * @module Types
  */
 export * from './commit/index';
 export * from './ArchiveFormat';
