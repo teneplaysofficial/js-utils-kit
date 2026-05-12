@@ -62,7 +62,7 @@ jobs:
         run: pnpm test
       - name: Copy content files to docs
         run: |
-          mkdir -p docs   
+          mkdir -p docs
 
           find packages -type d -name coverage | while read dir; do
             if [ -d "$dir" ]; then
