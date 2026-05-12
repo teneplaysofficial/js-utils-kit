@@ -46,7 +46,7 @@ jobs:
 
   deploy:
     needs: publish
-    if: needs.publish.outputs.published == 'true'
+    if: github.ref == 'refs/heads/main' && (needs.publish.outputs.published == 'true' || github.event_name == 'workflow_dispatch')
     runs-on: ubuntu-latest
     environment:
       name: github-pages
