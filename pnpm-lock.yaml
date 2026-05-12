@@ -219,16 +219,8 @@ importers:
       '@js-utils-kit/valid':
         specifier: workspace:*
         version: link:../valid
-    devDependencies:
-      '@repo/test-utils':
-        specifier: workspace:*
-        version: link:../../../internal/test-utils
 
-  packages/@js-utils-kit/regex:
-    devDependencies:
-      '@repo/test-utils':
-        specifier: workspace:*
-        version: link:../../../internal/test-utils
+  packages/@js-utils-kit/regex: {}
 
   packages/@js-utils-kit/string:
     dependencies:

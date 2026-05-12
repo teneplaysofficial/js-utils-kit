@@ -39,8 +39,5 @@
     "build": "tsdown",
     "test": "vitest run"
   },
-  "dependencies": {},
-  "devDependencies": {
-    "@repo/test-utils": "workspace:*"
-  }
+  "dependencies": {}
 }
