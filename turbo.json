@@ -11,6 +11,7 @@
     "test": {
       "inputs": ["$TURBO_DEFAULT$"],
       "env": ["NODE_ENV"],
+      "outputs": ["coverage/**"],
       "cache": true
     }
   }

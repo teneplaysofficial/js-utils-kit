@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -58,11 +59,19 @@ jobs:
           pnpm build
           pnpm build:docs
       - name: Run tests
-        run: pnpm vitest run --coverage
+        run: pnpm test
       - name: Copy content files to docs
         run: |
-          mkdir -p docs
-          cp -r coverage docs/
+          mkdir -p docs   
+
+          find packages -type d -name coverage | while read dir; do
+            if [ -d "$dir" ]; then
+              pkg=$(basename "$(dirname "$dir")")
+              mkdir -p "docs/coverage/$pkg"
+              cp -r "$dir/"* "docs/coverage/$pkg/"
+            fi
+          done
+
           cp google88133773e6f7fb4f.html docs/google88133773e6f7fb4f.html
           cp exports.json docs/exports.json
       - name: Configure Pages
