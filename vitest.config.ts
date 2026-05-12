@@ -1,7 +1,11 @@
-import { defineConfig } from 'vitest/config';
+import { type configDefaults, defineConfig } from 'vitest/config';
 
 const isTurbo = process.env['INIT_CWD'];
 const exclude = ['**/node_modules/**'];
+
+const coverage: (typeof configDefaults)['coverage'] = {
+  provider: 'v8',
+};
 
 export default defineConfig(() => {
   if (isTurbo) {
@@ -12,6 +16,7 @@ export default defineConfig(() => {
       test: {
         environment: isTurbo.includes('juk-web') ? 'happy-dom' : 'node',
         exclude,
+        coverage,
       },
     };
   }
@@ -21,6 +26,7 @@ export default defineConfig(() => {
       tsconfigPaths: true,
     },
     test: {
+      coverage,
       projects: [
         {
           test: {
