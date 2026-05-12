@@ -45,8 +45,5 @@
     "@js-utils-kit/regex": "workspace:*",
     "@js-utils-kit/types": "workspace:*",
     "@js-utils-kit/valid": "workspace:*"
-  },
-  "devDependencies": {
-    "@repo/test-utils": "workspace:*"
   }
 }
