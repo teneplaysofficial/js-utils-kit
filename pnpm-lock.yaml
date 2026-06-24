@@ -7,8 +7,8 @@ settings:
 catalogs:
   default:
     archiver:
-      specifier: ^7.0.1
-      version: 7.0.1
+      specifier: ^8.0.0
+      version: 8.0.0
     figlet:
       specifier: ^1.11.0
       version: 1.11.0
@@ -18,7 +18,7 @@ importers:
     dependencies:
       archiver:
         specifier: 'catalog:'
-        version: 7.0.1
+        version: 8.0.0
       figlet:
         specifier: 'catalog:'
         version: 1.11.0
@@ -185,7 +185,7 @@ importers:
         version: link:../types
       archiver:
         specifier: 'catalog:'
-        version: 7.0.1
+        version: 8.0.0
 
   packages/@js-utils-kit/number:
     dependencies:
@@ -1415,6 +1415,13 @@ packages:
       }
     engines: { node: '>= 14' }
 
+  archiver@8.0.0:
+    resolution:
+      {
+        integrity: sha512-fV1orZfsnPn9BaSByR/qE67rJCLJEy2Ox5bq7nJh+jquWaNh6Sfec75kJ2T6PtdGUbPQlrVoSVCEOa5SdiTQ1g==,
+      }
+    engines: { node: '>=18' }
+
   argparse@1.0.10:
     resolution:
       {
@@ -1662,6 +1669,13 @@ packages:
       }
     engines: { node: '>= 14' }
 
+  compress-commons@7.0.1:
+    resolution:
+      {
+        integrity: sha512-g0S8KAD8qf4+V//pr3BfB1aBnARLXNz2Gx+jmHU0LEriUuoQUOPOulVquHKTJ8+EAIIO7fhseNDr9wK5Q9FKBQ==,
+      }
+    engines: { node: '>=18' }
+
   convert-source-map@2.0.0:
     resolution:
       {
@@ -1688,6 +1702,13 @@ packages:
         integrity: sha512-piICUB6ei4IlTv1+653yq5+KoqfBYmj9bw6LqXoOneTMDXk5nM1qt12mFW1caG3LlJXEKW1Bp0WggEmIfQB34g==,
       }
     engines: { node: '>= 14' }
+
+  crc32-stream@7.0.1:
+    resolution:
+      {
+        integrity: sha512-IBWsY8xznyQrcHn8h4bC8/4ErNke5elzgG8GcqF4RFPw6aHkWWRc7Tgw6upjaTX/CT/yQgqYENkxYsTYN+hW2g==,
+      }
+    engines: { node: '>=18' }
 
   cross-spawn@7.0.6:
     resolution:
@@ -2185,6 +2206,13 @@ packages:
         integrity: sha512-hFoiJiTl63nn+kstHGBtewWSKnQLpyb155KHheA1l39uvtO9nWIop1p3udqPcUd/xbF1VLMO4n7OI6p7RbngDg==,
       }
     engines: { node: '>=8' }
+
+  is-stream@4.0.1:
+    resolution:
+      {
+        integrity: sha512-Dnz92NInDqYckGEUJv689RbRiTSEHCQ7wOVeALbkOz999YpqT46yMRIGtSNl2iCL1waAZSx40+h59NV/EwzV/A==,
+      }
+    engines: { node: '>=18' }
 
   is-subdir@1.2.0:
     resolution:
@@ -2834,6 +2862,13 @@ packages:
       {
         integrity: sha512-v05I2k7xN8zXvPD9N+z/uhXPaj0sUFCe2rcWZIpBsqxfP7xXFQ0tipAd/wjj1YxWyWtUS5IDJpOG82JKt2EAVA==,
       }
+
+  readdir-glob@3.0.0:
+    resolution:
+      {
+        integrity: sha512-AhNB2KgKeVJr16nK9LLZbJNWnYoT23ZrumNKFDebHBdkC8KHSqWo871JAUhoWC/RtjEVdqNMFpM6qrwRbaUqpw==,
+      }
+    engines: { node: '>=18' }
 
   resolve-from@5.0.0:
     resolution:
@@ -3512,6 +3547,13 @@ packages:
         integrity: sha512-zK7YHHz4ZXpW89AHXUPbQVGKI7uvkd3hzusTdotCg1UxyaVtg0zFJSTfW/Dq5f7OBBVnq6cZIaC8Ti4hb6dtCA==,
       }
     engines: { node: '>= 14' }
+
+  zip-stream@7.0.5:
+    resolution:
+      {
+        integrity: sha512-dSvYKdvLsAHCDqPOhIwk/q5CvuWtTB3Dgpoe0uVEFjTzIOAmsQpprX25InCvrvJsirEbu1OHyy67n/kAj1Sw/w==,
+      }
+    engines: { node: '>=18' }
 
   zylog@0.1.0:
     resolution:
@@ -4255,6 +4297,22 @@ snapshots:
       - bare-buffer
       - react-native-b4a
 
+  archiver@8.0.0:
+    dependencies:
+      async: 3.2.6
+      buffer-crc32: 1.0.0
+      is-stream: 4.0.1
+      lazystream: 1.0.1
+      normalize-path: 3.0.0
+      readable-stream: 4.7.0
+      readdir-glob: 3.0.0
+      tar-stream: 3.1.8
+      zip-stream: 7.0.5
+    transitivePeerDependencies:
+      - bare-abort-controller
+      - bare-buffer
+      - react-native-b4a
+
   argparse@1.0.10:
     dependencies:
       sprintf-js: 1.0.3
@@ -4377,6 +4435,14 @@ snapshots:
       normalize-path: 3.0.0
       readable-stream: 4.7.0
 
+  compress-commons@7.0.1:
+    dependencies:
+      crc-32: 1.2.2
+      crc32-stream: 7.0.1
+      is-stream: 4.0.1
+      normalize-path: 3.0.0
+      readable-stream: 4.7.0
+
   convert-source-map@2.0.0: {}
 
   core-util-is@1.0.3: {}
@@ -4384,6 +4450,11 @@ snapshots:
   crc-32@1.2.2: {}
 
   crc32-stream@6.0.0:
+    dependencies:
+      crc-32: 1.2.2
+      readable-stream: 4.7.0
+
+  crc32-stream@7.0.1:
     dependencies:
       crc-32: 1.2.2
       readable-stream: 4.7.0
@@ -4624,6 +4695,8 @@ snapshots:
   is-plain-obj@4.1.0: {}
 
   is-stream@2.0.1: {}
+
+  is-stream@4.0.1: {}
 
   is-subdir@1.2.0:
     dependencies:
@@ -4953,6 +5026,10 @@ snapshots:
   readdir-glob@1.1.3:
     dependencies:
       minimatch: 5.1.9
+
+  readdir-glob@3.0.0:
+    dependencies:
+      minimatch: 10.2.5
 
   resolve-from@5.0.0: {}
 
@@ -5374,6 +5451,12 @@ snapshots:
     dependencies:
       archiver-utils: 5.0.2
       compress-commons: 6.0.2
+      readable-stream: 4.7.0
+
+  zip-stream@7.0.5:
+    dependencies:
+      compress-commons: 7.0.1
+      normalize-path: 3.0.0
       readable-stream: 4.7.0
 
   zylog@0.1.0:
