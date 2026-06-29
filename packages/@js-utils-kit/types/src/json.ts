@@ -10,6 +10,4 @@
  * - Defined explicitly to avoid TypeScript overload inference issues with `Parameters<typeof JSON.stringify>[1]`.
  */
 export type JsonReplacer =
-  | ((this: unknown, key: string, value: unknown) => unknown)
-  | readonly (string | number)[]
-  | null;
+  ((this: unknown, key: string, value: unknown) => unknown) | readonly (string | number)[] | null;
