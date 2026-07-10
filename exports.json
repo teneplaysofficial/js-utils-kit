@@ -1,12 +1,12 @@
 {
   "summary": {
-    "totalExports": 220,
+    "totalExports": 222,
     "deprecatedExports": 0,
     "classExports": 0,
     "functionExports": 89,
-    "variableExports": 105,
+    "variableExports": 107,
     "typeExports": 25,
-    "valueExports": 194,
+    "valueExports": 196,
     "totalPackages": 14
   },
   "exportNames": {
@@ -137,6 +137,7 @@
       "HAS_WHITESPACE_REGEX",
       "homeDir",
       "HOUR",
+      "HTML_TAG_REGEX",
       "HTTP_METHODS",
       "HTTP_STATUS",
       "IS_ALPHA_REGEX",
@@ -198,6 +199,7 @@
       "SQRT_1_2",
       "SQRT_2",
       "STARTS_WITH_UPPERCASE_REGEX",
+      "STRICT_HTML_TAG_REGEX",
       "TAB",
       "TAU",
       "TON_TO_KG",
@@ -1401,6 +1403,22 @@
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/regex/src/hasWhitespace.ts",
         "line": 23
+      },
+      {
+        "name": "HTML_TAG_REGEX",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/regex/src/html.ts",
+        "line": 18
+      },
+      {
+        "name": "STRICT_HTML_TAG_REGEX",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/regex/src/html.ts",
+        "line": 37
       },
       {
         "name": "NPM_PACKAGE_NAME_REGEX",
