@@ -62,7 +62,7 @@
     "@clack/prompts": "^1.1.0",
     "@manypkg/get-packages": "^3.1.0",
     "@tenedev/prettier-config": "^1.2.0",
-    "@tenedev/tsconfig": "^0.0.4",
+    "@tenedev/tsconfig": "^0.0.5",
     "@types/archiver": "^7.0.0",
     "@types/figlet": "^1.7.0",
     "@types/node": "^25.5.0",
