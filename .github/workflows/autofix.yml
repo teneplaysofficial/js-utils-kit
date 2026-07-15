@@ -1,0 +1,40 @@
+name: autofix.ci
+
+permissions:
+  contents: read
+
+on:
+  pull_request:
+
+jobs:
+  autofix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
+      - uses: ./.github/actions/setup
+      - run: |
+          pnpm lint:fix
+          pnpm deps:sync
+          pnpm sync
+          pnpm gen
+          pnpm fmt
+
+      - run: |
+          if ! git diff --quiet; then
+            echo "────────────────────────────────────────"
+            echo "The following files are not up to date"
+            echo "────────────────────────────────────────"
+            echo ""
+            git diff --name-only \
+            | sed 's/^/  - /'
+            echo ""
+            echo "────────────────────────────────────────"
+            echo "Actual diff:"
+            echo "────────────────────────────────────────"
+            echo ""
+            git --no-pager diff
+          else
+            echo "No changes detected. All generated files are up to date."
+          fi
+
+      - uses: autofix-ci/action@v1

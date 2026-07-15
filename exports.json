@@ -1,12 +1,12 @@
 {
   "summary": {
-    "totalExports": 222,
+    "totalExports": 437,
     "deprecatedExports": 0,
     "classExports": 0,
     "functionExports": 89,
-    "variableExports": 107,
+    "variableExports": 322,
     "typeExports": 25,
-    "valueExports": 196,
+    "valueExports": 411,
     "totalPackages": 14
   },
   "exportNames": {
@@ -104,42 +104,126 @@
     ],
     "variableExports": [
       "ALPHANUMERIC",
+      "AMPERSAND",
+      "ANSI_BOLD_SEQUENCE",
+      "ANSI_ESCAPE_PREFIX",
+      "ANSI_GREEN_TEXT_SEQUENCE",
+      "ANSI_RED_TEXT_SEQUENCE",
+      "ANSI_RESET_SEQUENCE",
+      "APPROXIMATELY_EQUAL",
       "ARCHITECTURE",
       "argv",
+      "ARROW_FUNCTION",
+      "ASTERISK",
+      "AT_SIGN",
+      "BACKSLASH",
+      "BACKSPACE",
+      "BACKTICK",
+      "BELL",
+      "BITCOIN_SIGN",
+      "BLACK_CIRCLE",
+      "BLACK_DIAMOND",
+      "BLACK_SQUARE",
+      "BLACK_STAR",
+      "BLACK_TRIANGLE_UP",
+      "BULLET",
       "bunCommands",
       "CAMEL_CASE_REGEX",
+      "CARRIAGE_RETURN",
+      "CARRIAGE_RETURN_LINE_CLEAR",
+      "CENT_SIGN",
+      "CHECK_MARK_EMOJI",
+      "CLI_FLAG_PREFIX",
+      "CLI_HEREDOC_OPERATOR",
+      "CLI_NULL_DEVICE_REDIRECT",
+      "CLI_REDIRECT_APPEND",
+      "CLI_STDERR_REDIRECT",
       "CM_TO_MM",
+      "COLON",
+      "COMMA",
       "COMMIT_SCOPE_VALUES",
       "COMMIT_SCOPES",
       "COMMIT_TYPE_VALUES",
       "COMMIT_TYPES",
+      "COPYRIGHT_SIGN",
       "CPUCores",
       "CPUModel",
+      "CROSS_MARK_EMOJI",
       "cwd",
+      "DAGGER",
       "DAY",
       "DEFAULT_RADIX",
       "DEG_TO_RAD",
+      "DEGREE_CELSIUS",
+      "DEGREE_FAHRENHEIT",
+      "DEGREE_SIGN",
+      "DELETE_CHARACTER",
+      "DELTA",
       "DIGITS",
+      "DIVISION_SIGN",
+      "DOLLAR_SIGN",
+      "DOUBLE_DAGGER",
+      "DOUBLE_LEFT_ARROW",
+      "DOUBLE_QUOTE",
+      "DOUBLE_RIGHT_ARROW",
+      "DOWN_ARROW",
       "E",
+      "ELLIPSIS",
+      "EM_DASH",
       "EMAIL_DOMAIN_REGEX",
       "EMAIL_LOCAL_PART_REGEX",
       "EMAIL_REGEX",
       "EMAIL_REGEX_PRESETS",
       "EMAIL_UNICODE_REGEX",
       "EMPTY_STRING",
+      "EN_DASH",
       "ENDS_WITH_PUNCTUATION_REGEX",
       "env",
       "Environment",
       "EPSILON",
+      "EQUALS_SIGN",
+      "ESCAPE",
+      "ESTIMATED_SYMBOL",
+      "EURO_SIGN",
+      "EXCLAMATION_MARK",
+      "EYES_EMOJI",
+      "FILE_SEPARATOR",
+      "FIRE_EMOJI",
+      "FORM_FEED",
+      "FORWARD_SLASH",
       "freeMemory",
       "GAS",
+      "GIT_ADDED_FILE_MARKER",
+      "GIT_CONFLICT_MARKER_END",
+      "GIT_CONFLICT_MARKER_MIDDLE",
+      "GIT_CONFLICT_MARKER_START",
+      "GIT_DELETED_FILE_MARKER",
+      "GIT_MODIFIED_FILE_MARKER",
+      "GIT_RENAMED_FILE_MARKER",
+      "GIT_UNTRACKED_FILE_MARKER",
+      "GLOB_RECURSIVE_WILDCARD",
       "GRAVITY",
+      "GREATER_THAN_OR_EQUAL",
+      "GROUP_SEPARATOR",
       "HAS_WHITESPACE_REGEX",
+      "HASH",
+      "HOME_DIRECTORY_SHORTHAND",
       "homeDir",
       "HOUR",
+      "HTML_COMMENT_CLOSE",
+      "HTML_COMMENT_OPEN",
+      "HTML_DOCTYPE_PREFIX",
+      "HTML_SELF_CLOSING_SUFFIX",
+      "HTML_TAG_CLOSE_PREFIX",
       "HTML_TAG_REGEX",
       "HTTP_METHODS",
+      "HTTP_SCHEME_PREFIX",
       "HTTP_STATUS",
+      "HTTPS_SCHEME_PREFIX",
+      "HYPHEN",
+      "INCREMENT_OPERATOR",
+      "INFINITY",
+      "INTEGRAL",
       "IS_ALPHA_REGEX",
       "IS_ALPHA_UNICODE_REGEX",
       "isAndroid",
@@ -153,63 +237,194 @@
       "isProd",
       "isTest",
       "isWindows",
+      "JSON_EMPTY_ARRAY",
+      "JSON_EMPTY_OBJECT",
+      "JSON_FALSE_LITERAL",
+      "JSON_NULL_LITERAL",
+      "JSON_TRUE_LITERAL",
       "KEBAB_CASE_REGEX",
       "KG_TO_G",
       "KM_TO_M",
+      "LATIN_CAPITAL_LIGATURE_AE",
+      "LATIN_SMALL_LETTER_ETH",
+      "LATIN_SMALL_LETTER_SHARP_S",
+      "LATIN_SMALL_LETTER_THORN",
+      "LATIN_SMALL_LIGATURE_AE",
+      "LEFT_ANGLE_BRACKET",
+      "LEFT_ANGLE_QUOTE",
+      "LEFT_ARROW",
+      "LEFT_CURLY_BRACE",
+      "LEFT_DOUBLE_QUOTATION_MARK",
+      "LEFT_PARENTHESIS",
+      "LEFT_RIGHT_ARROW",
+      "LEFT_SINGLE_QUOTATION_MARK",
+      "LEFT_SQUARE_BRACKET",
+      "LESS_THAN_OR_EQUAL",
+      "LIGHT_BULB_EMOJI",
       "LN_10",
       "LN_2",
       "LOG10_E",
       "LOG2_E",
+      "LOGICAL_AND",
+      "LOGICAL_OR",
+      "LOW_DOUBLE_QUOTATION_MARK",
       "LOWERCASE_ALPHA_REGEX",
       "LOWERCASE_ALPHABET",
       "M_TO_CM",
+      "MAILTO_SCHEME_PREFIX",
+      "MARKDOWN_BOLD_DELIMITER",
+      "MARKDOWN_CODE_FENCE",
+      "MARKDOWN_HEADING_PREFIX",
+      "MARKDOWN_HORIZONTAL_RULE",
+      "MARKDOWN_STRIKETHROUGH_DELIMITER",
+      "MARKDOWN_TASK_CHECKED",
+      "MARKDOWN_TASK_UNCHECKED",
       "MAX_NPM_PACKAGE_NAME_LENGTH",
       "MAX_SAFE_INT",
       "MAX_VALUE",
+      "MICRO_SIGN",
       "MIN_SAFE_INT",
       "MIN_VALUE",
       "MINUTE",
       "MONTH_AVG",
+      "MULTIPLICATION_SIGN",
+      "NAMESPACE_SEPARATOR",
       "NEGATIVE_INFINITY",
       "NEW_LINE",
       "NODE_BUILTIN_MODULES",
       "NODE_MAJOR_VERSION",
       "NODE_VERSION",
       "nodePath",
+      "NORTH_EAST_ARROW",
+      "NOT_EQUAL",
       "NPM_PACKAGE_NAME_REGEX",
       "npmCommands",
+      "NULL_CHARACTER",
+      "NULLISH_COALESCING",
+      "NUMERO_SIGN",
+      "OHM_SIGN",
+      "ONE_FIFTH",
+      "ONE_HALF",
+      "ONE_QUARTER",
+      "ONE_THIRD",
+      "OPTIONAL_CHAINING",
       "PACKAGE_MANAGERS",
+      "PARENT_DIRECTORY",
+      "PARTIAL_DIFFERENTIAL",
       "PASCAL_CASE_REGEX",
+      "PERCENT_SIGN",
+      "PERIOD",
       "PI",
+      "PI_SYMBOL",
+      "PILCROW_SIGN",
+      "PIPE",
       "PLANCK",
       "PLATFORM",
+      "PLUS_MINUS_SIGN",
       "PM_COMMANDS",
       "pnpmCommands",
       "POSITIVE_INFINITY",
+      "POUND_SIGN",
       "PROCESS_MEMORY_USAGE",
+      "PROTOCOL_SEPARATOR",
+      "QUESTION_MARK",
       "RAD_TO_DEG",
+      "RECORD_SEPARATOR",
+      "REGEX_CASE_INSENSITIVE_FLAG",
+      "REGEX_DIGIT_CLASS",
+      "REGEX_GLOBAL_FLAG",
+      "REGEX_NON_DIGIT_CLASS",
+      "REGEX_NON_WORD_CLASS",
+      "REGEX_START_OF_LINE_ANCHOR",
+      "REGEX_WHITESPACE_CLASS",
+      "REGEX_WORD_CLASS",
+      "REGISTERED_SIGN",
+      "RIGHT_ANGLE_BRACKET",
+      "RIGHT_ANGLE_QUOTE",
+      "RIGHT_ARROW",
+      "RIGHT_CURLY_BRACE",
+      "RIGHT_DOUBLE_QUOTATION_MARK",
+      "RIGHT_PARENTHESIS",
+      "RIGHT_SINGLE_QUOTATION_MARK",
+      "RIGHT_SQUARE_BRACKET",
+      "ROCKET_EMOJI",
       "RUNTIME_VERSIONS",
+      "RUPEE_SIGN",
       "SECOND",
+      "SECTION_SIGN",
+      "SEMICOLON",
       "SHEBANG",
+      "SHEBANG_PREFIX",
+      "SINGLE_QUOTE",
       "SNAKE_CASE_REGEX",
+      "SOUTH_EAST_ARROW",
       "SPACE",
+      "SPARKLES_EMOJI",
       "SPDX_LICENSE",
       "SPDX_LICENSE_IDENTIFIERS",
       "SPEED_OF_LIGHT",
+      "SPREAD_OPERATOR",
       "SQRT_1_2",
       "SQRT_2",
+      "SQUARE_ROOT",
       "STARTS_WITH_UPPERCASE_REGEX",
+      "STRICT_EQUALS",
       "STRICT_HTML_TAG_REGEX",
+      "STRICT_NOT_EQUAL",
+      "SUBSCRIPT_FOUR",
+      "SUBSCRIPT_MINUS",
+      "SUBSCRIPT_ONE",
+      "SUBSCRIPT_PLUS",
+      "SUBSCRIPT_THREE",
+      "SUBSCRIPT_TWO",
+      "SUBSCRIPT_ZERO",
+      "SUMMATION",
+      "SUPERSCRIPT_FOUR",
+      "SUPERSCRIPT_MINUS",
+      "SUPERSCRIPT_ONE",
+      "SUPERSCRIPT_PLUS",
+      "SUPERSCRIPT_THREE",
+      "SUPERSCRIPT_TWO",
+      "SUPERSCRIPT_ZERO",
       "TAB",
       "TAU",
+      "TEMPLATE_LITERAL_PLACEHOLDER_OPEN",
+      "TERNARY_CONDITIONAL_OPERATOR",
+      "THREE_QUARTERS",
+      "THUMBS_DOWN_EMOJI",
+      "THUMBS_UP_EMOJI",
+      "TILDE",
       "TON_TO_KG",
       "totalMemory",
+      "TRADEMARK_SIGN",
       "trim",
+      "TWO_THIRDS",
+      "TYPE_ANNOTATION_SEPARATOR",
+      "UNC_PATH_PREFIX",
+      "UNDERSCORE",
+      "UNIT_SEPARATOR",
+      "UP_ARROW",
+      "UP_DOWN_ARROW",
       "UPPERCASE_ALPHA_REGEX",
       "UPPERCASE_ALPHABET",
+      "VERTICAL_TAB",
+      "WARNING_EMOJI",
       "WEEK",
+      "WHITE_CIRCLE",
+      "WHITE_DIAMOND",
+      "WHITE_SQUARE",
+      "WHITE_STAR",
+      "WHITE_TRIANGLE_UP",
+      "WINDOWS_DRIVE_SEPARATOR",
+      "WON_SIGN",
+      "WWW_SUBDOMAIN_PREFIX",
+      "XML_CDATA_CLOSE",
+      "XML_CDATA_OPEN",
+      "XML_DECLARATION_PREFIX",
+      "XML_PROCESSING_INSTRUCTION_CLOSE",
       "yarnCommands",
-      "YEAR"
+      "YEAR",
+      "YEN_SIGN"
     ],
     "typeExports": [
       "ArchiveFormat",
@@ -598,7 +813,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
-        "line": 4
+        "line": 6
       },
       {
         "name": "TAB",
@@ -606,7 +821,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
-        "line": 9
+        "line": 11
       },
       {
         "name": "SPACE",
@@ -614,7 +829,7 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
-        "line": 14
+        "line": 16
       },
       {
         "name": "EMPTY_STRING",
@@ -622,7 +837,1727 @@
         "exportKind": "variable",
         "deprecated": false,
         "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
-        "line": 19
+        "line": 21
+      },
+      {
+        "name": "CARRIAGE_RETURN",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 26
+      },
+      {
+        "name": "FORM_FEED",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 31
+      },
+      {
+        "name": "VERTICAL_TAB",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 36
+      },
+      {
+        "name": "BACKSPACE",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 43
+      },
+      {
+        "name": "BELL",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 48
+      },
+      {
+        "name": "DELETE_CHARACTER",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 53
+      },
+      {
+        "name": "ESCAPE",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 58
+      },
+      {
+        "name": "FILE_SEPARATOR",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 63
+      },
+      {
+        "name": "GROUP_SEPARATOR",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 68
+      },
+      {
+        "name": "NULL_CHARACTER",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 73
+      },
+      {
+        "name": "RECORD_SEPARATOR",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 78
+      },
+      {
+        "name": "UNIT_SEPARATOR",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 83
+      },
+      {
+        "name": "BACKTICK",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 90
+      },
+      {
+        "name": "DOUBLE_QUOTE",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 95
+      },
+      {
+        "name": "LEFT_ANGLE_QUOTE",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 100
+      },
+      {
+        "name": "LEFT_DOUBLE_QUOTATION_MARK",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 105
+      },
+      {
+        "name": "LEFT_SINGLE_QUOTATION_MARK",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 110
+      },
+      {
+        "name": "LOW_DOUBLE_QUOTATION_MARK",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 115
+      },
+      {
+        "name": "RIGHT_ANGLE_QUOTE",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 120
+      },
+      {
+        "name": "RIGHT_DOUBLE_QUOTATION_MARK",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 125
+      },
+      {
+        "name": "RIGHT_SINGLE_QUOTATION_MARK",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 130
+      },
+      {
+        "name": "SINGLE_QUOTE",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 135
+      },
+      {
+        "name": "LEFT_ANGLE_BRACKET",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 142
+      },
+      {
+        "name": "LEFT_CURLY_BRACE",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 147
+      },
+      {
+        "name": "LEFT_PARENTHESIS",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 152
+      },
+      {
+        "name": "LEFT_SQUARE_BRACKET",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 157
+      },
+      {
+        "name": "RIGHT_ANGLE_BRACKET",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 162
+      },
+      {
+        "name": "RIGHT_CURLY_BRACE",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 167
+      },
+      {
+        "name": "RIGHT_PARENTHESIS",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 172
+      },
+      {
+        "name": "RIGHT_SQUARE_BRACKET",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 177
+      },
+      {
+        "name": "AMPERSAND",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 184
+      },
+      {
+        "name": "ASTERISK",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 189
+      },
+      {
+        "name": "AT_SIGN",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 194
+      },
+      {
+        "name": "BACKSLASH",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 199
+      },
+      {
+        "name": "COLON",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 204
+      },
+      {
+        "name": "COMMA",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 209
+      },
+      {
+        "name": "ELLIPSIS",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 214
+      },
+      {
+        "name": "EXCLAMATION_MARK",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 219
+      },
+      {
+        "name": "FORWARD_SLASH",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 224
+      },
+      {
+        "name": "HASH",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 229
+      },
+      {
+        "name": "HYPHEN",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 234
+      },
+      {
+        "name": "PERCENT_SIGN",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 239
+      },
+      {
+        "name": "PERIOD",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 244
+      },
+      {
+        "name": "PIPE",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 249
+      },
+      {
+        "name": "QUESTION_MARK",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 254
+      },
+      {
+        "name": "SEMICOLON",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 259
+      },
+      {
+        "name": "TILDE",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 264
+      },
+      {
+        "name": "UNDERSCORE",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 269
+      },
+      {
+        "name": "ARROW_FUNCTION",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 276
+      },
+      {
+        "name": "EQUALS_SIGN",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 281
+      },
+      {
+        "name": "GREATER_THAN_OR_EQUAL",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 286
+      },
+      {
+        "name": "LESS_THAN_OR_EQUAL",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 291
+      },
+      {
+        "name": "LOGICAL_AND",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 296
+      },
+      {
+        "name": "LOGICAL_OR",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 301
+      },
+      {
+        "name": "NOT_EQUAL",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 306
+      },
+      {
+        "name": "NULLISH_COALESCING",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 311
+      },
+      {
+        "name": "OPTIONAL_CHAINING",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 316
+      },
+      {
+        "name": "SPREAD_OPERATOR",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 321
+      },
+      {
+        "name": "STRICT_EQUALS",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 326
+      },
+      {
+        "name": "STRICT_NOT_EQUAL",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 331
+      },
+      {
+        "name": "APPROXIMATELY_EQUAL",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 338
+      },
+      {
+        "name": "DEGREE_SIGN",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 343
+      },
+      {
+        "name": "DELTA",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 348
+      },
+      {
+        "name": "DIVISION_SIGN",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 353
+      },
+      {
+        "name": "INFINITY",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 358
+      },
+      {
+        "name": "INTEGRAL",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 363
+      },
+      {
+        "name": "MULTIPLICATION_SIGN",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 368
+      },
+      {
+        "name": "PARTIAL_DIFFERENTIAL",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 373
+      },
+      {
+        "name": "PI_SYMBOL",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 378
+      },
+      {
+        "name": "PLUS_MINUS_SIGN",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 383
+      },
+      {
+        "name": "SQUARE_ROOT",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 388
+      },
+      {
+        "name": "SUMMATION",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 393
+      },
+      {
+        "name": "BITCOIN_SIGN",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 400
+      },
+      {
+        "name": "CENT_SIGN",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 405
+      },
+      {
+        "name": "DOLLAR_SIGN",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 410
+      },
+      {
+        "name": "EURO_SIGN",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 415
+      },
+      {
+        "name": "POUND_SIGN",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 420
+      },
+      {
+        "name": "RUPEE_SIGN",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 425
+      },
+      {
+        "name": "WON_SIGN",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 430
+      },
+      {
+        "name": "YEN_SIGN",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 435
+      },
+      {
+        "name": "DOUBLE_LEFT_ARROW",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 442
+      },
+      {
+        "name": "DOUBLE_RIGHT_ARROW",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 447
+      },
+      {
+        "name": "DOWN_ARROW",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 452
+      },
+      {
+        "name": "LEFT_ARROW",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 457
+      },
+      {
+        "name": "LEFT_RIGHT_ARROW",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 462
+      },
+      {
+        "name": "NORTH_EAST_ARROW",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 467
+      },
+      {
+        "name": "RIGHT_ARROW",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 472
+      },
+      {
+        "name": "SOUTH_EAST_ARROW",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 477
+      },
+      {
+        "name": "UP_ARROW",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 482
+      },
+      {
+        "name": "UP_DOWN_ARROW",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 487
+      },
+      {
+        "name": "BLACK_CIRCLE",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 494
+      },
+      {
+        "name": "BLACK_DIAMOND",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 499
+      },
+      {
+        "name": "BLACK_SQUARE",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 504
+      },
+      {
+        "name": "BLACK_STAR",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 509
+      },
+      {
+        "name": "BLACK_TRIANGLE_UP",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 514
+      },
+      {
+        "name": "WHITE_CIRCLE",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 519
+      },
+      {
+        "name": "WHITE_DIAMOND",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 524
+      },
+      {
+        "name": "WHITE_SQUARE",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 529
+      },
+      {
+        "name": "WHITE_STAR",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 534
+      },
+      {
+        "name": "WHITE_TRIANGLE_UP",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 539
+      },
+      {
+        "name": "CHECK_MARK_EMOJI",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 546
+      },
+      {
+        "name": "CROSS_MARK_EMOJI",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 551
+      },
+      {
+        "name": "EYES_EMOJI",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 556
+      },
+      {
+        "name": "FIRE_EMOJI",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 561
+      },
+      {
+        "name": "LIGHT_BULB_EMOJI",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 566
+      },
+      {
+        "name": "ROCKET_EMOJI",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 571
+      },
+      {
+        "name": "SPARKLES_EMOJI",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 576
+      },
+      {
+        "name": "THUMBS_DOWN_EMOJI",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 581
+      },
+      {
+        "name": "THUMBS_UP_EMOJI",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 586
+      },
+      {
+        "name": "WARNING_EMOJI",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 591
+      },
+      {
+        "name": "BULLET",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 598
+      },
+      {
+        "name": "COPYRIGHT_SIGN",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 603
+      },
+      {
+        "name": "DAGGER",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 608
+      },
+      {
+        "name": "DOUBLE_DAGGER",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 613
+      },
+      {
+        "name": "EM_DASH",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 618
+      },
+      {
+        "name": "EN_DASH",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 623
+      },
+      {
+        "name": "PILCROW_SIGN",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 628
+      },
+      {
+        "name": "REGISTERED_SIGN",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 633
+      },
+      {
+        "name": "SECTION_SIGN",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 638
+      },
+      {
+        "name": "TRADEMARK_SIGN",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 643
+      },
+      {
+        "name": "ONE_FIFTH",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 650
+      },
+      {
+        "name": "ONE_HALF",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 655
+      },
+      {
+        "name": "ONE_QUARTER",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 660
+      },
+      {
+        "name": "ONE_THIRD",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 665
+      },
+      {
+        "name": "THREE_QUARTERS",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 670
+      },
+      {
+        "name": "TWO_THIRDS",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 675
+      },
+      {
+        "name": "SUPERSCRIPT_FOUR",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 682
+      },
+      {
+        "name": "SUPERSCRIPT_MINUS",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 687
+      },
+      {
+        "name": "SUPERSCRIPT_ONE",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 692
+      },
+      {
+        "name": "SUPERSCRIPT_PLUS",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 697
+      },
+      {
+        "name": "SUPERSCRIPT_THREE",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 702
+      },
+      {
+        "name": "SUPERSCRIPT_TWO",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 707
+      },
+      {
+        "name": "SUPERSCRIPT_ZERO",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 712
+      },
+      {
+        "name": "SUBSCRIPT_FOUR",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 719
+      },
+      {
+        "name": "SUBSCRIPT_MINUS",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 724
+      },
+      {
+        "name": "SUBSCRIPT_ONE",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 729
+      },
+      {
+        "name": "SUBSCRIPT_PLUS",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 734
+      },
+      {
+        "name": "SUBSCRIPT_THREE",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 739
+      },
+      {
+        "name": "SUBSCRIPT_TWO",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 744
+      },
+      {
+        "name": "SUBSCRIPT_ZERO",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 749
+      },
+      {
+        "name": "LATIN_CAPITAL_LIGATURE_AE",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 756
+      },
+      {
+        "name": "LATIN_SMALL_LETTER_ETH",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 761
+      },
+      {
+        "name": "LATIN_SMALL_LETTER_SHARP_S",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 766
+      },
+      {
+        "name": "LATIN_SMALL_LETTER_THORN",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 771
+      },
+      {
+        "name": "LATIN_SMALL_LIGATURE_AE",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 776
+      },
+      {
+        "name": "DEGREE_CELSIUS",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 783
+      },
+      {
+        "name": "DEGREE_FAHRENHEIT",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 788
+      },
+      {
+        "name": "ESTIMATED_SYMBOL",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 793
+      },
+      {
+        "name": "MICRO_SIGN",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 798
+      },
+      {
+        "name": "NUMERO_SIGN",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 803
+      },
+      {
+        "name": "OHM_SIGN",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 808
+      },
+      {
+        "name": "GLOB_RECURSIVE_WILDCARD",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 815
+      },
+      {
+        "name": "HOME_DIRECTORY_SHORTHAND",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 820
+      },
+      {
+        "name": "PARENT_DIRECTORY",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 825
+      },
+      {
+        "name": "UNC_PATH_PREFIX",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 830
+      },
+      {
+        "name": "WINDOWS_DRIVE_SEPARATOR",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 835
+      },
+      {
+        "name": "HTTPS_SCHEME_PREFIX",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 842
+      },
+      {
+        "name": "HTTP_SCHEME_PREFIX",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 847
+      },
+      {
+        "name": "MAILTO_SCHEME_PREFIX",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 852
+      },
+      {
+        "name": "PROTOCOL_SEPARATOR",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 857
+      },
+      {
+        "name": "WWW_SUBDOMAIN_PREFIX",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 862
+      },
+      {
+        "name": "MARKDOWN_BOLD_DELIMITER",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 869
+      },
+      {
+        "name": "MARKDOWN_CODE_FENCE",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 874
+      },
+      {
+        "name": "MARKDOWN_HEADING_PREFIX",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 879
+      },
+      {
+        "name": "MARKDOWN_HORIZONTAL_RULE",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 884
+      },
+      {
+        "name": "MARKDOWN_STRIKETHROUGH_DELIMITER",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 889
+      },
+      {
+        "name": "MARKDOWN_TASK_CHECKED",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 894
+      },
+      {
+        "name": "MARKDOWN_TASK_UNCHECKED",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 899
+      },
+      {
+        "name": "HTML_COMMENT_CLOSE",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 906
+      },
+      {
+        "name": "HTML_COMMENT_OPEN",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 911
+      },
+      {
+        "name": "HTML_DOCTYPE_PREFIX",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 916
+      },
+      {
+        "name": "HTML_SELF_CLOSING_SUFFIX",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 921
+      },
+      {
+        "name": "HTML_TAG_CLOSE_PREFIX",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 926
+      },
+      {
+        "name": "XML_CDATA_CLOSE",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 933
+      },
+      {
+        "name": "XML_CDATA_OPEN",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 938
+      },
+      {
+        "name": "XML_DECLARATION_PREFIX",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 943
+      },
+      {
+        "name": "XML_PROCESSING_INSTRUCTION_CLOSE",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 948
+      },
+      {
+        "name": "JSON_EMPTY_ARRAY",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 955
+      },
+      {
+        "name": "JSON_EMPTY_OBJECT",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 960
+      },
+      {
+        "name": "JSON_FALSE_LITERAL",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 965
+      },
+      {
+        "name": "JSON_NULL_LITERAL",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 970
+      },
+      {
+        "name": "JSON_TRUE_LITERAL",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 975
+      },
+      {
+        "name": "REGEX_CASE_INSENSITIVE_FLAG",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 982
+      },
+      {
+        "name": "REGEX_DIGIT_CLASS",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 987
+      },
+      {
+        "name": "REGEX_GLOBAL_FLAG",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 992
+      },
+      {
+        "name": "REGEX_NON_DIGIT_CLASS",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 997
+      },
+      {
+        "name": "REGEX_NON_WORD_CLASS",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 1002
+      },
+      {
+        "name": "REGEX_START_OF_LINE_ANCHOR",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 1007
+      },
+      {
+        "name": "REGEX_WHITESPACE_CLASS",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 1012
+      },
+      {
+        "name": "REGEX_WORD_CLASS",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 1017
+      },
+      {
+        "name": "CLI_FLAG_PREFIX",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 1024
+      },
+      {
+        "name": "CLI_HEREDOC_OPERATOR",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 1029
+      },
+      {
+        "name": "CLI_NULL_DEVICE_REDIRECT",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 1034
+      },
+      {
+        "name": "CLI_REDIRECT_APPEND",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 1039
+      },
+      {
+        "name": "CLI_STDERR_REDIRECT",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 1044
+      },
+      {
+        "name": "ANSI_BOLD_SEQUENCE",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 1051
+      },
+      {
+        "name": "ANSI_ESCAPE_PREFIX",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 1056
+      },
+      {
+        "name": "ANSI_GREEN_TEXT_SEQUENCE",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 1061
+      },
+      {
+        "name": "ANSI_RED_TEXT_SEQUENCE",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 1066
+      },
+      {
+        "name": "ANSI_RESET_SEQUENCE",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 1071
+      },
+      {
+        "name": "CARRIAGE_RETURN_LINE_CLEAR",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 1076
+      },
+      {
+        "name": "GIT_ADDED_FILE_MARKER",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 1083
+      },
+      {
+        "name": "GIT_CONFLICT_MARKER_END",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 1088
+      },
+      {
+        "name": "GIT_CONFLICT_MARKER_MIDDLE",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 1093
+      },
+      {
+        "name": "GIT_CONFLICT_MARKER_START",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 1098
+      },
+      {
+        "name": "GIT_DELETED_FILE_MARKER",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 1103
+      },
+      {
+        "name": "GIT_MODIFIED_FILE_MARKER",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 1108
+      },
+      {
+        "name": "GIT_RENAMED_FILE_MARKER",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 1113
+      },
+      {
+        "name": "GIT_UNTRACKED_FILE_MARKER",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 1118
+      },
+      {
+        "name": "INCREMENT_OPERATOR",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 1125
+      },
+      {
+        "name": "NAMESPACE_SEPARATOR",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 1130
+      },
+      {
+        "name": "SHEBANG_PREFIX",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 1135
+      },
+      {
+        "name": "TEMPLATE_LITERAL_PLACEHOLDER_OPEN",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 1140
+      },
+      {
+        "name": "TERNARY_CONDITIONAL_OPERATOR",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 1145
+      },
+      {
+        "name": "TYPE_ANNOTATION_SEPARATOR",
+        "declarationKind": "VariableDeclaration",
+        "exportKind": "variable",
+        "deprecated": false,
+        "filePath": "packages/@js-utils-kit/constants/src/symbols.ts",
+        "line": 1150
       },
       {
         "name": "SECOND",

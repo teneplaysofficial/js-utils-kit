@@ -20,38 +20,6 @@ env:
   TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
 
 jobs:
-  diff:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
-      - uses: ./.github/actions/setup
-      - run: |
-          pnpm sync
-          pnpm gen
-          pnpm fmt
-
-          isDiff=$(git --no-pager diff)
-
-          if [ -n "$isDiff" ]; then
-            echo "────────────────────────────────────────"
-            echo "The following files are not up to date"
-            echo "────────────────────────────────────────"
-            echo ""
-            git diff --name-only \
-            | sed 's/^/  - /'
-            echo ""
-            echo "────────────────────────────────────────"
-            echo "Actual diff:"
-            echo "────────────────────────────────────────"
-            echo ""
-            git --no-pager diff
-            echo ""
-            echo "::error::Generated or formatted files are out of date. Please run 'pnpm sync', 'pnpm gen' and 'pnpm fmt' locally."
-            exit 1
-          else
-            echo "No changes detected. All generated files are up to date."
-          fi
-
   lint:
     runs-on: ubuntu-latest
     steps:
