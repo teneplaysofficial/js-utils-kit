@@ -132,7 +132,7 @@ export const RIGHT_SINGLE_QUOTATION_MARK = '’';
 /**
  * Single quotation mark.
  */
-export const SINGLE_QUOTE = '\'';
+export const SINGLE_QUOTE = "'";
 
 // Brackets
 
