@@ -50,7 +50,7 @@ export const BELL = '\x07';
 /**
  * Delete control character.
  */
-export const DELETE_CHARACTER = '';
+export const DELETE_CHARACTER = '\x7f';
 
 /**
  * Escape character.
