@@ -3,7 +3,7 @@ description: Propose a detailed new utility function or enhancement for js-utils
 title: '[Proposal] <utility-name> - <short summary>'
 labels: ['suggestion', 'enhancement']
 assignees:
-  - TenEplaysOfficial
+  - tenedev
 
 body:
   - type: markdown
