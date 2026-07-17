@@ -2,11 +2,11 @@
 
 > Modular, typed, and tree-shakable JavaScript utilities.
 
-[![Publish](https://github.com/teneplaysofficial/js-utils-kit/actions/workflows/publish.yml/badge.svg)](https://github.com/teneplaysofficial/js-utils-kit/actions/workflows/publish.yml)
-[![ci](https://github.com/teneplaysofficial/js-utils-kit/actions/workflows/ci.yml/badge.svg)](https://github.com/TenEplaysOfficial/js-utils-kit)
-[![commits since release](https://img.shields.io/github/commits-since/teneplaysofficial/js-utils-kit/latest/main?logo=github&color=brightgreen)](https://github.com/teneplaysofficial/js-utils-kit/releases)
-[![codecov](https://codecov.io/github/teneplaysofficial/js-utils-kit/graph/badge.svg?token=9CEFGKSU2S)](https://app.codecov.io/gh/teneplaysofficial/js-utils-kit/tree/main)
-[![pkg.pr.new](https://pkg.pr.new/badge/teneplaysofficial/js-utils-kit)](https://pkg.pr.new/~/teneplaysofficial/js-utils-kit)
+[![Publish](https://github.com/tenedev/js-utils-kit/actions/workflows/publish.yml/badge.svg)](https://github.com/tenedev/js-utils-kit/actions/workflows/publish.yml)
+[![ci](https://github.com/tenedev/js-utils-kit/actions/workflows/ci.yml/badge.svg)](https://github.com/tenedev/js-utils-kit)
+[![commits since release](https://img.shields.io/github/commits-since/tenedev/js-utils-kit/latest/main?logo=github&color=brightgreen)](https://github.com/tenedev/js-utils-kit/releases)
+[![codecov](https://codecov.io/github/tenedev/js-utils-kit/graph/badge.svg?token=9CEFGKSU2S)](https://app.codecov.io/gh/tenedev/js-utils-kit/tree/main)
+[![pkg.pr.new](https://pkg.pr.new/badge/tenedev/js-utils-kit)](https://pkg.pr.new/~/tenedev/js-utils-kit)
 
 ## Overview
 
@@ -86,7 +86,7 @@ Full documentation is available at [js-utils.js.org](https://js-utils.js.org/mod
 
 ## Contributing
 
-We welcome contributions whether it's fixing bugs, adding utilities, improving docs, or writing tests. See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines and join our [GitHub Discussions](https://github.com/teneplaysofficial/js-utils-kit/discussions) to share ideas or propose features.
+We welcome contributions whether it's fixing bugs, adding utilities, improving docs, or writing tests. See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines and join our [GitHub Discussions](https://github.com/tenedev/js-utils-kit/discussions) to share ideas or propose features.
 
 ## License
 
