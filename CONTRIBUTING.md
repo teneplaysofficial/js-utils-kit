@@ -1,6 +1,8 @@
 # Contributing to JS Utils Kit
 
-Thank you for your interest in contributing to **JS Utils Kit** 🎉. This project is a **pnpm monorepo powered by Turbo**, and we welcome improvements across utilities, tooling, documentation, and performance.
+Thank you for your interest in contributing to **JS Utils Kit** 🎉. 
+
+This project is a **pnpm monorepo powered by Turbo**, and we welcome improvements across utilities, tooling, documentation, and performance.
 
 ## Monorepo Structure
 
@@ -18,7 +20,7 @@ This project uses:
 js-utils-kit/
 ├── packages/              # All publishable/internal packages
 ├── scripts/               # Build & development tooling
-├── eslint.config.ts       # ESLint configuration
+├── biome.json             # Biome configuration
 ├── tsconfig.json          # TypeScript config
 ├── turbo.json             # Turbo pipeline config
 ├── typedoc.json           # Documentation config
@@ -229,7 +231,7 @@ If you are contributing a new package:
 
 This project enforces:
 
-- ESLint (see `eslint.config.ts`)
+- Biome 
 - TypeScript strict mode
 - Clean public exports
 - Dual ESM + CJS compatibility
@@ -244,8 +246,8 @@ pnpm lint
 
 Please review:
 
-- `CODE_OF_CONDUCT.md`
-- `SECURITY.md`
+- [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md)
+- [SECURITY.md](./SECURITY.md)
 
 Report security issues responsibly.
 
