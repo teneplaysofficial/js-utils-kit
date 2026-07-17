@@ -6,16 +6,16 @@
   "homepage": "https://js-utils.js.org",
   "repository": {
     "type": "git",
-    "url": "https://github.com/teneplaysofficial/js-utils-kit",
+    "url": "https://github.com/tenedev/js-utils-kit",
     "directory": ""
   },
   "bugs": {
-    "url": "https://github.com/teneplaysofficial/js-utils-kit/issues"
+    "url": "https://github.com/tenedev/js-utils-kit/issues"
   },
   "license": "MIT",
   "author": {
     "name": "Sriman",
-    "email": "136729116+TenEplaysOfficial@users.noreply.github.com",
+    "email": "136729116+tenedev@users.noreply.github.com",
     "url": "https://tene.vercel.app"
   },
   "private": true,
