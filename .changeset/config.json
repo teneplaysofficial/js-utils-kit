@@ -1,6 +1,6 @@
 {
   "$schema": "https://unpkg.com/@changesets/config@3.1.1/schema.json",
-  "changelog": ["@changesets/changelog-github", { "repo": "teneplaysofficial/js-utils-kit" }],
+  "changelog": ["@changesets/changelog-github", { "repo": "tenedev/js-utils-kit" }],
   "commit": false,
   "fixed": [],
   "linked": [],
