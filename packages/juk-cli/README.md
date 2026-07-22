@@ -1,8 +1,13 @@
 # juk-cli
 
-A simple and lightweight command-line interface for the **js-utils-kit** ecosystem, providing useful utilities for environment checks and scripting workflows.
+> CLI for the JS Utils Kit ecosystem.
 
-The CLI is designed to work well in local development, CI pipelines, and automation scripts.
+[![npm version](https://img.shields.io/npm/v/juk-cli.svg?logo=npm&color=brightgreen)](https://www.npmjs.com/package/juk-cli)
+[![Downloads](https://img.shields.io/npm/dt/juk-cli?logo=npm)](https://www.npmjs.com/package/juk-cli)
+
+## Overview
+
+juk-cli provides command-line utilities for the JS Utils Kit ecosystem. It is designed for local development, automation scripts, and CI environments.
 
 ## Installation
 
