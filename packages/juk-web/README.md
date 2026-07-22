@@ -13,3 +13,33 @@
 ```bash
 pnpm add juk-web
 ```
+
+## Usage
+
+### Package Managers
+
+```js
+import { isBrowser } from "juk-web";
+
+console.log(isBrowser);
+```
+
+### Browser (ESM)
+
+```html
+<script type="module">
+  import { isBrowser } from "https://esm.sh/juk-web@0";
+
+  console.log(isBrowser);
+</script>
+```
+
+### Browser (Global)
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/juk-web@0/dist/index.iife.js"></script>
+
+<script>
+  console.log(jukWeb.isBrowser);
+</script>
+```
