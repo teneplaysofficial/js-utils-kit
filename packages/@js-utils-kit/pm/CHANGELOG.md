@@ -1,5 +1,14 @@
 # @js-utils-kit/pm
 
+## 0.4.1
+
+### Patch Changes
+
+- Updated dependencies [[`b34ae26`](https://github.com/tenedev/js-utils-kit/commit/b34ae260c2e86661733a9d2288defa483f050aac), [`94f19a2`](https://github.com/tenedev/js-utils-kit/commit/94f19a2d7711d6c280c690fad1922c6d100a040a)]:
+  - @js-utils-kit/regex@0.3.0
+  - @js-utils-kit/constants@0.7.0
+  - @js-utils-kit/valid@3.0.2
+
 ## 0.4.0
 
 ### Minor Changes

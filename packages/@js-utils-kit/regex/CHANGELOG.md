@@ -1,5 +1,11 @@
 # @js-utils-kit/regex
 
+## 0.3.0
+
+### Minor Changes
+
+- [#230](https://github.com/tenedev/js-utils-kit/pull/230) [`b34ae26`](https://github.com/tenedev/js-utils-kit/commit/b34ae260c2e86661733a9d2288defa483f050aac) Thanks [@tenedev](https://github.com/tenedev)! - Add `HTML_TAG_REGEX` and `STRICT_HTML_TAG_REGEX` regexes
+
 ## 0.2.0
 
 ### Minor Changes
