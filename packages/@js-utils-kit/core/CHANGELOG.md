@@ -1,5 +1,22 @@
 # @js-utils-kit/core
 
+## 5.2.0
+
+### Minor Changes
+
+- [#230](https://github.com/tenedev/js-utils-kit/pull/230) [`b34ae26`](https://github.com/tenedev/js-utils-kit/commit/b34ae260c2e86661733a9d2288defa483f050aac) Thanks [@tenedev](https://github.com/tenedev)! - Add `HTML_TAG_REGEX` and `STRICT_HTML_TAG_REGEX` regexes
+
+- [#238](https://github.com/tenedev/js-utils-kit/pull/238) [`94f19a2`](https://github.com/tenedev/js-utils-kit/commit/94f19a2d7711d6c280c690fad1922c6d100a040a) Thanks [@tenedev](https://github.com/tenedev)! - Add additional string constants covering Unicode characters, operators, punctuation, emoji, typography, symbols, and more.
+
+### Patch Changes
+
+- Updated dependencies [[`b34ae26`](https://github.com/tenedev/js-utils-kit/commit/b34ae260c2e86661733a9d2288defa483f050aac), [`94f19a2`](https://github.com/tenedev/js-utils-kit/commit/94f19a2d7711d6c280c690fad1922c6d100a040a)]:
+  - @js-utils-kit/regex@0.3.0
+  - @js-utils-kit/constants@0.7.0
+  - @js-utils-kit/pm@0.4.1
+  - @js-utils-kit/valid@3.0.2
+  - @js-utils-kit/object@2.0.2
+
 ## 5.1.0
 
 ### Minor Changes

@@ -1,5 +1,11 @@
 # @js-utils-kit/constants
 
+## 0.7.0
+
+### Minor Changes
+
+- [#238](https://github.com/tenedev/js-utils-kit/pull/238) [`94f19a2`](https://github.com/tenedev/js-utils-kit/commit/94f19a2d7711d6c280c690fad1922c6d100a040a) Thanks [@tenedev](https://github.com/tenedev)! - Add additional string constants covering Unicode characters, operators, punctuation, emoji, typography, symbols, and more.
+
 ## 0.6.0
 
 ### Minor Changes
